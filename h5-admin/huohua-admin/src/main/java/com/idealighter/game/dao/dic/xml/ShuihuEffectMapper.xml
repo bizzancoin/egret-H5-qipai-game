@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.ShuihuEffectMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.ShuihuEffect">
+    <id column="key" jdbcType="VARCHAR" property="key" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="picName" jdbcType="VARCHAR" property="picname" />
+    <result column="frameTime" jdbcType="INTEGER" property="frametime" />
+    <result column="beginFrame" jdbcType="INTEGER" property="beginframe" />
+    <result column="length" jdbcType="INTEGER" property="length" />
+    <result column="isLoop" jdbcType="INTEGER" property="isloop" />
+    <result column="lifeTime" jdbcType="INTEGER" property="lifetime" />
+    <result column="isMove" jdbcType="INTEGER" property="ismove" />
+    <result column="moveTime" jdbcType="INTEGER" property="movetime" />
+    <result column="beginPos" jdbcType="VARCHAR" property="beginpos" />
+    <result column="endPos" jdbcType="VARCHAR" property="endpos" />
+    <result column="musicId" jdbcType="INTEGER" property="musicid" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    key, remarks, picName, frameTime, beginFrame, length, isLoop, lifeTime, isMove, moveTime, 
+    beginPos, endPos, musicId
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffectExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from shuihu_effect
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from shuihu_effect
+    where key = #{key,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from shuihu_effect
+    where key = #{key,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffectExample">
+    delete from shuihu_effect
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffect">
+    insert into shuihu_effect (key, remarks, picName, 
+      frameTime, beginFrame, length, 
+      isLoop, lifeTime, isMove, 
+      moveTime, beginPos, endPos, 
+      musicId)
+    values (#{key,jdbcType=VARCHAR}, #{remarks,jdbcType=VARCHAR}, #{picname,jdbcType=VARCHAR}, 
+      #{frametime,jdbcType=INTEGER}, #{beginframe,jdbcType=INTEGER}, #{length,jdbcType=INTEGER}, 
+      #{isloop,jdbcType=INTEGER}, #{lifetime,jdbcType=INTEGER}, #{ismove,jdbcType=INTEGER}, 
+      #{movetime,jdbcType=INTEGER}, #{beginpos,jdbcType=VARCHAR}, #{endpos,jdbcType=VARCHAR}, 
+      #{musicid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffect">
+    insert into shuihu_effect
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="key != null">
+        key,
+      </if>
+      <if test="remarks != null">
+        remarks,
+      </if>
+      <if test="picname != null">
+        picName,
+      </if>
+      <if test="frametime != null">
+        frameTime,
+      </if>
+      <if test="beginframe != null">
+        beginFrame,
+      </if>
+      <if test="length != null">
+        length,
+      </if>
+      <if test="isloop != null">
+        isLoop,
+      </if>
+      <if test="lifetime != null">
+        lifeTime,
+      </if>
+      <if test="ismove != null">
+        isMove,
+      </if>
+      <if test="movetime != null">
+        moveTime,
+      </if>
+      <if test="beginpos != null">
+        beginPos,
+      </if>
+      <if test="endpos != null">
+        endPos,
+      </if>
+      <if test="musicid != null">
+        musicId,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="key != null">
+        #{key,jdbcType=VARCHAR},
+      </if>
+      <if test="remarks != null">
+        #{remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="picname != null">
+        #{picname,jdbcType=VARCHAR},
+      </if>
+      <if test="frametime != null">
+        #{frametime,jdbcType=INTEGER},
+      </if>
+      <if test="beginframe != null">
+        #{beginframe,jdbcType=INTEGER},
+      </if>
+      <if test="length != null">
+        #{length,jdbcType=INTEGER},
+      </if>
+      <if test="isloop != null">
+        #{isloop,jdbcType=INTEGER},
+      </if>
+      <if test="lifetime != null">
+        #{lifetime,jdbcType=INTEGER},
+      </if>
+      <if test="ismove != null">
+        #{ismove,jdbcType=INTEGER},
+      </if>
+      <if test="movetime != null">
+        #{movetime,jdbcType=INTEGER},
+      </if>
+      <if test="beginpos != null">
+        #{beginpos,jdbcType=VARCHAR},
+      </if>
+      <if test="endpos != null">
+        #{endpos,jdbcType=VARCHAR},
+      </if>
+      <if test="musicid != null">
+        #{musicid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffectExample" resultType="java.lang.Long">
+    select count(*) from shuihu_effect
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update shuihu_effect
+    <set>
+      <if test="record.key != null">
+        key = #{record.key,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remarks != null">
+        remarks = #{record.remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="record.picname != null">
+        picName = #{record.picname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.frametime != null">
+        frameTime = #{record.frametime,jdbcType=INTEGER},
+      </if>
+      <if test="record.beginframe != null">
+        beginFrame = #{record.beginframe,jdbcType=INTEGER},
+      </if>
+      <if test="record.length != null">
+        length = #{record.length,jdbcType=INTEGER},
+      </if>
+      <if test="record.isloop != null">
+        isLoop = #{record.isloop,jdbcType=INTEGER},
+      </if>
+      <if test="record.lifetime != null">
+        lifeTime = #{record.lifetime,jdbcType=INTEGER},
+      </if>
+      <if test="record.ismove != null">
+        isMove = #{record.ismove,jdbcType=INTEGER},
+      </if>
+      <if test="record.movetime != null">
+        moveTime = #{record.movetime,jdbcType=INTEGER},
+      </if>
+      <if test="record.beginpos != null">
+        beginPos = #{record.beginpos,jdbcType=VARCHAR},
+      </if>
+      <if test="record.endpos != null">
+        endPos = #{record.endpos,jdbcType=VARCHAR},
+      </if>
+      <if test="record.musicid != null">
+        musicId = #{record.musicid,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update shuihu_effect
+    set key = #{record.key,jdbcType=VARCHAR},
+      remarks = #{record.remarks,jdbcType=VARCHAR},
+      picName = #{record.picname,jdbcType=VARCHAR},
+      frameTime = #{record.frametime,jdbcType=INTEGER},
+      beginFrame = #{record.beginframe,jdbcType=INTEGER},
+      length = #{record.length,jdbcType=INTEGER},
+      isLoop = #{record.isloop,jdbcType=INTEGER},
+      lifeTime = #{record.lifetime,jdbcType=INTEGER},
+      isMove = #{record.ismove,jdbcType=INTEGER},
+      moveTime = #{record.movetime,jdbcType=INTEGER},
+      beginPos = #{record.beginpos,jdbcType=VARCHAR},
+      endPos = #{record.endpos,jdbcType=VARCHAR},
+      musicId = #{record.musicid,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffect">
+    update shuihu_effect
+    <set>
+      <if test="remarks != null">
+        remarks = #{remarks,jdbcType=VARCHAR},
+      </if>
+      <if test="picname != null">
+        picName = #{picname,jdbcType=VARCHAR},
+      </if>
+      <if test="frametime != null">
+        frameTime = #{frametime,jdbcType=INTEGER},
+      </if>
+      <if test="beginframe != null">
+        beginFrame = #{beginframe,jdbcType=INTEGER},
+      </if>
+      <if test="length != null">
+        length = #{length,jdbcType=INTEGER},
+      </if>
+      <if test="isloop != null">
+        isLoop = #{isloop,jdbcType=INTEGER},
+      </if>
+      <if test="lifetime != null">
+        lifeTime = #{lifetime,jdbcType=INTEGER},
+      </if>
+      <if test="ismove != null">
+        isMove = #{ismove,jdbcType=INTEGER},
+      </if>
+      <if test="movetime != null">
+        moveTime = #{movetime,jdbcType=INTEGER},
+      </if>
+      <if test="beginpos != null">
+        beginPos = #{beginpos,jdbcType=VARCHAR},
+      </if>
+      <if test="endpos != null">
+        endPos = #{endpos,jdbcType=VARCHAR},
+      </if>
+      <if test="musicid != null">
+        musicId = #{musicid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where key = #{key,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.ShuihuEffect">
+    update shuihu_effect
+    set remarks = #{remarks,jdbcType=VARCHAR},
+      picName = #{picname,jdbcType=VARCHAR},
+      frameTime = #{frametime,jdbcType=INTEGER},
+      beginFrame = #{beginframe,jdbcType=INTEGER},
+      length = #{length,jdbcType=INTEGER},
+      isLoop = #{isloop,jdbcType=INTEGER},
+      lifeTime = #{lifetime,jdbcType=INTEGER},
+      isMove = #{ismove,jdbcType=INTEGER},
+      moveTime = #{movetime,jdbcType=INTEGER},
+      beginPos = #{beginpos,jdbcType=VARCHAR},
+      endPos = #{endpos,jdbcType=VARCHAR},
+      musicId = #{musicid,jdbcType=INTEGER}
+    where key = #{key,jdbcType=VARCHAR}
+  </update>
+</mapper>

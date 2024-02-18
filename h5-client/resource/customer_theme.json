@@ -1,0 +1,26 @@
+{
+  "exmls": [
+    "resource/eui_skins/TextInputSkin.exml",
+    "resource/eui_skins/HSliderSkin.exml",
+    "resource/eui_skins/ProgressBarSkin.exml",
+    "resource/skins/ButtonTipSkin.exml",
+    "resource/skins/HomeSkin.exml",
+    "resource/skins/ItemRoomSkin.exml",
+    "resource/skins/LoginSkin.exml",
+    "resource/skins/PanelSkin.exml",
+    "resource/skins/game/baccarat/BJLProgressBarSkin.exml",
+    "resource/skins/fish/BatterySkin1.exml",
+    "resource/skins/fish/BatterySkin2.exml",
+    "resource/skins/fish/FishMainSkin.exml",
+    "resource/skins/brnn/BrnnBetAreaSkin.exml",
+    "resource/skins/brnn/BrnnBetBtnSkin.exml",
+    "resource/skins/brnn/BrnnCardItemSkin.exml",
+    "resource/skins/brnn/BrnnClearingSkin.exml",
+    "resource/skins/brnn/BrnnRecordSkin.exml",
+    "resource/skins/brnn/BrnnWaitSkin.exml",
+    "resource/skins/brnn/BrnnWaitItemSkin.exml",
+    "resource/skins/brnn/BrnnMainSkin.exml",
+    "resource/skins/ExchangeSkin.exml",
+    "resource/skins/SetSkin.exml"
+  ]
+}

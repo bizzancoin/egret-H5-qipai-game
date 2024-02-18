@@ -1,0 +1,8 @@
+{
+    "IsDebug":false,
+    "GoldMode": false,
+    "HttpSerever":"http://www.baidu.com",
+    "SocketUrl":"ws://47.254.198.101:5014/websocket",
+    "SocketServer":"47.254.198.101:5014/websocket",
+    "SocketPort": 7004
+}

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.ZhajinhuaRoomMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.ZhajinhuaRoom">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="maxNum" jdbcType="INTEGER" property="maxNum" />
+    <result column="free" jdbcType="INTEGER" property="free" />
+    <result column="general" jdbcType="INTEGER" property="general" />
+    <result column="crowded" jdbcType="INTEGER" property="crowded" />
+    <result column="lower" jdbcType="BIGINT" property="lower" />
+    <result column="upper" jdbcType="BIGINT" property="upper" />
+    <result column="ordinarPeople" jdbcType="INTEGER" property="ordinarPeople" />
+    <result column="proportionGold" jdbcType="INTEGER" property="proportionGold" />
+    <result column="proportionChips" jdbcType="INTEGER" property="proportionChips" />
+    <result column="tableNum" jdbcType="INTEGER" property="tableNum" />
+    <result column="chair" jdbcType="INTEGER" property="chair" />
+    <result column="minOne" jdbcType="INTEGER" property="minOne" />
+    <result column="maxOne" jdbcType="INTEGER" property="maxOne" />
+    <result column="afee" jdbcType="INTEGER" property="afee" />
+    <result column="inType" jdbcType="INTEGER" property="inType" />
+    <result column="base" jdbcType="INTEGER" property="base" />
+    <result column="top" jdbcType="INTEGER" property="top" />
+    <result column="chip1" jdbcType="INTEGER" property="chip1" />
+    <result column="chip2" jdbcType="INTEGER" property="chip2" />
+    <result column="chip3" jdbcType="INTEGER" property="chip3" />
+    <result column="displays" jdbcType="VARCHAR" property="displays" />
+    <result column="placeHolder" jdbcType="VARCHAR" property="placeHolder" />
+    <result column="isActive" jdbcType="TINYINT" property="isActive" />
+    <result column="timeCreate" jdbcType="TIMESTAMP" property="timeCreate" />
+    <result column="timeOpen" jdbcType="TIMESTAMP" property="timeOpen" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, type, maxNum, free, general, crowded, lower, upper, ordinarPeople, proportionGold, 
+    proportionChips, tableNum, chair, minOne, maxOne, afee, inType, base, top, chip1, 
+    chip2, chip3, displays, placeHolder, isActive, timeCreate, timeOpen
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoomExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from zhajinhua_room
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from zhajinhua_room
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from zhajinhua_room
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoomExample">
+    delete from zhajinhua_room
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoom">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into zhajinhua_room (name, type, maxNum, 
+      free, general, crowded, 
+      lower, upper, ordinarPeople, 
+      proportionGold, proportionChips, tableNum, 
+      chair, minOne, maxOne, 
+      afee, inType, base, 
+      top, chip1, chip2, 
+      chip3, displays, placeHolder, 
+      isActive, timeCreate, timeOpen
+      )
+    values (#{name,jdbcType=VARCHAR}, #{type,jdbcType=INTEGER}, #{maxNum,jdbcType=INTEGER}, 
+      #{free,jdbcType=INTEGER}, #{general,jdbcType=INTEGER}, #{crowded,jdbcType=INTEGER}, 
+      #{lower,jdbcType=BIGINT}, #{upper,jdbcType=BIGINT}, #{ordinarPeople,jdbcType=INTEGER}, 
+      #{proportionGold,jdbcType=INTEGER}, #{proportionChips,jdbcType=INTEGER}, #{tableNum,jdbcType=INTEGER}, 
+      #{chair,jdbcType=INTEGER}, #{minOne,jdbcType=INTEGER}, #{maxOne,jdbcType=INTEGER}, 
+      #{afee,jdbcType=INTEGER}, #{inType,jdbcType=INTEGER}, #{base,jdbcType=INTEGER}, 
+      #{top,jdbcType=INTEGER}, #{chip1,jdbcType=INTEGER}, #{chip2,jdbcType=INTEGER}, 
+      #{chip3,jdbcType=INTEGER}, #{displays,jdbcType=VARCHAR}, #{placeHolder,jdbcType=VARCHAR}, 
+      #{isActive,jdbcType=TINYINT}, #{timeCreate,jdbcType=TIMESTAMP}, #{timeOpen,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoom">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into zhajinhua_room
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        name,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="maxNum != null">
+        maxNum,
+      </if>
+      <if test="free != null">
+        free,
+      </if>
+      <if test="general != null">
+        general,
+      </if>
+      <if test="crowded != null">
+        crowded,
+      </if>
+      <if test="lower != null">
+        lower,
+      </if>
+      <if test="upper != null">
+        upper,
+      </if>
+      <if test="ordinarPeople != null">
+        ordinarPeople,
+      </if>
+      <if test="proportionGold != null">
+        proportionGold,
+      </if>
+      <if test="proportionChips != null">
+        proportionChips,
+      </if>
+      <if test="tableNum != null">
+        tableNum,
+      </if>
+      <if test="chair != null">
+        chair,
+      </if>
+      <if test="minOne != null">
+        minOne,
+      </if>
+      <if test="maxOne != null">
+        maxOne,
+      </if>
+      <if test="afee != null">
+        afee,
+      </if>
+      <if test="inType != null">
+        inType,
+      </if>
+      <if test="base != null">
+        base,
+      </if>
+      <if test="top != null">
+        top,
+      </if>
+      <if test="chip1 != null">
+        chip1,
+      </if>
+      <if test="chip2 != null">
+        chip2,
+      </if>
+      <if test="chip3 != null">
+        chip3,
+      </if>
+      <if test="displays != null">
+        displays,
+      </if>
+      <if test="placeHolder != null">
+        placeHolder,
+      </if>
+      <if test="isActive != null">
+        isActive,
+      </if>
+      <if test="timeCreate != null">
+        timeCreate,
+      </if>
+      <if test="timeOpen != null">
+        timeOpen,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="maxNum != null">
+        #{maxNum,jdbcType=INTEGER},
+      </if>
+      <if test="free != null">
+        #{free,jdbcType=INTEGER},
+      </if>
+      <if test="general != null">
+        #{general,jdbcType=INTEGER},
+      </if>
+      <if test="crowded != null">
+        #{crowded,jdbcType=INTEGER},
+      </if>
+      <if test="lower != null">
+        #{lower,jdbcType=BIGINT},
+      </if>
+      <if test="upper != null">
+        #{upper,jdbcType=BIGINT},
+      </if>
+      <if test="ordinarPeople != null">
+        #{ordinarPeople,jdbcType=INTEGER},
+      </if>
+      <if test="proportionGold != null">
+        #{proportionGold,jdbcType=INTEGER},
+      </if>
+      <if test="proportionChips != null">
+        #{proportionChips,jdbcType=INTEGER},
+      </if>
+      <if test="tableNum != null">
+        #{tableNum,jdbcType=INTEGER},
+      </if>
+      <if test="chair != null">
+        #{chair,jdbcType=INTEGER},
+      </if>
+      <if test="minOne != null">
+        #{minOne,jdbcType=INTEGER},
+      </if>
+      <if test="maxOne != null">
+        #{maxOne,jdbcType=INTEGER},
+      </if>
+      <if test="afee != null">
+        #{afee,jdbcType=INTEGER},
+      </if>
+      <if test="inType != null">
+        #{inType,jdbcType=INTEGER},
+      </if>
+      <if test="base != null">
+        #{base,jdbcType=INTEGER},
+      </if>
+      <if test="top != null">
+        #{top,jdbcType=INTEGER},
+      </if>
+      <if test="chip1 != null">
+        #{chip1,jdbcType=INTEGER},
+      </if>
+      <if test="chip2 != null">
+        #{chip2,jdbcType=INTEGER},
+      </if>
+      <if test="chip3 != null">
+        #{chip3,jdbcType=INTEGER},
+      </if>
+      <if test="displays != null">
+        #{displays,jdbcType=VARCHAR},
+      </if>
+      <if test="placeHolder != null">
+        #{placeHolder,jdbcType=VARCHAR},
+      </if>
+      <if test="isActive != null">
+        #{isActive,jdbcType=TINYINT},
+      </if>
+      <if test="timeCreate != null">
+        #{timeCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="timeOpen != null">
+        #{timeOpen,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoomExample" resultType="java.lang.Long">
+    select count(*) from zhajinhua_room
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update zhajinhua_room
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=INTEGER},
+      </if>
+      <if test="record.maxNum != null">
+        maxNum = #{record.maxNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.free != null">
+        free = #{record.free,jdbcType=INTEGER},
+      </if>
+      <if test="record.general != null">
+        general = #{record.general,jdbcType=INTEGER},
+      </if>
+      <if test="record.crowded != null">
+        crowded = #{record.crowded,jdbcType=INTEGER},
+      </if>
+      <if test="record.lower != null">
+        lower = #{record.lower,jdbcType=BIGINT},
+      </if>
+      <if test="record.upper != null">
+        upper = #{record.upper,jdbcType=BIGINT},
+      </if>
+      <if test="record.ordinarPeople != null">
+        ordinarPeople = #{record.ordinarPeople,jdbcType=INTEGER},
+      </if>
+      <if test="record.proportionGold != null">
+        proportionGold = #{record.proportionGold,jdbcType=INTEGER},
+      </if>
+      <if test="record.proportionChips != null">
+        proportionChips = #{record.proportionChips,jdbcType=INTEGER},
+      </if>
+      <if test="record.tableNum != null">
+        tableNum = #{record.tableNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.chair != null">
+        chair = #{record.chair,jdbcType=INTEGER},
+      </if>
+      <if test="record.minOne != null">
+        minOne = #{record.minOne,jdbcType=INTEGER},
+      </if>
+      <if test="record.maxOne != null">
+        maxOne = #{record.maxOne,jdbcType=INTEGER},
+      </if>
+      <if test="record.afee != null">
+        afee = #{record.afee,jdbcType=INTEGER},
+      </if>
+      <if test="record.inType != null">
+        inType = #{record.inType,jdbcType=INTEGER},
+      </if>
+      <if test="record.base != null">
+        base = #{record.base,jdbcType=INTEGER},
+      </if>
+      <if test="record.top != null">
+        top = #{record.top,jdbcType=INTEGER},
+      </if>
+      <if test="record.chip1 != null">
+        chip1 = #{record.chip1,jdbcType=INTEGER},
+      </if>
+      <if test="record.chip2 != null">
+        chip2 = #{record.chip2,jdbcType=INTEGER},
+      </if>
+      <if test="record.chip3 != null">
+        chip3 = #{record.chip3,jdbcType=INTEGER},
+      </if>
+      <if test="record.displays != null">
+        displays = #{record.displays,jdbcType=VARCHAR},
+      </if>
+      <if test="record.placeHolder != null">
+        placeHolder = #{record.placeHolder,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isActive != null">
+        isActive = #{record.isActive,jdbcType=TINYINT},
+      </if>
+      <if test="record.timeCreate != null">
+        timeCreate = #{record.timeCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.timeOpen != null">
+        timeOpen = #{record.timeOpen,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update zhajinhua_room
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=INTEGER},
+      maxNum = #{record.maxNum,jdbcType=INTEGER},
+      free = #{record.free,jdbcType=INTEGER},
+      general = #{record.general,jdbcType=INTEGER},
+      crowded = #{record.crowded,jdbcType=INTEGER},
+      lower = #{record.lower,jdbcType=BIGINT},
+      upper = #{record.upper,jdbcType=BIGINT},
+      ordinarPeople = #{record.ordinarPeople,jdbcType=INTEGER},
+      proportionGold = #{record.proportionGold,jdbcType=INTEGER},
+      proportionChips = #{record.proportionChips,jdbcType=INTEGER},
+      tableNum = #{record.tableNum,jdbcType=INTEGER},
+      chair = #{record.chair,jdbcType=INTEGER},
+      minOne = #{record.minOne,jdbcType=INTEGER},
+      maxOne = #{record.maxOne,jdbcType=INTEGER},
+      afee = #{record.afee,jdbcType=INTEGER},
+      inType = #{record.inType,jdbcType=INTEGER},
+      base = #{record.base,jdbcType=INTEGER},
+      top = #{record.top,jdbcType=INTEGER},
+      chip1 = #{record.chip1,jdbcType=INTEGER},
+      chip2 = #{record.chip2,jdbcType=INTEGER},
+      chip3 = #{record.chip3,jdbcType=INTEGER},
+      displays = #{record.displays,jdbcType=VARCHAR},
+      placeHolder = #{record.placeHolder,jdbcType=VARCHAR},
+      isActive = #{record.isActive,jdbcType=TINYINT},
+      timeCreate = #{record.timeCreate,jdbcType=TIMESTAMP},
+      timeOpen = #{record.timeOpen,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoom">
+    update zhajinhua_room
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="maxNum != null">
+        maxNum = #{maxNum,jdbcType=INTEGER},
+      </if>
+      <if test="free != null">
+        free = #{free,jdbcType=INTEGER},
+      </if>
+      <if test="general != null">
+        general = #{general,jdbcType=INTEGER},
+      </if>
+      <if test="crowded != null">
+        crowded = #{crowded,jdbcType=INTEGER},
+      </if>
+      <if test="lower != null">
+        lower = #{lower,jdbcType=BIGINT},
+      </if>
+      <if test="upper != null">
+        upper = #{upper,jdbcType=BIGINT},
+      </if>
+      <if test="ordinarPeople != null">
+        ordinarPeople = #{ordinarPeople,jdbcType=INTEGER},
+      </if>
+      <if test="proportionGold != null">
+        proportionGold = #{proportionGold,jdbcType=INTEGER},
+      </if>
+      <if test="proportionChips != null">
+        proportionChips = #{proportionChips,jdbcType=INTEGER},
+      </if>
+      <if test="tableNum != null">
+        tableNum = #{tableNum,jdbcType=INTEGER},
+      </if>
+      <if test="chair != null">
+        chair = #{chair,jdbcType=INTEGER},
+      </if>
+      <if test="minOne != null">
+        minOne = #{minOne,jdbcType=INTEGER},
+      </if>
+      <if test="maxOne != null">
+        maxOne = #{maxOne,jdbcType=INTEGER},
+      </if>
+      <if test="afee != null">
+        afee = #{afee,jdbcType=INTEGER},
+      </if>
+      <if test="inType != null">
+        inType = #{inType,jdbcType=INTEGER},
+      </if>
+      <if test="base != null">
+        base = #{base,jdbcType=INTEGER},
+      </if>
+      <if test="top != null">
+        top = #{top,jdbcType=INTEGER},
+      </if>
+      <if test="chip1 != null">
+        chip1 = #{chip1,jdbcType=INTEGER},
+      </if>
+      <if test="chip2 != null">
+        chip2 = #{chip2,jdbcType=INTEGER},
+      </if>
+      <if test="chip3 != null">
+        chip3 = #{chip3,jdbcType=INTEGER},
+      </if>
+      <if test="displays != null">
+        displays = #{displays,jdbcType=VARCHAR},
+      </if>
+      <if test="placeHolder != null">
+        placeHolder = #{placeHolder,jdbcType=VARCHAR},
+      </if>
+      <if test="isActive != null">
+        isActive = #{isActive,jdbcType=TINYINT},
+      </if>
+      <if test="timeCreate != null">
+        timeCreate = #{timeCreate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="timeOpen != null">
+        timeOpen = #{timeOpen,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.ZhajinhuaRoom">
+    update zhajinhua_room
+    set name = #{name,jdbcType=VARCHAR},
+      type = #{type,jdbcType=INTEGER},
+      maxNum = #{maxNum,jdbcType=INTEGER},
+      free = #{free,jdbcType=INTEGER},
+      general = #{general,jdbcType=INTEGER},
+      crowded = #{crowded,jdbcType=INTEGER},
+      lower = #{lower,jdbcType=BIGINT},
+      upper = #{upper,jdbcType=BIGINT},
+      ordinarPeople = #{ordinarPeople,jdbcType=INTEGER},
+      proportionGold = #{proportionGold,jdbcType=INTEGER},
+      proportionChips = #{proportionChips,jdbcType=INTEGER},
+      tableNum = #{tableNum,jdbcType=INTEGER},
+      chair = #{chair,jdbcType=INTEGER},
+      minOne = #{minOne,jdbcType=INTEGER},
+      maxOne = #{maxOne,jdbcType=INTEGER},
+      afee = #{afee,jdbcType=INTEGER},
+      inType = #{inType,jdbcType=INTEGER},
+      base = #{base,jdbcType=INTEGER},
+      top = #{top,jdbcType=INTEGER},
+      chip1 = #{chip1,jdbcType=INTEGER},
+      chip2 = #{chip2,jdbcType=INTEGER},
+      chip3 = #{chip3,jdbcType=INTEGER},
+      displays = #{displays,jdbcType=VARCHAR},
+      placeHolder = #{placeHolder,jdbcType=VARCHAR},
+      isActive = #{isActive,jdbcType=TINYINT},
+      timeCreate = #{timeCreate,jdbcType=TIMESTAMP},
+      timeOpen = #{timeOpen,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

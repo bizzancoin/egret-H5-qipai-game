@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="brnn.BrnnBetBtnSkin" xmlns:e="http://ns.egret.com/eui">
+    <e:Group id="groupBtnChip" height="140" width="1100" y="70" anchorOffsetX="550" anchorOffsetY="70" x="550">
+        <e:Button id="btnChip8" label="1000万" x="188" y="57">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.10000000"
+                             source.disabled="brnn_atlas1_json.10000000h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip7" label="100万" x="282" y="60">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.1000000"
+                             source.disabled="brnn_atlas1_json.1000000h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip6" label="10万" x="70" y="36">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.100000"
+                             source.disabled="brnn_atlas1_json.100000h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip5" label="1万" x="292" y="66">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.10000"
+                             source.disabled="brnn_atlas1_json.10000h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip4" label="1000" x="122" y="69">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.1000"
+                             source.disabled="brnn_atlas1_json.1000h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip3" label="100" x="285" y="51">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.100"
+                             source.disabled="brnn_atlas1_json.100h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip2" label="10" x="110" y="81">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.10"
+                             source.disabled="brnn_atlas1_json.10h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnChip1" label="1" x="179" y="75">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.1"
+                             source.disabled="brnn_atlas1_json.1h" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:layout>
+            <e:HorizontalLayout gap="20" horizontalAlign="center" verticalAlign="middle" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.SharkIconRateMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.SharkIconRate">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="icon" jdbcType="INTEGER" property="icon" />
+    <result column="plan" jdbcType="INTEGER" property="plan" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="minRate" jdbcType="INTEGER" property="minrate" />
+    <result column="maxRate" jdbcType="INTEGER" property="maxrate" />
+    <result column="probability" jdbcType="INTEGER" property="probability" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, icon, plan, name, minRate, maxRate, probability
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.SharkIconRateExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from shark_icon_rate
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from shark_icon_rate
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from shark_icon_rate
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.SharkIconRateExample">
+    delete from shark_icon_rate
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.SharkIconRate">
+    insert into shark_icon_rate (id, icon, plan, 
+      name, minRate, maxRate, 
+      probability)
+    values (#{id,jdbcType=INTEGER}, #{icon,jdbcType=INTEGER}, #{plan,jdbcType=INTEGER}, 
+      #{name,jdbcType=VARCHAR}, #{minrate,jdbcType=INTEGER}, #{maxrate,jdbcType=INTEGER}, 
+      #{probability,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.SharkIconRate">
+    insert into shark_icon_rate
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="icon != null">
+        icon,
+      </if>
+      <if test="plan != null">
+        plan,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="minrate != null">
+        minRate,
+      </if>
+      <if test="maxrate != null">
+        maxRate,
+      </if>
+      <if test="probability != null">
+        probability,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null">
+        #{icon,jdbcType=INTEGER},
+      </if>
+      <if test="plan != null">
+        #{plan,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="minrate != null">
+        #{minrate,jdbcType=INTEGER},
+      </if>
+      <if test="maxrate != null">
+        #{maxrate,jdbcType=INTEGER},
+      </if>
+      <if test="probability != null">
+        #{probability,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.SharkIconRateExample" resultType="java.lang.Long">
+    select count(*) from shark_icon_rate
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update shark_icon_rate
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.icon != null">
+        icon = #{record.icon,jdbcType=INTEGER},
+      </if>
+      <if test="record.plan != null">
+        plan = #{record.plan,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.minrate != null">
+        minRate = #{record.minrate,jdbcType=INTEGER},
+      </if>
+      <if test="record.maxrate != null">
+        maxRate = #{record.maxrate,jdbcType=INTEGER},
+      </if>
+      <if test="record.probability != null">
+        probability = #{record.probability,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update shark_icon_rate
+    set id = #{record.id,jdbcType=INTEGER},
+      icon = #{record.icon,jdbcType=INTEGER},
+      plan = #{record.plan,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      minRate = #{record.minrate,jdbcType=INTEGER},
+      maxRate = #{record.maxrate,jdbcType=INTEGER},
+      probability = #{record.probability,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.SharkIconRate">
+    update shark_icon_rate
+    <set>
+      <if test="icon != null">
+        icon = #{icon,jdbcType=INTEGER},
+      </if>
+      <if test="plan != null">
+        plan = #{plan,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="minrate != null">
+        minRate = #{minrate,jdbcType=INTEGER},
+      </if>
+      <if test="maxrate != null">
+        maxRate = #{maxrate,jdbcType=INTEGER},
+      </if>
+      <if test="probability != null">
+        probability = #{probability,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.SharkIconRate">
+    update shark_icon_rate
+    set icon = #{icon,jdbcType=INTEGER},
+      plan = #{plan,jdbcType=INTEGER},
+      name = #{name,jdbcType=VARCHAR},
+      minRate = #{minrate,jdbcType=INTEGER},
+      maxRate = #{maxrate,jdbcType=INTEGER},
+      probability = #{probability,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

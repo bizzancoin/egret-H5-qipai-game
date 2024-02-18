@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.SendGoldRecordMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.SendGoldRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="super_id" jdbcType="BIGINT" property="superId" />
+    <result column="player_name" jdbcType="VARCHAR" property="playerName" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="admin_name" jdbcType="VARCHAR" property="adminName" />
+    <result column="gold" jdbcType="BIGINT" property="gold" />
+    <result column="safe_gold" jdbcType="BIGINT" property="safeGold" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="channel_id" jdbcType="VARCHAR" property="channelId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, player_id, super_id, player_name, admin_id, admin_name, gold, safe_gold, time, 
+    channel_id
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.SendGoldRecordExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from send_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from send_gold_record
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from send_gold_record
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.SendGoldRecordExample">
+    delete from send_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.SendGoldRecord">
+    insert into send_gold_record (id, player_id, super_id, 
+      player_name, admin_id, admin_name, 
+      gold, safe_gold, time, 
+      channel_id)
+    values (#{id,jdbcType=INTEGER}, #{playerId,jdbcType=BIGINT}, #{superId,jdbcType=BIGINT}, 
+      #{playerName,jdbcType=VARCHAR}, #{adminId,jdbcType=INTEGER}, #{adminName,jdbcType=VARCHAR}, 
+      #{gold,jdbcType=BIGINT}, #{safeGold,jdbcType=BIGINT}, #{time,jdbcType=TIMESTAMP}, 
+      #{channelId,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.SendGoldRecord">
+    insert into send_gold_record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="superId != null">
+        super_id,
+      </if>
+      <if test="playerName != null">
+        player_name,
+      </if>
+      <if test="adminId != null">
+        admin_id,
+      </if>
+      <if test="adminName != null">
+        admin_name,
+      </if>
+      <if test="gold != null">
+        gold,
+      </if>
+      <if test="safeGold != null">
+        safe_gold,
+      </if>
+      <if test="time != null">
+        time,
+      </if>
+      <if test="channelId != null">
+        channel_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="superId != null">
+        #{superId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminId != null">
+        #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="adminName != null">
+        #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="gold != null">
+        #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="safeGold != null">
+        #{safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="time != null">
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="channelId != null">
+        #{channelId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.SendGoldRecordExample" resultType="java.lang.Long">
+    select count(*) from send_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update send_gold_record
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.superId != null">
+        super_id = #{record.superId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playerName != null">
+        player_name = #{record.playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.adminId != null">
+        admin_id = #{record.adminId,jdbcType=INTEGER},
+      </if>
+      <if test="record.adminName != null">
+        admin_name = #{record.adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gold != null">
+        gold = #{record.gold,jdbcType=BIGINT},
+      </if>
+      <if test="record.safeGold != null">
+        safe_gold = #{record.safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.time != null">
+        time = #{record.time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.channelId != null">
+        channel_id = #{record.channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update send_gold_record
+    set id = #{record.id,jdbcType=INTEGER},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      super_id = #{record.superId,jdbcType=BIGINT},
+      player_name = #{record.playerName,jdbcType=VARCHAR},
+      admin_id = #{record.adminId,jdbcType=INTEGER},
+      admin_name = #{record.adminName,jdbcType=VARCHAR},
+      gold = #{record.gold,jdbcType=BIGINT},
+      safe_gold = #{record.safeGold,jdbcType=BIGINT},
+      time = #{record.time,jdbcType=TIMESTAMP},
+      channel_id = #{record.channelId,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.SendGoldRecord">
+    update send_gold_record
+    <set>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="superId != null">
+        super_id = #{superId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        player_name = #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="adminId != null">
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="adminName != null">
+        admin_name = #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="gold != null">
+        gold = #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="safeGold != null">
+        safe_gold = #{safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="time != null">
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="channelId != null">
+        channel_id = #{channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.SendGoldRecord">
+    update send_gold_record
+    set player_id = #{playerId,jdbcType=BIGINT},
+      super_id = #{superId,jdbcType=BIGINT},
+      player_name = #{playerName,jdbcType=VARCHAR},
+      admin_id = #{adminId,jdbcType=INTEGER},
+      admin_name = #{adminName,jdbcType=VARCHAR},
+      gold = #{gold,jdbcType=BIGINT},
+      safe_gold = #{safeGold,jdbcType=BIGINT},
+      time = #{time,jdbcType=TIMESTAMP},
+      channel_id = #{channelId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

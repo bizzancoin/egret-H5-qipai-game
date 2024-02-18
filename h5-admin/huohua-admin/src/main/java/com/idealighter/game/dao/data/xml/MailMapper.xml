@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.MailMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.Mail">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="player_super_id" jdbcType="BIGINT" property="playerSuperId" />
+    <result column="player_name" jdbcType="VARCHAR" property="playerName" />
+    <result column="from_player_id" jdbcType="BIGINT" property="fromPlayerId" />
+    <result column="from_player_super_id" jdbcType="BIGINT" property="fromPlayerSuperId" />
+    <result column="from_player_name" jdbcType="VARCHAR" property="fromPlayerName" />
+    <result column="gold" jdbcType="BIGINT" property="gold" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="is_read" jdbcType="BIT" property="isRead" />
+    <result column="is_rec_gold" jdbcType="BIT" property="isRecGold" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.idealighter.game.dao.data.po.Mail">
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, player_id, player_super_id, player_name, from_player_id, from_player_super_id, 
+    from_player_name, gold, title, is_read, is_rec_gold, create_time
+  </sql>
+  <sql id="Blob_Column_List">
+    content
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.idealighter.game.dao.data.po.MailExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from mail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.MailExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from mail
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from mail
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.MailExample">
+    delete from mail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.Mail">
+    insert into mail (id, player_id, player_super_id, 
+      player_name, from_player_id, from_player_super_id, 
+      from_player_name, gold, title, 
+      is_read, is_rec_gold, create_time, 
+      content)
+    values (#{id,jdbcType=INTEGER}, #{playerId,jdbcType=BIGINT}, #{playerSuperId,jdbcType=BIGINT}, 
+      #{playerName,jdbcType=VARCHAR}, #{fromPlayerId,jdbcType=BIGINT}, #{fromPlayerSuperId,jdbcType=BIGINT}, 
+      #{fromPlayerName,jdbcType=VARCHAR}, #{gold,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, 
+      #{isRead,jdbcType=BIT}, #{isRecGold,jdbcType=BIT}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.Mail">
+    insert into mail
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="playerSuperId != null">
+        player_super_id,
+      </if>
+      <if test="playerName != null">
+        player_name,
+      </if>
+      <if test="fromPlayerId != null">
+        from_player_id,
+      </if>
+      <if test="fromPlayerSuperId != null">
+        from_player_super_id,
+      </if>
+      <if test="fromPlayerName != null">
+        from_player_name,
+      </if>
+      <if test="gold != null">
+        gold,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="isRead != null">
+        is_read,
+      </if>
+      <if test="isRecGold != null">
+        is_rec_gold,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playerSuperId != null">
+        #{playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="fromPlayerId != null">
+        #{fromPlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="fromPlayerSuperId != null">
+        #{fromPlayerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="fromPlayerName != null">
+        #{fromPlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="gold != null">
+        #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="isRead != null">
+        #{isRead,jdbcType=BIT},
+      </if>
+      <if test="isRecGold != null">
+        #{isRecGold,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.MailExample" resultType="java.lang.Long">
+    select count(*) from mail
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update mail
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playerSuperId != null">
+        player_super_id = #{record.playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playerName != null">
+        player_name = #{record.playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.fromPlayerId != null">
+        from_player_id = #{record.fromPlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.fromPlayerSuperId != null">
+        from_player_super_id = #{record.fromPlayerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="record.fromPlayerName != null">
+        from_player_name = #{record.fromPlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.gold != null">
+        gold = #{record.gold,jdbcType=BIGINT},
+      </if>
+      <if test="record.title != null">
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isRead != null">
+        is_read = #{record.isRead,jdbcType=BIT},
+      </if>
+      <if test="record.isRecGold != null">
+        is_rec_gold = #{record.isRecGold,jdbcType=BIT},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.content != null">
+        content = #{record.content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update mail
+    set id = #{record.id,jdbcType=INTEGER},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      player_super_id = #{record.playerSuperId,jdbcType=BIGINT},
+      player_name = #{record.playerName,jdbcType=VARCHAR},
+      from_player_id = #{record.fromPlayerId,jdbcType=BIGINT},
+      from_player_super_id = #{record.fromPlayerSuperId,jdbcType=BIGINT},
+      from_player_name = #{record.fromPlayerName,jdbcType=VARCHAR},
+      gold = #{record.gold,jdbcType=BIGINT},
+      title = #{record.title,jdbcType=VARCHAR},
+      is_read = #{record.isRead,jdbcType=BIT},
+      is_rec_gold = #{record.isRecGold,jdbcType=BIT},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      content = #{record.content,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update mail
+    set id = #{record.id,jdbcType=INTEGER},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      player_super_id = #{record.playerSuperId,jdbcType=BIGINT},
+      player_name = #{record.playerName,jdbcType=VARCHAR},
+      from_player_id = #{record.fromPlayerId,jdbcType=BIGINT},
+      from_player_super_id = #{record.fromPlayerSuperId,jdbcType=BIGINT},
+      from_player_name = #{record.fromPlayerName,jdbcType=VARCHAR},
+      gold = #{record.gold,jdbcType=BIGINT},
+      title = #{record.title,jdbcType=VARCHAR},
+      is_read = #{record.isRead,jdbcType=BIT},
+      is_rec_gold = #{record.isRecGold,jdbcType=BIT},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.Mail">
+    update mail
+    <set>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playerSuperId != null">
+        player_super_id = #{playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        player_name = #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="fromPlayerId != null">
+        from_player_id = #{fromPlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="fromPlayerSuperId != null">
+        from_player_super_id = #{fromPlayerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="fromPlayerName != null">
+        from_player_name = #{fromPlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="gold != null">
+        gold = #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="isRead != null">
+        is_read = #{isRead,jdbcType=BIT},
+      </if>
+      <if test="isRecGold != null">
+        is_rec_gold = #{isRecGold,jdbcType=BIT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.idealighter.game.dao.data.po.Mail">
+    update mail
+    set player_id = #{playerId,jdbcType=BIGINT},
+      player_super_id = #{playerSuperId,jdbcType=BIGINT},
+      player_name = #{playerName,jdbcType=VARCHAR},
+      from_player_id = #{fromPlayerId,jdbcType=BIGINT},
+      from_player_super_id = #{fromPlayerSuperId,jdbcType=BIGINT},
+      from_player_name = #{fromPlayerName,jdbcType=VARCHAR},
+      gold = #{gold,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      is_read = #{isRead,jdbcType=BIT},
+      is_rec_gold = #{isRecGold,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.Mail">
+    update mail
+    set player_id = #{playerId,jdbcType=BIGINT},
+      player_super_id = #{playerSuperId,jdbcType=BIGINT},
+      player_name = #{playerName,jdbcType=VARCHAR},
+      from_player_id = #{fromPlayerId,jdbcType=BIGINT},
+      from_player_super_id = #{fromPlayerSuperId,jdbcType=BIGINT},
+      from_player_name = #{fromPlayerName,jdbcType=VARCHAR},
+      gold = #{gold,jdbcType=BIGINT},
+      title = #{title,jdbcType=VARCHAR},
+      is_read = #{isRead,jdbcType=BIT},
+      is_rec_gold = #{isRecGold,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

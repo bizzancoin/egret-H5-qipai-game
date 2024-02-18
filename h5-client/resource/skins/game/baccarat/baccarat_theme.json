@@ -1,0 +1,12 @@
+{
+  "exmls": [
+    "resource/skins/game/baccarat/BJLPokerSkin.exml",
+    "resource/skins/game/baccarat/BJLChipSkin.exml",
+    "resource/skins/game/baccarat/BJLWayBillSkin.exml",
+    "resource/skins/game/baccarat/BJLMainWayItemSkin.exml",
+    "resource/skins/game/baccarat/BJLBigEyeItemSkin.exml",
+    "resource/skins/game/baccarat/BJLBigWayItemSkin.exml",
+    "resource/skins/game/baccarat/BJLMainWayItemSkin.exml",
+    "resource/skins/game/baccarat/BJLSmallWayItemSkin.exml"
+  ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BaccaratLoadSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgLoadBg" x="0" y="0" width="100%" height="100%" source="bjl_loadingmap_png"/>
+	<e:ProgressBar id="pbLoad" width="1000" height="30" skinName="BJLProgressBarSkin" horizontalCenter="0" enabled="true" verticalCenter="325"/>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="brnn.BrnnBetAreaSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+    <e:Group id="groupParent" width="255" height="310" horizontalCenter="0" verticalCenter="0" anchorOffsetY="155" anchorOffsetX="127.5">
+        <e:Group id="groupMyBet" height="50" width="250" scaleX="1" scaleY="1" horizontalCenter="0" top="-60" touchEnabled="false" >
+            <e:BitmapLabel id="bmpMyBet" text="0" horizontalCenter="0" bottom="0" touchEnabled="false"  font="brnn_font_betMy_fnt"/>
+        </e:Group>
+        <e:Group id="groupChips" width="255" height="300" verticalCenter="0" touchEnabled="false"  horizontalCenter="0">
+				</e:Group>
+        <e:Group id="groupTotalBet" height="50" width="250" scaleX="1" scaleY="1" horizontalCenter="0" bottom="3" touchEnabled="false">
+            <e:BitmapLabel id="bmpTotalBet" text="0" font="brnn_font_clockNum_fnt" horizontalCenter="0" bottom="-8" />
+        </e:Group>
+			<e:Image id="imgWin" touchEnabled="false" horizontalCenter="0" verticalCenter="0" source="brnn_atlas1_json.xzk" scale9Grid="35,42,216,252"/>
+    </e:Group>
+</e:Skin>

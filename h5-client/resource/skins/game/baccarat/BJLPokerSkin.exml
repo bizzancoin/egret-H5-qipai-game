@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BJLPokerSkin" width="147" height="189" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgPokerBack" source="poker_json.dp" x="73.5" y="94.5" anchorOffsetX="73.5" anchorOffsetY="94.5"/>
+	<e:Image id="imgPokerFront" x="73.5" y="94.5" source="poker_json.HTA" anchorOffsetY="94.5" anchorOffsetX="73.5"/>
+</e:Skin>

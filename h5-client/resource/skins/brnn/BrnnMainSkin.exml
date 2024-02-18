@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="brnn.BrnnMainSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:brnn="brnn.*" xmlns:game="game.*">
+	<e:Group left="0" top="0" width="100%" height="100%">
+		<e:Image left="0" top="0" width="100%" height="100%" x="0" y="0" scaleX="1" scaleY="1" source="brnn_fill_png" scale9Grid="224,143,1482,829"/>
+	</e:Group>
+	<e:Group width="1920" height="1080" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="brnn_bg_png" left="0" right="0" top="0" bottom="0"/>
+		<e:Rect id="cardStartRect" width="0" height="0" x="1299" y="114"/>
+		<e:Group id="groupDealer" width="948" height="110" anchorOffsetX="474" anchorOffsetY="55" horizontalCenter="0" verticalCenter="-440">
+			<e:Image scaleX="1" scaleY="1" source="brnn_atlas1_json.btk"/>
+			<e:Group width="290" height="110" verticalCenter="0" left="20">
+				<e:Image id="imgDealer" verticalCenter="0" left="60" source="brnn_atlas1_json.tx"/>
+				<e:Label id="lbDealerNick" text="系统庄家" verticalCenter="-30" textAlign="right" right="0" size="25"/>
+				<e:Label id="lbDealerGold" text="0" verticalCenter="20" right="0" size="25"/>
+				<e:Image bottom="0" left="100" source="brnn_atlas1_json.z"/>
+			</e:Group>
+			<e:Button id="btnSZLst" label="" verticalCenter="0" horizontalCenter="270">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" alpha.down="0.8" height="100%" source="brnn_atlas1_json.szlb"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:Button>
+		</e:Group>
+
+		<e:Group id="groupChips" width="1100" height="310" horizontalCenter="0" verticalCenter="10">
+
+
+
+
+		</e:Group>
+		<e:Group id="groupCards" width="1100" height="140" horizontalCenter="0" verticalCenter="260">
+		</e:Group>
+		<e:Group id="groupCountdown" width="322" height="66" horizontalCenter="0" top="280">
+			<e:Image source="brnn_atlas1_json.srk"/>
+
+
+			<e:Image id="imgState" verticalCenter="0" left="40" source="brnn_atlas1_json.bairenniuniu_state_1"/>
+			<e:BitmapLabel id="bmpClock" font="brnn_font_clock_fnt" text="1" verticalCenter="0" right="60"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Group id="groupTop" width="100%" height="120" horizontalCenter="0" top="0" touchEnabled="false">
+		<e:Button id="btnExit" label="" left="30" bottom="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.tc"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="btnSet" label="" right="30" bottom="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.szan"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="btnHistory" label="" right="150" bottom="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.lsji"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="btnHelp" label="" right="280" bottom="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.bl"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+	</e:Group>
+	<e:Group id="groupBottom" width="100%" height="140" bottom="0" horizontalCenter="0" touchEnabled="false">
+		<e:Image bottom="0" width="100%" height="140" horizontalCenter="0" source="brnn_atlas1_json.cmk" scale9Grid="296,17,1223,106"/>
+		<e:Group width="90" height="90" scaleX="1" scaleY="1" verticalCenter="0" left="30">
+			<e:Image id="imgHead" horizontalCenter="0" verticalCenter="0" width="88" height="88" source="brnn_atlas1_json.txk1"/>
+			<e:Label id="lbNick" text="昵称" size="35" textAlign="left" left="120" verticalCenter="-25"/>
+			<e:Label id="lbGold" text="0" size="35" textAlign="left" left="120" verticalCenter="25"/>
+		</e:Group>
+		<e:Button id="btnExchange" label="" verticalCenter="0" right="285">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.dhan" source.disabled="brnn_atlas1_json.dhan1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnClear" label="" width="148" height="102" verticalCenter="0" right="145">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.qkan" source.disabled="brnn_atlas1_json.qkan1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="btnContinue" label="" width="148" height="102" verticalCenter="0" right="5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="brnn_atlas1_json.xyan1" source.disabled="brnn_atlas1_json.xyan"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<brnn:BetBtn id="betBtn" skinName="brnn.BrnnBetBtnSkin" horizontalCenter="-30" verticalCenter="0" anchorOffsetX="550" anchorOffsetY="70"/>
+	</e:Group>
+	<game:ExchangeView id="exchangeView" width="100%" height="100%" x="0" y="0" skinName="game.ExchangeSkin" visible="false"/>
+	<e:Group id="groupHelp" width="100%" height="100%" visible="false">
+		<e:Rect fillAlpha="0.2" left="0" right="0" top="0" bottom="0" touchEnabled="false"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="brnn_atlas1_json.blv"/>
+	</e:Group>
+	<brnn:ClearingView id="clearingView" skinName="brnn.BrnnClearingSkin" width="100%" height="100%" visible="false"/>
+	<brnn:RecordView id="recordView" width="100%" height="100%" skinName="brnn.BrnnRecordSkin" visible="false"/>
+	<brnn:WaitView id="waitView" width="100%" height="100%" skinName="brnn.BrnnWaitSkin" visible="false"/>
+	<game:SetView id="setView" skinName="game.SetSkin" horizontalCenter="0" verticalCenter="0" visible="false"/>
+
+
+</e:Skin>

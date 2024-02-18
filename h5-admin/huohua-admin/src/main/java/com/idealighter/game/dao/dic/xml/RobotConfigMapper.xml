@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.RobotConfigMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.RobotConfig">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="game" jdbcType="INTEGER" property="game" />
+    <result column="room" jdbcType="INTEGER" property="room" />
+    <result column="occupyTable" jdbcType="TINYINT" property="occupytable" />
+    <result column="gameWithPlayer" jdbcType="TINYINT" property="gamewithplayer" />
+    <result column="goldLower" jdbcType="BIGINT" property="goldlower" />
+    <result column="goldUpper" jdbcType="BIGINT" property="goldupper" />
+    <result column="maxGold" jdbcType="BIGINT" property="maxgold" />
+    <result column="tableGameLower" jdbcType="INTEGER" property="tablegamelower" />
+    <result column="tableGameUpper" jdbcType="INTEGER" property="tablegameupper" />
+    <result column="totalGameLower" jdbcType="INTEGER" property="totalgamelower" />
+    <result column="totalGameUpper" jdbcType="INTEGER" property="totalgameupper" />
+    <result column="beBankerChips" jdbcType="BIGINT" property="bebankerchips" />
+    <result column="bankerApplyNums" jdbcType="TINYINT" property="bankerapplynums" />
+    <result column="robotBankerApplyNums" jdbcType="TINYINT" property="robotbankerapplynums" />
+    <result column="time1Players" jdbcType="INTEGER" property="time1players" />
+    <result column="time2Players" jdbcType="INTEGER" property="time2players" />
+    <result column="time3Players" jdbcType="INTEGER" property="time3players" />
+    <result column="time4Players" jdbcType="INTEGER" property="time4players" />
+    <result column="time5Players" jdbcType="INTEGER" property="time5players" />
+    <result column="time6Players" jdbcType="INTEGER" property="time6players" />
+    <result column="time7Players" jdbcType="INTEGER" property="time7players" />
+    <result column="time8Players" jdbcType="INTEGER" property="time8players" />
+    <result column="time9Players" jdbcType="INTEGER" property="time9players" />
+    <result column="time10Players" jdbcType="INTEGER" property="time10players" />
+    <result column="time11Players" jdbcType="INTEGER" property="time11players" />
+    <result column="time12Players" jdbcType="INTEGER" property="time12players" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, game, room, occupyTable, gameWithPlayer, goldLower, goldUpper, maxGold, tableGameLower, 
+    tableGameUpper, totalGameLower, totalGameUpper, beBankerChips, bankerApplyNums, robotBankerApplyNums, 
+    time1Players, time2Players, time3Players, time4Players, time5Players, time6Players, 
+    time7Players, time8Players, time9Players, time10Players, time11Players, time12Players, 
+    state
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.RobotConfigExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from robot_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from robot_config
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from robot_config
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.RobotConfigExample">
+    delete from robot_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.RobotConfig">
+    insert into robot_config (id, game, room, 
+      occupyTable, gameWithPlayer, goldLower, 
+      goldUpper, maxGold, tableGameLower, 
+      tableGameUpper, totalGameLower, totalGameUpper, 
+      beBankerChips, bankerApplyNums, robotBankerApplyNums, 
+      time1Players, time2Players, time3Players, 
+      time4Players, time5Players, time6Players, 
+      time7Players, time8Players, time9Players, 
+      time10Players, time11Players, time12Players, 
+      state)
+    values (#{id,jdbcType=INTEGER}, #{game,jdbcType=INTEGER}, #{room,jdbcType=INTEGER}, 
+      #{occupytable,jdbcType=TINYINT}, #{gamewithplayer,jdbcType=TINYINT}, #{goldlower,jdbcType=BIGINT}, 
+      #{goldupper,jdbcType=BIGINT}, #{maxgold,jdbcType=BIGINT}, #{tablegamelower,jdbcType=INTEGER}, 
+      #{tablegameupper,jdbcType=INTEGER}, #{totalgamelower,jdbcType=INTEGER}, #{totalgameupper,jdbcType=INTEGER}, 
+      #{bebankerchips,jdbcType=BIGINT}, #{bankerapplynums,jdbcType=TINYINT}, #{robotbankerapplynums,jdbcType=TINYINT}, 
+      #{time1players,jdbcType=INTEGER}, #{time2players,jdbcType=INTEGER}, #{time3players,jdbcType=INTEGER}, 
+      #{time4players,jdbcType=INTEGER}, #{time5players,jdbcType=INTEGER}, #{time6players,jdbcType=INTEGER}, 
+      #{time7players,jdbcType=INTEGER}, #{time8players,jdbcType=INTEGER}, #{time9players,jdbcType=INTEGER}, 
+      #{time10players,jdbcType=INTEGER}, #{time11players,jdbcType=INTEGER}, #{time12players,jdbcType=INTEGER}, 
+      #{state,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.RobotConfig">
+    insert into robot_config
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="game != null">
+        game,
+      </if>
+      <if test="room != null">
+        room,
+      </if>
+      <if test="occupytable != null">
+        occupyTable,
+      </if>
+      <if test="gamewithplayer != null">
+        gameWithPlayer,
+      </if>
+      <if test="goldlower != null">
+        goldLower,
+      </if>
+      <if test="goldupper != null">
+        goldUpper,
+      </if>
+      <if test="maxgold != null">
+        maxGold,
+      </if>
+      <if test="tablegamelower != null">
+        tableGameLower,
+      </if>
+      <if test="tablegameupper != null">
+        tableGameUpper,
+      </if>
+      <if test="totalgamelower != null">
+        totalGameLower,
+      </if>
+      <if test="totalgameupper != null">
+        totalGameUpper,
+      </if>
+      <if test="bebankerchips != null">
+        beBankerChips,
+      </if>
+      <if test="bankerapplynums != null">
+        bankerApplyNums,
+      </if>
+      <if test="robotbankerapplynums != null">
+        robotBankerApplyNums,
+      </if>
+      <if test="time1players != null">
+        time1Players,
+      </if>
+      <if test="time2players != null">
+        time2Players,
+      </if>
+      <if test="time3players != null">
+        time3Players,
+      </if>
+      <if test="time4players != null">
+        time4Players,
+      </if>
+      <if test="time5players != null">
+        time5Players,
+      </if>
+      <if test="time6players != null">
+        time6Players,
+      </if>
+      <if test="time7players != null">
+        time7Players,
+      </if>
+      <if test="time8players != null">
+        time8Players,
+      </if>
+      <if test="time9players != null">
+        time9Players,
+      </if>
+      <if test="time10players != null">
+        time10Players,
+      </if>
+      <if test="time11players != null">
+        time11Players,
+      </if>
+      <if test="time12players != null">
+        time12Players,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="game != null">
+        #{game,jdbcType=INTEGER},
+      </if>
+      <if test="room != null">
+        #{room,jdbcType=INTEGER},
+      </if>
+      <if test="occupytable != null">
+        #{occupytable,jdbcType=TINYINT},
+      </if>
+      <if test="gamewithplayer != null">
+        #{gamewithplayer,jdbcType=TINYINT},
+      </if>
+      <if test="goldlower != null">
+        #{goldlower,jdbcType=BIGINT},
+      </if>
+      <if test="goldupper != null">
+        #{goldupper,jdbcType=BIGINT},
+      </if>
+      <if test="maxgold != null">
+        #{maxgold,jdbcType=BIGINT},
+      </if>
+      <if test="tablegamelower != null">
+        #{tablegamelower,jdbcType=INTEGER},
+      </if>
+      <if test="tablegameupper != null">
+        #{tablegameupper,jdbcType=INTEGER},
+      </if>
+      <if test="totalgamelower != null">
+        #{totalgamelower,jdbcType=INTEGER},
+      </if>
+      <if test="totalgameupper != null">
+        #{totalgameupper,jdbcType=INTEGER},
+      </if>
+      <if test="bebankerchips != null">
+        #{bebankerchips,jdbcType=BIGINT},
+      </if>
+      <if test="bankerapplynums != null">
+        #{bankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="robotbankerapplynums != null">
+        #{robotbankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="time1players != null">
+        #{time1players,jdbcType=INTEGER},
+      </if>
+      <if test="time2players != null">
+        #{time2players,jdbcType=INTEGER},
+      </if>
+      <if test="time3players != null">
+        #{time3players,jdbcType=INTEGER},
+      </if>
+      <if test="time4players != null">
+        #{time4players,jdbcType=INTEGER},
+      </if>
+      <if test="time5players != null">
+        #{time5players,jdbcType=INTEGER},
+      </if>
+      <if test="time6players != null">
+        #{time6players,jdbcType=INTEGER},
+      </if>
+      <if test="time7players != null">
+        #{time7players,jdbcType=INTEGER},
+      </if>
+      <if test="time8players != null">
+        #{time8players,jdbcType=INTEGER},
+      </if>
+      <if test="time9players != null">
+        #{time9players,jdbcType=INTEGER},
+      </if>
+      <if test="time10players != null">
+        #{time10players,jdbcType=INTEGER},
+      </if>
+      <if test="time11players != null">
+        #{time11players,jdbcType=INTEGER},
+      </if>
+      <if test="time12players != null">
+        #{time12players,jdbcType=INTEGER},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.RobotConfigExample" resultType="java.lang.Long">
+    select count(*) from robot_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update robot_config
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.game != null">
+        game = #{record.game,jdbcType=INTEGER},
+      </if>
+      <if test="record.room != null">
+        room = #{record.room,jdbcType=INTEGER},
+      </if>
+      <if test="record.occupytable != null">
+        occupyTable = #{record.occupytable,jdbcType=TINYINT},
+      </if>
+      <if test="record.gamewithplayer != null">
+        gameWithPlayer = #{record.gamewithplayer,jdbcType=TINYINT},
+      </if>
+      <if test="record.goldlower != null">
+        goldLower = #{record.goldlower,jdbcType=BIGINT},
+      </if>
+      <if test="record.goldupper != null">
+        goldUpper = #{record.goldupper,jdbcType=BIGINT},
+      </if>
+      <if test="record.maxgold != null">
+        maxGold = #{record.maxgold,jdbcType=BIGINT},
+      </if>
+      <if test="record.tablegamelower != null">
+        tableGameLower = #{record.tablegamelower,jdbcType=INTEGER},
+      </if>
+      <if test="record.tablegameupper != null">
+        tableGameUpper = #{record.tablegameupper,jdbcType=INTEGER},
+      </if>
+      <if test="record.totalgamelower != null">
+        totalGameLower = #{record.totalgamelower,jdbcType=INTEGER},
+      </if>
+      <if test="record.totalgameupper != null">
+        totalGameUpper = #{record.totalgameupper,jdbcType=INTEGER},
+      </if>
+      <if test="record.bebankerchips != null">
+        beBankerChips = #{record.bebankerchips,jdbcType=BIGINT},
+      </if>
+      <if test="record.bankerapplynums != null">
+        bankerApplyNums = #{record.bankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="record.robotbankerapplynums != null">
+        robotBankerApplyNums = #{record.robotbankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="record.time1players != null">
+        time1Players = #{record.time1players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time2players != null">
+        time2Players = #{record.time2players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time3players != null">
+        time3Players = #{record.time3players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time4players != null">
+        time4Players = #{record.time4players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time5players != null">
+        time5Players = #{record.time5players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time6players != null">
+        time6Players = #{record.time6players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time7players != null">
+        time7Players = #{record.time7players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time8players != null">
+        time8Players = #{record.time8players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time9players != null">
+        time9Players = #{record.time9players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time10players != null">
+        time10Players = #{record.time10players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time11players != null">
+        time11Players = #{record.time11players,jdbcType=INTEGER},
+      </if>
+      <if test="record.time12players != null">
+        time12Players = #{record.time12players,jdbcType=INTEGER},
+      </if>
+      <if test="record.state != null">
+        state = #{record.state,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update robot_config
+    set id = #{record.id,jdbcType=INTEGER},
+      game = #{record.game,jdbcType=INTEGER},
+      room = #{record.room,jdbcType=INTEGER},
+      occupyTable = #{record.occupytable,jdbcType=TINYINT},
+      gameWithPlayer = #{record.gamewithplayer,jdbcType=TINYINT},
+      goldLower = #{record.goldlower,jdbcType=BIGINT},
+      goldUpper = #{record.goldupper,jdbcType=BIGINT},
+      maxGold = #{record.maxgold,jdbcType=BIGINT},
+      tableGameLower = #{record.tablegamelower,jdbcType=INTEGER},
+      tableGameUpper = #{record.tablegameupper,jdbcType=INTEGER},
+      totalGameLower = #{record.totalgamelower,jdbcType=INTEGER},
+      totalGameUpper = #{record.totalgameupper,jdbcType=INTEGER},
+      beBankerChips = #{record.bebankerchips,jdbcType=BIGINT},
+      bankerApplyNums = #{record.bankerapplynums,jdbcType=TINYINT},
+      robotBankerApplyNums = #{record.robotbankerapplynums,jdbcType=TINYINT},
+      time1Players = #{record.time1players,jdbcType=INTEGER},
+      time2Players = #{record.time2players,jdbcType=INTEGER},
+      time3Players = #{record.time3players,jdbcType=INTEGER},
+      time4Players = #{record.time4players,jdbcType=INTEGER},
+      time5Players = #{record.time5players,jdbcType=INTEGER},
+      time6Players = #{record.time6players,jdbcType=INTEGER},
+      time7Players = #{record.time7players,jdbcType=INTEGER},
+      time8Players = #{record.time8players,jdbcType=INTEGER},
+      time9Players = #{record.time9players,jdbcType=INTEGER},
+      time10Players = #{record.time10players,jdbcType=INTEGER},
+      time11Players = #{record.time11players,jdbcType=INTEGER},
+      time12Players = #{record.time12players,jdbcType=INTEGER},
+      state = #{record.state,jdbcType=TINYINT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.RobotConfig">
+    update robot_config
+    <set>
+      <if test="game != null">
+        game = #{game,jdbcType=INTEGER},
+      </if>
+      <if test="room != null">
+        room = #{room,jdbcType=INTEGER},
+      </if>
+      <if test="occupytable != null">
+        occupyTable = #{occupytable,jdbcType=TINYINT},
+      </if>
+      <if test="gamewithplayer != null">
+        gameWithPlayer = #{gamewithplayer,jdbcType=TINYINT},
+      </if>
+      <if test="goldlower != null">
+        goldLower = #{goldlower,jdbcType=BIGINT},
+      </if>
+      <if test="goldupper != null">
+        goldUpper = #{goldupper,jdbcType=BIGINT},
+      </if>
+      <if test="maxgold != null">
+        maxGold = #{maxgold,jdbcType=BIGINT},
+      </if>
+      <if test="tablegamelower != null">
+        tableGameLower = #{tablegamelower,jdbcType=INTEGER},
+      </if>
+      <if test="tablegameupper != null">
+        tableGameUpper = #{tablegameupper,jdbcType=INTEGER},
+      </if>
+      <if test="totalgamelower != null">
+        totalGameLower = #{totalgamelower,jdbcType=INTEGER},
+      </if>
+      <if test="totalgameupper != null">
+        totalGameUpper = #{totalgameupper,jdbcType=INTEGER},
+      </if>
+      <if test="bebankerchips != null">
+        beBankerChips = #{bebankerchips,jdbcType=BIGINT},
+      </if>
+      <if test="bankerapplynums != null">
+        bankerApplyNums = #{bankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="robotbankerapplynums != null">
+        robotBankerApplyNums = #{robotbankerapplynums,jdbcType=TINYINT},
+      </if>
+      <if test="time1players != null">
+        time1Players = #{time1players,jdbcType=INTEGER},
+      </if>
+      <if test="time2players != null">
+        time2Players = #{time2players,jdbcType=INTEGER},
+      </if>
+      <if test="time3players != null">
+        time3Players = #{time3players,jdbcType=INTEGER},
+      </if>
+      <if test="time4players != null">
+        time4Players = #{time4players,jdbcType=INTEGER},
+      </if>
+      <if test="time5players != null">
+        time5Players = #{time5players,jdbcType=INTEGER},
+      </if>
+      <if test="time6players != null">
+        time6Players = #{time6players,jdbcType=INTEGER},
+      </if>
+      <if test="time7players != null">
+        time7Players = #{time7players,jdbcType=INTEGER},
+      </if>
+      <if test="time8players != null">
+        time8Players = #{time8players,jdbcType=INTEGER},
+      </if>
+      <if test="time9players != null">
+        time9Players = #{time9players,jdbcType=INTEGER},
+      </if>
+      <if test="time10players != null">
+        time10Players = #{time10players,jdbcType=INTEGER},
+      </if>
+      <if test="time11players != null">
+        time11Players = #{time11players,jdbcType=INTEGER},
+      </if>
+      <if test="time12players != null">
+        time12Players = #{time12players,jdbcType=INTEGER},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.RobotConfig">
+    update robot_config
+    set game = #{game,jdbcType=INTEGER},
+      room = #{room,jdbcType=INTEGER},
+      occupyTable = #{occupytable,jdbcType=TINYINT},
+      gameWithPlayer = #{gamewithplayer,jdbcType=TINYINT},
+      goldLower = #{goldlower,jdbcType=BIGINT},
+      goldUpper = #{goldupper,jdbcType=BIGINT},
+      maxGold = #{maxgold,jdbcType=BIGINT},
+      tableGameLower = #{tablegamelower,jdbcType=INTEGER},
+      tableGameUpper = #{tablegameupper,jdbcType=INTEGER},
+      totalGameLower = #{totalgamelower,jdbcType=INTEGER},
+      totalGameUpper = #{totalgameupper,jdbcType=INTEGER},
+      beBankerChips = #{bebankerchips,jdbcType=BIGINT},
+      bankerApplyNums = #{bankerapplynums,jdbcType=TINYINT},
+      robotBankerApplyNums = #{robotbankerapplynums,jdbcType=TINYINT},
+      time1Players = #{time1players,jdbcType=INTEGER},
+      time2Players = #{time2players,jdbcType=INTEGER},
+      time3Players = #{time3players,jdbcType=INTEGER},
+      time4Players = #{time4players,jdbcType=INTEGER},
+      time5Players = #{time5players,jdbcType=INTEGER},
+      time6Players = #{time6players,jdbcType=INTEGER},
+      time7Players = #{time7players,jdbcType=INTEGER},
+      time8Players = #{time8players,jdbcType=INTEGER},
+      time9Players = #{time9players,jdbcType=INTEGER},
+      time10Players = #{time10players,jdbcType=INTEGER},
+      time11Players = #{time11players,jdbcType=INTEGER},
+      time12Players = #{time12players,jdbcType=INTEGER},
+      state = #{state,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

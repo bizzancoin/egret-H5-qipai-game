@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.PlayerMainMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.PlayerMain">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="super_id" jdbcType="BIGINT" property="superId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="union_id" jdbcType="VARCHAR" property="unionId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="player_name" jdbcType="VARCHAR" property="playerName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="re_login_code" jdbcType="VARCHAR" property="reLoginCode" />
+    <result column="recommend_id" jdbcType="BIGINT" property="recommendId" />
+    <result column="register_type" jdbcType="TINYINT" property="registerType" />
+    <result column="tourist" jdbcType="BIT" property="tourist" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="online" jdbcType="BIT" property="online" />
+    <result column="icon" jdbcType="INTEGER" property="icon" />
+    <result column="exp" jdbcType="BIGINT" property="exp" />
+    <result column="level" jdbcType="INTEGER" property="level" />
+    <result column="ingot" jdbcType="BIGINT" property="ingot" />
+    <result column="gold" jdbcType="BIGINT" property="gold" />
+    <result column="safe_gold" jdbcType="BIGINT" property="safeGold" />
+    <result column="win_gold" jdbcType="BIGINT" property="winGold" />
+    <result column="cedit" jdbcType="BIGINT" property="cedit" />
+    <result column="lottery" jdbcType="BIGINT" property="lottery" />
+    <result column="transfer_reward" jdbcType="BIGINT" property="transferReward" />
+    <result column="bank_pwd" jdbcType="VARCHAR" property="bankPwd" />
+    <result column="vip_level" jdbcType="INTEGER" property="vipLevel" />
+    <result column="vip_end_time" jdbcType="TIMESTAMP" property="vipEndTime" />
+    <result column="locked" jdbcType="BIT" property="locked" />
+    <result column="channel_id" jdbcType="VARCHAR" property="channelId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, super_id, phone, union_id, user_name, email, player_name, password, re_login_code, 
+    recommend_id, register_type, tourist, type, online, icon, exp, level, ingot, gold, 
+    safe_gold, win_gold, cedit, lottery, transfer_reward, bank_pwd, vip_level, vip_end_time, 
+    locked, channel_id
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.PlayerMainExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from player_main
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from player_main
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from player_main
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.PlayerMainExample">
+    delete from player_main
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.PlayerMain">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into player_main (super_id, phone, union_id, 
+      user_name, email, player_name, 
+      password, re_login_code, recommend_id, 
+      register_type, tourist, type, 
+      online, icon, exp, level, 
+      ingot, gold, safe_gold, 
+      win_gold, cedit, lottery, 
+      transfer_reward, bank_pwd, vip_level, 
+      vip_end_time, locked, channel_id
+      )
+    values (#{superId,jdbcType=BIGINT}, #{phone,jdbcType=VARCHAR}, #{unionId,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{playerName,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{reLoginCode,jdbcType=VARCHAR}, #{recommendId,jdbcType=BIGINT}, 
+      #{registerType,jdbcType=TINYINT}, #{tourist,jdbcType=BIT}, #{type,jdbcType=TINYINT}, 
+      #{online,jdbcType=BIT}, #{icon,jdbcType=INTEGER}, #{exp,jdbcType=BIGINT}, #{level,jdbcType=INTEGER}, 
+      #{ingot,jdbcType=BIGINT}, #{gold,jdbcType=BIGINT}, #{safeGold,jdbcType=BIGINT}, 
+      #{winGold,jdbcType=BIGINT}, #{cedit,jdbcType=BIGINT}, #{lottery,jdbcType=BIGINT}, 
+      #{transferReward,jdbcType=BIGINT}, #{bankPwd,jdbcType=VARCHAR}, #{vipLevel,jdbcType=INTEGER}, 
+      #{vipEndTime,jdbcType=TIMESTAMP}, #{locked,jdbcType=BIT}, #{channelId,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.PlayerMain">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into player_main
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="superId != null">
+        super_id,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="unionId != null">
+        union_id,
+      </if>
+      <if test="userName != null">
+        user_name,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="playerName != null">
+        player_name,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="reLoginCode != null">
+        re_login_code,
+      </if>
+      <if test="recommendId != null">
+        recommend_id,
+      </if>
+      <if test="registerType != null">
+        register_type,
+      </if>
+      <if test="tourist != null">
+        tourist,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="online != null">
+        online,
+      </if>
+      <if test="icon != null">
+        icon,
+      </if>
+      <if test="exp != null">
+        exp,
+      </if>
+      <if test="level != null">
+        level,
+      </if>
+      <if test="ingot != null">
+        ingot,
+      </if>
+      <if test="gold != null">
+        gold,
+      </if>
+      <if test="safeGold != null">
+        safe_gold,
+      </if>
+      <if test="winGold != null">
+        win_gold,
+      </if>
+      <if test="cedit != null">
+        cedit,
+      </if>
+      <if test="lottery != null">
+        lottery,
+      </if>
+      <if test="transferReward != null">
+        transfer_reward,
+      </if>
+      <if test="bankPwd != null">
+        bank_pwd,
+      </if>
+      <if test="vipLevel != null">
+        vip_level,
+      </if>
+      <if test="vipEndTime != null">
+        vip_end_time,
+      </if>
+      <if test="locked != null">
+        locked,
+      </if>
+      <if test="channelId != null">
+        channel_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="superId != null">
+        #{superId,jdbcType=BIGINT},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="unionId != null">
+        #{unionId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="playerName != null">
+        #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="reLoginCode != null">
+        #{reLoginCode,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendId != null">
+        #{recommendId,jdbcType=BIGINT},
+      </if>
+      <if test="registerType != null">
+        #{registerType,jdbcType=TINYINT},
+      </if>
+      <if test="tourist != null">
+        #{tourist,jdbcType=BIT},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="online != null">
+        #{online,jdbcType=BIT},
+      </if>
+      <if test="icon != null">
+        #{icon,jdbcType=INTEGER},
+      </if>
+      <if test="exp != null">
+        #{exp,jdbcType=BIGINT},
+      </if>
+      <if test="level != null">
+        #{level,jdbcType=INTEGER},
+      </if>
+      <if test="ingot != null">
+        #{ingot,jdbcType=BIGINT},
+      </if>
+      <if test="gold != null">
+        #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="safeGold != null">
+        #{safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="winGold != null">
+        #{winGold,jdbcType=BIGINT},
+      </if>
+      <if test="cedit != null">
+        #{cedit,jdbcType=BIGINT},
+      </if>
+      <if test="lottery != null">
+        #{lottery,jdbcType=BIGINT},
+      </if>
+      <if test="transferReward != null">
+        #{transferReward,jdbcType=BIGINT},
+      </if>
+      <if test="bankPwd != null">
+        #{bankPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="vipLevel != null">
+        #{vipLevel,jdbcType=INTEGER},
+      </if>
+      <if test="vipEndTime != null">
+        #{vipEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="locked != null">
+        #{locked,jdbcType=BIT},
+      </if>
+      <if test="channelId != null">
+        #{channelId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.PlayerMainExample" resultType="java.lang.Long">
+    select count(*) from player_main
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update player_main
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.superId != null">
+        super_id = #{record.superId,jdbcType=BIGINT},
+      </if>
+      <if test="record.phone != null">
+        phone = #{record.phone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.unionId != null">
+        union_id = #{record.unionId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.userName != null">
+        user_name = #{record.userName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.playerName != null">
+        player_name = #{record.playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.reLoginCode != null">
+        re_login_code = #{record.reLoginCode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.recommendId != null">
+        recommend_id = #{record.recommendId,jdbcType=BIGINT},
+      </if>
+      <if test="record.registerType != null">
+        register_type = #{record.registerType,jdbcType=TINYINT},
+      </if>
+      <if test="record.tourist != null">
+        tourist = #{record.tourist,jdbcType=BIT},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=TINYINT},
+      </if>
+      <if test="record.online != null">
+        online = #{record.online,jdbcType=BIT},
+      </if>
+      <if test="record.icon != null">
+        icon = #{record.icon,jdbcType=INTEGER},
+      </if>
+      <if test="record.exp != null">
+        exp = #{record.exp,jdbcType=BIGINT},
+      </if>
+      <if test="record.level != null">
+        level = #{record.level,jdbcType=INTEGER},
+      </if>
+      <if test="record.ingot != null">
+        ingot = #{record.ingot,jdbcType=BIGINT},
+      </if>
+      <if test="record.gold != null">
+        gold = #{record.gold,jdbcType=BIGINT},
+      </if>
+      <if test="record.safeGold != null">
+        safe_gold = #{record.safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.winGold != null">
+        win_gold = #{record.winGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.cedit != null">
+        cedit = #{record.cedit,jdbcType=BIGINT},
+      </if>
+      <if test="record.lottery != null">
+        lottery = #{record.lottery,jdbcType=BIGINT},
+      </if>
+      <if test="record.transferReward != null">
+        transfer_reward = #{record.transferReward,jdbcType=BIGINT},
+      </if>
+      <if test="record.bankPwd != null">
+        bank_pwd = #{record.bankPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="record.vipLevel != null">
+        vip_level = #{record.vipLevel,jdbcType=INTEGER},
+      </if>
+      <if test="record.vipEndTime != null">
+        vip_end_time = #{record.vipEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.locked != null">
+        locked = #{record.locked,jdbcType=BIT},
+      </if>
+      <if test="record.channelId != null">
+        channel_id = #{record.channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update player_main
+    set id = #{record.id,jdbcType=BIGINT},
+      super_id = #{record.superId,jdbcType=BIGINT},
+      phone = #{record.phone,jdbcType=VARCHAR},
+      union_id = #{record.unionId,jdbcType=VARCHAR},
+      user_name = #{record.userName,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      player_name = #{record.playerName,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR},
+      re_login_code = #{record.reLoginCode,jdbcType=VARCHAR},
+      recommend_id = #{record.recommendId,jdbcType=BIGINT},
+      register_type = #{record.registerType,jdbcType=TINYINT},
+      tourist = #{record.tourist,jdbcType=BIT},
+      type = #{record.type,jdbcType=TINYINT},
+      online = #{record.online,jdbcType=BIT},
+      icon = #{record.icon,jdbcType=INTEGER},
+      exp = #{record.exp,jdbcType=BIGINT},
+      level = #{record.level,jdbcType=INTEGER},
+      ingot = #{record.ingot,jdbcType=BIGINT},
+      gold = #{record.gold,jdbcType=BIGINT},
+      safe_gold = #{record.safeGold,jdbcType=BIGINT},
+      win_gold = #{record.winGold,jdbcType=BIGINT},
+      cedit = #{record.cedit,jdbcType=BIGINT},
+      lottery = #{record.lottery,jdbcType=BIGINT},
+      transfer_reward = #{record.transferReward,jdbcType=BIGINT},
+      bank_pwd = #{record.bankPwd,jdbcType=VARCHAR},
+      vip_level = #{record.vipLevel,jdbcType=INTEGER},
+      vip_end_time = #{record.vipEndTime,jdbcType=TIMESTAMP},
+      locked = #{record.locked,jdbcType=BIT},
+      channel_id = #{record.channelId,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.PlayerMain">
+    update player_main
+    <set>
+      <if test="superId != null">
+        super_id = #{superId,jdbcType=BIGINT},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="unionId != null">
+        union_id = #{unionId,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        user_name = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="playerName != null">
+        player_name = #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="reLoginCode != null">
+        re_login_code = #{reLoginCode,jdbcType=VARCHAR},
+      </if>
+      <if test="recommendId != null">
+        recommend_id = #{recommendId,jdbcType=BIGINT},
+      </if>
+      <if test="registerType != null">
+        register_type = #{registerType,jdbcType=TINYINT},
+      </if>
+      <if test="tourist != null">
+        tourist = #{tourist,jdbcType=BIT},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="online != null">
+        online = #{online,jdbcType=BIT},
+      </if>
+      <if test="icon != null">
+        icon = #{icon,jdbcType=INTEGER},
+      </if>
+      <if test="exp != null">
+        exp = #{exp,jdbcType=BIGINT},
+      </if>
+      <if test="level != null">
+        level = #{level,jdbcType=INTEGER},
+      </if>
+      <if test="ingot != null">
+        ingot = #{ingot,jdbcType=BIGINT},
+      </if>
+      <if test="gold != null">
+        gold = #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="safeGold != null">
+        safe_gold = #{safeGold,jdbcType=BIGINT},
+      </if>
+      <if test="winGold != null">
+        win_gold = #{winGold,jdbcType=BIGINT},
+      </if>
+      <if test="cedit != null">
+        cedit = #{cedit,jdbcType=BIGINT},
+      </if>
+      <if test="lottery != null">
+        lottery = #{lottery,jdbcType=BIGINT},
+      </if>
+      <if test="transferReward != null">
+        transfer_reward = #{transferReward,jdbcType=BIGINT},
+      </if>
+      <if test="bankPwd != null">
+        bank_pwd = #{bankPwd,jdbcType=VARCHAR},
+      </if>
+      <if test="vipLevel != null">
+        vip_level = #{vipLevel,jdbcType=INTEGER},
+      </if>
+      <if test="vipEndTime != null">
+        vip_end_time = #{vipEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="locked != null">
+        locked = #{locked,jdbcType=BIT},
+      </if>
+      <if test="channelId != null">
+        channel_id = #{channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.PlayerMain">
+    update player_main
+    set super_id = #{superId,jdbcType=BIGINT},
+      phone = #{phone,jdbcType=VARCHAR},
+      union_id = #{unionId,jdbcType=VARCHAR},
+      user_name = #{userName,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      player_name = #{playerName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      re_login_code = #{reLoginCode,jdbcType=VARCHAR},
+      recommend_id = #{recommendId,jdbcType=BIGINT},
+      register_type = #{registerType,jdbcType=TINYINT},
+      tourist = #{tourist,jdbcType=BIT},
+      type = #{type,jdbcType=TINYINT},
+      online = #{online,jdbcType=BIT},
+      icon = #{icon,jdbcType=INTEGER},
+      exp = #{exp,jdbcType=BIGINT},
+      level = #{level,jdbcType=INTEGER},
+      ingot = #{ingot,jdbcType=BIGINT},
+      gold = #{gold,jdbcType=BIGINT},
+      safe_gold = #{safeGold,jdbcType=BIGINT},
+      win_gold = #{winGold,jdbcType=BIGINT},
+      cedit = #{cedit,jdbcType=BIGINT},
+      lottery = #{lottery,jdbcType=BIGINT},
+      transfer_reward = #{transferReward,jdbcType=BIGINT},
+      bank_pwd = #{bankPwd,jdbcType=VARCHAR},
+      vip_level = #{vipLevel,jdbcType=INTEGER},
+      vip_end_time = #{vipEndTime,jdbcType=TIMESTAMP},
+      locked = #{locked,jdbcType=BIT},
+      channel_id = #{channelId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

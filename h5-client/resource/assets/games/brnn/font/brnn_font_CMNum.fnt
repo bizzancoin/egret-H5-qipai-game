@@ -1,0 +1,12 @@
+{"file":"brnn_font_CMNum.png","frames":{
+"-":{"x":0,"y":120,"w":14,"h":6,"offX":2,"offY":13,"sourceW":18,"sourceH":31},
+"1":{"x":54,"y":0,"w":10,"h":27,"offX":2,"offY":4,"sourceW":14,"sourceH":31},
+"4":{"x":17,"y":31,"w":17,"h":27,"offX":2,"offY":4,"sourceW":21,"sourceH":31},
+"6":{"x":18,"y":93,"w":18,"h":27,"offX":2,"offY":4,"sourceW":22,"sourceH":31},
+"9":{"x":0,"y":93,"w":18,"h":27,"offX":2,"offY":4,"sourceW":22,"sourceH":31},
+"7":{"x":36,"y":31,"w":18,"h":27,"offX":2,"offY":4,"sourceW":22,"sourceH":31},
+"0":{"x":0,"y":62,"w":17,"h":31,"offX":2,"offY":0,"sourceW":21,"sourceH":31},
+"3":{"x":0,"y":31,"w":17,"h":31,"offX":2,"offY":0,"sourceW":21,"sourceH":31},
+"5":{"x":0,"y":0,"w":18,"h":31,"offX":2,"offY":0,"sourceW":22,"sourceH":31},
+"8":{"x":36,"y":0,"w":18,"h":31,"offX":2,"offY":0,"sourceW":22,"sourceH":31},
+"2":{"x":18,"y":0,"w":18,"h":31,"offX":2,"offY":0,"sourceW":22,"sourceH":31}}}

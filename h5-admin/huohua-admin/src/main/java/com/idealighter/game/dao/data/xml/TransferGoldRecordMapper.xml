@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.TransferGoldRecordMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.TransferGoldRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="opposite_type" jdbcType="TINYINT" property="oppositeType" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="player_super_id" jdbcType="BIGINT" property="playerSuperId" />
+    <result column="player_name" jdbcType="VARCHAR" property="playerName" />
+    <result column="opposite_player_id" jdbcType="BIGINT" property="oppositePlayerId" />
+    <result column="opposite_super_id" jdbcType="BIGINT" property="oppositeSuperId" />
+    <result column="opposite_player_name" jdbcType="VARCHAR" property="oppositePlayerName" />
+    <result column="before_safe_gold" jdbcType="BIGINT" property="beforeSafeGold" />
+    <result column="after_safe_gold" jdbcType="BIGINT" property="afterSafeGold" />
+    <result column="fee" jdbcType="BIGINT" property="fee" />
+    <result column="fee_rate" jdbcType="INTEGER" property="feeRate" />
+    <result column="change_safe_gold" jdbcType="BIGINT" property="changeSafeGold" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="player_type" jdbcType="TINYINT" property="playerType" />
+    <result column="channel_id" jdbcType="VARCHAR" property="channelId" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, type, opposite_type, player_id, player_super_id, player_name, opposite_player_id, 
+    opposite_super_id, opposite_player_name, before_safe_gold, after_safe_gold, fee, 
+    fee_rate, change_safe_gold, create_time, player_type, channel_id
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecordExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from transfer_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from transfer_gold_record
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from transfer_gold_record
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecordExample">
+    delete from transfer_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecord">
+    insert into transfer_gold_record (id, type, opposite_type, 
+      player_id, player_super_id, player_name, 
+      opposite_player_id, opposite_super_id, opposite_player_name, 
+      before_safe_gold, after_safe_gold, fee, 
+      fee_rate, change_safe_gold, create_time, 
+      player_type, channel_id)
+    values (#{id,jdbcType=INTEGER}, #{type,jdbcType=TINYINT}, #{oppositeType,jdbcType=TINYINT}, 
+      #{playerId,jdbcType=BIGINT}, #{playerSuperId,jdbcType=BIGINT}, #{playerName,jdbcType=VARCHAR}, 
+      #{oppositePlayerId,jdbcType=BIGINT}, #{oppositeSuperId,jdbcType=BIGINT}, #{oppositePlayerName,jdbcType=VARCHAR}, 
+      #{beforeSafeGold,jdbcType=BIGINT}, #{afterSafeGold,jdbcType=BIGINT}, #{fee,jdbcType=BIGINT}, 
+      #{feeRate,jdbcType=INTEGER}, #{changeSafeGold,jdbcType=BIGINT}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{playerType,jdbcType=TINYINT}, #{channelId,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecord">
+    insert into transfer_gold_record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="oppositeType != null">
+        opposite_type,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="playerSuperId != null">
+        player_super_id,
+      </if>
+      <if test="playerName != null">
+        player_name,
+      </if>
+      <if test="oppositePlayerId != null">
+        opposite_player_id,
+      </if>
+      <if test="oppositeSuperId != null">
+        opposite_super_id,
+      </if>
+      <if test="oppositePlayerName != null">
+        opposite_player_name,
+      </if>
+      <if test="beforeSafeGold != null">
+        before_safe_gold,
+      </if>
+      <if test="afterSafeGold != null">
+        after_safe_gold,
+      </if>
+      <if test="fee != null">
+        fee,
+      </if>
+      <if test="feeRate != null">
+        fee_rate,
+      </if>
+      <if test="changeSafeGold != null">
+        change_safe_gold,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="playerType != null">
+        player_type,
+      </if>
+      <if test="channelId != null">
+        channel_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="oppositeType != null">
+        #{oppositeType,jdbcType=TINYINT},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playerSuperId != null">
+        #{playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="oppositePlayerId != null">
+        #{oppositePlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="oppositeSuperId != null">
+        #{oppositeSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="oppositePlayerName != null">
+        #{oppositePlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeSafeGold != null">
+        #{beforeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="afterSafeGold != null">
+        #{afterSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="fee != null">
+        #{fee,jdbcType=BIGINT},
+      </if>
+      <if test="feeRate != null">
+        #{feeRate,jdbcType=INTEGER},
+      </if>
+      <if test="changeSafeGold != null">
+        #{changeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playerType != null">
+        #{playerType,jdbcType=TINYINT},
+      </if>
+      <if test="channelId != null">
+        #{channelId,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecordExample" resultType="java.lang.Long">
+    select count(*) from transfer_gold_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update transfer_gold_record
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=TINYINT},
+      </if>
+      <if test="record.oppositeType != null">
+        opposite_type = #{record.oppositeType,jdbcType=TINYINT},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playerSuperId != null">
+        player_super_id = #{record.playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playerName != null">
+        player_name = #{record.playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.oppositePlayerId != null">
+        opposite_player_id = #{record.oppositePlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.oppositeSuperId != null">
+        opposite_super_id = #{record.oppositeSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="record.oppositePlayerName != null">
+        opposite_player_name = #{record.oppositePlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.beforeSafeGold != null">
+        before_safe_gold = #{record.beforeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.afterSafeGold != null">
+        after_safe_gold = #{record.afterSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.fee != null">
+        fee = #{record.fee,jdbcType=BIGINT},
+      </if>
+      <if test="record.feeRate != null">
+        fee_rate = #{record.feeRate,jdbcType=INTEGER},
+      </if>
+      <if test="record.changeSafeGold != null">
+        change_safe_gold = #{record.changeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.playerType != null">
+        player_type = #{record.playerType,jdbcType=TINYINT},
+      </if>
+      <if test="record.channelId != null">
+        channel_id = #{record.channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update transfer_gold_record
+    set id = #{record.id,jdbcType=INTEGER},
+      type = #{record.type,jdbcType=TINYINT},
+      opposite_type = #{record.oppositeType,jdbcType=TINYINT},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      player_super_id = #{record.playerSuperId,jdbcType=BIGINT},
+      player_name = #{record.playerName,jdbcType=VARCHAR},
+      opposite_player_id = #{record.oppositePlayerId,jdbcType=BIGINT},
+      opposite_super_id = #{record.oppositeSuperId,jdbcType=BIGINT},
+      opposite_player_name = #{record.oppositePlayerName,jdbcType=VARCHAR},
+      before_safe_gold = #{record.beforeSafeGold,jdbcType=BIGINT},
+      after_safe_gold = #{record.afterSafeGold,jdbcType=BIGINT},
+      fee = #{record.fee,jdbcType=BIGINT},
+      fee_rate = #{record.feeRate,jdbcType=INTEGER},
+      change_safe_gold = #{record.changeSafeGold,jdbcType=BIGINT},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      player_type = #{record.playerType,jdbcType=TINYINT},
+      channel_id = #{record.channelId,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecord">
+    update transfer_gold_record
+    <set>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="oppositeType != null">
+        opposite_type = #{oppositeType,jdbcType=TINYINT},
+      </if>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playerSuperId != null">
+        player_super_id = #{playerSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="playerName != null">
+        player_name = #{playerName,jdbcType=VARCHAR},
+      </if>
+      <if test="oppositePlayerId != null">
+        opposite_player_id = #{oppositePlayerId,jdbcType=BIGINT},
+      </if>
+      <if test="oppositeSuperId != null">
+        opposite_super_id = #{oppositeSuperId,jdbcType=BIGINT},
+      </if>
+      <if test="oppositePlayerName != null">
+        opposite_player_name = #{oppositePlayerName,jdbcType=VARCHAR},
+      </if>
+      <if test="beforeSafeGold != null">
+        before_safe_gold = #{beforeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="afterSafeGold != null">
+        after_safe_gold = #{afterSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="fee != null">
+        fee = #{fee,jdbcType=BIGINT},
+      </if>
+      <if test="feeRate != null">
+        fee_rate = #{feeRate,jdbcType=INTEGER},
+      </if>
+      <if test="changeSafeGold != null">
+        change_safe_gold = #{changeSafeGold,jdbcType=BIGINT},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="playerType != null">
+        player_type = #{playerType,jdbcType=TINYINT},
+      </if>
+      <if test="channelId != null">
+        channel_id = #{channelId,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.TransferGoldRecord">
+    update transfer_gold_record
+    set type = #{type,jdbcType=TINYINT},
+      opposite_type = #{oppositeType,jdbcType=TINYINT},
+      player_id = #{playerId,jdbcType=BIGINT},
+      player_super_id = #{playerSuperId,jdbcType=BIGINT},
+      player_name = #{playerName,jdbcType=VARCHAR},
+      opposite_player_id = #{oppositePlayerId,jdbcType=BIGINT},
+      opposite_super_id = #{oppositeSuperId,jdbcType=BIGINT},
+      opposite_player_name = #{oppositePlayerName,jdbcType=VARCHAR},
+      before_safe_gold = #{beforeSafeGold,jdbcType=BIGINT},
+      after_safe_gold = #{afterSafeGold,jdbcType=BIGINT},
+      fee = #{fee,jdbcType=BIGINT},
+      fee_rate = #{feeRate,jdbcType=INTEGER},
+      change_safe_gold = #{changeSafeGold,jdbcType=BIGINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      player_type = #{playerType,jdbcType=TINYINT},
+      channel_id = #{channelId,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

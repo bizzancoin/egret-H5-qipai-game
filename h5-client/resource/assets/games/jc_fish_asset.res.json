@@ -1,0 +1,190 @@
+{
+	"groups": [
+		{
+			"keys": "jc_bg1_jpg,jc_bg2_jpg,jc_bg3_jpg,jc_fish_betall_fnt,jc_fish_betall_png,jc_fish_goldBig_fnt,jc_fish_goldBig_png,jc_fish_multiple_fnt,jc_fish_multiple_png,jc_fish_config_json,jc_fish_atlas1_json,jc_fish_atlas1_png,jc_fish_atlas10_json,jc_fish_atlas10_png,jc_fish_atlas11_json,jc_fish_atlas11_png,jc_fish_atlas12_json,jc_fish_atlas12_png,jc_fish_atlas2_json,jc_fish_atlas2_png,jc_fish_atlas3_json,jc_fish_atlas3_png,jc_fish_atlas4_json,jc_fish_atlas4_png,jc_fish_atlas5_json,jc_fish_atlas5_png,jc_fish_atlas6_json,jc_fish_atlas6_png,jc_fish_atlas7_json,jc_fish_atlas7_png,jc_fish_atlas8_json,jc_fish_atlas8_png,jc_fish_atlas9_json,jc_fish_atlas9_png",
+			"name": "jc_fish_asset"
+		},
+		{
+			"keys": "jc_fish_loading_json",
+			"name": "jc_loading_asset"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/games/jcby/background/jc_bg1.jpg",
+			"type": "image",
+			"name": "jc_bg1_jpg"
+		},
+		{
+			"url": "assets/games/jcby/background/jc_bg2.jpg",
+			"type": "image",
+			"name": "jc_bg2_jpg"
+		},
+		{
+			"url": "assets/games/jcby/background/jc_bg3.jpg",
+			"type": "image",
+			"name": "jc_bg3_jpg"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_betall.fnt",
+			"type": "font",
+			"name": "jc_fish_betall_fnt"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_betall.png",
+			"type": "image",
+			"name": "jc_fish_betall_png"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_goldBig.fnt",
+			"type": "font",
+			"name": "jc_fish_goldBig_fnt"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_goldBig.png",
+			"type": "image",
+			"name": "jc_fish_goldBig_png"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_multiple.fnt",
+			"type": "font",
+			"name": "jc_fish_multiple_fnt"
+		},
+		{
+			"url": "assets/games/jcby/number/jc_fish_multiple.png",
+			"type": "image",
+			"name": "jc_fish_multiple_png"
+		},
+		{
+			"url": "assets/games/jcby/loading/jc_fish_loading.json",
+			"type": "sheet",
+			"name": "jc_fish_loading_json",
+			"subkeys": "loadbg,loadingbg,loadt,quan_1,quan_2,yuwangquan"
+		},
+		{
+			"url": "assets/games/jcby/jc_fish_config.json",
+			"type": "json",
+			"name": "jc_fish_config_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas1.png",
+			"type": "image",
+			"name": "jc_fish_atlas1_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas10.png",
+			"type": "image",
+			"name": "jc_fish_atlas10_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas11.png",
+			"type": "image",
+			"name": "jc_fish_atlas11_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas12.png",
+			"type": "image",
+			"name": "jc_fish_atlas12_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas2.png",
+			"type": "image",
+			"name": "jc_fish_atlas2_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas3.png",
+			"type": "image",
+			"name": "jc_fish_atlas3_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas4.png",
+			"type": "image",
+			"name": "jc_fish_atlas4_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas5.png",
+			"type": "image",
+			"name": "jc_fish_atlas5_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas6.png",
+			"type": "image",
+			"name": "jc_fish_atlas6_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas7.png",
+			"type": "image",
+			"name": "jc_fish_atlas7_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas8.png",
+			"type": "image",
+			"name": "jc_fish_atlas8_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas9.png",
+			"type": "image",
+			"name": "jc_fish_atlas9_png"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas12.json",
+			"type": "json",
+			"name": "jc_fish_atlas12_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas11.json",
+			"type": "json",
+			"name": "jc_fish_atlas11_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas10.json",
+			"type": "json",
+			"name": "jc_fish_atlas10_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas2.json",
+			"type": "json",
+			"name": "jc_fish_atlas2_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas3.json",
+			"type": "json",
+			"name": "jc_fish_atlas3_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas4.json",
+			"type": "json",
+			"name": "jc_fish_atlas4_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas1.json",
+			"type": "json",
+			"name": "jc_fish_atlas1_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas7.json",
+			"type": "json",
+			"name": "jc_fish_atlas7_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas5.json",
+			"type": "json",
+			"name": "jc_fish_atlas5_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas9.json",
+			"type": "json",
+			"name": "jc_fish_atlas9_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas6.json",
+			"type": "json",
+			"name": "jc_fish_atlas6_json"
+		},
+		{
+			"url": "assets/games/jcby/fish/jc_fish_atlas8.json",
+			"type": "json",
+			"name": "jc_fish_atlas8_json"
+		}
+	]
+}

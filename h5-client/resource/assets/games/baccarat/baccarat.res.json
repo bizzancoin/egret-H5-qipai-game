@@ -1,0 +1,382 @@
+{
+	"groups": [
+		{
+			"keys": "poker_config_json,bjl_wd_json,bjl_btn_dp_png,bjl_btn_hp_png,bjl_chips_json,bjl_xiazhu_json,h2l_png,l2h_png,l2l_png,h2l_json,l2l_json,l2h_json,poker_json,ckldbj_png,ckldbj1_png,ludan_json,bjl_bj0_mp3,bjl_fnt_betOtherNum_fnt,bjl_fnt_betOtherNum_png,bjl_fnt_bigRoadNum_fnt,bjl_fnt_bigRoadNum_png,bjl_fnt_clock_fnt,bjl_fnt_clock_png,bjl_fnt_jiesuan_fnt,bjl_fnt_jiesuan_png,bjl_img_json,bjl_btn_json,bjl_zmc_png,bjl_duih_png,bjl_beginXiazhu_mp3,bjl_F_LOSE_0_mp3,bjl_F_LOSE_1_mp3,bjl_F_WIN_0_mp3,bjl_F_WIN_1_mp3,bjl_M_LOSE_0_mp3,bjl_M_LOSE_1_mp3,bjl_M_WIN_0_mp3,bjl_M_WIN_1_mp3,bjl_OpenCard_mp3,bjl_PAWN_BANKER_mp3,bjl_READY_mp3,bjl_bopai_mp3,bjl_outcard_mp3,bjl_stopXiazhu_mp3,bjl_time_mp3,bjl_xian0dian_mp3,bjl_xian1dian_mp3,bjl_xian2dian_mp3,bjl_xian3dian_mp3,bjl_xian4dian_mp3,bjl_xian5dian_mp3,bjl_xian6dian_mp3,bjl_xian7dian_mp3,bjl_xian8dian_mp3,bjl_xian9dian_mp3,bjl_zhuang0dian_mp3,bjl_zhuang1dian_mp3,bjl_zhuang2dian_mp3,bjl_zhuang3dian_mp3,bjl_zhuang4dian_mp3,bjl_zhuang5dian_mp3,bjl_zhuang6dian_mp3,bjl_zhuang7dian_mp3,bjl_zhuang8dian_mp3,bjl_zhuang9dian_mp3,bjl_duih_d_png,bjl_bg_jpg,bjl_loading_png,bjl_loadingbg_png,bjl_loadingmap_png,baccarat.res_json,bjl_light_json",
+			"name": "baccarat"
+		},
+		{
+			"keys": "bjl_loading_png,bjl_loadingbg_png,bjl_loadingmap_png",
+			"name": "baccarat_load"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/baccarat/poker_config.json",
+			"type": "json",
+			"name": "poker_config_json"
+		},
+		{
+			"url": "assets/games/baccarat/word/bjl_wd.json",
+			"type": "sheet",
+			"name": "bjl_wd_json",
+			"subkeys": "bjl_wd_he,bjl_wd_hezi,bjl_wd_huzi,bjl_wd_jushu,bjl_wd_kpz,bjl_wd_longzi,bjl_wd_qxz,bjl_wd_xbp,bjl_wd_xiandui,bjl_wd_xianjia,bjl_wd_xpz,bjl_wd_xxyx,bjl_wd_xy,bjl_wd_zbp,bjl_wd_zd,bjl_wd_zj,bjl_wd_zy"
+		},
+		{
+			"url": "assets/games/baccarat/image/load/bjl_loading.png",
+			"type": "image",
+			"name": "bjl_loading_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/load/bjl_loadingbg.png",
+			"type": "image",
+			"name": "bjl_loadingbg_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/load/bjl_loadingmap.png",
+			"type": "image",
+			"name": "bjl_loadingmap_png"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_btn_dp.png",
+			"type": "image",
+			"name": "bjl_btn_dp_png"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_btn_hp.png",
+			"type": "image",
+			"name": "bjl_btn_hp_png"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_chips.json",
+			"type": "sheet",
+			"name": "bjl_chips_json",
+			"subkeys": "bjl_btn_cm11,bjl_btn_cm12,bjl_btn_cm13,bjl_btn_cm21,bjl_btn_cm22,bjl_btn_cm23,bjl_btn_cm31,bjl_btn_cm32,bjl_btn_cm33,bjl_btn_cm41,bjl_btn_cm42,bjl_btn_cm43,bjl_btn_cm51,bjl_btn_cm52,bjl_btn_cm53,bjl_btn_cm61,bjl_btn_cm62,bjl_btn_cm63,bjl_btn_cm71,bjl_btn_cm72,bjl_btn_cm73,bjl_btn_cm81,bjl_btn_cm82,bjl_btn_cm83"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_xiazhu.json",
+			"type": "sheet",
+			"name": "bjl_xiazhu_json",
+			"subkeys": "b0,b0.1,b1,b1.1,b2,b2.1,b4,b4.1,b9,b9.1"
+		},
+		{
+			"url": "assets/games/baccarat/effect/h2l.png",
+			"type": "image",
+			"name": "h2l_png"
+		},
+		{
+			"url": "assets/games/baccarat/effect/l2h.png",
+			"type": "image",
+			"name": "l2h_png"
+		},
+		{
+			"url": "assets/games/baccarat/effect/l2l.png",
+			"type": "image",
+			"name": "l2l_png"
+		},
+		{
+			"url": "assets/games/baccarat/effect/h2l.json",
+			"type": "json",
+			"name": "h2l_json"
+		},
+		{
+			"url": "assets/games/baccarat/effect/l2l.json",
+			"type": "json",
+			"name": "l2l_json"
+		},
+		{
+			"url": "assets/games/baccarat/effect/l2h.json",
+			"type": "json",
+			"name": "l2h_json"
+		},
+		{
+			"url": "assets/games/baccarat/effect/poker.json",
+			"type": "sheet",
+			"name": "poker_json",
+			"subkeys": "FK10,FK2,FK3,FK4,FK5,FK6,FK7,FK8,FK9,FKA,FKJ,FKK,FKQ,HT10,HT2,HT3,HT4,HT5,HT6,HT7,HT8,HT9,HTA,HTJ,HTK,HTQ,J1,J2,MH10,MH2,MH3,MH4,MH5,MH6,MH7,MH8,MH9,MHA,MHJ,MHK,MHQ,RH10,RH2,RH3,RH4,RH5,RH6,RH7,RH8,RH9,RHA,RHJ,RHK,RHQ,_FK10,_FK2,_FK3,_FK4,_FK5,_FK6,_FK7,_FK8,_FK9,_FKA,_FKJ,_FKK,_FKQ,_HT10,_HT2,_HT3,_HT4,_HT5,_HT6,_HT7,_HT8,_HT9,_HTA,_HTJ,_HTK,_HTQ,_J1,_J2,_MH10,_MH2,_MH3,_MH4,_MH5,_MH6,_MH7,_MH8,_MH9,_MHA,_MHJ,_MHK,_MHQ,_RH10,_RH2,_RH3,_RH4,_RH5,_RH6,_RH7,_RH8,_RH9,_RHA,_RHJ,_RHK,_RHQ,_dp,dp"
+		},
+		{
+			"url": "assets/games/baccarat/image/chakanludan/ckldbj.png",
+			"type": "image",
+			"name": "ckldbj_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/chakanludan/ckldbj1.png",
+			"type": "image",
+			"name": "ckldbj1_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/chakanludan/ludan.json",
+			"type": "sheet",
+			"name": "ludan_json",
+			"subkeys": "bjl,bjl1,bjl_a_hqd,bjl_a_hqs,bjl_a_hqx,bjl_a_hxg,bjl_a_jqd,bjl_a_jqs,bjl_a_jqx,bjl_a_lqd,bjl_a_lqs,bjl_a_lqx,bjl_a_lvxg,bjl_a_lxg,bjl_d_hqiu,bjl_d_hquan,bjl_d_htiao,bjl_d_jqiu,bjl_d_jquan,bjl_d_jtiao,bjl_d_lqiu,bjl_d_lquan,bjl_d_ltiao,bjl_t_fg,bjl_t_fqiu,bjl_t_fquan,bjl_t_jg,bjl_t_jqiu,bjl_t_jquan,bjl_t_lg,bjl_t_lqiu,bjl_t_lquan,ckld,dx,dx1,hwl,lh,lh1,lwl,xwl,z_da,z_he,z_hu,z_long,z_xian,z_xiao,z_zhuang,zhu_hd,zhu_ld,zwl,zx,zx1"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_bj0.mp3",
+			"type": "sound",
+			"name": "bjl_bj0_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_betOtherNum.fnt",
+			"type": "font",
+			"name": "bjl_fnt_betOtherNum_fnt"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_betOtherNum.png",
+			"type": "image",
+			"name": "bjl_fnt_betOtherNum_png"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_bigRoadNum.fnt",
+			"type": "font",
+			"name": "bjl_fnt_bigRoadNum_fnt"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_bigRoadNum.png",
+			"type": "image",
+			"name": "bjl_fnt_bigRoadNum_png"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_clock.fnt",
+			"type": "font",
+			"name": "bjl_fnt_clock_fnt"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_clock.png",
+			"type": "image",
+			"name": "bjl_fnt_clock_png"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_jiesuan.fnt",
+			"type": "font",
+			"name": "bjl_fnt_jiesuan_fnt"
+		},
+		{
+			"url": "assets/games/baccarat/font/bjl_fnt_jiesuan.png",
+			"type": "image",
+			"name": "bjl_fnt_jiesuan_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/bjl_img.json",
+			"type": "sheet",
+			"name": "bjl_img_json",
+			"subkeys": "bjl_bi,bjl_bi1,bjl_c,bjl_fgz,bjl_fpq,bjl_grxx,bjl_grxx1,bjl_hd,bjl_hz,bjl_jus,bjl_pais,bjl_pais2,bjl_s_close,bjl_s_in,bjl_s_out,bjl_s_szbg,bjl_s_szd,bjl_s_szf,bjl_shezd,bjl_sj,bjl_spaim"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_btn.json",
+			"type": "sheet",
+			"name": "bjl_btn_json",
+			"subkeys": "bjl_btn_bz,bjl_btn_qk,bjl_btn_qk1,bjl_btn_sz,bjl_btn_tc1,bjl_btn_tc2,bjl_btn_tc3,bjl_btn_xy,bjl_btn_xy1"
+		},
+		{
+			"url": "assets/games/baccarat/image/bjl_zmc.png",
+			"type": "image",
+			"name": "bjl_zmc_png"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_duih.png",
+			"type": "image",
+			"name": "bjl_duih_png"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_beginXiazhu.mp3",
+			"type": "sound",
+			"name": "bjl_beginXiazhu_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_F_LOSE_0.mp3",
+			"type": "sound",
+			"name": "bjl_F_LOSE_0_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_F_LOSE_1.mp3",
+			"type": "sound",
+			"name": "bjl_F_LOSE_1_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_F_WIN_0.mp3",
+			"type": "sound",
+			"name": "bjl_F_WIN_0_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_F_WIN_1.mp3",
+			"type": "sound",
+			"name": "bjl_F_WIN_1_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_M_LOSE_0.mp3",
+			"type": "sound",
+			"name": "bjl_M_LOSE_0_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_M_LOSE_1.mp3",
+			"type": "sound",
+			"name": "bjl_M_LOSE_1_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_M_WIN_0.mp3",
+			"type": "sound",
+			"name": "bjl_M_WIN_0_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_M_WIN_1.mp3",
+			"type": "sound",
+			"name": "bjl_M_WIN_1_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_OpenCard.mp3",
+			"type": "sound",
+			"name": "bjl_OpenCard_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_PAWN_BANKER.mp3",
+			"type": "sound",
+			"name": "bjl_PAWN_BANKER_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_READY.mp3",
+			"type": "sound",
+			"name": "bjl_READY_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_bopai.mp3",
+			"type": "sound",
+			"name": "bjl_bopai_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_outcard.mp3",
+			"type": "sound",
+			"name": "bjl_outcard_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_stopXiazhu.mp3",
+			"type": "sound",
+			"name": "bjl_stopXiazhu_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_time.mp3",
+			"type": "sound",
+			"name": "bjl_time_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian0dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian0dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian1dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian1dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian2dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian2dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian3dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian3dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian4dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian4dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian5dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian5dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian6dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian6dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian7dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian7dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian8dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian8dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_xian9dian.mp3",
+			"type": "sound",
+			"name": "bjl_xian9dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang0dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang0dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang1dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang1dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang2dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang2dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang3dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang3dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang4dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang4dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang5dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang5dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang6dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang6dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang7dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang7dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang8dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang8dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/music/bjl_zhuang9dian.mp3",
+			"type": "sound",
+			"name": "bjl_zhuang9dian_mp3"
+		},
+		{
+			"url": "assets/games/baccarat/button/bjl_duih_d.png",
+			"type": "image",
+			"name": "bjl_duih_d_png"
+		},
+		{
+			"url": "assets/games/baccarat/image/bjl_bg.jpg",
+			"type": "image",
+			"name": "bjl_bg_jpg"
+		},
+		{
+			"url": "assets/games/baccarat/baccarat.res.json",
+			"type": "json",
+			"name": "baccarat.res_json"
+		},
+		{
+			"url": "assets/games/baccarat/image/bjl_light.json",
+			"type": "sheet",
+			"name": "bjl_light_json",
+			"subkeys": "0,1,2,4,9"
+		}
+	]
+}

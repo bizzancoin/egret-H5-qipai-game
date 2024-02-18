@@ -1,0 +1,7 @@
+{"file":"jc_fish_loading.png","frames":{
+"yuwangquan":{"x":1200,"y":1174,"w":247,"h":247,"offX":0,"offY":0,"sourceW":247,"sourceH":247},
+"loadbg":{"x":0,"y":1080,"w":1244,"h":94,"offX":0,"offY":0,"sourceW":1244,"sourceH":94},
+"loadingbg":{"x":0,"y":0,"w":1920,"h":1080,"offX":0,"offY":0,"sourceW":1920,"sourceH":1080},
+"loadt":{"x":0,"y":1174,"w":1200,"h":56,"offX":23,"offY":14,"sourceW":1244,"sourceH":94},
+"quan_1":{"x":1447,"y":1321,"w":147,"h":147,"offX":0,"offY":0,"sourceW":147,"sourceH":147},
+"quan_2":{"x":1447,"y":1174,"w":147,"h":147,"offX":0,"offY":0,"sourceW":147,"sourceH":147}}}

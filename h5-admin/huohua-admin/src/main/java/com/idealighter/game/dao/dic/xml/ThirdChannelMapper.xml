@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.ThirdChannelMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.ThirdChannel">
+    <id column="channel_id" jdbcType="VARCHAR" property="channelId" />
+    <result column="channel_name" jdbcType="VARCHAR" property="channelName" />
+    <result column="channel_remark" jdbcType="VARCHAR" property="channelRemark" />
+    <result column="channel_des_key" jdbcType="VARCHAR" property="channelDesKey" />
+    <result column="channel_md5_key" jdbcType="VARCHAR" property="channelMd5Key" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    channel_id, channel_name, channel_remark, channel_des_key, channel_md5_key
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.ThirdChannelExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from third_channel
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from third_channel
+    where channel_id = #{channelId,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from third_channel
+    where channel_id = #{channelId,jdbcType=VARCHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.ThirdChannelExample">
+    delete from third_channel
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.ThirdChannel">
+    insert into third_channel (channel_id, channel_name, channel_remark, 
+      channel_des_key, channel_md5_key)
+    values (#{channelId,jdbcType=VARCHAR}, #{channelName,jdbcType=VARCHAR}, #{channelRemark,jdbcType=VARCHAR}, 
+      #{channelDesKey,jdbcType=VARCHAR}, #{channelMd5Key,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.ThirdChannel">
+    insert into third_channel
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="channelId != null">
+        channel_id,
+      </if>
+      <if test="channelName != null">
+        channel_name,
+      </if>
+      <if test="channelRemark != null">
+        channel_remark,
+      </if>
+      <if test="channelDesKey != null">
+        channel_des_key,
+      </if>
+      <if test="channelMd5Key != null">
+        channel_md5_key,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="channelId != null">
+        #{channelId,jdbcType=VARCHAR},
+      </if>
+      <if test="channelName != null">
+        #{channelName,jdbcType=VARCHAR},
+      </if>
+      <if test="channelRemark != null">
+        #{channelRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="channelDesKey != null">
+        #{channelDesKey,jdbcType=VARCHAR},
+      </if>
+      <if test="channelMd5Key != null">
+        #{channelMd5Key,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.ThirdChannelExample" resultType="java.lang.Long">
+    select count(*) from third_channel
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update third_channel
+    <set>
+      <if test="record.channelId != null">
+        channel_id = #{record.channelId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelName != null">
+        channel_name = #{record.channelName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelRemark != null">
+        channel_remark = #{record.channelRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelDesKey != null">
+        channel_des_key = #{record.channelDesKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channelMd5Key != null">
+        channel_md5_key = #{record.channelMd5Key,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update third_channel
+    set channel_id = #{record.channelId,jdbcType=VARCHAR},
+      channel_name = #{record.channelName,jdbcType=VARCHAR},
+      channel_remark = #{record.channelRemark,jdbcType=VARCHAR},
+      channel_des_key = #{record.channelDesKey,jdbcType=VARCHAR},
+      channel_md5_key = #{record.channelMd5Key,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.ThirdChannel">
+    update third_channel
+    <set>
+      <if test="channelName != null">
+        channel_name = #{channelName,jdbcType=VARCHAR},
+      </if>
+      <if test="channelRemark != null">
+        channel_remark = #{channelRemark,jdbcType=VARCHAR},
+      </if>
+      <if test="channelDesKey != null">
+        channel_des_key = #{channelDesKey,jdbcType=VARCHAR},
+      </if>
+      <if test="channelMd5Key != null">
+        channel_md5_key = #{channelMd5Key,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where channel_id = #{channelId,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.ThirdChannel">
+    update third_channel
+    set channel_name = #{channelName,jdbcType=VARCHAR},
+      channel_remark = #{channelRemark,jdbcType=VARCHAR},
+      channel_des_key = #{channelDesKey,jdbcType=VARCHAR},
+      channel_md5_key = #{channelMd5Key,jdbcType=VARCHAR}
+    where channel_id = #{channelId,jdbcType=VARCHAR}
+  </update>
+</mapper>

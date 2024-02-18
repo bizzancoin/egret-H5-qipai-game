@@ -1,0 +1,265 @@
+{
+	"groups": [
+		{
+			"keys": "common_btn_red_png,common_input_png,common_btn_orange_png,common_dialog_bg_png,common_dialog_bg2_png,common_btn_close_png,common_room_item_bg_png,player_1_png,player_2_png,player_3_png,player_4_png,player_5_png,player_6_png,player_7_png,player_8_png,player_9_png,common_marquee_bg_png,login_account_png,login_lb_account_png,login_lb_code_png,login_bg_jpg,login_logo_s_png,login_tourist_png,common_slider_png,common_slider_bg_png,setting_music_png,setting_sound_png,setting_switch_off_png,setting_switch_on_png,setting_title_png,btnclick_mp3,common_left_png,common_right_png",
+			"name": "common_asset"
+		},
+		{
+			"keys": "loading_bg_jpg,loading_fill_png,loading_fill_bg_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/common/btn_red.png",
+			"type": "image",
+			"name": "common_btn_red_png"
+		},
+		{
+			"url": "assets/common/input.png",
+			"type": "image",
+			"name": "common_input_png"
+		},
+		{
+			"url": "assets/common/btn_orange.png",
+			"type": "image",
+			"name": "common_btn_orange_png"
+		},
+		{
+			"url": "assets/common/dialog_bg.png",
+			"type": "image",
+			"name": "common_dialog_bg_png",
+			"scale9grid": "79,149,740,571"
+		},
+		{
+			"url": "assets/game/game_icon_bjl.png",
+			"type": "image",
+			"name": "game_icon_bjl_png"
+		},
+		{
+			"url": "assets/game/game_icon_brnn.png",
+			"type": "image",
+			"name": "game_icon_brnn_png"
+		},
+		{
+			"url": "assets/game/game_icon_dzpk.png",
+			"type": "image",
+			"name": "game_icon_dzpk_png"
+		},
+		{
+			"url": "assets/game/game_icon_errdz.png",
+			"type": "image",
+			"name": "game_icon_errdz_png"
+		},
+		{
+			"url": "assets/game/game_icon_errnn.png",
+			"type": "image",
+			"name": "game_icon_errnn_png"
+		},
+		{
+			"url": "assets/game/game_icon_jcby.png",
+			"type": "image",
+			"name": "game_icon_jcby_png"
+		},
+		{
+			"url": "assets/game/game_icon_jsys.png",
+			"type": "image",
+			"name": "game_icon_jsys_png"
+		},
+		{
+			"url": "assets/game/game_icon_lkpy.png",
+			"type": "image",
+			"name": "game_icon_lkpy_png"
+		},
+		{
+			"url": "assets/game/game_icon_qc4sd.png",
+			"type": "image",
+			"name": "game_icon_qc4sd_png"
+		},
+		{
+			"url": "assets/game/game_icon_shz.png",
+			"type": "image",
+			"name": "game_icon_shz_png"
+		},
+		{
+			"url": "assets/game/game_icon_srnn.png",
+			"type": "image",
+			"name": "game_icon_srnn_png"
+		},
+		{
+			"url": "assets/game/game_icon_tbnn.png",
+			"type": "image",
+			"name": "game_icon_tbnn_png"
+		},
+		{
+			"url": "assets/game/game_icon_wgkp.png",
+			"type": "image",
+			"name": "game_icon_wgkp_png"
+		},
+		{
+			"url": "assets/game/game_icon_zjh.png",
+			"type": "image",
+			"name": "game_icon_zjh_png"
+		},
+		{
+			"url": "assets/common/dialog_bg2.png",
+			"type": "image",
+			"name": "common_dialog_bg2_png"
+		},
+		{
+			"url": "assets/common/btn_close.png",
+			"type": "image",
+			"name": "common_btn_close_png"
+		},
+		{
+			"url": "assets/common/room_item_bg.png",
+			"type": "image",
+			"name": "common_room_item_bg_png"
+		},
+		{
+			"url": "assets/player/player_1.png",
+			"type": "image",
+			"name": "player_1_png"
+		},
+		{
+			"url": "assets/player/player_2.png",
+			"type": "image",
+			"name": "player_2_png"
+		},
+		{
+			"url": "assets/player/player_3.png",
+			"type": "image",
+			"name": "player_3_png"
+		},
+		{
+			"url": "assets/player/player_4.png",
+			"type": "image",
+			"name": "player_4_png"
+		},
+		{
+			"url": "assets/player/player_5.png",
+			"type": "image",
+			"name": "player_5_png"
+		},
+		{
+			"url": "assets/player/player_6.png",
+			"type": "image",
+			"name": "player_6_png"
+		},
+		{
+			"url": "assets/player/player_7.png",
+			"type": "image",
+			"name": "player_7_png"
+		},
+		{
+			"url": "assets/player/player_8.png",
+			"type": "image",
+			"name": "player_8_png"
+		},
+		{
+			"url": "assets/player/player_9.png",
+			"type": "image",
+			"name": "player_9_png"
+		},
+		{
+			"url": "assets/common/marquee_bg.png",
+			"type": "image",
+			"name": "common_marquee_bg_png"
+		},
+		{
+			"url": "assets/login/login_account.png",
+			"type": "image",
+			"name": "login_account_png"
+		},
+		{
+			"url": "assets/login/login_lb_account.png",
+			"type": "image",
+			"name": "login_lb_account_png"
+		},
+		{
+			"url": "assets/login/login_lb_code.png",
+			"type": "image",
+			"name": "login_lb_code_png"
+		},
+		{
+			"url": "assets/login/login_tourist.png",
+			"type": "image",
+			"name": "login_tourist_png"
+		},
+		{
+			"url": "assets/loading/loading_bg.jpg",
+			"type": "image",
+			"name": "loading_bg_jpg"
+		},
+		{
+			"url": "assets/loading/loading_fill.png",
+			"type": "image",
+			"name": "loading_fill_png"
+		},
+		{
+			"url": "assets/loading/loading_fill_bg.png",
+			"type": "image",
+			"name": "loading_fill_bg_png"
+		},
+		{
+			"url": "assets/login/login_bg.jpg",
+			"type": "image",
+			"name": "login_bg_jpg"
+		},
+		{
+			"url": "assets/login/login_logo_s.png",
+			"type": "image",
+			"name": "login_logo_s_png"
+		},
+		{
+			"url": "assets/common/common_slider.png",
+			"type": "image",
+			"name": "common_slider_png"
+		},
+		{
+			"url": "assets/common/common_slider_bg.png",
+			"type": "image",
+			"name": "common_slider_bg_png"
+		},
+		{
+			"url": "assets/common/set/setting_music.png",
+			"type": "image",
+			"name": "setting_music_png"
+		},
+		{
+			"url": "assets/common/set/setting_sound.png",
+			"type": "image",
+			"name": "setting_sound_png"
+		},
+		{
+			"url": "assets/common/set/setting_switch_off.png",
+			"type": "image",
+			"name": "setting_switch_off_png"
+		},
+		{
+			"url": "assets/common/set/setting_switch_on.png",
+			"type": "image",
+			"name": "setting_switch_on_png"
+		},
+		{
+			"url": "assets/common/set/setting_title.png",
+			"type": "image",
+			"name": "setting_title_png"
+		},
+		{
+			"url": "assets/common/btnclick.mp3",
+			"type": "sound",
+			"name": "btnclick_mp3"
+		},
+		{
+			"url": "assets/common/common_left.png",
+			"type": "image",
+			"name": "common_left_png"
+		},
+		{
+			"url": "assets/common/common_right.png",
+			"type": "image",
+			"name": "common_right_png"
+		}
+	]
+}

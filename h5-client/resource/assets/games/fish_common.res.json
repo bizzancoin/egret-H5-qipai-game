@@ -1,0 +1,311 @@
+{
+	"groups": [
+		{
+			"keys": "fish_common_atlas1_png,fish_common_atlas2_png,fish_common_atlas3_png,fish_common_atlas4_png,fish_common_atlas5_png,fish_common_atlas6_png,fish_common_atlas2_json,fish_common_atlas4_json,fish_common_atlas3_json,fish_common_atlas1_json,fish_common_atlas6_json,fish_common_atlas5_json,fish_common_atlas0_json,fish_common_bg4_jpg,fish_common_scene0_mp3,fish_common_scene1_mp3,fish_common_scene2_mp3,fish_common_scene3_mp3,fish_common_scene4_mp3,fish_common_Bigdie01_mp3,fish_common_Bigdie02_mp3,fish_common_FP1_mp3,fish_common_boom_mp3,fish_common_catch_1_mp3,fish_common_catch_10_mp3,fish_common_catch_11_mp3,fish_common_catch_12_mp3,fish_common_catch_13_mp3,fish_common_catch_14_mp3,fish_common_catch_15_mp3,fish_common_catch_16_mp3,fish_common_catch_17_mp3,fish_common_catch_18_mp3,fish_common_catch_19_mp3,fish_common_catch_2_mp3,fish_common_catch_20_mp3,fish_common_catch_21_mp3,fish_common_catch_22_mp3,fish_common_catch_23_mp3,fish_common_catch_24_mp3,fish_common_catch_25_mp3,fish_common_catch_26_mp3,fish_common_catch_3_mp3,fish_common_catch_4_mp3,fish_common_catch_5_mp3,fish_common_catch_6_mp3,fish_common_catch_7_mp3,fish_common_catch_8_mp3,fish_common_catch_9_mp3,fish_common_change_scene_mp3,fish_common_eyu_mp3,fish_common_jinbi_mp3,fish_common_qingwa_mp3,fish_common_sanyuansixi_mp3,fish_common_yuwang_mp3,fish_common_zidan_mp3,fish_common_auto_normal_png,fish_common_auto_press_png,fish_common_lock_normal_png,fish_common_lock_press_png",
+			"name": "fish_common_asset"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/games/fish/fish_common_atlas1.png",
+			"type": "image",
+			"name": "fish_common_atlas1_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas2.png",
+			"type": "image",
+			"name": "fish_common_atlas2_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas3.png",
+			"type": "image",
+			"name": "fish_common_atlas3_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas4.png",
+			"type": "image",
+			"name": "fish_common_atlas4_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas5.png",
+			"type": "image",
+			"name": "fish_common_atlas5_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas6.png",
+			"type": "image",
+			"name": "fish_common_atlas6_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas2.json",
+			"type": "json",
+			"name": "fish_common_atlas2_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas4.json",
+			"type": "json",
+			"name": "fish_common_atlas4_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas3.json",
+			"type": "json",
+			"name": "fish_common_atlas3_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas1.json",
+			"type": "json",
+			"name": "fish_common_atlas1_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas6.json",
+			"type": "json",
+			"name": "fish_common_atlas6_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas5.json",
+			"type": "json",
+			"name": "fish_common_atlas5_json"
+		},
+		{
+			"url": "assets/games/fish/fish_common_atlas0.json",
+			"type": "sheet",
+			"name": "fish_common_atlas0_json",
+			"subkeys": "Bow_01,GetBigFishFlash,add,beishu,btnClose,btnExchange,btnHelp,btnLeft,btnLock,btnOut,btnRight,btnSetup,btnUnLock,bullet1_1,bullet1_2,bullet1_3,bullet2_1,bullet2_2,bullet2_3,bullet3_1,bullet3_2,bullet3_3,bullet4_1,bullet4_2,bullet4_3,bullet5_1,bullet5_2,bullet5_3,bullet6_1,bullet6_2,bullet6_3,bullet7_1,bullet7_2,bullet7_3,bullet8_1,bullet8_2,bullet8_3,bullet9_1,bullet9_2,bullet9_3,dda,kuang1,kuang2,kuang3,kuang4,kuang5,kuang6,kuang7,kuang8,lock_1,lock_1_1,lock_2,lock_2_1,lock_3,lock_3_1,lock_4,lock_4_1,lock_5,lock_5_1,lock_6,lock_6_1,lock_7,lock_7_1,lock_8,lock_8_1,panel,paogai,paozuo,yubibuzhu"
+		},
+		{
+			"url": "assets/games/fish/fish_common_bg4.jpg",
+			"type": "image",
+			"name": "fish_common_bg4_jpg"
+		},
+		{
+			"url": "assets/games/fish/music/background/fish_common_scene0.mp3",
+			"type": "sound",
+			"name": "fish_common_scene0_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/background/fish_common_scene1.mp3",
+			"type": "sound",
+			"name": "fish_common_scene1_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/background/fish_common_scene2.mp3",
+			"type": "sound",
+			"name": "fish_common_scene2_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/background/fish_common_scene3.mp3",
+			"type": "sound",
+			"name": "fish_common_scene3_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/background/fish_common_scene4.mp3",
+			"type": "sound",
+			"name": "fish_common_scene4_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_Bigdie01.mp3",
+			"type": "sound",
+			"name": "fish_common_Bigdie01_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_Bigdie02.mp3",
+			"type": "sound",
+			"name": "fish_common_Bigdie02_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_FP1.mp3",
+			"type": "sound",
+			"name": "fish_common_FP1_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_boom.mp3",
+			"type": "sound",
+			"name": "fish_common_boom_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_1.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_1_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_10.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_10_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_11.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_11_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_12.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_12_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_13.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_13_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_14.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_14_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_15.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_15_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_16.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_16_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_17.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_17_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_18.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_18_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_19.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_19_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_2.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_2_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_20.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_20_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_21.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_21_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_22.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_22_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_23.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_23_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_24.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_24_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_25.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_25_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_26.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_26_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_3.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_3_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_4.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_4_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_5.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_5_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_6.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_6_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_7.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_7_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_8.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_8_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_catch_9.mp3",
+			"type": "sound",
+			"name": "fish_common_catch_9_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_change_scene.mp3",
+			"type": "sound",
+			"name": "fish_common_change_scene_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_eyu.mp3",
+			"type": "sound",
+			"name": "fish_common_eyu_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_jinbi.mp3",
+			"type": "sound",
+			"name": "fish_common_jinbi_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_qingwa.mp3",
+			"type": "sound",
+			"name": "fish_common_qingwa_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_sanyuansixi.mp3",
+			"type": "sound",
+			"name": "fish_common_sanyuansixi_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_yuwang.mp3",
+			"type": "sound",
+			"name": "fish_common_yuwang_mp3"
+		},
+		{
+			"url": "assets/games/fish/music/effect/fish_common_zidan.mp3",
+			"type": "sound",
+			"name": "fish_common_zidan_mp3"
+		},
+		{
+			"url": "assets/games/fish/fish_common_auto_normal.png",
+			"type": "image",
+			"name": "fish_common_auto_normal_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_auto_press.png",
+			"type": "image",
+			"name": "fish_common_auto_press_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_lock_normal.png",
+			"type": "image",
+			"name": "fish_common_lock_normal_png"
+		},
+		{
+			"url": "assets/games/fish/fish_common_lock_press.png",
+			"type": "image",
+			"name": "fish_common_lock_press_png"
+		}
+	]
+}

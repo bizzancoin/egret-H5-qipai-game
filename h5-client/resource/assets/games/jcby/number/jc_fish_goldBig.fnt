@@ -1,0 +1,12 @@
+{"file":"jc_fish_goldBig.png","frames":{
+"0":{"x":50,"y":0,"w":48,"h":64,"offX":2,"offY":0,"sourceW":52,"sourceH":64},
+"2":{"x":0,"y":62,"w":46,"h":63,"offX":2,"offY":0,"sourceW":50,"sourceH":64},
+"5":{"x":136,"y":64,"w":44,"h":63,"offX":2,"offY":1,"sourceW":48,"sourceH":64},
+"8":{"x":193,"y":0,"w":47,"h":64,"offX":2,"offY":0,"sourceW":51,"sourceH":64},
+"1":{"x":180,"y":64,"w":28,"h":62,"offX":2,"offY":2,"sourceW":32,"sourceH":64},
+"4":{"x":0,"y":0,"w":50,"h":62,"offX":2,"offY":2,"sourceW":54,"sourceH":64},
+"7":{"x":91,"y":64,"w":45,"h":62,"offX":2,"offY":2,"sourceW":49,"sourceH":64},
+"3":{"x":46,"y":64,"w":45,"h":64,"offX":2,"offY":0,"sourceW":49,"sourceH":64},
+"6":{"x":98,"y":0,"w":48,"h":64,"offX":2,"offY":0,"sourceW":52,"sourceH":64},
+"9":{"x":146,"y":0,"w":47,"h":64,"offX":2,"offY":0,"sourceW":51,"sourceH":64},
+" ":{"x":240,"y":0,"w":5,"h":5,"offX":0,"offY":0,"sourceW":16,"sourceH":64}}}

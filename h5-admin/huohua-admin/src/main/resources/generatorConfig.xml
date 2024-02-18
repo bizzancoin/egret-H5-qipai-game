@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+  <classPathEntry location="E:\mysql-connector-java-5.1.42.jar" />
+ <context
+    id="context1"
+    targetRuntime="MyBatis3">
+    <!-- 新增分页插件 -->
+    <plugin type="com.xxg.mybatis.plugins.MySQLLimitPlugin"/>
+    <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+    <commentGenerator>
+      <property
+        name="suppressAllComments"
+        value="true" />
+      <property
+        name="suppressDate"
+        value="true" />
+    </commentGenerator>
+    <jdbcConnection
+      driverClass="com.mysql.jdbc.Driver"
+      connectionURL="jdbc:mysql://127.0.0.1:3306/gz_test_abgame_fenxiao"
+      userId="root"
+      password="bosan204" />
+    <javaTypeResolver>
+      <property
+        name="forceBigDecimals"
+        value="false" />
+    </javaTypeResolver>
+    <javaModelGenerator
+      targetPackage="com.idealighter.game.dao.proxy.po"
+      targetProject="src/main/java">
+      <!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+      <property
+        name="enableSubPackages"
+        value="false" />
+      <property
+        name="trimStrings"
+        value="true" />
+    </javaModelGenerator>
+    <sqlMapGenerator
+      targetPackage="com.idealighter.game.dao.proxy.xml"
+      targetProject="src/main/java">
+      <!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+      <property
+        name="enableSubPackages"
+        value="false" />
+    </sqlMapGenerator>
+    <javaClientGenerator
+      targetPackage="com.idealighter.game.dao.proxy.mapper"
+      targetProject="src/main/java"
+      type="XMLMAPPER">
+      <!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+      <property
+        name="enableSubPackages"
+        value="false" />
+    </javaClientGenerator>
+    
+    <table
+      schema="abgame_fenxiao"
+      tableName="game_rebate_item"
+      domainObjectName="RebateItem"
+      enableCountByExample="true"
+      enableUpdateByExample="true"
+      enableDeleteByExample="true"
+      enableSelectByExample="true"
+      selectByExampleQueryId="true">
+      <property name="useActualColumnNames" value="false"/>
+      <generatedKey column="id" sqlStatement="mysql" identity="true"/>
+      <columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)" replaceString=""/>
+      </table>
+    
+  </context>
+</generatorConfiguration>

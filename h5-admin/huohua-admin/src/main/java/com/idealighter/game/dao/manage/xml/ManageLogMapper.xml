@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.manage.mapper.ManageLogMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.manage.po.ManageLog">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+    <result column="admin_name" jdbcType="VARCHAR" property="adminName" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="sys" jdbcType="VARCHAR" property="sys" />
+    <result column="doaction" jdbcType="VARCHAR" property="doaction" />
+    <result column="docontent" jdbcType="VARCHAR" property="docontent" />
+    <result column="dotime" jdbcType="TIMESTAMP" property="dotime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, admin_id, admin_name, player_id, sys, doaction, docontent, dotime
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.manage.po.ManageLogExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from log
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from log
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.manage.po.ManageLogExample">
+    delete from log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.manage.po.ManageLog">
+    insert into log (id, admin_id, admin_name, 
+      player_id, sys, doaction, 
+      docontent, dotime)
+    values (#{id,jdbcType=INTEGER}, #{adminId,jdbcType=INTEGER}, #{adminName,jdbcType=VARCHAR}, 
+      #{playerId,jdbcType=BIGINT}, #{sys,jdbcType=VARCHAR}, #{doaction,jdbcType=VARCHAR}, 
+      #{docontent,jdbcType=VARCHAR}, #{dotime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.manage.po.ManageLog">
+    insert into log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="adminId != null">
+        admin_id,
+      </if>
+      <if test="adminName != null">
+        admin_name,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="sys != null">
+        sys,
+      </if>
+      <if test="doaction != null">
+        doaction,
+      </if>
+      <if test="docontent != null">
+        docontent,
+      </if>
+      <if test="dotime != null">
+        dotime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="adminId != null">
+        #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="adminName != null">
+        #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="sys != null">
+        #{sys,jdbcType=VARCHAR},
+      </if>
+      <if test="doaction != null">
+        #{doaction,jdbcType=VARCHAR},
+      </if>
+      <if test="docontent != null">
+        #{docontent,jdbcType=VARCHAR},
+      </if>
+      <if test="dotime != null">
+        #{dotime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.manage.po.ManageLogExample" resultType="java.lang.Long">
+    select count(*) from log
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update log
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.adminId != null">
+        admin_id = #{record.adminId,jdbcType=INTEGER},
+      </if>
+      <if test="record.adminName != null">
+        admin_name = #{record.adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.sys != null">
+        sys = #{record.sys,jdbcType=VARCHAR},
+      </if>
+      <if test="record.doaction != null">
+        doaction = #{record.doaction,jdbcType=VARCHAR},
+      </if>
+      <if test="record.docontent != null">
+        docontent = #{record.docontent,jdbcType=VARCHAR},
+      </if>
+      <if test="record.dotime != null">
+        dotime = #{record.dotime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update log
+    set id = #{record.id,jdbcType=INTEGER},
+      admin_id = #{record.adminId,jdbcType=INTEGER},
+      admin_name = #{record.adminName,jdbcType=VARCHAR},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      sys = #{record.sys,jdbcType=VARCHAR},
+      doaction = #{record.doaction,jdbcType=VARCHAR},
+      docontent = #{record.docontent,jdbcType=VARCHAR},
+      dotime = #{record.dotime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.manage.po.ManageLog">
+    update log
+    <set>
+      <if test="adminId != null">
+        admin_id = #{adminId,jdbcType=INTEGER},
+      </if>
+      <if test="adminName != null">
+        admin_name = #{adminName,jdbcType=VARCHAR},
+      </if>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="sys != null">
+        sys = #{sys,jdbcType=VARCHAR},
+      </if>
+      <if test="doaction != null">
+        doaction = #{doaction,jdbcType=VARCHAR},
+      </if>
+      <if test="docontent != null">
+        docontent = #{docontent,jdbcType=VARCHAR},
+      </if>
+      <if test="dotime != null">
+        dotime = #{dotime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.manage.po.ManageLog">
+    update log
+    set admin_id = #{adminId,jdbcType=INTEGER},
+      admin_name = #{adminName,jdbcType=VARCHAR},
+      player_id = #{playerId,jdbcType=BIGINT},
+      sys = #{sys,jdbcType=VARCHAR},
+      doaction = #{doaction,jdbcType=VARCHAR},
+      docontent = #{docontent,jdbcType=VARCHAR},
+      dotime = #{dotime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

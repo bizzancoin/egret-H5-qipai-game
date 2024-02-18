@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LoginSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:game="game.*">
+	<e:Image width="100%" height="100%" source="login_bg_jpg"/>
+	<e:Group width="1200" height="900" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="imgLogo" width="622" height="301" source="login_logo_s_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="0" blendMode="normal" visible="false"/>
+		<e:Group width="680" height="120" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="login_lb_account_png" width="96" height="43" verticalCenter="0" left="0"/>
+			<e:TextInput id="inputAccount" skinName="skins.TextInputSkin" height="100" verticalCenter="0" left="180" right="0" maxChars="11"/>
+		</e:Group>
+		<e:Group width="680" height="120" horizontalCenter="0" verticalCenter="160">
+			<e:Image width="149" height="43" source="login_lb_code_png" scaleX="1" scaleY="1" left="0" verticalCenter="0"/>
+			<e:Button id="btnCode" label="获取验证码" width="220" height="110" verticalCenter="0" right="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="common_btn_red_png" alpha.disabled="0.7" alpha.down="0.8"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:TextInput id="inputCode" height="100" verticalCenter="0" left="180" right="240" skinName="skins.TextInputSkin" maxChars="6"/>
+		</e:Group>
+		<e:Group width="800" height="120" horizontalCenter="0" bottom="0">
+			<e:Button id="btnAccount" label="" verticalCenter="0" left="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="login_account_png" alpha.down="0.8"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTourist" label="" verticalCenter="0" right="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="login_tourist_png" alpha.down="0.8"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

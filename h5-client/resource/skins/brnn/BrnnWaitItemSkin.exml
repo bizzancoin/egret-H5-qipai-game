@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="brnn.BrnnWaitItemSkin" width="380" height="41" xmlns:e="http://ns.egret.com/eui">
+    <e:Group width="380" height="41" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+        <e:Label id="lbNick" text="昵称" verticalCenter="0" horizontalCenter="-90" size="25"  width="180" verticalAlign="middle" textAlign="center" height="25"/>
+        <e:Label id="lbGold" text="筹码" verticalCenter="0" horizontalCenter="90" verticalAlign="middle" size="25" />
+    </e:Group>
+</e:Skin>

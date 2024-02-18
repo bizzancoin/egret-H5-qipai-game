@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Battery1Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Declarations>
+	</w:Declarations>
+	<e:Group id="gpParent" width="595" height="300" x="0" y="0" anchorOffsetX="0" name="gpParent">
+		<e:Image id="imgGold" right="0" verticalCenter="89.5" touchEnabled="false" source="fish_common_atlas0_json.kuang1"/>
+		<e:Group height="40" anchorOffsetY="0" anchorOffsetX="0" right="15" verticalCenter="78" left="350" touchEnabled="false">
+			<e:BitmapLabel id="bmpGold" verticalCenter="0" left="0" text="0" font="jc_fish_multiple_fnt"/>
+		</e:Group>
+		<e:Image id="imgBattery" x="18" bottom="29" touchEnabled="false" source="fish_common_atlas0_json.paozuo"/>
+		<e:Button id="btnMinus" label="" anchorOffsetX="50.5" anchorOffsetY="49.5" horizontalCenter="-247" verticalCenter="73.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scaleX.down="0.9" scaleY.down="0.9" source="fish_common_atlas0_json.dda"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Button id="btnAdd" label="" anchorOffsetX="50.5" anchorOffsetY="49.5" horizontalCenter="-3" verticalCenter="73.5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scaleX.down="0.9" scaleY.down="0.9" source="fish_common_atlas0_json.add"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+		<e:Image id="imgBarrel" anchorOffsetX="39.15" anchorOffsetY="96" rotation="270" x="175" y="220" width="261" height="192" touchEnabled="false" source="fish_common_atlas0_json.Bow_01"/>
+		<e:Image verticalCenter="108" left="89" source="fish_common_atlas0_json.paogai"/>
+		<e:Group width="80" height="30" x="135" y="234">
+			<e:BitmapLabel id="bmpLevel" text="11" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0" font="jc_fish_betall_fnt"/>
+		</e:Group>
+		<e:Image id="imgGoldLimit" x="245" y="-3" touchEnabled="false" source="fish_common_atlas0_json.yubibuzhu" visible="false"/>
+	</e:Group>
+</e:Skin>

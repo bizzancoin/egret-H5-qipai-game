@@ -1,0 +1,100 @@
+{
+    "2":{
+        "id":2,
+        "name":"二人牛牛",
+        "play_state":0,
+        "icon": "game_icon_errnn_png",
+        "sort": 20
+    },
+    "3":{
+        "id":3,
+        "name":"水浒传",
+        "play_state":0,
+        "icon": "game_icon_shz_png",
+        "sort": 19
+    },
+    "4":{
+        "id":4,
+        "name":"汽车4S店",
+        "play_state":0,
+        "icon": "game_icon_qc4sd_png",
+        "sort": 18
+    },
+    "5":{
+        "id":5,
+        "name":"德州扑克",
+        "play_state":0,
+        "icon": "game_icon_dzpk_png",
+        "sort": 17
+    },
+    "7":{
+        "id":7,
+        "name":"百人牛牛",
+        "play_state":1,
+        "icon": "game_icon_brnn_png",
+        "sort": 1
+    },
+    "9":{
+        "id":9,
+        "name":"金蟾捕鱼",
+        "play_state":1,
+        "icon": "game_icon_jcby_png",
+        "sort": 2
+    },
+    "10":{
+        "id":10,
+        "name":"金鲨银鲨",
+        "play_state":0,
+        "icon": "game_icon_jsys_png",
+        "sort": 16
+    },
+    "12":{
+        "id":12,
+        "name":"李逵劈鱼",
+        "play_state":0,
+        "icon": "game_icon_lkpy_png",
+        "sort": 14
+    },
+    "13":{
+        "id":13,
+        "name":"四人牛牛",
+        "play_state":0,
+        "icon": "game_icon_srnn_png",
+        "sort": 13
+    },
+    "14":{
+        "id":14,
+        "name":"通比牛牛",
+        "play_state":0,
+        "icon": "game_icon_tbnn_png",
+        "sort": 12
+    },
+    "15":{
+        "id":15,
+        "name":"二人德州",
+        "play_state":0,
+        "icon": "game_icon_errdz_png",
+        "sort": 11
+    },
+    "16":{
+        "id":16,
+        "name":"乌龟快跑",
+        "play_state":0,
+        "icon": "game_icon_wgkp_png",
+        "sort": 10
+    },
+    "17":{
+        "id":17,
+        "name":"炸金花",
+        "play_state":0,
+        "icon": "game_icon_zjh_png",
+        "sort": 9
+    },
+    "18":{
+        "id":18,
+        "name":"百家乐",
+        "play_state":1,
+        "icon": "game_icon_bjl_png",
+        "sort": 3
+    }
+}

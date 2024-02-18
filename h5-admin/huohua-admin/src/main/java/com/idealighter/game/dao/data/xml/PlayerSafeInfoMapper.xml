@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.PlayerSafeInfoMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.PlayerSafeInfo">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="validate_phone" jdbcType="BIT" property="validatePhone" />
+    <result column="validate_email" jdbcType="BIT" property="validateEmail" />
+    <result column="first_pwd_protect_q" jdbcType="VARCHAR" property="firstPwdProtectQ" />
+    <result column="first_pwd_protect_a" jdbcType="VARCHAR" property="firstPwdProtectA" />
+    <result column="second_pwd_protect_q" jdbcType="VARCHAR" property="secondPwdProtectQ" />
+    <result column="second_pwd_protect_a" jdbcType="VARCHAR" property="secondPwdProtectA" />
+    <result column="login_phone_verify" jdbcType="BIT" property="loginPhoneVerify" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, player_id, validate_phone, validate_email, first_pwd_protect_q, first_pwd_protect_a, 
+    second_pwd_protect_q, second_pwd_protect_a, login_phone_verify
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from player_safe_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from player_safe_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from player_safe_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfoExample">
+    delete from player_safe_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfo">
+    insert into player_safe_info (id, player_id, validate_phone, 
+      validate_email, first_pwd_protect_q, first_pwd_protect_a, 
+      second_pwd_protect_q, second_pwd_protect_a, login_phone_verify
+      )
+    values (#{id,jdbcType=INTEGER}, #{playerId,jdbcType=BIGINT}, #{validatePhone,jdbcType=BIT}, 
+      #{validateEmail,jdbcType=BIT}, #{firstPwdProtectQ,jdbcType=VARCHAR}, #{firstPwdProtectA,jdbcType=VARCHAR}, 
+      #{secondPwdProtectQ,jdbcType=VARCHAR}, #{secondPwdProtectA,jdbcType=VARCHAR}, #{loginPhoneVerify,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfo">
+    insert into player_safe_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="validatePhone != null">
+        validate_phone,
+      </if>
+      <if test="validateEmail != null">
+        validate_email,
+      </if>
+      <if test="firstPwdProtectQ != null">
+        first_pwd_protect_q,
+      </if>
+      <if test="firstPwdProtectA != null">
+        first_pwd_protect_a,
+      </if>
+      <if test="secondPwdProtectQ != null">
+        second_pwd_protect_q,
+      </if>
+      <if test="secondPwdProtectA != null">
+        second_pwd_protect_a,
+      </if>
+      <if test="loginPhoneVerify != null">
+        login_phone_verify,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="validatePhone != null">
+        #{validatePhone,jdbcType=BIT},
+      </if>
+      <if test="validateEmail != null">
+        #{validateEmail,jdbcType=BIT},
+      </if>
+      <if test="firstPwdProtectQ != null">
+        #{firstPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="firstPwdProtectA != null">
+        #{firstPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="secondPwdProtectQ != null">
+        #{secondPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="secondPwdProtectA != null">
+        #{secondPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="loginPhoneVerify != null">
+        #{loginPhoneVerify,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfoExample" resultType="java.lang.Long">
+    select count(*) from player_safe_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update player_safe_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.validatePhone != null">
+        validate_phone = #{record.validatePhone,jdbcType=BIT},
+      </if>
+      <if test="record.validateEmail != null">
+        validate_email = #{record.validateEmail,jdbcType=BIT},
+      </if>
+      <if test="record.firstPwdProtectQ != null">
+        first_pwd_protect_q = #{record.firstPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="record.firstPwdProtectA != null">
+        first_pwd_protect_a = #{record.firstPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="record.secondPwdProtectQ != null">
+        second_pwd_protect_q = #{record.secondPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="record.secondPwdProtectA != null">
+        second_pwd_protect_a = #{record.secondPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="record.loginPhoneVerify != null">
+        login_phone_verify = #{record.loginPhoneVerify,jdbcType=BIT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update player_safe_info
+    set id = #{record.id,jdbcType=INTEGER},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      validate_phone = #{record.validatePhone,jdbcType=BIT},
+      validate_email = #{record.validateEmail,jdbcType=BIT},
+      first_pwd_protect_q = #{record.firstPwdProtectQ,jdbcType=VARCHAR},
+      first_pwd_protect_a = #{record.firstPwdProtectA,jdbcType=VARCHAR},
+      second_pwd_protect_q = #{record.secondPwdProtectQ,jdbcType=VARCHAR},
+      second_pwd_protect_a = #{record.secondPwdProtectA,jdbcType=VARCHAR},
+      login_phone_verify = #{record.loginPhoneVerify,jdbcType=BIT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfo">
+    update player_safe_info
+    <set>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="validatePhone != null">
+        validate_phone = #{validatePhone,jdbcType=BIT},
+      </if>
+      <if test="validateEmail != null">
+        validate_email = #{validateEmail,jdbcType=BIT},
+      </if>
+      <if test="firstPwdProtectQ != null">
+        first_pwd_protect_q = #{firstPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="firstPwdProtectA != null">
+        first_pwd_protect_a = #{firstPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="secondPwdProtectQ != null">
+        second_pwd_protect_q = #{secondPwdProtectQ,jdbcType=VARCHAR},
+      </if>
+      <if test="secondPwdProtectA != null">
+        second_pwd_protect_a = #{secondPwdProtectA,jdbcType=VARCHAR},
+      </if>
+      <if test="loginPhoneVerify != null">
+        login_phone_verify = #{loginPhoneVerify,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.PlayerSafeInfo">
+    update player_safe_info
+    set player_id = #{playerId,jdbcType=BIGINT},
+      validate_phone = #{validatePhone,jdbcType=BIT},
+      validate_email = #{validateEmail,jdbcType=BIT},
+      first_pwd_protect_q = #{firstPwdProtectQ,jdbcType=VARCHAR},
+      first_pwd_protect_a = #{firstPwdProtectA,jdbcType=VARCHAR},
+      second_pwd_protect_q = #{secondPwdProtectQ,jdbcType=VARCHAR},
+      second_pwd_protect_a = #{secondPwdProtectA,jdbcType=VARCHAR},
+      login_phone_verify = #{loginPhoneVerify,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

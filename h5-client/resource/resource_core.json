@@ -1,0 +1,25 @@
+{
+	"groups": [
+		{
+			"keys": "global, game_config, message_config",
+			"name": "preload_core"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/global.json",
+			"type": "json",
+			"name": "global"
+		},
+		{
+			"url": "config/game_config.json",
+			"type": "json",
+			"name": "game_config"
+		},
+		{
+			"url": "config/message_config.json",
+			"type": "json",
+			"name": "message_config"
+		}
+	]
+}

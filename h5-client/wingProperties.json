@@ -1,0 +1,39 @@
+{
+	"resourcePlugin": {
+		"configs": [
+			{
+				"configPath": "resource/default.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/common/common.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/login/login.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/assets/games/baccarat/baccarat.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/proto/proto.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/assets/games/fish_common.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/assets/games/jc_fish_asset.res.json",
+				"relativePath": "resource/"
+			},
+			{
+				"configPath": "resource/assets/games/brnn/brnn.res.json",
+				"relativePath": "resource/"
+			}
+		]
+	},
+	"theme": "resource/default.thm.json"
+}

@@ -1,0 +1,12 @@
+{"file":"jc_fish_betall.png","frames":{
+"0":{"x":45,"y":0,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"2":{"x":45,"y":20,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"4":{"x":0,"y":0,"w":15,"h":21,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"6":{"x":15,"y":0,"w":15,"h":21,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"8":{"x":30,"y":40,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"1":{"x":45,"y":40,"w":8,"h":21,"offX":2,"offY":0,"sourceW":12,"sourceH":21},
+"3":{"x":15,"y":21,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"5":{"x":30,"y":0,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"7":{"x":0,"y":21,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+"9":{"x":30,"y":20,"w":15,"h":20,"offX":2,"offY":0,"sourceW":19,"sourceH":21},
+" ":{"x":53,"y":40,"w":5,"h":5,"offX":0,"offY":0,"sourceW":5,"sourceH":21}}}

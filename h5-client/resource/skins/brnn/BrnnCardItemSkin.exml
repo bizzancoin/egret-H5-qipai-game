@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="brnn.BrnnCardItemSkin" xmlns:e="http://ns.egret.com/eui">
+    <e:Group width="255" height="140" anchorOffsetX="127.5" verticalCenter="0" horizontalCenter="0" anchorOffsetY="115">
+        <e:Group id="groupCard" anchorOffsetX="127.5" anchorOffsetY="60"  width="255" height="120" horizontalCenter="0" scaleX="0.6" scaleY="0.6" top="5"/>
+        <e:Group id="groupType" width="255" height="88" horizontalCenter="0" bottom="-20" x="415.21" y="128"
+                >
+            <e:Image id="imgTypeBg"
+                      horizontalCenter="0" verticalCenter="-5" source="brnn_atlas1_json.cd"/>
+            <e:Image id="imgType" horizontalCenter="0" verticalCenter="-5"  source="brnn_atlas1_json.n1"/>
+        </e:Group>
+        <e:Group id="groupEffect" width="255" height="120"
+                 scaleX="0.6" scaleY="0.6" anchorOffsetX="127.5" anchorOffsetY="60" horizontalCenter="0" top="5"></e:Group>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FishMainSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:fish="fish.*" xmlns:game="game.*" width="1920" height="1080">
+	<e:Image width="100%" height="100%" source="fish_common_bg4_jpg" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group width="1920" height="1080" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="groupBackground" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0" x="0" y="0" scaleX="1" scaleY="1"/>
+
+
+		<e:Group id="groupFish" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="groupWater" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="groupBattery" touchEnabled="true" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="groupLock" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="groupBullet" touchEnabled="false" width="100%" height="100%" horizontalCenter="0" verticalCenter="0">
+
+		</e:Group>
+
+		<e:Group id="groupLongTimeNoSend" width="1920" height="100" verticalCenter="0" horizontalCenter="0" touchEnabled="false" visible="false">
+			<e:Image horizontalCenter="0" verticalCenter="0" touchEnabled="false" source="common_marquee_bg_png" width="1300" scale9Grid="322,12,493,75"/>
+
+			<e:Label textColor="0x91dcf8" text="由于您三十秒秒未发射子弹，系统将在            秒后离开游戏！" verticalCenter="0" horizontalCenter="0" size="45" italic="true" touchEnabled="false" bold="true"/>
+			<e:Label id="lbTimeout" text="60" horizontalCenter="235" verticalCenter="0" size="80" italic="true" bold="true"/>
+		</e:Group>
+	</e:Group>
+	<e:Group touchEnabled="false" width="100%" height="100%">
+		<e:Group width="200" height="200" verticalCenter="-130" left="0">
+			<e:ToggleButton id="tgLock" label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="fish_common_lock_normal_png" source.down="fish_common_lock_press_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:ToggleButton>
+
+		</e:Group>
+		<e:Group width="200" height="200" verticalCenter="130" left="0">
+			<e:ToggleButton id="tgAuto" label="" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="fish_common_auto_normal_png" source.down="fish_common_auto_press_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+			</e:ToggleButton>
+
+		</e:Group>
+		<e:Group id="groupRight" width="178" height="640" verticalCenter="0" right="-178">
+		<e:Image scale9Grid="22,84,134,507" right="0" scaleX="1" scaleY="1" left="0" top="0" bottom="0" source="fish_common_atlas0_json.panel"/>
+		<e:Button id="btnLeft" label="" verticalCenter="0" left="-63">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="fish_common_atlas0_json.btnLeft"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnRight" label="" verticalCenter="0" left="-63" visible="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="fish_common_atlas0_json.btnRight"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Button id="btnHelp" label="" x="45.99999999999977" y="291" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="fish_common_atlas0_json.btnHelp"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnExchange" label="" x="79" y="239">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" alpha.down="0.8" source="fish_common_atlas0_json.btnExchange"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnSet" label="" x="73.00000000000023" y="403.0000000000001" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="fish_common_atlas0_json.btnSetup"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnExit" label="" x="52" y="154.00000000000006" scaleX="1" scaleY="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" alpha.down="0.8" source="fish_common_atlas0_json.btnOut"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		</e:Group>
+	</e:Group>
+	<game:ExchangeView id="exchangeView" skinName="game.ExchangeSkin" width="100%" height="100%" visible="false"/>
+	<game:SetView id="setView" skinName="game.SetSkin" horizontalCenter="0" verticalCenter="0" visible="false"/>
+
+	<e:Group id="groupHelp" left="0" right="0" top="0" bottom="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.3"/>
+		<e:Image horizontalCenter="0" verticalCenter="0" source="fish_common_atlas0_json.beishu"/>
+		<e:Button id="btnClose" label="" anchorOffsetX="39" anchorOffsetY="36" verticalCenter="-418" horizontalCenter="620">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" scaleX.down="0.9" scaleY.down="0.9" source="fish_common_atlas0_json.btnClose"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+	</e:Group>
+</e:Skin>

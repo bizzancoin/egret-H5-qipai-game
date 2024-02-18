@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HomeSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="login_bg_jpg" left="0" right="0" top="0" bottom="0"/>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image scaleX="1" scaleY="1" source="common_left_png" verticalCenter="-40" left="5" visible="false"/>
+		<e:Image source="common_right_png" verticalCenter="-40" right="5" visible="false"/>
+		<e:Scroller id="scrollerGame" right="40" bottom="300" left="40" top="180" x="40" y="180.00000000000003" scaleX="1" scaleY="1">
+		</e:Scroller>
+		<e:Group width="1200" height="240" left="40" bottom="40" x="40" y="800" scaleX="1" scaleY="1">
+			<e:Image id="imgHead" width="200" height="200" left="0" verticalCenter="0"/>
+			<e:Group height="180" verticalCenter="0" left="240" right="0">
+			<e:Label id="lbNick" text="昵称" scaleX="1" scaleY="1" left="0" top="0" size="40" verticalAlign="middle"/>
+			<e:Label id="lbID" text="ID:1234" bottom="0" left="0" size="35"/>
+				<e:Label id="lbGold" text="金币：1111" x="208" y="37" size="35"/>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="left" verticalAlign="middle" gap="20"/>
+				</e:layout>
+			</e:Group>
+			<e:Button id="btnExit" label="退出" verticalCenter="0" right="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="common_btn_red_png" alpha.down="0.8"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+</e:Skin>

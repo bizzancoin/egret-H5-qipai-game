@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.TexapokerRobotRulesMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.TexapokerRobotRules">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="cardsNum" jdbcType="INTEGER" property="cardsnum" />
+    <result column="paired" jdbcType="INTEGER" property="paired" />
+    <result column="pairedMax" jdbcType="INTEGER" property="pairedmax" />
+    <result column="pairedMin" jdbcType="INTEGER" property="pairedmin" />
+    <result column="pairedMy" jdbcType="INTEGER" property="pairedmy" />
+    <result column="twoTwo" jdbcType="INTEGER" property="twotwo" />
+    <result column="twoTwoMy" jdbcType="INTEGER" property="twotwomy" />
+    <result column="three" jdbcType="INTEGER" property="three" />
+    <result column="threeMax" jdbcType="INTEGER" property="threemax" />
+    <result column="threeMy" jdbcType="INTEGER" property="threemy" />
+    <result column="four" jdbcType="INTEGER" property="four" />
+    <result column="fourMy" jdbcType="INTEGER" property="fourmy" />
+    <result column="longThree" jdbcType="INTEGER" property="longthree" />
+    <result column="longThreeMy" jdbcType="INTEGER" property="longthreemy" />
+    <result column="longFour" jdbcType="INTEGER" property="longfour" />
+    <result column="longFourMy" jdbcType="INTEGER" property="longfourmy" />
+    <result column="longFive" jdbcType="INTEGER" property="longfive" />
+    <result column="longFiveMy" jdbcType="INTEGER" property="longfivemy" />
+    <result column="sameFour" jdbcType="INTEGER" property="samefour" />
+    <result column="sameFourMy" jdbcType="INTEGER" property="samefourmy" />
+    <result column="sameFive" jdbcType="INTEGER" property="samefive" />
+    <result column="sameFiveMy" jdbcType="INTEGER" property="samefivemy" />
+    <result column="sameLong" jdbcType="INTEGER" property="samelong" />
+    <result column="sameLongMy" jdbcType="INTEGER" property="samelongmy" />
+    <result column="showhandMust" jdbcType="INTEGER" property="showhandmust" />
+    <result column="win" jdbcType="INTEGER" property="win" />
+    <result column="follow" jdbcType="INTEGER" property="follow" />
+    <result column="filling" jdbcType="INTEGER" property="filling" />
+    <result column="showhand" jdbcType="INTEGER" property="showhand" />
+    <result column="giveUp" jdbcType="INTEGER" property="giveup" />
+    <result column="timeMin" jdbcType="INTEGER" property="timemin" />
+    <result column="timeMax" jdbcType="INTEGER" property="timemax" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, cardsNum, paired, pairedMax, pairedMin, pairedMy, twoTwo, twoTwoMy, three, threeMax, 
+    threeMy, four, fourMy, longThree, longThreeMy, longFour, longFourMy, longFive, longFiveMy, 
+    sameFour, sameFourMy, sameFive, sameFiveMy, sameLong, sameLongMy, showhandMust, win, 
+    follow, filling, showhand, giveUp, timeMin, timeMax, remark
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRulesExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from texapokerrobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from texapokerrobotrules
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from texapokerrobotrules
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRulesExample">
+    delete from texapokerrobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRules">
+    insert into texapokerrobotrules (id, cardsNum, paired, 
+      pairedMax, pairedMin, pairedMy, 
+      twoTwo, twoTwoMy, three, 
+      threeMax, threeMy, four, 
+      fourMy, longThree, longThreeMy, 
+      longFour, longFourMy, longFive, 
+      longFiveMy, sameFour, sameFourMy, 
+      sameFive, sameFiveMy, sameLong, 
+      sameLongMy, showhandMust, win, 
+      follow, filling, showhand, 
+      giveUp, timeMin, timeMax, 
+      remark)
+    values (#{id,jdbcType=INTEGER}, #{cardsnum,jdbcType=INTEGER}, #{paired,jdbcType=INTEGER}, 
+      #{pairedmax,jdbcType=INTEGER}, #{pairedmin,jdbcType=INTEGER}, #{pairedmy,jdbcType=INTEGER}, 
+      #{twotwo,jdbcType=INTEGER}, #{twotwomy,jdbcType=INTEGER}, #{three,jdbcType=INTEGER}, 
+      #{threemax,jdbcType=INTEGER}, #{threemy,jdbcType=INTEGER}, #{four,jdbcType=INTEGER}, 
+      #{fourmy,jdbcType=INTEGER}, #{longthree,jdbcType=INTEGER}, #{longthreemy,jdbcType=INTEGER}, 
+      #{longfour,jdbcType=INTEGER}, #{longfourmy,jdbcType=INTEGER}, #{longfive,jdbcType=INTEGER}, 
+      #{longfivemy,jdbcType=INTEGER}, #{samefour,jdbcType=INTEGER}, #{samefourmy,jdbcType=INTEGER}, 
+      #{samefive,jdbcType=INTEGER}, #{samefivemy,jdbcType=INTEGER}, #{samelong,jdbcType=INTEGER}, 
+      #{samelongmy,jdbcType=INTEGER}, #{showhandmust,jdbcType=INTEGER}, #{win,jdbcType=INTEGER}, 
+      #{follow,jdbcType=INTEGER}, #{filling,jdbcType=INTEGER}, #{showhand,jdbcType=INTEGER}, 
+      #{giveup,jdbcType=INTEGER}, #{timemin,jdbcType=INTEGER}, #{timemax,jdbcType=INTEGER}, 
+      #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRules">
+    insert into texapokerrobotrules
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="cardsnum != null">
+        cardsNum,
+      </if>
+      <if test="paired != null">
+        paired,
+      </if>
+      <if test="pairedmax != null">
+        pairedMax,
+      </if>
+      <if test="pairedmin != null">
+        pairedMin,
+      </if>
+      <if test="pairedmy != null">
+        pairedMy,
+      </if>
+      <if test="twotwo != null">
+        twoTwo,
+      </if>
+      <if test="twotwomy != null">
+        twoTwoMy,
+      </if>
+      <if test="three != null">
+        three,
+      </if>
+      <if test="threemax != null">
+        threeMax,
+      </if>
+      <if test="threemy != null">
+        threeMy,
+      </if>
+      <if test="four != null">
+        four,
+      </if>
+      <if test="fourmy != null">
+        fourMy,
+      </if>
+      <if test="longthree != null">
+        longThree,
+      </if>
+      <if test="longthreemy != null">
+        longThreeMy,
+      </if>
+      <if test="longfour != null">
+        longFour,
+      </if>
+      <if test="longfourmy != null">
+        longFourMy,
+      </if>
+      <if test="longfive != null">
+        longFive,
+      </if>
+      <if test="longfivemy != null">
+        longFiveMy,
+      </if>
+      <if test="samefour != null">
+        sameFour,
+      </if>
+      <if test="samefourmy != null">
+        sameFourMy,
+      </if>
+      <if test="samefive != null">
+        sameFive,
+      </if>
+      <if test="samefivemy != null">
+        sameFiveMy,
+      </if>
+      <if test="samelong != null">
+        sameLong,
+      </if>
+      <if test="samelongmy != null">
+        sameLongMy,
+      </if>
+      <if test="showhandmust != null">
+        showhandMust,
+      </if>
+      <if test="win != null">
+        win,
+      </if>
+      <if test="follow != null">
+        follow,
+      </if>
+      <if test="filling != null">
+        filling,
+      </if>
+      <if test="showhand != null">
+        showhand,
+      </if>
+      <if test="giveup != null">
+        giveUp,
+      </if>
+      <if test="timemin != null">
+        timeMin,
+      </if>
+      <if test="timemax != null">
+        timeMax,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="cardsnum != null">
+        #{cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="paired != null">
+        #{paired,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmax != null">
+        #{pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmin != null">
+        #{pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmy != null">
+        #{pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="twotwo != null">
+        #{twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="twotwomy != null">
+        #{twotwomy,jdbcType=INTEGER},
+      </if>
+      <if test="three != null">
+        #{three,jdbcType=INTEGER},
+      </if>
+      <if test="threemax != null">
+        #{threemax,jdbcType=INTEGER},
+      </if>
+      <if test="threemy != null">
+        #{threemy,jdbcType=INTEGER},
+      </if>
+      <if test="four != null">
+        #{four,jdbcType=INTEGER},
+      </if>
+      <if test="fourmy != null">
+        #{fourmy,jdbcType=INTEGER},
+      </if>
+      <if test="longthree != null">
+        #{longthree,jdbcType=INTEGER},
+      </if>
+      <if test="longthreemy != null">
+        #{longthreemy,jdbcType=INTEGER},
+      </if>
+      <if test="longfour != null">
+        #{longfour,jdbcType=INTEGER},
+      </if>
+      <if test="longfourmy != null">
+        #{longfourmy,jdbcType=INTEGER},
+      </if>
+      <if test="longfive != null">
+        #{longfive,jdbcType=INTEGER},
+      </if>
+      <if test="longfivemy != null">
+        #{longfivemy,jdbcType=INTEGER},
+      </if>
+      <if test="samefour != null">
+        #{samefour,jdbcType=INTEGER},
+      </if>
+      <if test="samefourmy != null">
+        #{samefourmy,jdbcType=INTEGER},
+      </if>
+      <if test="samefive != null">
+        #{samefive,jdbcType=INTEGER},
+      </if>
+      <if test="samefivemy != null">
+        #{samefivemy,jdbcType=INTEGER},
+      </if>
+      <if test="samelong != null">
+        #{samelong,jdbcType=INTEGER},
+      </if>
+      <if test="samelongmy != null">
+        #{samelongmy,jdbcType=INTEGER},
+      </if>
+      <if test="showhandmust != null">
+        #{showhandmust,jdbcType=INTEGER},
+      </if>
+      <if test="win != null">
+        #{win,jdbcType=INTEGER},
+      </if>
+      <if test="follow != null">
+        #{follow,jdbcType=INTEGER},
+      </if>
+      <if test="filling != null">
+        #{filling,jdbcType=INTEGER},
+      </if>
+      <if test="showhand != null">
+        #{showhand,jdbcType=INTEGER},
+      </if>
+      <if test="giveup != null">
+        #{giveup,jdbcType=INTEGER},
+      </if>
+      <if test="timemin != null">
+        #{timemin,jdbcType=INTEGER},
+      </if>
+      <if test="timemax != null">
+        #{timemax,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRulesExample" resultType="java.lang.Long">
+    select count(*) from texapokerrobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update texapokerrobotrules
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.cardsnum != null">
+        cardsNum = #{record.cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="record.paired != null">
+        paired = #{record.paired,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmax != null">
+        pairedMax = #{record.pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmin != null">
+        pairedMin = #{record.pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmy != null">
+        pairedMy = #{record.pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.twotwo != null">
+        twoTwo = #{record.twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="record.twotwomy != null">
+        twoTwoMy = #{record.twotwomy,jdbcType=INTEGER},
+      </if>
+      <if test="record.three != null">
+        three = #{record.three,jdbcType=INTEGER},
+      </if>
+      <if test="record.threemax != null">
+        threeMax = #{record.threemax,jdbcType=INTEGER},
+      </if>
+      <if test="record.threemy != null">
+        threeMy = #{record.threemy,jdbcType=INTEGER},
+      </if>
+      <if test="record.four != null">
+        four = #{record.four,jdbcType=INTEGER},
+      </if>
+      <if test="record.fourmy != null">
+        fourMy = #{record.fourmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.longthree != null">
+        longThree = #{record.longthree,jdbcType=INTEGER},
+      </if>
+      <if test="record.longthreemy != null">
+        longThreeMy = #{record.longthreemy,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfour != null">
+        longFour = #{record.longfour,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfourmy != null">
+        longFourMy = #{record.longfourmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfive != null">
+        longFive = #{record.longfive,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfivemy != null">
+        longFiveMy = #{record.longfivemy,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefour != null">
+        sameFour = #{record.samefour,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefourmy != null">
+        sameFourMy = #{record.samefourmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefive != null">
+        sameFive = #{record.samefive,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefivemy != null">
+        sameFiveMy = #{record.samefivemy,jdbcType=INTEGER},
+      </if>
+      <if test="record.samelong != null">
+        sameLong = #{record.samelong,jdbcType=INTEGER},
+      </if>
+      <if test="record.samelongmy != null">
+        sameLongMy = #{record.samelongmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.showhandmust != null">
+        showhandMust = #{record.showhandmust,jdbcType=INTEGER},
+      </if>
+      <if test="record.win != null">
+        win = #{record.win,jdbcType=INTEGER},
+      </if>
+      <if test="record.follow != null">
+        follow = #{record.follow,jdbcType=INTEGER},
+      </if>
+      <if test="record.filling != null">
+        filling = #{record.filling,jdbcType=INTEGER},
+      </if>
+      <if test="record.showhand != null">
+        showhand = #{record.showhand,jdbcType=INTEGER},
+      </if>
+      <if test="record.giveup != null">
+        giveUp = #{record.giveup,jdbcType=INTEGER},
+      </if>
+      <if test="record.timemin != null">
+        timeMin = #{record.timemin,jdbcType=INTEGER},
+      </if>
+      <if test="record.timemax != null">
+        timeMax = #{record.timemax,jdbcType=INTEGER},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update texapokerrobotrules
+    set id = #{record.id,jdbcType=INTEGER},
+      cardsNum = #{record.cardsnum,jdbcType=INTEGER},
+      paired = #{record.paired,jdbcType=INTEGER},
+      pairedMax = #{record.pairedmax,jdbcType=INTEGER},
+      pairedMin = #{record.pairedmin,jdbcType=INTEGER},
+      pairedMy = #{record.pairedmy,jdbcType=INTEGER},
+      twoTwo = #{record.twotwo,jdbcType=INTEGER},
+      twoTwoMy = #{record.twotwomy,jdbcType=INTEGER},
+      three = #{record.three,jdbcType=INTEGER},
+      threeMax = #{record.threemax,jdbcType=INTEGER},
+      threeMy = #{record.threemy,jdbcType=INTEGER},
+      four = #{record.four,jdbcType=INTEGER},
+      fourMy = #{record.fourmy,jdbcType=INTEGER},
+      longThree = #{record.longthree,jdbcType=INTEGER},
+      longThreeMy = #{record.longthreemy,jdbcType=INTEGER},
+      longFour = #{record.longfour,jdbcType=INTEGER},
+      longFourMy = #{record.longfourmy,jdbcType=INTEGER},
+      longFive = #{record.longfive,jdbcType=INTEGER},
+      longFiveMy = #{record.longfivemy,jdbcType=INTEGER},
+      sameFour = #{record.samefour,jdbcType=INTEGER},
+      sameFourMy = #{record.samefourmy,jdbcType=INTEGER},
+      sameFive = #{record.samefive,jdbcType=INTEGER},
+      sameFiveMy = #{record.samefivemy,jdbcType=INTEGER},
+      sameLong = #{record.samelong,jdbcType=INTEGER},
+      sameLongMy = #{record.samelongmy,jdbcType=INTEGER},
+      showhandMust = #{record.showhandmust,jdbcType=INTEGER},
+      win = #{record.win,jdbcType=INTEGER},
+      follow = #{record.follow,jdbcType=INTEGER},
+      filling = #{record.filling,jdbcType=INTEGER},
+      showhand = #{record.showhand,jdbcType=INTEGER},
+      giveUp = #{record.giveup,jdbcType=INTEGER},
+      timeMin = #{record.timemin,jdbcType=INTEGER},
+      timeMax = #{record.timemax,jdbcType=INTEGER},
+      remark = #{record.remark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRules">
+    update texapokerrobotrules
+    <set>
+      <if test="cardsnum != null">
+        cardsNum = #{cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="paired != null">
+        paired = #{paired,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmax != null">
+        pairedMax = #{pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmin != null">
+        pairedMin = #{pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmy != null">
+        pairedMy = #{pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="twotwo != null">
+        twoTwo = #{twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="twotwomy != null">
+        twoTwoMy = #{twotwomy,jdbcType=INTEGER},
+      </if>
+      <if test="three != null">
+        three = #{three,jdbcType=INTEGER},
+      </if>
+      <if test="threemax != null">
+        threeMax = #{threemax,jdbcType=INTEGER},
+      </if>
+      <if test="threemy != null">
+        threeMy = #{threemy,jdbcType=INTEGER},
+      </if>
+      <if test="four != null">
+        four = #{four,jdbcType=INTEGER},
+      </if>
+      <if test="fourmy != null">
+        fourMy = #{fourmy,jdbcType=INTEGER},
+      </if>
+      <if test="longthree != null">
+        longThree = #{longthree,jdbcType=INTEGER},
+      </if>
+      <if test="longthreemy != null">
+        longThreeMy = #{longthreemy,jdbcType=INTEGER},
+      </if>
+      <if test="longfour != null">
+        longFour = #{longfour,jdbcType=INTEGER},
+      </if>
+      <if test="longfourmy != null">
+        longFourMy = #{longfourmy,jdbcType=INTEGER},
+      </if>
+      <if test="longfive != null">
+        longFive = #{longfive,jdbcType=INTEGER},
+      </if>
+      <if test="longfivemy != null">
+        longFiveMy = #{longfivemy,jdbcType=INTEGER},
+      </if>
+      <if test="samefour != null">
+        sameFour = #{samefour,jdbcType=INTEGER},
+      </if>
+      <if test="samefourmy != null">
+        sameFourMy = #{samefourmy,jdbcType=INTEGER},
+      </if>
+      <if test="samefive != null">
+        sameFive = #{samefive,jdbcType=INTEGER},
+      </if>
+      <if test="samefivemy != null">
+        sameFiveMy = #{samefivemy,jdbcType=INTEGER},
+      </if>
+      <if test="samelong != null">
+        sameLong = #{samelong,jdbcType=INTEGER},
+      </if>
+      <if test="samelongmy != null">
+        sameLongMy = #{samelongmy,jdbcType=INTEGER},
+      </if>
+      <if test="showhandmust != null">
+        showhandMust = #{showhandmust,jdbcType=INTEGER},
+      </if>
+      <if test="win != null">
+        win = #{win,jdbcType=INTEGER},
+      </if>
+      <if test="follow != null">
+        follow = #{follow,jdbcType=INTEGER},
+      </if>
+      <if test="filling != null">
+        filling = #{filling,jdbcType=INTEGER},
+      </if>
+      <if test="showhand != null">
+        showhand = #{showhand,jdbcType=INTEGER},
+      </if>
+      <if test="giveup != null">
+        giveUp = #{giveup,jdbcType=INTEGER},
+      </if>
+      <if test="timemin != null">
+        timeMin = #{timemin,jdbcType=INTEGER},
+      </if>
+      <if test="timemax != null">
+        timeMax = #{timemax,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.TexapokerRobotRules">
+    update texapokerrobotrules
+    set cardsNum = #{cardsnum,jdbcType=INTEGER},
+      paired = #{paired,jdbcType=INTEGER},
+      pairedMax = #{pairedmax,jdbcType=INTEGER},
+      pairedMin = #{pairedmin,jdbcType=INTEGER},
+      pairedMy = #{pairedmy,jdbcType=INTEGER},
+      twoTwo = #{twotwo,jdbcType=INTEGER},
+      twoTwoMy = #{twotwomy,jdbcType=INTEGER},
+      three = #{three,jdbcType=INTEGER},
+      threeMax = #{threemax,jdbcType=INTEGER},
+      threeMy = #{threemy,jdbcType=INTEGER},
+      four = #{four,jdbcType=INTEGER},
+      fourMy = #{fourmy,jdbcType=INTEGER},
+      longThree = #{longthree,jdbcType=INTEGER},
+      longThreeMy = #{longthreemy,jdbcType=INTEGER},
+      longFour = #{longfour,jdbcType=INTEGER},
+      longFourMy = #{longfourmy,jdbcType=INTEGER},
+      longFive = #{longfive,jdbcType=INTEGER},
+      longFiveMy = #{longfivemy,jdbcType=INTEGER},
+      sameFour = #{samefour,jdbcType=INTEGER},
+      sameFourMy = #{samefourmy,jdbcType=INTEGER},
+      sameFive = #{samefive,jdbcType=INTEGER},
+      sameFiveMy = #{samefivemy,jdbcType=INTEGER},
+      sameLong = #{samelong,jdbcType=INTEGER},
+      sameLongMy = #{samelongmy,jdbcType=INTEGER},
+      showhandMust = #{showhandmust,jdbcType=INTEGER},
+      win = #{win,jdbcType=INTEGER},
+      follow = #{follow,jdbcType=INTEGER},
+      filling = #{filling,jdbcType=INTEGER},
+      showhand = #{showhand,jdbcType=INTEGER},
+      giveUp = #{giveup,jdbcType=INTEGER},
+      timeMin = #{timemin,jdbcType=INTEGER},
+      timeMax = #{timemax,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

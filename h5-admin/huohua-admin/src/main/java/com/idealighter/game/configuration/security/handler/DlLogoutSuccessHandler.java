@@ -1,0 +1,34 @@
+package com.idealighter.game.configuration.security.handler;
+
+import com.idealighter.game.common.Result;
+import com.idealighter.utils.json.JsonUtil;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
+
+public class DlLogoutSuccessHandler extends SimpleUrlLogoutSuccessHandler {
+
+  @Override
+  public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response,
+      Authentication authentication) throws IOException, ServletException {
+    HttpSession session = request.getSession(false);
+    if (session != null) {
+      session.invalidate();
+    }
+
+    response.setContentType("application/json;charset=utf-8");
+    Result result = new Result(true);
+    PrintWriter writer = response.getWriter();
+    writer.append(JsonUtil.toJson(result));
+    writer.flush();
+    writer.close();
+  }
+}

@@ -1,0 +1,407 @@
+{
+	"groups": [
+		{
+			"keys": "brnn_font_CMNum_fnt,brnn_font_CMNum_png,brnn_font_betMy_fnt,brnn_font_betMy_png,brnn_font_clock_fnt,brnn_font_clock_png,brnn_font_clockNum_fnt,brnn_font_clockNum_png,brnn_font_jiesuanNum_fnt,brnn_font_jiesuanNum_png,brnn_atlas2_png,brnn_atlas2_json,brnn_atlas1_json,brnn_atlas3_json,brnn_bg_png,brnn_fill_png,brnn_music_BANKER_LOSE_mp3,brnn_music_BANKER_WAIT_SCORE_mp3,brnn_music_BANKER_WIN_mp3,brnn_music_BGSOUND_mp3,brnn_music_F_CALL_BANKER_1_mp3,brnn_music_F_CHANGE_BANKER_mp3,brnn_music_F_FIVE_SCORE_1_mp3,brnn_music_F_GET_BIG_BANKER_0_mp3,brnn_music_F_GET_BIG_BANKER_1_mp3,brnn_music_F_GIVE_UP_BANKER_1_mp3,brnn_music_F_LOSE_0_mp3,brnn_music_F_LOSE_1_mp3,brnn_music_F_OX_0_mp3,brnn_music_F_OX_1_mp3,brnn_music_F_OX_2_mp3,brnn_music_F_OX_3_mp3,brnn_music_F_OX_4_mp3,brnn_music_F_OX_4HUA_mp3,brnn_music_F_OX_4ZHA_mp3,brnn_music_F_OX_5_mp3,brnn_music_F_OX_6_mp3,brnn_music_F_OX_7_mp3,brnn_music_F_OX_8_mp3,brnn_music_F_OX_9_mp3,brnn_music_F_OX_NIUNIU_mp3,brnn_music_F_OX_TAURUS_mp3,brnn_music_F_OX_XIAO_NIU_mp3,brnn_music_F_WIN_0_mp3,brnn_music_F_WIN_1_mp3,brnn_music_GET_BANKER_mp3,brnn_music_M_CHANGE_BANKER_mp3,brnn_music_M_GET_BIG_BANKER_0_mp3,brnn_music_M_GET_BIG_BANKER_1_mp3,brnn_music_M_GET_SMALL_BANKER_0_mp3,brnn_music_M_GET_SMALL_BANKER_1_mp3,brnn_music_M_GIVE_UP_BANKER_1_mp3,brnn_music_M_LOSE_0_mp3,brnn_music_M_LOSE_1_mp3,brnn_music_M_OX_0_mp3,brnn_music_M_OX_1_mp3,brnn_music_M_OX_2_mp3,brnn_music_M_OX_3_mp3,brnn_music_M_OX_4_mp3,brnn_music_M_OX_4HUA_mp3,brnn_music_M_OX_4ZHA_mp3,brnn_music_M_OX_5_mp3,brnn_music_M_OX_6_mp3,brnn_music_M_OX_7_mp3,brnn_music_M_OX_8_mp3,brnn_music_M_OX_9_mp3,brnn_music_M_OX_NIUNIU_mp3,brnn_music_M_OX_TAURUS_mp3,brnn_music_M_OX_XIAO_NIU_mp3,brnn_music_M_WIN_0_mp3,brnn_music_M_WIN_1_mp3,brnn_music_OpenCard2_mp3,brnn_music_PAWN_BANKER_mp3,brnn_music_PlAYER_ADD_SCORE_mp3,brnn_music_TURN_CARD_mp3,brnn_music_gamestart_mp3,brnn_music_outcard_mp3",
+			"name": "brnn_asset"
+		},
+		{
+			"keys": "brnn_atlas0_json",
+			"name": "brnn_loading_asset"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/games/brnn/font/brnn_font_CMNum.fnt",
+			"type": "font",
+			"name": "brnn_font_CMNum_fnt"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_CMNum.png",
+			"type": "image",
+			"name": "brnn_font_CMNum_png"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_betMy.fnt",
+			"type": "font",
+			"name": "brnn_font_betMy_fnt"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_betMy.png",
+			"type": "image",
+			"name": "brnn_font_betMy_png"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_clock.fnt",
+			"type": "font",
+			"name": "brnn_font_clock_fnt"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_clock.png",
+			"type": "image",
+			"name": "brnn_font_clock_png"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_clockNum.fnt",
+			"type": "font",
+			"name": "brnn_font_clockNum_fnt"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_clockNum.png",
+			"type": "image",
+			"name": "brnn_font_clockNum_png"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_jiesuanNum.fnt",
+			"type": "font",
+			"name": "brnn_font_jiesuanNum_fnt"
+		},
+		{
+			"url": "assets/games/brnn/font/brnn_font_jiesuanNum.png",
+			"type": "image",
+			"name": "brnn_font_jiesuanNum_png"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_atlas0.json",
+			"type": "sheet",
+			"name": "brnn_atlas0_json",
+			"subkeys": "loadbg,loading,loadt"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_atlas2.png",
+			"type": "image",
+			"name": "brnn_atlas2_png"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_atlas2.json",
+			"type": "json",
+			"name": "brnn_atlas2_json"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_atlas1.json",
+			"type": "sheet",
+			"name": "brnn_atlas1_json",
+			"subkeys": "1,10,100,1000,10000,100000,1000000,10000000,10000000h,1000000h,100000h,10000h,1000h,100h,10h,1h,JieSuanBg,bairenniuniu_state_1,bairenniuniu_state_2,bairenniuniu_state_3,banker,bl,blv,btk,cd,cmk,dhan,dhan1,dhqb,gg,heid,lbbj,ld,lsji,lsjl,n1,n2,n3,n4,n5,n6,n7,n8,n9,niu,nn,qkan,qkan1,qxsq,sf,sfb,srk,szan,szlb,tc,tx,txk1,w,wn,wyszb,wyxz1,xx,xyan,xyan1,xzk,yzi,z,zd,zj"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_atlas3.json",
+			"type": "sheet",
+			"name": "brnn_atlas3_json",
+			"subkeys": "FK10,FK2,FK3,FK4,FK5,FK6,FK7,FK8,FK9,FKA,FKJ,FKK,FKQ,HT10,HT2,HT3,HT4,HT5,HT6,HT7,HT8,HT9,HTA,HTJ,HTK,HTQ,J1,J2,MH10,MH2,MH3,MH4,MH5,MH6,MH7,MH8,MH9,MHA,MHJ,MHK,MHQ,RH10,RH2,RH3,RH4,RH5,RH6,RH7,RH8,RH9,RHA,RHJ,RHK,RHQ,_FK10,_FK2,_FK3,_FK4,_FK5,_FK6,_FK7,_FK8,_FK9,_FKA,_FKJ,_FKK,_FKQ,_HT10,_HT2,_HT3,_HT4,_HT5,_HT6,_HT7,_HT8,_HT9,_HTA,_HTJ,_HTK,_HTQ,_J1,_J2,_MH10,_MH2,_MH3,_MH4,_MH5,_MH6,_MH7,_MH8,_MH9,_MHA,_MHJ,_MHK,_MHQ,_RH10,_RH2,_RH3,_RH4,_RH5,_RH6,_RH7,_RH8,_RH9,_RHA,_RHJ,_RHK,_RHQ,dp,dp1,fanp8,fanp9"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_bg.png",
+			"type": "image",
+			"name": "brnn_bg_png"
+		},
+		{
+			"url": "assets/games/brnn/atlas/brnn_fill.png",
+			"type": "image",
+			"name": "brnn_fill_png"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_BANKER_LOSE.mp3",
+			"type": "sound",
+			"name": "brnn_music_BANKER_LOSE_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_BANKER_WAIT_SCORE.mp3",
+			"type": "sound",
+			"name": "brnn_music_BANKER_WAIT_SCORE_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_BANKER_WIN.mp3",
+			"type": "sound",
+			"name": "brnn_music_BANKER_WIN_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_BGSOUND.mp3",
+			"type": "sound",
+			"name": "brnn_music_BGSOUND_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_CALL_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_CALL_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_CHANGE_BANKER.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_CHANGE_BANKER_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_FIVE_SCORE_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_FIVE_SCORE_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_GET_BIG_BANKER_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_GET_BIG_BANKER_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_GET_BIG_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_GET_BIG_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_GIVE_UP_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_GIVE_UP_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_LOSE_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_LOSE_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_LOSE_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_LOSE_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_2.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_2_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_3.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_3_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_4.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_4_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_4HUA.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_4HUA_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_4ZHA.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_4ZHA_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_5.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_5_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_6.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_6_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_7.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_7_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_8.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_8_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_9.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_9_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_NIUNIU.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_NIUNIU_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_TAURUS.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_TAURUS_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_OX_XIAO_NIU.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_OX_XIAO_NIU_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_WIN_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_WIN_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_F_WIN_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_F_WIN_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_GET_BANKER.mp3",
+			"type": "sound",
+			"name": "brnn_music_GET_BANKER_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_CHANGE_BANKER.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_CHANGE_BANKER_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_GET_BIG_BANKER_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_GET_BIG_BANKER_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_GET_BIG_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_GET_BIG_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_GET_SMALL_BANKER_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_GET_SMALL_BANKER_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_GET_SMALL_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_GET_SMALL_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_GIVE_UP_BANKER_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_GIVE_UP_BANKER_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_LOSE_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_LOSE_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_LOSE_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_LOSE_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_2.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_2_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_3.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_3_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_4.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_4_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_4HUA.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_4HUA_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_4ZHA.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_4ZHA_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_5.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_5_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_6.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_6_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_7.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_7_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_8.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_8_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_9.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_9_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_NIUNIU.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_NIUNIU_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_TAURUS.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_TAURUS_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_OX_XIAO_NIU.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_OX_XIAO_NIU_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_WIN_0.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_WIN_0_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_M_WIN_1.mp3",
+			"type": "sound",
+			"name": "brnn_music_M_WIN_1_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_OpenCard2.mp3",
+			"type": "sound",
+			"name": "brnn_music_OpenCard2_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_PAWN_BANKER.mp3",
+			"type": "sound",
+			"name": "brnn_music_PAWN_BANKER_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_PlAYER_ADD_SCORE.mp3",
+			"type": "sound",
+			"name": "brnn_music_PlAYER_ADD_SCORE_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_TURN_CARD.mp3",
+			"type": "sound",
+			"name": "brnn_music_TURN_CARD_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_gamestart.mp3",
+			"type": "sound",
+			"name": "brnn_music_gamestart_mp3"
+		},
+		{
+			"url": "assets/games/brnn/music/brnn_music_outcard.mp3",
+			"type": "sound",
+			"name": "brnn_music_outcard_mp3"
+		}
+	]
+}

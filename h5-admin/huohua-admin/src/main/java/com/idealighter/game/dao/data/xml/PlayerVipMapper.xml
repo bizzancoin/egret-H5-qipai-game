@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.PlayerVipMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.PlayerVip">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="play_item_effect" jdbcType="BIT" property="playItemEffect" />
+    <result column="table_limit_gold" jdbcType="BIGINT" property="tableLimitGold" />
+    <result column="table_limit_gold_abled" jdbcType="BIT" property="tableLimitGoldAbled" />
+    <result column="table_limit_ip" jdbcType="BIT" property="tableLimitIp" />
+    <result column="table_pwd" jdbcType="VARCHAR" property="tablePwd" />
+    <result column="table_pwd_abled" jdbcType="BIT" property="tablePwdAbled" />
+    <result column="room_setting_abled" jdbcType="BIT" property="roomSettingAbled" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, player_id, play_item_effect, table_limit_gold, table_limit_gold_abled, table_limit_ip, 
+    table_pwd, table_pwd_abled, room_setting_abled
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.PlayerVipExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from player_vip
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from player_vip
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from player_vip
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.PlayerVipExample">
+    delete from player_vip
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.PlayerVip">
+    insert into player_vip (id, player_id, play_item_effect, 
+      table_limit_gold, table_limit_gold_abled, table_limit_ip, 
+      table_pwd, table_pwd_abled, room_setting_abled
+      )
+    values (#{id,jdbcType=INTEGER}, #{playerId,jdbcType=BIGINT}, #{playItemEffect,jdbcType=BIT}, 
+      #{tableLimitGold,jdbcType=BIGINT}, #{tableLimitGoldAbled,jdbcType=BIT}, #{tableLimitIp,jdbcType=BIT}, 
+      #{tablePwd,jdbcType=VARCHAR}, #{tablePwdAbled,jdbcType=BIT}, #{roomSettingAbled,jdbcType=BIT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.PlayerVip">
+    insert into player_vip
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="playItemEffect != null">
+        play_item_effect,
+      </if>
+      <if test="tableLimitGold != null">
+        table_limit_gold,
+      </if>
+      <if test="tableLimitGoldAbled != null">
+        table_limit_gold_abled,
+      </if>
+      <if test="tableLimitIp != null">
+        table_limit_ip,
+      </if>
+      <if test="tablePwd != null">
+        table_pwd,
+      </if>
+      <if test="tablePwdAbled != null">
+        table_pwd_abled,
+      </if>
+      <if test="roomSettingAbled != null">
+        room_setting_abled,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playItemEffect != null">
+        #{playItemEffect,jdbcType=BIT},
+      </if>
+      <if test="tableLimitGold != null">
+        #{tableLimitGold,jdbcType=BIGINT},
+      </if>
+      <if test="tableLimitGoldAbled != null">
+        #{tableLimitGoldAbled,jdbcType=BIT},
+      </if>
+      <if test="tableLimitIp != null">
+        #{tableLimitIp,jdbcType=BIT},
+      </if>
+      <if test="tablePwd != null">
+        #{tablePwd,jdbcType=VARCHAR},
+      </if>
+      <if test="tablePwdAbled != null">
+        #{tablePwdAbled,jdbcType=BIT},
+      </if>
+      <if test="roomSettingAbled != null">
+        #{roomSettingAbled,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.PlayerVipExample" resultType="java.lang.Long">
+    select count(*) from player_vip
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update player_vip
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.playItemEffect != null">
+        play_item_effect = #{record.playItemEffect,jdbcType=BIT},
+      </if>
+      <if test="record.tableLimitGold != null">
+        table_limit_gold = #{record.tableLimitGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.tableLimitGoldAbled != null">
+        table_limit_gold_abled = #{record.tableLimitGoldAbled,jdbcType=BIT},
+      </if>
+      <if test="record.tableLimitIp != null">
+        table_limit_ip = #{record.tableLimitIp,jdbcType=BIT},
+      </if>
+      <if test="record.tablePwd != null">
+        table_pwd = #{record.tablePwd,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tablePwdAbled != null">
+        table_pwd_abled = #{record.tablePwdAbled,jdbcType=BIT},
+      </if>
+      <if test="record.roomSettingAbled != null">
+        room_setting_abled = #{record.roomSettingAbled,jdbcType=BIT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update player_vip
+    set id = #{record.id,jdbcType=INTEGER},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      play_item_effect = #{record.playItemEffect,jdbcType=BIT},
+      table_limit_gold = #{record.tableLimitGold,jdbcType=BIGINT},
+      table_limit_gold_abled = #{record.tableLimitGoldAbled,jdbcType=BIT},
+      table_limit_ip = #{record.tableLimitIp,jdbcType=BIT},
+      table_pwd = #{record.tablePwd,jdbcType=VARCHAR},
+      table_pwd_abled = #{record.tablePwdAbled,jdbcType=BIT},
+      room_setting_abled = #{record.roomSettingAbled,jdbcType=BIT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.PlayerVip">
+    update player_vip
+    <set>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="playItemEffect != null">
+        play_item_effect = #{playItemEffect,jdbcType=BIT},
+      </if>
+      <if test="tableLimitGold != null">
+        table_limit_gold = #{tableLimitGold,jdbcType=BIGINT},
+      </if>
+      <if test="tableLimitGoldAbled != null">
+        table_limit_gold_abled = #{tableLimitGoldAbled,jdbcType=BIT},
+      </if>
+      <if test="tableLimitIp != null">
+        table_limit_ip = #{tableLimitIp,jdbcType=BIT},
+      </if>
+      <if test="tablePwd != null">
+        table_pwd = #{tablePwd,jdbcType=VARCHAR},
+      </if>
+      <if test="tablePwdAbled != null">
+        table_pwd_abled = #{tablePwdAbled,jdbcType=BIT},
+      </if>
+      <if test="roomSettingAbled != null">
+        room_setting_abled = #{roomSettingAbled,jdbcType=BIT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.PlayerVip">
+    update player_vip
+    set player_id = #{playerId,jdbcType=BIGINT},
+      play_item_effect = #{playItemEffect,jdbcType=BIT},
+      table_limit_gold = #{tableLimitGold,jdbcType=BIGINT},
+      table_limit_gold_abled = #{tableLimitGoldAbled,jdbcType=BIT},
+      table_limit_ip = #{tableLimitIp,jdbcType=BIT},
+      table_pwd = #{tablePwd,jdbcType=VARCHAR},
+      table_pwd_abled = #{tablePwdAbled,jdbcType=BIT},
+      room_setting_abled = #{roomSettingAbled,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

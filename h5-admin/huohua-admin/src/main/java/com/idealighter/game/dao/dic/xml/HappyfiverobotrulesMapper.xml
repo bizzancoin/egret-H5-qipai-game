@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.HappyfiverobotrulesMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.Happyfiverobotrules">
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="cardsNum" jdbcType="INTEGER" property="cardsnum" />
+    <result column="times" jdbcType="INTEGER" property="times" />
+    <result column="First" jdbcType="INTEGER" property="first" />
+    <result column="biggest" jdbcType="INTEGER" property="biggest" />
+    <result column="pairedMy" jdbcType="INTEGER" property="pairedmy" />
+    <result column="pairedMax" jdbcType="INTEGER" property="pairedmax" />
+    <result column="pairedMin" jdbcType="INTEGER" property="pairedmin" />
+    <result column="pairedOthers" jdbcType="INTEGER" property="pairedothers" />
+    <result column="twoTwo" jdbcType="INTEGER" property="twotwo" />
+    <result column="twoTwoOthers" jdbcType="INTEGER" property="twotwoothers" />
+    <result column="three" jdbcType="INTEGER" property="three" />
+    <result column="threeOthers" jdbcType="INTEGER" property="threeothers" />
+    <result column="longFour" jdbcType="INTEGER" property="longfour" />
+    <result column="longFourOthers" jdbcType="INTEGER" property="longfourothers" />
+    <result column="sameFour" jdbcType="INTEGER" property="samefour" />
+    <result column="sameFourOthers" jdbcType="INTEGER" property="samefourothers" />
+    <result column="win1" jdbcType="INTEGER" property="win1" />
+    <result column="showHandOthers" jdbcType="INTEGER" property="showhandothers" />
+    <result column="win2" jdbcType="INTEGER" property="win2" />
+    <result column="follow" jdbcType="INTEGER" property="follow" />
+    <result column="filling1" jdbcType="INTEGER" property="filling1" />
+    <result column="filling2" jdbcType="INTEGER" property="filling2" />
+    <result column="filling3" jdbcType="INTEGER" property="filling3" />
+    <result column="showhand" jdbcType="INTEGER" property="showhand" />
+    <result column="giveUp" jdbcType="INTEGER" property="giveup" />
+    <result column="timeMin" jdbcType="INTEGER" property="timemin" />
+    <result column="timeMax" jdbcType="INTEGER" property="timemax" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ID, cardsNum, times, First, biggest, pairedMy, pairedMax, pairedMin, pairedOthers, 
+    twoTwo, twoTwoOthers, three, threeOthers, longFour, longFourOthers, sameFour, sameFourOthers, 
+    win1, showHandOthers, win2, follow, filling1, filling2, filling3, showhand, giveUp, 
+    timeMin, timeMax, remark
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.HappyfiverobotrulesExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from happyfiverobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from happyfiverobotrules
+    where ID = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from happyfiverobotrules
+    where ID = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.HappyfiverobotrulesExample">
+    delete from happyfiverobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.Happyfiverobotrules">
+    insert into happyfiverobotrules (ID, cardsNum, times, 
+      First, biggest, pairedMy, 
+      pairedMax, pairedMin, pairedOthers, 
+      twoTwo, twoTwoOthers, three, 
+      threeOthers, longFour, longFourOthers, 
+      sameFour, sameFourOthers, win1, 
+      showHandOthers, win2, follow, 
+      filling1, filling2, filling3, 
+      showhand, giveUp, timeMin, 
+      timeMax, remark)
+    values (#{id,jdbcType=INTEGER}, #{cardsnum,jdbcType=INTEGER}, #{times,jdbcType=INTEGER}, 
+      #{first,jdbcType=INTEGER}, #{biggest,jdbcType=INTEGER}, #{pairedmy,jdbcType=INTEGER}, 
+      #{pairedmax,jdbcType=INTEGER}, #{pairedmin,jdbcType=INTEGER}, #{pairedothers,jdbcType=INTEGER}, 
+      #{twotwo,jdbcType=INTEGER}, #{twotwoothers,jdbcType=INTEGER}, #{three,jdbcType=INTEGER}, 
+      #{threeothers,jdbcType=INTEGER}, #{longfour,jdbcType=INTEGER}, #{longfourothers,jdbcType=INTEGER}, 
+      #{samefour,jdbcType=INTEGER}, #{samefourothers,jdbcType=INTEGER}, #{win1,jdbcType=INTEGER}, 
+      #{showhandothers,jdbcType=INTEGER}, #{win2,jdbcType=INTEGER}, #{follow,jdbcType=INTEGER}, 
+      #{filling1,jdbcType=INTEGER}, #{filling2,jdbcType=INTEGER}, #{filling3,jdbcType=INTEGER}, 
+      #{showhand,jdbcType=INTEGER}, #{giveup,jdbcType=INTEGER}, #{timemin,jdbcType=INTEGER}, 
+      #{timemax,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.Happyfiverobotrules">
+    insert into happyfiverobotrules
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="cardsnum != null">
+        cardsNum,
+      </if>
+      <if test="times != null">
+        times,
+      </if>
+      <if test="first != null">
+        First,
+      </if>
+      <if test="biggest != null">
+        biggest,
+      </if>
+      <if test="pairedmy != null">
+        pairedMy,
+      </if>
+      <if test="pairedmax != null">
+        pairedMax,
+      </if>
+      <if test="pairedmin != null">
+        pairedMin,
+      </if>
+      <if test="pairedothers != null">
+        pairedOthers,
+      </if>
+      <if test="twotwo != null">
+        twoTwo,
+      </if>
+      <if test="twotwoothers != null">
+        twoTwoOthers,
+      </if>
+      <if test="three != null">
+        three,
+      </if>
+      <if test="threeothers != null">
+        threeOthers,
+      </if>
+      <if test="longfour != null">
+        longFour,
+      </if>
+      <if test="longfourothers != null">
+        longFourOthers,
+      </if>
+      <if test="samefour != null">
+        sameFour,
+      </if>
+      <if test="samefourothers != null">
+        sameFourOthers,
+      </if>
+      <if test="win1 != null">
+        win1,
+      </if>
+      <if test="showhandothers != null">
+        showHandOthers,
+      </if>
+      <if test="win2 != null">
+        win2,
+      </if>
+      <if test="follow != null">
+        follow,
+      </if>
+      <if test="filling1 != null">
+        filling1,
+      </if>
+      <if test="filling2 != null">
+        filling2,
+      </if>
+      <if test="filling3 != null">
+        filling3,
+      </if>
+      <if test="showhand != null">
+        showhand,
+      </if>
+      <if test="giveup != null">
+        giveUp,
+      </if>
+      <if test="timemin != null">
+        timeMin,
+      </if>
+      <if test="timemax != null">
+        timeMax,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="cardsnum != null">
+        #{cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="times != null">
+        #{times,jdbcType=INTEGER},
+      </if>
+      <if test="first != null">
+        #{first,jdbcType=INTEGER},
+      </if>
+      <if test="biggest != null">
+        #{biggest,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmy != null">
+        #{pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmax != null">
+        #{pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmin != null">
+        #{pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="pairedothers != null">
+        #{pairedothers,jdbcType=INTEGER},
+      </if>
+      <if test="twotwo != null">
+        #{twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="twotwoothers != null">
+        #{twotwoothers,jdbcType=INTEGER},
+      </if>
+      <if test="three != null">
+        #{three,jdbcType=INTEGER},
+      </if>
+      <if test="threeothers != null">
+        #{threeothers,jdbcType=INTEGER},
+      </if>
+      <if test="longfour != null">
+        #{longfour,jdbcType=INTEGER},
+      </if>
+      <if test="longfourothers != null">
+        #{longfourothers,jdbcType=INTEGER},
+      </if>
+      <if test="samefour != null">
+        #{samefour,jdbcType=INTEGER},
+      </if>
+      <if test="samefourothers != null">
+        #{samefourothers,jdbcType=INTEGER},
+      </if>
+      <if test="win1 != null">
+        #{win1,jdbcType=INTEGER},
+      </if>
+      <if test="showhandothers != null">
+        #{showhandothers,jdbcType=INTEGER},
+      </if>
+      <if test="win2 != null">
+        #{win2,jdbcType=INTEGER},
+      </if>
+      <if test="follow != null">
+        #{follow,jdbcType=INTEGER},
+      </if>
+      <if test="filling1 != null">
+        #{filling1,jdbcType=INTEGER},
+      </if>
+      <if test="filling2 != null">
+        #{filling2,jdbcType=INTEGER},
+      </if>
+      <if test="filling3 != null">
+        #{filling3,jdbcType=INTEGER},
+      </if>
+      <if test="showhand != null">
+        #{showhand,jdbcType=INTEGER},
+      </if>
+      <if test="giveup != null">
+        #{giveup,jdbcType=INTEGER},
+      </if>
+      <if test="timemin != null">
+        #{timemin,jdbcType=INTEGER},
+      </if>
+      <if test="timemax != null">
+        #{timemax,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.HappyfiverobotrulesExample" resultType="java.lang.Long">
+    select count(*) from happyfiverobotrules
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update happyfiverobotrules
+    <set>
+      <if test="record.id != null">
+        ID = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.cardsnum != null">
+        cardsNum = #{record.cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="record.times != null">
+        times = #{record.times,jdbcType=INTEGER},
+      </if>
+      <if test="record.first != null">
+        First = #{record.first,jdbcType=INTEGER},
+      </if>
+      <if test="record.biggest != null">
+        biggest = #{record.biggest,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmy != null">
+        pairedMy = #{record.pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmax != null">
+        pairedMax = #{record.pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedmin != null">
+        pairedMin = #{record.pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="record.pairedothers != null">
+        pairedOthers = #{record.pairedothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.twotwo != null">
+        twoTwo = #{record.twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="record.twotwoothers != null">
+        twoTwoOthers = #{record.twotwoothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.three != null">
+        three = #{record.three,jdbcType=INTEGER},
+      </if>
+      <if test="record.threeothers != null">
+        threeOthers = #{record.threeothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfour != null">
+        longFour = #{record.longfour,jdbcType=INTEGER},
+      </if>
+      <if test="record.longfourothers != null">
+        longFourOthers = #{record.longfourothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefour != null">
+        sameFour = #{record.samefour,jdbcType=INTEGER},
+      </if>
+      <if test="record.samefourothers != null">
+        sameFourOthers = #{record.samefourothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.win1 != null">
+        win1 = #{record.win1,jdbcType=INTEGER},
+      </if>
+      <if test="record.showhandothers != null">
+        showHandOthers = #{record.showhandothers,jdbcType=INTEGER},
+      </if>
+      <if test="record.win2 != null">
+        win2 = #{record.win2,jdbcType=INTEGER},
+      </if>
+      <if test="record.follow != null">
+        follow = #{record.follow,jdbcType=INTEGER},
+      </if>
+      <if test="record.filling1 != null">
+        filling1 = #{record.filling1,jdbcType=INTEGER},
+      </if>
+      <if test="record.filling2 != null">
+        filling2 = #{record.filling2,jdbcType=INTEGER},
+      </if>
+      <if test="record.filling3 != null">
+        filling3 = #{record.filling3,jdbcType=INTEGER},
+      </if>
+      <if test="record.showhand != null">
+        showhand = #{record.showhand,jdbcType=INTEGER},
+      </if>
+      <if test="record.giveup != null">
+        giveUp = #{record.giveup,jdbcType=INTEGER},
+      </if>
+      <if test="record.timemin != null">
+        timeMin = #{record.timemin,jdbcType=INTEGER},
+      </if>
+      <if test="record.timemax != null">
+        timeMax = #{record.timemax,jdbcType=INTEGER},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update happyfiverobotrules
+    set ID = #{record.id,jdbcType=INTEGER},
+      cardsNum = #{record.cardsnum,jdbcType=INTEGER},
+      times = #{record.times,jdbcType=INTEGER},
+      First = #{record.first,jdbcType=INTEGER},
+      biggest = #{record.biggest,jdbcType=INTEGER},
+      pairedMy = #{record.pairedmy,jdbcType=INTEGER},
+      pairedMax = #{record.pairedmax,jdbcType=INTEGER},
+      pairedMin = #{record.pairedmin,jdbcType=INTEGER},
+      pairedOthers = #{record.pairedothers,jdbcType=INTEGER},
+      twoTwo = #{record.twotwo,jdbcType=INTEGER},
+      twoTwoOthers = #{record.twotwoothers,jdbcType=INTEGER},
+      three = #{record.three,jdbcType=INTEGER},
+      threeOthers = #{record.threeothers,jdbcType=INTEGER},
+      longFour = #{record.longfour,jdbcType=INTEGER},
+      longFourOthers = #{record.longfourothers,jdbcType=INTEGER},
+      sameFour = #{record.samefour,jdbcType=INTEGER},
+      sameFourOthers = #{record.samefourothers,jdbcType=INTEGER},
+      win1 = #{record.win1,jdbcType=INTEGER},
+      showHandOthers = #{record.showhandothers,jdbcType=INTEGER},
+      win2 = #{record.win2,jdbcType=INTEGER},
+      follow = #{record.follow,jdbcType=INTEGER},
+      filling1 = #{record.filling1,jdbcType=INTEGER},
+      filling2 = #{record.filling2,jdbcType=INTEGER},
+      filling3 = #{record.filling3,jdbcType=INTEGER},
+      showhand = #{record.showhand,jdbcType=INTEGER},
+      giveUp = #{record.giveup,jdbcType=INTEGER},
+      timeMin = #{record.timemin,jdbcType=INTEGER},
+      timeMax = #{record.timemax,jdbcType=INTEGER},
+      remark = #{record.remark,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.Happyfiverobotrules">
+    update happyfiverobotrules
+    <set>
+      <if test="cardsnum != null">
+        cardsNum = #{cardsnum,jdbcType=INTEGER},
+      </if>
+      <if test="times != null">
+        times = #{times,jdbcType=INTEGER},
+      </if>
+      <if test="first != null">
+        First = #{first,jdbcType=INTEGER},
+      </if>
+      <if test="biggest != null">
+        biggest = #{biggest,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmy != null">
+        pairedMy = #{pairedmy,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmax != null">
+        pairedMax = #{pairedmax,jdbcType=INTEGER},
+      </if>
+      <if test="pairedmin != null">
+        pairedMin = #{pairedmin,jdbcType=INTEGER},
+      </if>
+      <if test="pairedothers != null">
+        pairedOthers = #{pairedothers,jdbcType=INTEGER},
+      </if>
+      <if test="twotwo != null">
+        twoTwo = #{twotwo,jdbcType=INTEGER},
+      </if>
+      <if test="twotwoothers != null">
+        twoTwoOthers = #{twotwoothers,jdbcType=INTEGER},
+      </if>
+      <if test="three != null">
+        three = #{three,jdbcType=INTEGER},
+      </if>
+      <if test="threeothers != null">
+        threeOthers = #{threeothers,jdbcType=INTEGER},
+      </if>
+      <if test="longfour != null">
+        longFour = #{longfour,jdbcType=INTEGER},
+      </if>
+      <if test="longfourothers != null">
+        longFourOthers = #{longfourothers,jdbcType=INTEGER},
+      </if>
+      <if test="samefour != null">
+        sameFour = #{samefour,jdbcType=INTEGER},
+      </if>
+      <if test="samefourothers != null">
+        sameFourOthers = #{samefourothers,jdbcType=INTEGER},
+      </if>
+      <if test="win1 != null">
+        win1 = #{win1,jdbcType=INTEGER},
+      </if>
+      <if test="showhandothers != null">
+        showHandOthers = #{showhandothers,jdbcType=INTEGER},
+      </if>
+      <if test="win2 != null">
+        win2 = #{win2,jdbcType=INTEGER},
+      </if>
+      <if test="follow != null">
+        follow = #{follow,jdbcType=INTEGER},
+      </if>
+      <if test="filling1 != null">
+        filling1 = #{filling1,jdbcType=INTEGER},
+      </if>
+      <if test="filling2 != null">
+        filling2 = #{filling2,jdbcType=INTEGER},
+      </if>
+      <if test="filling3 != null">
+        filling3 = #{filling3,jdbcType=INTEGER},
+      </if>
+      <if test="showhand != null">
+        showhand = #{showhand,jdbcType=INTEGER},
+      </if>
+      <if test="giveup != null">
+        giveUp = #{giveup,jdbcType=INTEGER},
+      </if>
+      <if test="timemin != null">
+        timeMin = #{timemin,jdbcType=INTEGER},
+      </if>
+      <if test="timemax != null">
+        timeMax = #{timemax,jdbcType=INTEGER},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.Happyfiverobotrules">
+    update happyfiverobotrules
+    set cardsNum = #{cardsnum,jdbcType=INTEGER},
+      times = #{times,jdbcType=INTEGER},
+      First = #{first,jdbcType=INTEGER},
+      biggest = #{biggest,jdbcType=INTEGER},
+      pairedMy = #{pairedmy,jdbcType=INTEGER},
+      pairedMax = #{pairedmax,jdbcType=INTEGER},
+      pairedMin = #{pairedmin,jdbcType=INTEGER},
+      pairedOthers = #{pairedothers,jdbcType=INTEGER},
+      twoTwo = #{twotwo,jdbcType=INTEGER},
+      twoTwoOthers = #{twotwoothers,jdbcType=INTEGER},
+      three = #{three,jdbcType=INTEGER},
+      threeOthers = #{threeothers,jdbcType=INTEGER},
+      longFour = #{longfour,jdbcType=INTEGER},
+      longFourOthers = #{longfourothers,jdbcType=INTEGER},
+      sameFour = #{samefour,jdbcType=INTEGER},
+      sameFourOthers = #{samefourothers,jdbcType=INTEGER},
+      win1 = #{win1,jdbcType=INTEGER},
+      showHandOthers = #{showhandothers,jdbcType=INTEGER},
+      win2 = #{win2,jdbcType=INTEGER},
+      follow = #{follow,jdbcType=INTEGER},
+      filling1 = #{filling1,jdbcType=INTEGER},
+      filling2 = #{filling2,jdbcType=INTEGER},
+      filling3 = #{filling3,jdbcType=INTEGER},
+      showhand = #{showhand,jdbcType=INTEGER},
+      giveUp = #{giveup,jdbcType=INTEGER},
+      timeMin = #{timemin,jdbcType=INTEGER},
+      timeMax = #{timemax,jdbcType=INTEGER},
+      remark = #{remark,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

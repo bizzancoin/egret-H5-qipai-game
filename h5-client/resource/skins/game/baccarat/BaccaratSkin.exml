@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BaccaratSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" xmlns:game="game.*">
+	<w:Config id="162ddedf8a7" />
+	<e:Image id="imgBG"  fillMode="scale" left="0" top="0" bottom="0" right="0" source="bjl_bg_jpg"/>
+	<e:Group width="1920" height="1080" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="WrapperBG" width="1920" height="1020" source="bjl_zmc_png" fillMode="clip" horizontalCenter="0" y="65"/>
+		<e:Group id="grpBetArea" width="1558" height="366" anchorOffsetX="0" anchorOffsetY="0" x="182" y="508" scaleX="1" scaleY="1">
+
+
+
+
+			<e:Button id="btnBetArea2" name="btnBetArea2" label="" x="519" y="180" scaleX="0.95" scaleY="0.95">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bjl_xiazhu_json.b2.1" source.down="bjl_xiazhu_json.b2" source.disabled="bjl_xiazhu_json.b2.1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+
+			</e:Button>
+
+			<e:Button id="btnBetArea4" name="btnBetArea4" label="" x="0" y="180" scaleX="0.95" scaleY="0.95">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bjl_xiazhu_json.b4.1" source.down="bjl_xiazhu_json.b4" source.disabled="bjl_xiazhu_json.b4.1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+
+			</e:Button>
+
+			<e:Button id="btnBetArea1" name="btnBetArea1" label="" x="0" y="0" scaleX="0.95" scaleY="0.95">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bjl_xiazhu_json.b0.1" source.down="bjl_xiazhu_json.b0" source.disabled="bjl_xiazhu_json.b0.1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+
+			</e:Button>
+
+			<e:Button id="btnBetArea9" label="" x="1038" y="180" name="btnBetArea9" scaleX="0.95" scaleY="0.95">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bjl_xiazhu_json.b9.1" source.down="bjl_xiazhu_json.b9" source.disabled="bjl_xiazhu_json.b9.1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+
+			</e:Button>
+
+
+			<e:Button id="btnBetArea0" name="btnBetArea0" label="" x="778" y="0" scaleX="0.95" scaleY="0.95">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bjl_xiazhu_json.b1.1" source.down="bjl_xiazhu_json.b1" source.disabled="bjl_xiazhu_json.b1.1"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+
+
+
+			</e:Button>
+
+		</e:Group>
+		<e:Group id="grpBetInfo" width="1558" height="366" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="182" scaleX="1" scaleY="1" top="508">
+			<e:Group id="grpChipPanel" height="366" y="0" width="1558" x="0" touchEnabled="false"/>
+
+
+			<e:BitmapLabel id="lbBetArea2" name="lbBetArea2" width="320" height="32" text="0" anchorOffsetX="0" anchorOffsetY="0" font="bjl_fnt_betOtherNum_fnt" textAlign="center" touchEnabled="false" bottom="2" horizontalCenter="0"/>
+
+			<e:BitmapLabel id="lbBetArea4" name="lbBetArea4" width="160" height="32" text="0" anchorOffsetX="0" anchorOffsetY="0" font="bjl_fnt_betOtherNum_fnt" textAlign="center" touchEnabled="false" bottom="2" left="180"/>
+
+			<e:BitmapLabel id="lbBetArea1" name="lbBetArea1" width="320" height="32" text="0" anchorOffsetX="0" anchorOffsetY="0" font="bjl_fnt_betOtherNum_fnt" textAlign="center" touchEnabled="false" horizontalCenter="-390" top="150"/>
+
+			<e:BitmapLabel id="lbBetArea9" name="lbBetArea9" width="160" height="32" text="0" anchorOffsetX="0" anchorOffsetY="0" font="bjl_fnt_betOtherNum_fnt" textAlign="center" touchEnabled="false" right="180" bottom="2"/>
+
+			<e:BitmapLabel id="lbBetArea0" name="lbBetArea0" width="320" height="32" text="0" anchorOffsetX="0" anchorOffsetY="0" font="bjl_fnt_betOtherNum_fnt" textAlign="center" touchEnabled="false" horizontalCenter="390" top="150"/>
+
+
+
+		</e:Group>
+		<e:Group id="grpWinLight" width="1558" height="366" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="182" y="508" scaleX="1" scaleY="1">
+
+
+			<e:Image id="imgBetArea2" width="546" height="195" anchorOffsetX="0" anchorOffsetY="0" name="imgBetArea2" scaleX="0.95" scaleY="0.95" y="180" x="519" source="bjl_light_json.2"/>
+
+			<e:Image id="imgBetArea4" width="546" height="195" anchorOffsetX="0" anchorOffsetY="0" name="imgBetArea4" scaleX="0.95" scaleY="0.95" y="180" x="0" source="bjl_light_json.4"/>
+
+			<e:Image id="imgBetArea1" width="819" height="195" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0" name="imgBetArea1" scaleX="0.95" scaleY="0.95" source="bjl_light_json.0"/>
+
+			<e:Image id="imgBetArea9" width="546" height="195" anchorOffsetX="0" anchorOffsetY="0" name="imgBetArea9" scaleX="0.95" scaleY="0.95" y="180" x="1038" source="bjl_light_json.9"/>
+
+			<e:Image id="imgBetArea0" width="819" height="195" y="0" anchorOffsetX="0" anchorOffsetY="0" name="imgBetArea0" scaleX="0.95" scaleY="0.95" x="778" source="bjl_light_json.1"/>
+
+		</e:Group>
+		<e:Group name="grpMyBet" id="grpMyBet" width="1558" height="366" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false" x="182" y="508" scaleX="1" scaleY="1">
+
+
+			<e:Group name="grpMyBet2" id="grpMyBet2" width="337" height="49" touchEnabled="false" bottom="130" horizontalCenter="0">
+			<e:Image width="337" height="49" x="0" y="0" source="bjl_img_json.bjl_hd" id="imgMybet2" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label text="0" x="0" y="0" textColor="0xF9E818" fontFamily="Georgia" width="336" height="49" textAlign="center" size="36" verticalAlign="middle" id="lbMyBet2" touchEnabled="false"/>
+			</e:Group>
+
+			<e:Group id="grpMyBet4" width="337" height="49" name="grpMyBet4" touchEnabled="false" bottom="130" left="90">
+			<e:Image id="imgMybet4" width="337" height="49" x="0" y="0" source="bjl_img_json.bjl_hd" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false"/>
+			<e:Label id="lbMyBet4" text="0" x="0" y="0" textColor="0xF9E818" fontFamily="Georgia" width="336" height="49" textAlign="center" size="36" verticalAlign="middle" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="false"/>
+			</e:Group>
+
+			<e:Group id="grpMyBet1" width="337" height="49" name="grpMyBet1" touchEnabled="false" top="6" left="220">
+			<e:Image id="imgMybet1" width="337" height="49" x="0" y="0" source="bjl_img_json.bjl_hd" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label id="lbMyBet1" text="0" x="0" y="0" textColor="0xF9E818" fontFamily="Georgia" width="336" height="49" textAlign="center" size="36" verticalAlign="middle" touchEnabled="false"/>
+			</e:Group>
+
+			<e:Group id="grpMyBet9" width="337" height="49" name="grpMyBet9" touchEnabled="false" bottom="130" right="90">
+			<e:Image id="imgMybet9" width="337" height="49" x="0" y="0" source="bjl_img_json.bjl_hd" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label id="lbMyBet9" text="0" x="0" y="0" textColor="0xF9E818" fontFamily="Georgia" width="336" height="49" textAlign="center" size="36" verticalAlign="middle" touchEnabled="false"/>
+			</e:Group>
+
+			<e:Group id="grpMyBet0" width="337" height="49" name="grpMyBet0" touchEnabled="false" right="220" top="6">
+			<e:Image id="imgMybet0" width="337" height="49" x="0" y="0" source="bjl_img_json.bjl_hd" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label id="lbMyBet0" text="0" x="0" y="0" textColor="0xF9E818" fontFamily="Georgia" width="336" height="49" textAlign="center" size="36" verticalAlign="middle" touchEnabled="false"/>
+			</e:Group>
+
+		</e:Group>
+		<e:Group id="grpBetBtns" width="1920" height="200" x="0" y="880" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1">
+			<e:Button id="btnContinue" label="" x="1660" name="btnContinue" y="10">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_btn_json.bjl_btn_xy" source.down="bjl_btn_json.bjl_btn_xy" source.disabled="bjl_btn_json.bjl_btn_xy1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnClear" label="" x="1660" y="100" name="btnClear">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_btn_json.bjl_btn_qk" source.down="bjl_btn_json.bjl_btn_qk" source.disabled="bjl_btn_json.bjl_btn_qk1"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnChip1" label="1" x="1460" y="50" name="btnChip1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm11" source.down="bjl_chips_json.bjl_btn_cm12" source.disabled="bjl_chips_json.bjl_btn_cm13"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="10" x="1300" y="50" id="btnChip2" name="btnChip2">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm21" source.down="bjl_chips_json.bjl_btn_cm22" source.disabled="bjl_chips_json.bjl_btn_cm23"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="100" x="1140" y="50" id="btnChip3" name="btnChip3">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm31" source.down="bjl_chips_json.bjl_btn_cm32" source.disabled="bjl_chips_json.bjl_btn_cm33"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="1000" x="980" y="50" id="btnChip4" name="btnChip4">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm41" source.down="bjl_chips_json.bjl_btn_cm42" source.disabled="bjl_chips_json.bjl_btn_cm43"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="1w" x="820" y="50" id="btnChip5" name="btnChip5">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm51" source.down="bjl_chips_json.bjl_btn_cm52" source.disabled="bjl_chips_json.bjl_btn_cm53"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="10w" x="660" y="50" id="btnChip6" name="btnChip6">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm61" source.down="bjl_chips_json.bjl_btn_cm62" source.disabled="bjl_chips_json.bjl_btn_cm63"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button label="100w" x="500" y="50" id="btnChip7" name="btnChip7">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm71" source.down="bjl_chips_json.bjl_btn_cm72" source.disabled="bjl_chips_json.bjl_btn_cm73"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btnChip8" label="1000w" x="340" y="50" name="btnChip8">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_chips_json.bjl_btn_cm81" source.down="bjl_chips_json.bjl_btn_cm82" source.disabled="bjl_chips_json.bjl_btn_cm83"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="-10" textColor="0x000000" size="22" bold="true"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group id="grpTop" height="200" anchorOffsetX="0" width="1920" y="0" x="0" scaleX="1" scaleY="1">
+			<e:Image id="imgPokerMachine" source="bjl_img_json.bjl_fpq" top="0" right="0"/>
+			<e:Image id="imgRoundCnt" source="bjl_img_json.bjl_jus" x="1515" y="0"/>
+			<e:Label id="lbRoundCnt" text="0" x="1643" y="49" textColor="0xce0808" anchorOffsetX="0" width="40" verticalAlign="middle" textAlign="center" size="28"/>
+			<e:Image id="imgPokerBox" x="68" y="150" source="bjl_img_json.bjl_hz"/>
+			<e:Group id="grpClock" width="240" height="100" x="167" y="38" anchorOffsetX="0">
+			<e:Image id="imgClock" scaleX="1" scaleY="1" source="bjl_img_json.bjl_sj" verticalCenter="0" left="0"/>
+			<e:BitmapLabel id="lbClock" width="50" height="32" y="42" text="0" font="bjl_fnt_clock_fnt" textAlign="center" left="15"/>
+			<e:Image id="imgStatus" x="105" y="35" source="bjl_wd_json.bjl_wd_xxyx"/>
+			</e:Group>
+			<e:Group id="grpBoxAnim" width="251" height="194" right="0" top="0"/>
+			<e:Group id="grpXPool" width="300" height="280" y="60" horizontalCenter="-390"/>
+			<e:Group id="grpZPool" width="300" height="280" y="60" horizontalCenter="390"/>
+			<e:Group id="grpWPool" width="250" height="180" y="151" horizontalCenter="820"/>
+			<e:Image id="imgXPB" x="475" y="32" source="bjl_wd_json.bjl_wd_xbp"/>
+			<e:Image id="imgZPB" x="1250" y="32" source="bjl_wd_json.bjl_wd_zbp"/>
+			<e:Group id="grpPaim" width="105" height="200" x="160" y="256" anchorOffsetX="0">
+			<e:Image id="imgPaimPair" x="8" y="106" source="bjl_img_json.bjl_pais2" width="95" height="95" scaleX="1" scaleY="1"/>
+			<e:Image id="imgPaim" x="6" y="95" source="bjl_img_json.bjl_spaim" width="98" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Panel id="pnlResult" width="800" height="600" enabled="true" horizontalCenter="0" verticalCenter="0" x="560" y="240" scaleX="1" scaleY="1">
+			<e:Image id="imgResult" y="160" horizontalCenter="0" source="bjl_wd_json.bjl_wd_zy"/>
+			<e:BitmapLabel id="lbResult" width="800" height="120" font="bjl_fnt_jiesuan_fnt" text="+0" horizontalCenter="0" bottom="128" textAlign="center" scaleX="1" scaleY="1"/>
+		</e:Panel>
+		<e:Group id="grpShuffle" width="100%" height="100%" x="0" y="0" touchEnabled="false" scaleX="1" scaleY="1" visible="false">
+			<e:Image id="imgShufflePair" x="387" y="410" source="bjl_img_json.bjl_pais" height="416" fillMode="clip"/>
+			<e:Image id="imgShufflePaim" x="387" y="298" source="bjl_img_json.bjl_spaim" width="127" height="156"/>
+			<e:Image id="imgShuffleYellow" x="1320" y="560" source="bjl_img_json.bjl_fgz" visible="false"/>
+		</e:Group>
+		<e:Group id="grpHint" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Image id="imgHint" source="bjl_img_json.bjl_bi" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="grpSet" width="100%" height="100%" x="0" y="0" visible="false">
+			<e:Rect id="imgRect0" width="100%" height="100%" x="0" y="0" alpha="0.3"/>
+			<e:Image horizontalCenter="0" verticalCenter="0" source="bjl_img_json.bjl_s_szbg"/>
+			<e:RadioButton id="rabMusicOn" label="" x="812" y="500" enabled="true" width="64" height="64" value="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_szf" source.down="bjl_img_json.bjl_s_szd"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="rabMusicOff" label="" x="1146" y="500" enabled="true" width="64" height="64" value="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_szf" source.down="bjl_img_json.bjl_s_szd"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="rabVoiceOn" label="" x="812" y="596" enabled="true" width="64" height="64" value="1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_szf" source.down="bjl_img_json.bjl_s_szd"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:RadioButton id="rabVoiceOff" label="" x="1146" y="596" enabled="true" width="64" height="64" value="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_szf" source.down="bjl_img_json.bjl_s_szd"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:RadioButton>
+			<e:Button id="btnSetClose" label="" x="1399" y="315">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_close" source.down="bjl_img_json.bjl_s_close"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Button id="btnDuihuan" label="" bottom="50" left="60">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bjl_duih_png" source.down="bjl_duih_png" source.disabled="bjl_duih_d_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+
+		</e:Button>
+	</e:Group>
+	<e:Group id="grpSetPanel" width="320" height="360" anchorOffsetX="0" anchorOffsetY="0" top="380" y="380" scaleX="1" scaleY="1" right="-320">
+		<e:Image x="0" y="0" source="bjl_img_json.bjl_shezd"/>
+		<e:Button id="btnSet" label="" y="100" width="200" height="80" horizontalCenter="10">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="bjl_btn_json.bjl_btn_sz"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnExit" label="" y="210" horizontalCenter="10" width="200" height="80">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="bjl_btn_json.bjl_btn_tc1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnSetDrag" label="" x="-113" verticalCenter="0" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="bjl_img_json.bjl_s_out"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Image id="imgSetDrag" x="-113" verticalCenter="0" source="bjl_img_json.bjl_s_out" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="grpPlayerInfo" width="350" height="302" y="500" scaleX="1" scaleY="1" left="-285">
+		<e:Image id="imgPlayerBg" x="0" y="0" source="bjl_img_json.bjl_grxx1"/>
+		<e:Image id="imgPlayerAvatar" width="106" height="106" x="94" y="27" anchorOffsetX="0" anchorOffsetY="0" source="player_1_png"/>
+		<e:Label id="lbNick" text="游客" x="105" y="152" anchorOffsetX="0" width="143" height="22" size="22"/>
+		<e:Label id="lbGold" text="0" x="105" y="200" anchorOffsetX="0" width="143" size="22" textColor="0xfcf137"/>
+		<e:Label id="lbChip" text="0" x="105" y="249" anchorOffsetX="0" width="143" size="22" textColor="0xfcf137"/>
+		<e:Button id="btnPlayer" label="" x="281" y="45" width="66" height="212" enabled="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="bjl_img_json.bjl_grxx"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+	<game:ExchangeView id="exchangeView" skinName="game.ExchangeSkin" width="100%" x="0" height="100%" y="0" visible="false"/>
+</e:Skin>

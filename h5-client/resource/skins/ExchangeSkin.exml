@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="game.ExchangeSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" x="0" height="100%">
+		<e:Rect left="0" top="0" width="100%" height="100%" fillAlpha="0.2"/>
+		<e:Group width="1000" height="650" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" verticalCenter="0">
+			<e:Group id="groupSelect" width="650" height="650" horizontalCenter="0" verticalCenter="0">
+				<e:Image source="common_dialog_bg2_png" scale9Grid="151,240,1480,559" left="0" right="0" top="0" bottom="0"/>
+				<e:Label text="筹码兑换" size="50" horizontalCenter="0" top="50"/>
+				<e:Button id="btnClose1" label="" right="0" top="0" height="128">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_close_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnCashOut" label="上分" horizontalCenter="0" verticalCenter="-40">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_red_png"/>
+						<e:Label id="labelDisplay" size="35" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Button id="btnCashIn" label="下分" horizontalCenter="0" verticalCenter="160">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_orange_png"/>
+						<e:Label id="labelDisplay" size="35" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+			<e:Group id="groupExchange" left="0" right="0" top="0" bottom="0" visible="false">
+				<e:Image source="common_dialog_bg_png" scale9Grid="156,190,595,470" left="0" right="0" top="0" bottom="0"/>
+				<e:Button id="btnClose2" label="" right="3" top="-3" x="869.0000000000002" y="-2.9999999999999716" scaleX="1" scaleY="1">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_close_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="lbTitle" text="上分" verticalAlign="middle" textAlign="center" size="60" horizontalCenter="0" y="39.00000000000003" x="439.99999999999994" scaleX="1" scaleY="1"/>
+				<e:Label id="lbRate" text="兑换比例：1金币=20筹码" top="160" size="35" horizontalCenter="0" textAlign="center"/>
+				<e:Label id="lbExchange" text="兑换筹码：10000" horizontalCenter="0.5" verticalCenter="-69.5" textAlign="center" size="35" x="363.99999999999994" y="188" scaleX="1" scaleY="1"/>
+				<e:HSlider id="sliderExchange" skinName="skins.HSliderSkin" horizontalCenter="0" x="270.00000000000006" scaleX="1" scaleY="1" verticalCenter="0" y="273.00000000000006"/>
+				<e:Label id="lbTotal" text="总筹码：1000000" textAlign="center" horizontalCenter="0" bottom="210" size="40" x="342.00000000000006" y="390.0000000000001" scaleX="1" scaleY="1"/>
+				<e:Button id="btnSure" label="确定" horizontalCenter="0" bottom="25" x="350.99999999999994" y="500" scaleX="1" scaleY="1">
+					<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_red_png"/>
+						<e:Label id="labelDisplay" size="35" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

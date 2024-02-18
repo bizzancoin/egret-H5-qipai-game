@@ -1,0 +1,314 @@
+{ 
+	"1":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqHeartbeatMsg';message ReqHeartbeatMsg {  required int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ReqHeartbeatMsg"
+	},
+	"5003":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ReqModifyRoomSettingMsg';message ReqModifyRoomSettingMsg {  optional int32 id=1;optional RoomSetting roomSetting=2;}message RoomSetting {  optional int64 tableLimitGold=1;optional int32 tableLimitGoldAbled=2;optional int32 tableLimitIp=3;optional string tablePwd=4;optional int32 tablePwdAbled=5;optional int32 roomSettingAbled=6;}",
+		 "name":"com.idealighter.game.gamehall.message.ReqModifyRoomSettingMsg"
+	},
+	"5901":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqEnterGameHallMsg';message ReqEnterGameHallMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqEnterGameHallMsg"
+	},
+	"5902":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqEnterRoomMsg';message ReqEnterRoomMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqEnterRoomMsg"
+	},
+	"5903":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqEnterTableMsg';message ReqEnterTableMsg {  optional int32 id=1;optional int32 tableId=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqEnterTableMsg"
+	},
+	"5904":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqFastEnterTableMsg';message ReqFastEnterTableMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqFastEnterTableMsg"
+	},
+	"5905":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqExitRoomMsg';message ReqExitRoomMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqExitRoomMsg"
+	},
+	"401":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqDepositeGoldMsg';message ReqDepositeGoldMsg {  optional int32 id=1;optional int64 gold=2;}",
+		 "name":"com.idealighter.game.bank.message.ReqDepositeGoldMsg"
+	},
+	"402":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqWithdrawGoldMsg';message ReqWithdrawGoldMsg {  optional int32 id=1;optional string bankPwd=2;optional int64 gold=3;}",
+		 "name":"com.idealighter.game.bank.message.ReqWithdrawGoldMsg"
+	},
+	"5906":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqExitTableMsg';message ReqExitTableMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqExitTableMsg"
+	},
+	"403":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqTransferGoldMsg';message ReqTransferGoldMsg {  optional int32 id=1;optional string bankPwd=2;optional int64 gold=3;optional int64 targetSuperId=4;}",
+		 "name":"com.idealighter.game.bank.message.ReqTransferGoldMsg"
+	},
+	"5907":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqBetMsg';message ReqBetMsg {  optional int32 id=1;optional int32 area=2;optional int64 chips=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqBetMsg"
+	},
+	"5908":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqClearBetMsg';message ReqClearBetMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqClearBetMsg"
+	},
+	"404":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqTransferGoldRecordMsg';message ReqTransferGoldRecordMsg {  optional int32 id=1;optional int32 recordId=2;optional bool next=3;optional int32 oppositeType=4;}",
+		 "name":"com.idealighter.game.bank.message.ReqTransferGoldRecordMsg"
+	},
+	"5909":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqExchangeGoldsMsg';message ReqExchangeGoldsMsg {  optional int32 id=1;optional int64 chips=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqExchangeGoldsMsg"
+	},
+	"405":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqTranferRewardMsg';message ReqTranferRewardMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.bank.message.ReqTranferRewardMsg"
+	},
+	"5910":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqExchangeChipsMsg';message ReqExchangeChipsMsg {  optional int32 id=1;optional int64 gold=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqExchangeChipsMsg"
+	},
+	"406":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ReqTransferCountMsg';message ReqTransferCountMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.bank.message.ReqTransferCountMsg"
+	},
+	"5911":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqFastEnterMsg';message ReqFastEnterMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqFastEnterMsg"
+	},
+	"5401":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqEnterGameHallMsg';message ReqEnterGameHallMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqEnterGameHallMsg"
+	},
+	"5402":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqEnterRoomMsg';message ReqEnterRoomMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqEnterRoomMsg"
+	},
+	"5403":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqFastEnterTableMsg';message ReqFastEnterTableMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqFastEnterTableMsg"
+	},
+	"5406":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqFireMsg';message ReqFireMsg {  optional int32 id=1;optional int32 angle=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqFireMsg"
+	},
+	"5407":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqSwitchBatteryMsg';message ReqSwitchBatteryMsg {  optional int32 id=1;optional int32 type=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqSwitchBatteryMsg"
+	},
+	"5408":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqHitMsg';message ReqHitMsg {  optional int32 id=1;optional int64 playerId=2;optional int64 bulletId=3;optional int32 fishId=4;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqHitMsg"
+	},
+	"801":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.rank.message;option java_outer_classname = 'ReqGoldRankMsg';message ReqGoldRankMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.rank.message.ReqGoldRankMsg"
+	},
+	"5409":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqExitRoomMsg';message ReqExitRoomMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqExitRoomMsg"
+	},
+	"802":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.rank.message;option java_outer_classname = 'ReqWinGoldRankMsg';message ReqWinGoldRankMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.rank.message.ReqWinGoldRankMsg"
+	},
+	"5410":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqExitTableMsg';message ReqExitTableMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqExitTableMsg"
+	},
+	"5411":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqScenceMsg';message ReqScenceMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqScenceMsg"
+	},
+	"5412":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqLockMsg';message ReqLockMsg {  optional int32 id=1;optional int32 fishId=2;optional int32 angle=3;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqLockMsg"
+	},
+	"5413":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqCancelLockMsg';message ReqCancelLockMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqCancelLockMsg"
+	},
+	"5414":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqGameInfoMsg';message ReqGameInfoMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqGameInfoMsg"
+	},
+	"5415":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqExchangeGoldsMsg';message ReqExchangeGoldsMsg {  optional int32 id=1;optional int64 chips=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqExchangeGoldsMsg"
+	},
+	"5416":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqExchangeChipsMsg';message ReqExchangeChipsMsg {  optional int32 id=1;optional int64 gold=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqExchangeChipsMsg"
+	},
+	"5417":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ReqFastEnterMsg';message ReqFastEnterMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ReqFastEnterMsg"
+	},
+	"701":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.welfare.message;option java_outer_classname = 'ReqReceiveBenefitsMsg';message ReqReceiveBenefitsMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.welfare.message.ReqReceiveBenefitsMsg"
+	},
+	"702":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.welfare.message;option java_outer_classname = 'ReqSignInMsg';message ReqSignInMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.welfare.message.ReqSignInMsg"
+	},
+	"705":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.welfare.message;option java_outer_classname = 'ReqShareWechatMsg';message ReqShareWechatMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.welfare.message.ReqShareWechatMsg"
+	},
+	"202":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqBindEmailMsg';message ReqBindEmailMsg {  optional int32 id=1;optional string email=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqBindEmailMsg"
+	},
+	"203":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqBindPhoneMsg';message ReqBindPhoneMsg {  optional int32 id=1;optional string key=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqBindPhoneMsg"
+	},
+	"204":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqEnterPersonalCenterMsg';message ReqEnterPersonalCenterMsg {  optional int32 id=1;optional string bankPwd=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqEnterPersonalCenterMsg"
+	},
+	"205":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqGetBindPhoneKeyMsg';message ReqGetBindPhoneKeyMsg {  optional int32 id=1;optional string phone=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqGetBindPhoneKeyMsg"
+	},
+	"206":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqGetUnBindPhoneKeyMsg';message ReqGetUnBindPhoneKeyMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqGetUnBindPhoneKeyMsg"
+	},
+	"207":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqMdifyPwdProtectMsg';message ReqMdifyPwdProtectMsg {  optional int32 id=1;optional string firstPwdProtectQ=2;optional string firstPwdProtectA=3;optional string secondPwdProtectQ=4;optional string secondPwdProtectA=5;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqMdifyPwdProtectMsg"
+	},
+	"208":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqModifyBankPwdMsg';message ReqModifyBankPwdMsg {  optional int32 id=1;optional string oldPwd=2;optional string newPwd=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqModifyBankPwdMsg"
+	},
+	"209":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqModifyBaseInfoMsg';message ReqModifyBaseInfoMsg {  optional int32 id=1;optional PlayerBaseInfo baseInfo=2;}message PlayerBaseInfo {  optional int32 icon=1;optional string nickName=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqModifyBaseInfoMsg"
+	},
+	"210":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqModifyGameSettingMsg';message ReqModifyGameSettingMsg {  optional int32 id=1;optional int32 loginPhoneVerify=2;optional int32 playItemEffect=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqModifyGameSettingMsg"
+	},
+	"211":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqModifyLoginPwdMsg';message ReqModifyLoginPwdMsg {  optional int32 id=1;optional string oldPwd=2;optional string newPwd=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqModifyLoginPwdMsg"
+	},
+	"212":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqRealNameAuthenticateMsg';message ReqRealNameAuthenticateMsg {  optional int32 id=1;optional string name=2;optional string idNo=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqRealNameAuthenticateMsg"
+	},
+	"213":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ReqUnBindPhoneMsg';message ReqUnBindPhoneMsg {  optional int32 id=1;optional string key=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ReqUnBindPhoneMsg"
+	},
+	"601":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ReqRoomChatMsg';message ReqRoomChatMsg {  optional int32 id=1;optional string content=2;}",
+		 "name":"com.idealighter.game.chat.message.ReqRoomChatMsg"
+	},
+	"602":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ReqTableChatMsg';message ReqTableChatMsg {  optional int32 id=1;optional string content=2;}",
+		 "name":"com.idealighter.game.chat.message.ReqTableChatMsg"
+	},
+	"101":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqTouristLoginMsg';message ReqTouristLoginMsg {  optional int32 id=1;optional string code=2;optional int32 platform=3;}",
+		 "name":"com.idealighter.game.login.message.ReqTouristLoginMsg"
+	},
+	"102":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqPhoneLoginOrRegisterGetSmsMsg';message ReqPhoneLoginOrRegisterGetSmsMsg {  optional int32 id=1;optional string phone=2;}",
+		 "name":"com.idealighter.game.login.message.ReqPhoneLoginOrRegisterGetSmsMsg"
+	},
+	"103":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqPhoneLoginOrRegisterMsg';message ReqPhoneLoginOrRegisterMsg {  optional int32 id=1;optional string smsCode=2;optional string phone=3;optional int32 platform=4;}",
+		 "name":"com.idealighter.game.login.message.ReqPhoneLoginOrRegisterMsg"
+	},
+	"104":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqRobotLoginMsg';message ReqRobotLoginMsg {  optional int32 id=1;optional string name=2;optional string password=3;optional int64 gold=4;}",
+		 "name":"com.idealighter.game.login.message.ReqRobotLoginMsg"
+	},
+	"105":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqLogoutMsg';message ReqLogoutMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ReqLogoutMsg"
+	},
+	"1001":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.mail.message;option java_outer_classname = 'ReqMailListMsg';message ReqMailListMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.mail.message.ReqMailListMsg"
+	},
+	"106":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqReLoginMsg';message ReqReLoginMsg {  optional int32 id=1;optional int32 type=2;optional string code=3;optional int32 byHand=4;optional int32 platform=5;}",
+		 "name":"com.idealighter.game.login.message.ReqReLoginMsg"
+	},
+	"107":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ReqTouristUpdateMsg';message ReqTouristUpdateMsg {  optional int32 id=1;optional string smsCode=2;optional string playerName=3;optional int64 recommend=4;}",
+		 "name":"com.idealighter.game.gamehall.message.ReqTouristUpdateMsg"
+	},
+	"5099":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ReqGameMsg';message ReqGameMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.gamehall.message.ReqGameMsg"
+	},
+	"5999":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ReqGameInfoMsg';message ReqGameInfoMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ReqGameInfoMsg"
+	},
+	"6001":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqEnterGameHallMsg';message ReqEnterGameHallMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqEnterGameHallMsg"
+	},
+	"113":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ReqWeChatLoginMsg';message ReqWeChatLoginMsg {  optional int32 id=1;optional string unionId=2;optional string nickName=3;optional int32 platform=4;}",
+		 "name":"com.idealighter.game.login.message.ReqWeChatLoginMsg"
+	},
+	"6002":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqEnterRoomMsg';message ReqEnterRoomMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqEnterRoomMsg"
+	},
+	"6003":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqFastEnterTableMsg';message ReqFastEnterTableMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqFastEnterTableMsg"
+	},
+	"6004":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqExitTableMsg';message ReqExitTableMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqExitTableMsg"
+	},
+	"6005":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqExitRoomMsg';message ReqExitRoomMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqExitRoomMsg"
+	},
+	"6006":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqApplyBankerMsg';message ReqApplyBankerMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqApplyBankerMsg"
+	},
+	"6007":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqCancelApplyBankerMsg';message ReqCancelApplyBankerMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqCancelApplyBankerMsg"
+	},
+	"6008":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqOffBankerMsg';message ReqOffBankerMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqOffBankerMsg"
+	},
+	"6009":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqBetMsg';message ReqBetMsg {  optional int32 id=1;optional int32 area=2;optional int64 chips=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqBetMsg"
+	},
+	"6010":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqClearBetMsg';message ReqClearBetMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqClearBetMsg"
+	},
+	"6011":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqGameInfoMsg';message ReqGameInfoMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqGameInfoMsg"
+	},
+	"6012":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqExchangeGoldsMsg';message ReqExchangeGoldsMsg {  optional int32 id=1;optional int64 chips=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqExchangeGoldsMsg"
+	},
+	"6013":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqExchangeChipsMsg';message ReqExchangeChipsMsg {  optional int32 id=1;optional int64 gold=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqExchangeChipsMsg"
+	},
+	"6014":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ReqFastEnterMsg';message ReqFastEnterMsg {  optional int32 id=1;optional int32 roomId=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ReqFastEnterMsg"
+	}
+} 

@@ -1,0 +1,40 @@
+{"mc":{
+	"SeaWave":{
+		"frameRate":4,
+		"labels":[
+			{"name":"act","frame":1,"end":4}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"SeaWave_01",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"SeaWave_02",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"SeaWave_03",
+			"x":0,
+			"y":0
+			},
+			{
+			"res":"SeaWave_04",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"SeaWave_04":{"x":1010,"y":0,"w":480,"h":1080},
+		"SeaWave_03":{"x":0,"y":0,"w":511,"h":1080},
+		"SeaWave_01":{"x":1490,"y":0,"w":475,"h":1080},
+		"SeaWave_02":{"x":511,"y":0,"w":499,"h":1080}
+	}}

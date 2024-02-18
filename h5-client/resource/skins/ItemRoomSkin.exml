@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up, down">
+	<e:Image source="common_room_item_bg_png" alpha.down="0.8" horizontalCenter="0" verticalCenter="0" scale9Grid="33,284,289,128" width="259" height="540"/>
+	<e:Label id="lbTitle" text="Label" horizontalCenter="0" verticalCenter="-20" size="25"/>
+	<e:Label id="lbLimit" text="Label" size="20" horizontalCenter="0" verticalCenter="20"/>
+</e:Skin>

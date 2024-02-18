@@ -1,0 +1,20 @@
+{
+	"groups": [
+		{
+			"keys": "reqMsg,resMsg",
+			"name": "proto_file"
+		}
+	],
+	"resources": [
+		{
+			"url": "proto/reqMsg.json",
+			"type": "json",
+			"name": "reqMsg"
+		},
+		{
+			"url": "proto/resMsg.json",
+			"type": "json",
+			"name": "resMsg"
+		}
+	]
+}

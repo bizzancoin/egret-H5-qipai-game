@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.dic.mapper.HorseraceSence1Mapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.dic.po.HorseraceSence1">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="itemId" jdbcType="INTEGER" property="itemid" />
+    <result column="pX" jdbcType="INTEGER" property="px" />
+    <result column="pY" jdbcType="INTEGER" property="py" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, itemId, pX, pY
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1Example" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from horserace_sence_1
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from horserace_sence_1
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from horserace_sence_1
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1Example">
+    delete from horserace_sence_1
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1">
+    insert into horserace_sence_1 (id, itemId, pX, 
+      pY)
+    values (#{id,jdbcType=INTEGER}, #{itemid,jdbcType=INTEGER}, #{px,jdbcType=INTEGER}, 
+      #{py,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1">
+    insert into horserace_sence_1
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="itemid != null">
+        itemId,
+      </if>
+      <if test="px != null">
+        pX,
+      </if>
+      <if test="py != null">
+        pY,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="itemid != null">
+        #{itemid,jdbcType=INTEGER},
+      </if>
+      <if test="px != null">
+        #{px,jdbcType=INTEGER},
+      </if>
+      <if test="py != null">
+        #{py,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1Example" resultType="java.lang.Long">
+    select count(*) from horserace_sence_1
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update horserace_sence_1
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.itemid != null">
+        itemId = #{record.itemid,jdbcType=INTEGER},
+      </if>
+      <if test="record.px != null">
+        pX = #{record.px,jdbcType=INTEGER},
+      </if>
+      <if test="record.py != null">
+        pY = #{record.py,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update horserace_sence_1
+    set id = #{record.id,jdbcType=INTEGER},
+      itemId = #{record.itemid,jdbcType=INTEGER},
+      pX = #{record.px,jdbcType=INTEGER},
+      pY = #{record.py,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1">
+    update horserace_sence_1
+    <set>
+      <if test="itemid != null">
+        itemId = #{itemid,jdbcType=INTEGER},
+      </if>
+      <if test="px != null">
+        pX = #{px,jdbcType=INTEGER},
+      </if>
+      <if test="py != null">
+        pY = #{py,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.dic.po.HorseraceSence1">
+    update horserace_sence_1
+    set itemId = #{itemid,jdbcType=INTEGER},
+      pX = #{px,jdbcType=INTEGER},
+      pY = #{py,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

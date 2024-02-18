@@ -1,0 +1,336 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.idealighter</groupId>
+  <artifactId>huohua-admin-parent</artifactId>
+  <version>malai-h5-admin-1.0.0</version>
+  <packaging>pom</packaging>
+
+  <name>huohua-admin-parent</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <idealighter.util.version>1.0.3.RELEASE</idealighter.util.version>
+    <game.version>${project.version}</game.version>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <it.skip>true</it.skip>
+    <unti.skip>true</unti.skip>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring.version>4.3.9.RELEASE</spring.version>
+    <spring.boot.version>1.5.4.RELEASE</spring.boot.version>
+    <resteasy.starter.version>2.3.2-RELEASE</resteasy.starter.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <java.version>1.8</java.version>
+    <org.mapstruct.version>1.2.0.Final</org.mapstruct.version>
+    <lombok.version>1.16.18</lombok.version>
+    <m2e.apt.activation>jdt_apt</m2e.apt.activation>
+    <mysql.version>6.0.6</mysql.version>
+    <mybatis.starter.version>1.3.0</mybatis.starter.version>
+
+
+    <junit.version>4.12</junit.version>
+    <org.hamcrest.version>1.3</org.hamcrest.version>
+    <jaxb.version>2.2.11</jaxb.version>
+    <HikariCP.version>2.6.2</HikariCP.version>
+
+    <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+    <javax.validation.version>1.1.0.Final</javax.validation.version>
+    <javax.el.version>3.0.0</javax.el.version>
+    <resteasy.validator.version>3.1.3.Final</resteasy.validator.version>
+    <jjwt.version>0.7.0</jjwt.version>
+    <hibernate.validator.version>5.4.1.Final</hibernate.validator.version>
+    <validator.collection.version>2.1.6</validator.collection.version>
+    <spring-security.version>4.1.0.RELEASE</spring-security.version>
+    <thymeleaf.version>3.0.6.RELEASE</thymeleaf.version>
+    <thymeleaf-layout-dialect.version>2.2.2</thymeleaf-layout-dialect.version>
+    <spring.session.version>1.3.1.RELEASE</spring.session.version>
+    <okhttp.version>3.9.1</okhttp.version>
+
+    <!-- 插件版本号 -->
+    <test.plugin.version>2.19.1</test.plugin.version>
+    <compiler.plugin.version>3.7.0</compiler.plugin.version>
+    <source.plugin.version>3.0.0</source.plugin.version>
+    <clean.plugin.version>3.0.0</clean.plugin.version>
+    <assembly.plugin.version>2.6</assembly.plugin.version>
+    <third.processor.plugin.version>3.1.0</third.processor.plugin.version>
+    <jacoco.plugin.version>0.7.6.201602180812</jacoco.plugin.version>
+    <versions.plugin.version>2.3</versions.plugin.version>
+    <lombok.plugin.version>1.16.18.1</lombok.plugin.version>
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.thymeleaf</groupId>
+        <artifactId>thymeleaf</artifactId>
+        <version>${thymeleaf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.thymeleaf</groupId>
+        <artifactId>thymeleaf-spring4</artifactId>
+        <version>${thymeleaf.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>nz.net.ultraq.thymeleaf</groupId>
+        <artifactId>thymeleaf-layout-dialect</artifactId>
+        <version>${thymeleaf-layout-dialect.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>${okhttp.version}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>com.idealighter</groupId>
+        <artifactId>utils-core</artifactId>
+        <version>${idealighter.util.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>${HikariCP.version}</version>
+      </dependency>
+
+      <!-- model mapper -->
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct-jdk8</artifactId>
+        <version>${org.mapstruct.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mapstruct</groupId>
+        <artifactId>mapstruct-processor</artifactId>
+        <version>${org.mapstruct.version}</version>
+      </dependency>
+      <!-- 自动生成get set 等 -->
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>${javax.validation.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate.validator.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.el</groupId>
+        <artifactId>javax.el-api</artifactId>
+        <version>${javax.el.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.glassfish</groupId>
+        <artifactId>javax.el</artifactId>
+        <version>${javax.el.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>cz.jirutka.validator</groupId>
+        <artifactId>validator-collection</artifactId>
+        <version>${validator.collection.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.ws.rs</groupId>
+        <artifactId>javax.ws.rs-api</artifactId>
+        <version>${javax.ws.rs.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.paypal.springboot</groupId>
+        <artifactId>resteasy-spring-boot-starter</artifactId>
+        <version>${resteasy.starter.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.resteasy</groupId>
+        <artifactId>resteasy-validator-provider-11</artifactId>
+        <version>${resteasy.validator.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.jsonwebtoken</groupId>
+        <artifactId>jjwt</artifactId>
+        <version>${jjwt.version}</version>
+      </dependency>
+
+
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hamcrest</groupId>
+        <artifactId>hamcrest-all</artifactId>
+        <version>${org.hamcrest.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>${spring.boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-redis</artifactId>
+        <version>${spring.boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jdbc</artifactId>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jdbc</artifactId>
+          </exclusion>
+        </exclusions>
+        <version>${spring.boot.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mybatis.spring.boot</groupId>
+        <artifactId>mybatis-spring-boot-starter</artifactId>
+        <exclusions>
+          <exclusion>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-jdbc</artifactId>
+          </exclusion>
+        </exclusions>
+        <version>${mybatis.starter.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session</artifactId>
+        <version>${spring.session.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>3.17</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>3.17</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.abgame</groupId>
+        <artifactId>game-common-redis</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+
+    </dependencies>
+  </dependencyManagement>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <!-- spring boot 打包插件 -->
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring.boot.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>${assembly.plugin.version}</version>
+        </plugin>
+        <!-- 集成测试插件 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${test.plugin.version}</version>
+        </plugin>
+        <!-- 单元测试插件 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${test.plugin.version}</version>
+        </plugin>
+        <!-- 测试覆盖插件 -->
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco.plugin.version}</version>
+        </plugin>
+        <!-- 编译插件 src testsrc -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>${compiler.plugin.version}</version>
+        </plugin>
+        <!-- 源码插件 -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>${source.plugin.version}</version>
+        </plugin>
+        <!-- mapstruct使用 process annotation for jdk6 at compile time -->
+        <plugin>
+          <groupId>org.bsc.maven</groupId>
+          <artifactId>maven-processor-plugin</artifactId>
+          <version>${third.processor.plugin.version}</version>
+        </plugin>
+        <!-- 版本管理插件 -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <version>${versions.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>${clean.plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok-maven-plugin</artifactId>
+          <version>${lombok.plugin.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <modules>
+    <module>huohua-admin</module>
+  </modules>
+
+  <!-- 仓库地址 -->
+  <repositories>
+    <repository>
+      <id>nexus</id>
+      <name>Team Nexus Repository</name>
+      <url>http://127.0.0.1:8888/nexus/content/groups/public</url>
+    </repository>
+  </repositories>
+
+  <!-- 插件地址 -->
+  <pluginRepositories>
+    <pluginRepository>
+      <id>nexus</id>
+      <name>Team Nexus Repository</name>
+      <url>http://127.0.0.1:8888/nexus/content/groups/public</url>
+    </pluginRepository>
+  </pluginRepositories>
+</project>

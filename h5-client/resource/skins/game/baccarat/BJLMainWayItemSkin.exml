@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BJLMainWayItemSkin" width="56" height="56" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgZX" width="40" height="40" source="ludan_json.z_xian" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="imgZdui" width="10" height="10" source="ludan_json.zhu_hd" left="9" top="9"/>
+	<e:Image id="imgXdui" width="10" height="10" source="ludan_json.zhu_ld" right="9" bottom="9"/>
+</e:Skin>

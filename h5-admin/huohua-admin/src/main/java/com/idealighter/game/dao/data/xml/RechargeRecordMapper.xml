@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.idealighter.game.dao.data.mapper.RechargeRecordMapper">
+  <resultMap id="BaseResultMap" type="com.idealighter.game.dao.data.po.RechargeRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="trade_no" jdbcType="VARCHAR" property="tradeNo" />
+    <result column="outside_no" jdbcType="VARCHAR" property="outsideNo" />
+    <result column="pay_type" jdbcType="TINYINT" property="payType" />
+    <result column="player_id" jdbcType="BIGINT" property="playerId" />
+    <result column="recharge_item_id" jdbcType="INTEGER" property="rechargeItemId" />
+    <result column="gold" jdbcType="BIGINT" property="gold" />
+    <result column="send_gold" jdbcType="BIGINT" property="sendGold" />
+    <result column="price" jdbcType="INTEGER" property="price" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, trade_no, outside_no, pay_type, player_id, recharge_item_id, gold, send_gold, 
+    price, create_time, pay_time, state
+  </sql>
+  <select id="selectByExample" parameterType="com.idealighter.game.dao.data.po.RechargeRecordExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from recharge_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from recharge_record
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from recharge_record
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.idealighter.game.dao.data.po.RechargeRecordExample">
+    delete from recharge_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.idealighter.game.dao.data.po.RechargeRecord">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into recharge_record (trade_no, outside_no, pay_type, 
+      player_id, recharge_item_id, gold, 
+      send_gold, price, create_time, 
+      pay_time, state)
+    values (#{tradeNo,jdbcType=VARCHAR}, #{outsideNo,jdbcType=VARCHAR}, #{payType,jdbcType=TINYINT}, 
+      #{playerId,jdbcType=BIGINT}, #{rechargeItemId,jdbcType=INTEGER}, #{gold,jdbcType=BIGINT}, 
+      #{sendGold,jdbcType=BIGINT}, #{price,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{payTime,jdbcType=TIMESTAMP}, #{state,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.idealighter.game.dao.data.po.RechargeRecord">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into recharge_record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tradeNo != null">
+        trade_no,
+      </if>
+      <if test="outsideNo != null">
+        outside_no,
+      </if>
+      <if test="payType != null">
+        pay_type,
+      </if>
+      <if test="playerId != null">
+        player_id,
+      </if>
+      <if test="rechargeItemId != null">
+        recharge_item_id,
+      </if>
+      <if test="gold != null">
+        gold,
+      </if>
+      <if test="sendGold != null">
+        send_gold,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="payTime != null">
+        pay_time,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tradeNo != null">
+        #{tradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="outsideNo != null">
+        #{outsideNo,jdbcType=VARCHAR},
+      </if>
+      <if test="payType != null">
+        #{payType,jdbcType=TINYINT},
+      </if>
+      <if test="playerId != null">
+        #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="rechargeItemId != null">
+        #{rechargeItemId,jdbcType=INTEGER},
+      </if>
+      <if test="gold != null">
+        #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="sendGold != null">
+        #{sendGold,jdbcType=BIGINT},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payTime != null">
+        #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.idealighter.game.dao.data.po.RechargeRecordExample" resultType="java.lang.Long">
+    select count(*) from recharge_record
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update recharge_record
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.tradeNo != null">
+        trade_no = #{record.tradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.outsideNo != null">
+        outside_no = #{record.outsideNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.payType != null">
+        pay_type = #{record.payType,jdbcType=TINYINT},
+      </if>
+      <if test="record.playerId != null">
+        player_id = #{record.playerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.rechargeItemId != null">
+        recharge_item_id = #{record.rechargeItemId,jdbcType=INTEGER},
+      </if>
+      <if test="record.gold != null">
+        gold = #{record.gold,jdbcType=BIGINT},
+      </if>
+      <if test="record.sendGold != null">
+        send_gold = #{record.sendGold,jdbcType=BIGINT},
+      </if>
+      <if test="record.price != null">
+        price = #{record.price,jdbcType=INTEGER},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.payTime != null">
+        pay_time = #{record.payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.state != null">
+        state = #{record.state,jdbcType=TINYINT},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update recharge_record
+    set id = #{record.id,jdbcType=INTEGER},
+      trade_no = #{record.tradeNo,jdbcType=VARCHAR},
+      outside_no = #{record.outsideNo,jdbcType=VARCHAR},
+      pay_type = #{record.payType,jdbcType=TINYINT},
+      player_id = #{record.playerId,jdbcType=BIGINT},
+      recharge_item_id = #{record.rechargeItemId,jdbcType=INTEGER},
+      gold = #{record.gold,jdbcType=BIGINT},
+      send_gold = #{record.sendGold,jdbcType=BIGINT},
+      price = #{record.price,jdbcType=INTEGER},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      pay_time = #{record.payTime,jdbcType=TIMESTAMP},
+      state = #{record.state,jdbcType=TINYINT}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.idealighter.game.dao.data.po.RechargeRecord">
+    update recharge_record
+    <set>
+      <if test="tradeNo != null">
+        trade_no = #{tradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="outsideNo != null">
+        outside_no = #{outsideNo,jdbcType=VARCHAR},
+      </if>
+      <if test="payType != null">
+        pay_type = #{payType,jdbcType=TINYINT},
+      </if>
+      <if test="playerId != null">
+        player_id = #{playerId,jdbcType=BIGINT},
+      </if>
+      <if test="rechargeItemId != null">
+        recharge_item_id = #{rechargeItemId,jdbcType=INTEGER},
+      </if>
+      <if test="gold != null">
+        gold = #{gold,jdbcType=BIGINT},
+      </if>
+      <if test="sendGold != null">
+        send_gold = #{sendGold,jdbcType=BIGINT},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payTime != null">
+        pay_time = #{payTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=TINYINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.idealighter.game.dao.data.po.RechargeRecord">
+    update recharge_record
+    set trade_no = #{tradeNo,jdbcType=VARCHAR},
+      outside_no = #{outsideNo,jdbcType=VARCHAR},
+      pay_type = #{payType,jdbcType=TINYINT},
+      player_id = #{playerId,jdbcType=BIGINT},
+      recharge_item_id = #{rechargeItemId,jdbcType=INTEGER},
+      gold = #{gold,jdbcType=BIGINT},
+      send_gold = #{sendGold,jdbcType=BIGINT},
+      price = #{price,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      pay_time = #{payTime,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=TINYINT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

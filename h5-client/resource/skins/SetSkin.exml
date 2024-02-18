@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="game.SetSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="100%" x="0" height="100%">
+		<e:Rect left="0" top="0" width="100%" height="100%" fillAlpha="0.2"/>
+		<e:Group id="groupSet" width="900" height="600" horizontalCenter="0" verticalCenter="0">
+			<e:Image source="common_dialog_bg2_png" scale9Grid="151,240,1480,559" left="0" right="0" top="0" bottom="0"/>
+			<e:Button id="btnClose" label="" right="0" top="0" height="128">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" alpha.down="0.8" height="100%" source="common_btn_close_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image source="setting_title_png" horizontalCenter="0" top="30"/>
+			<e:Group width="440" height="100" horizontalCenter="0" verticalCenter="-50">
+				<e:Image source="setting_music_png" verticalCenter="0" left="0"/>
+				<e:ToggleSwitch id="tgMusic" label="" right="0" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="setting_switch_off_png" source.down="setting_switch_on_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+			</e:Group>
+			<e:Group width="440" height="100" verticalCenter="120" horizontalCenter="0">
+				<e:Image source="setting_sound_png" verticalCenter="0" left="0"/>
+				<e:ToggleSwitch id="tgSound" label="" right="0" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="setting_switch_off_png" source.down="setting_switch_on_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+						</e:Skin>
+					</e:skinName>
+				</e:ToggleSwitch>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

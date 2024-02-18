@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BJLBigWayItemSkin" width="31" height="32" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgBigIcon" width="36" height="36" source="ludan_json.bjl_d_lquan" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="imgHeIcon" width="31" height="31" source="ludan_json.bjl_a_lvxg" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0"/>
+	<e:BitmapLabel id="fntHeNum" width="38" height="21" font="bjl_fnt_bigRoadNum_fnt" text="0" scaleX="0.8" scaleY="0.8" horizontalCenter="0" verticalCenter="0" textAlign="center"/>
+</e:Skin>

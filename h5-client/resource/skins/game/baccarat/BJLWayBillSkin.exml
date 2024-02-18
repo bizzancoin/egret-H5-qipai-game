@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BJLWayBillSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="btnShowLoad" label="" enabled="true" horizontalCenter="0" verticalCenter="445">
+		<e:skinName>
+		<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.ckld" source.down="ludan_json.ckld" source.disabled="ludan_json.ckld"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Group id="grpBJLLoad" width="1578" height="948" horizontalCenter="0" verticalCenter="-65">
+		<e:Image x="0" y="0" source="ckldbj_png"/>
+		<e:Button id="btnBLoadBJL" label="" x="166" y="28">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.bjl1" source.down="ludan_json.bjl1" source.disabled="ludan_json.bjl1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnBLoadLH" label="" x="342" y="28">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.lh" source.down="ludan_json.lh" source.disabled="ludan_json.lh"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnBLoadZWL" label="" x="770" y="28">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.zwl" source.down="ludan_json.zwl" source.disabled="ludan_json.zwl"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnBLoadXWL" label="" x="1170" y="28">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.xwl" source.down="ludan_json.xwl" source.disabled="ludan_json.xwl"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:TabBar id="tabLoad" x="25" y="100" height="686">
+				<e:layout>
+					<e:VerticalLayout gap="-1" horizontalAlign="justify" verticalAlign="contentJustify"/>
+				</e:layout>
+				<e:itemRendererSkinName>
+					<e:Skin states="up,down,disabled">
+						<e:Group minHeight="48" width="100%">
+							<e:Image width="100%" height="100%" alpha.disabled="0.5"
+									source="{data.on}"
+									source.down="{data.off}"/>
+						</e:Group>
+					</e:Skin>
+				</e:itemRendererSkinName>
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object on="ludan_json.zx" off="ludan_json.zx1"/>
+						<e:Object on="ludan_json.dx" off="ludan_json.dx1"/>
+					</e:Array>
+				</e:ArrayCollection>
+		</e:TabBar>
+		<e:ViewStack id="vsBJLMainLoad" width="556" height="660" x="153" y="115" selectedIndex="1">
+			<e:Group id="grpBJLZXMainLoad" width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+				<e:layout>
+				<e:TileLayout orientation="columns" horizontalGap="0" verticalGap="0" rowHeight="55" columnWidth="55"/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="grpBJLDXMainLoad" width="100%" height="100%" x="0" y="0" anchorOffsetX="0" anchorOffsetY="0">
+				<e:layout>
+				<e:TileLayout orientation="columns" horizontalGap="0" verticalGap="0" rowHeight="55" columnWidth="55"/>
+				</e:layout>
+			</e:Group>
+		</e:ViewStack>
+		<e:Group id="grpBJLBigWay" width="781" height="258" x="755" y="118" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="grpBJLBigEyeWay" width="781" height="258" x="755" y="389" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="grpBJLSmallWay" width="781" height="258" x="755" y="659" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="lbBJLGameNum" text="0" x="143" y="801" textColor="0xe8db09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbBJLHeNum" text="0" x="106" y="856" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbBJLZhuangNum" text="0" x="390" y="801" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbBJLZPairNum" text="0" x="390" y="856" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbBJLXianNum" text="0" x="635" y="801" textColor="0xE8DB09" width="80" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbBJLXPairNum" text="0" x="635" y="856" textColor="0xE8DB09" width="80" height="50" verticalAlign="middle" size="36"/>
+		<e:Image id="imgBigIconZhuang" x="930" y="43" source="ludan_json.bjl_t_fquan" width="38" height="38"/>
+		<e:Image id="imgSmallIconZhuang" x="1000" y="43" source="ludan_json.bjl_t_lqiu" width="38" height="38"/>
+		<e:Image id="imgXQIconZhuang" x="1070" y="43" source="ludan_json.bjl_t_lg" width="38" height="38"/>
+		<e:Image id="imgBigIconXian" x="1330" y="43" source="ludan_json.bjl_t_lquan" width="38" height="38"/>
+		<e:Image id="imgSmallIconXian" x="1400" y="43" source="ludan_json.bjl_t_lqiu" width="38" height="38"/>
+		<e:Image id="imgXQIconXian" x="1470" y="43" source="ludan_json.bjl_t_fg" width="38" height="38"/>
+	</e:Group>
+	<e:Group id="grpLHLoad" width="1578" height="948" horizontalCenter="0" verticalCenter="-65">
+		<e:Image x="0" y="0" source="ckldbj1_png"/>
+		<e:Button id="btnLLoadBJL" label="" x="39" y="28">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="ludan_json.bjl" source.down="ludan_json.bjl" source.disabled="ludan_json.bjl"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:ns1="*"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btnLLoadLH" label="" x="200" y="28" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.lh1" source.down="ludan_json.lh1" source.disabled="ludan_json.lh1"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnLoadLWL" label="" x="770" y="28" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.lwl" source.down="ludan_json.lwl" source.disabled="ludan_json.lwl"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Button id="btnLoadHWL" label="" x="1170" y="28" visible="false">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:ns1="*">
+			<e:Image width="100%" height="100%" source="ludan_json.hwl" source.down="ludan_json.hwl" source.disabled="ludan_json.hwl"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+		<e:Group id="grpLHMainLoad" width="663" height="662" x="45" y="113" anchorOffsetX="0" anchorOffsetY="0">
+			<e:layout>
+			<e:TileLayout orientation="columns" horizontalGap="0" verticalGap="0" rowHeight="55" columnWidth="55"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="grpLHBigWay" width="781" height="258" x="755" y="118" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="grpLHBigEyeWay" width="781" height="258" x="755" y="389" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Group id="grpLHSmallWay" width="781" height="258" x="755" y="659" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="lbLHGameNum" text="0" x="143" y="801" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbLHHeNum" text="0" x="106" y="856" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbLHLongNum" text="0" x="390" y="801" textColor="0xE8DB09" width="120" height="50" verticalAlign="middle" size="36"/>
+		<e:Label id="lbLHHuNum" text="0" x="603" y="801" textColor="0xE8DB09" width="110" height="50" verticalAlign="middle" size="36"/>
+		<e:Image id="imgBigIconLong" x="930" y="43" source="ludan_json.bjl_t_jquan" width="38" height="38"/>
+		<e:Image id="imgSmallIconLong" x="1000" y="43" source="ludan_json.bjl_t_fqiu" width="38" height="38"/>
+		<e:Image id="imgXQIconLong" x="1070" y="43" source="ludan_json.bjl_t_fg" width="38" height="38"/>
+		<e:Image id="imgBigIconHu" x="1330" y="43" source="ludan_json.bjl_t_fquan" width="38" height="38"/>
+		<e:Image id="imgSmallIconHu" x="1400" y="43" source="ludan_json.bjl_t_fqiu" width="38" height="38"/>
+		<e:Image id="imgXQIconHu" x="1470" y="43" source="ludan_json.bjl_t_jg" width="38" height="38"/>
+	</e:Group>
+</e:Skin>

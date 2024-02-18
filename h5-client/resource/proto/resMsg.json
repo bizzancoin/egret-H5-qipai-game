@@ -1,0 +1,414 @@
+{ 
+	"1":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResHeartbeatMsg';message ResHeartbeatMsg {  required int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ResHeartbeatMsg"
+	},
+	"2":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResDefaultMsg';message ResDefaultMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.common.message.ResDefaultMsg"
+	},
+	"3":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResErrorMsg';message ResErrorMsg {  optional int32 id=1;optional int32 errorCode=2;optional int32 system=3;repeated string args=4;}",
+		 "name":"com.idealighter.game.common.message.ResErrorMsg"
+	},
+	"4":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResShowMsg';message ResShowMsg {  optional int32 id=1;optional int32 msgId=2;optional int32 system=3;repeated string args=4;}",
+		 "name":"com.idealighter.game.common.message.ResShowMsg"
+	},
+	"5":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResTipMsg';message ResTipMsg {  optional int32 id=1;optional int32 errorCode=2;optional int32 system=3;repeated string args=4;}",
+		 "name":"com.idealighter.game.common.message.ResTipMsg"
+	},
+	"6":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResWarnMsg';message ResWarnMsg {  optional int32 id=1;optional int32 errorCode=2;optional int32 system=3;repeated string args=4;}",
+		 "name":"com.idealighter.game.common.message.ResWarnMsg"
+	},
+	"5901":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResEnterGameHallMsg';message ResEnterGameHallMsg {  optional int32 id=1;repeated RoomTypeDetailInfo roomTypes=2;}message RoomTypeDetailInfo {  optional int32 type=1;optional string typeName=2;repeated RoomInfo rooms=3;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int32 proportionGold=7;optional int32 proportionChips=8;optional int32 table=9;repeated int64 betOptions=10;optional int32 afee=11;optional int32 inType=12;optional int32 playerNum=13;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResEnterGameHallMsg"
+	},
+	"5902":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResEnterRoomMsg';message ResEnterRoomMsg {  optional int32 id=1;repeated TableInfo tables=2;repeated MemInfo members=3;}message TableInfo {  optional int32 id=1;optional int32 roomId=2;optional int32 hasPwd=3;repeated SeatInfo seats=4;}message SeatInfo {  optional int32 tableId=1;optional int32 order=2;optional int64 playerId=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResEnterRoomMsg"
+	},
+	"5903":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResEnterTableMsg';message ResEnterTableMsg {  optional int32 id=1;repeated MemInfo mems=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResEnterTableMsg"
+	},
+	"5904":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResFastEnterTableMsg';message ResFastEnterTableMsg {  optional int32 id=1;repeated MemInfo mems=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResFastEnterTableMsg"
+	},
+	"5907":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResBetMsg';message ResBetMsg {  optional int32 id=1;optional int32 area=2;optional int64 chips=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResBetMsg"
+	},
+	"5911":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResFastEnterMsg';message ResFastEnterMsg {  optional int32 id=1;repeated MemInfo mems=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResFastEnterMsg"
+	},
+	"5401":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResEnterGameHallMsg';message ResEnterGameHallMsg {  optional int32 id=1;repeated RoomTypeDetailInfo roomTypes=2;}message RoomTypeDetailInfo {  optional int32 type=1;optional string typeName=2;repeated RoomInfo rooms=3;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int32 proportionGold=7;optional int32 proportionChips=8;optional int32 tabble=9;optional int32 afee=10;optional int32 inType=11;optional int32 playerNum=12;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResEnterGameHallMsg"
+	},
+	"5402":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResEnterRoomMsg';message ResEnterRoomMsg {  optional int32 id=1;repeated TableInfo tables=2;repeated MemInfo members=3;}message TableInfo {  optional int32 id=1;optional int32 roomId=2;optional int32 hasPwd=3;repeated SeatInfo seats=4;}message SeatInfo {  optional int32 tableId=1;optional int32 order=2;optional int64 playerId=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResEnterRoomMsg"
+	},
+	"5403":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResEnterTableMsg';message ResEnterTableMsg {  optional int32 id=1;repeated MemInfo mems=2;optional int64 totalChips=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResEnterTableMsg"
+	},
+	"5920":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeOtherEnterTableMsg';message NoticeOtherEnterTableMsg {  optional int32 id=1;optional MemInfo mem=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeOtherEnterTableMsg"
+	},
+	"801":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.rank.message;option java_outer_classname = 'ResGoldRankMsg';message ResGoldRankMsg {  optional int32 id=1;repeated RankPlayerDto players=2;}message RankPlayerDto {  optional int64 playerId=1;optional int64 superId=2;optional string playerName=3;optional int32 icon=4;optional int32 vipLevel=5;optional int64 gold=6;}",
+		 "name":"com.idealighter.game.rank.message.ResGoldRankMsg"
+	},
+	"5921":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeChipsChangeMsg';message NoticeChipsChangeMsg {  optional int32 id=1;optional int64 playerId=2;optional int64 chips=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeChipsChangeMsg"
+	},
+	"5922":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeHistoryMsg';message NoticeHistoryMsg {  optional int32 id=1;repeated int32 hisWaybill=2;repeated int32 hisDragon=3;repeated int32 hisBigSmall=4;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeHistoryMsg"
+	},
+	"802":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.rank.message;option java_outer_classname = 'ResWinGoldRankMsg';message ResWinGoldRankMsg {  optional int32 id=1;repeated RankPlayerDto players=2;}message RankPlayerDto {  optional int64 playerId=1;optional int64 superId=2;optional string playerName=3;optional int32 icon=4;optional int32 vipLevel=5;optional int64 gold=6;}",
+		 "name":"com.idealighter.game.rank.message.ResWinGoldRankMsg"
+	},
+	"5411":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResScenceMsg';message ResScenceMsg {  optional int32 id=1;optional int32 scenceId=2;repeated FishInfo fishs=3;repeated BatteryInfo batterys=4;repeated int64 insteadPlayers=5;}message BatteryInfo {  optional int64 playerId=1;optional int32 order=2;optional int32 score=3;optional int32 num=4;optional int32 power=5;}message FishInfo {  optional int32 id=1;optional int32 type=2;optional int32 xcoord=3;optional int32 ycoord=4;optional int32 road=5;optional int64 time=6;optional int32 angle=7;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResScenceMsg"
+	},
+	"5923":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeMultipleMsg';message NoticeMultipleMsg {  optional int32 id=1;repeated IconMultiple iconMulti=2;}message IconMultiple {  optional int32 areaId=1;optional int32 rate=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeMultipleMsg"
+	},
+	"5924":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeCutCardsMsg';message NoticeCutCardsMsg {  optional int32 id=1;repeated int32 cardsInfo=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeCutCardsMsg"
+	},
+	"5925":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeDealCardsMsg';message NoticeDealCardsMsg {  optional int32 id=1;repeated CardsInfo cardsInfo=2;optional int32 cardIndex=3;optional int32 leftNum=4;optional int32 yellowCard=5;}message CardsInfo {  repeated int32 cards=1;optional int32 id=2;optional int32 cardsType=3;optional int32 point=4;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeDealCardsMsg"
+	},
+	"5414":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResGameInfoMsg';message ResGameInfoMsg {  optional int32 id=1;optional RoomInfo room=2;repeated MemInfo mems=3;optional GameInfo gameInfo=4;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int32 proportionGold=7;optional int32 proportionChips=8;optional int32 tabble=9;optional int32 afee=10;optional int32 inType=11;optional int32 playerNum=12;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}message GameInfo {  repeated LockInfo lockInfos=1;}message LockInfo {  optional int64 playerId=1;optional int32 lockFishId=2;optional int32 lockAngle=3;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResGameInfoMsg"
+	},
+	"5926":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeBillMsg';message NoticeBillMsg {  optional int32 id=1;optional int64 bankerChips=2;optional int64 playerChips=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeBillMsg"
+	},
+	"5927":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeStatisticsInfoMsg';message NoticeStatisticsInfoMsg {  optional int32 id=1;optional int32 bankerWin=2;optional int32 playerWin=3;optional int32 tie=4;optional int32 bankerPaire=5;optional int32 playerPaire=6;optional int32 dragon=7;optional int32 tiger=8;optional int32 dragonTigerTie=9;optional int32 score=10;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeStatisticsInfoMsg"
+	},
+	"5928":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeTableBetMsg';message NoticeTableBetMsg {  optional int32 id=1;repeated BetInfo betInfo=2;}message BetInfo {  optional int32 area=1;optional int64 chips=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeTableBetMsg"
+	},
+	"5929":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeTimeMsg';message NoticeTimeMsg {  optional int32 id=1;optional int32 state=2;optional int32 time=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeTimeMsg"
+	},
+	"5417":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResFastEnterMsg';message ResFastEnterMsg {  optional int32 id=1;repeated MemInfo mems=2;optional int64 totalChips=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResFastEnterMsg"
+	},
+	"5930":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeResultMsg';message NoticeResultMsg {  optional int32 id=1;repeated int32 result=2;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeResultMsg"
+	},
+	"5931":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'NoticeExitTableMsg';message NoticeExitTableMsg {  optional int32 id=1;optional int32 order=2;optional int64 playerId=3;}",
+		 "name":"com.idealighter.game.games.baccarat.message.NoticeExitTableMsg"
+	},
+	"5451":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResOtherEnterTableMsg';message ResOtherEnterTableMsg {  optional int32 id=1;optional BatteryInfo battery=2;optional MemInfo mem=3;}message BatteryInfo {  optional int64 playerId=1;optional int32 order=2;optional int32 score=3;optional int32 num=4;optional int32 power=5;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResOtherEnterTableMsg"
+	},
+	"5452":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResChipsChangeMsg';message ResChipsChangeMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;optional int64 chips=4;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResChipsChangeMsg"
+	},
+	"5453":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResFireMsg';message ResFireMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;optional int64 bulletId=4;optional int32 angle=5;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResFireMsg"
+	},
+	"5454":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResBatteryChangeMsg';message ResBatteryChangeMsg {  optional int32 id=1;optional BatteryInfo battery=2;}message BatteryInfo {  optional int64 playerId=1;optional int32 order=2;optional int32 score=3;optional int32 num=4;optional int32 power=5;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResBatteryChangeMsg"
+	},
+	"5455":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResHitMsg';message ResHitMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;repeated FishDieInfo dies=4;}message FishDieInfo {  optional int32 fishId=1;optional int32 score=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResHitMsg"
+	},
+	"5456":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResExitTableMsg';message ResExitTableMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResExitTableMsg"
+	},
+	"5457":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResLockMsg';message ResLockMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;optional int32 fishId=4;optional int32 angle=5;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResLockMsg"
+	},
+	"5458":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResCancelLockMsg';message ResCancelLockMsg {  optional int32 id=1;optional int64 playerId=2;optional int32 order=3;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResCancelLockMsg"
+	},
+	"5459":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResInsteadPlayersUpgradeMsg';message ResInsteadPlayersUpgradeMsg {  optional int32 id=1;repeated int64 insteadPlayers=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResInsteadPlayersUpgradeMsg"
+	},
+	"5460":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResLikuiUpgradeMsg';message ResLikuiUpgradeMsg {  optional int32 id=1;optional int32 fishId=2;optional int32 rate=3;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResLikuiUpgradeMsg"
+	},
+	"5461":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResProduceFishMsg';message ResProduceFishMsg {  optional int32 id=1;repeated FishInfo fishs=2;}message FishInfo {  optional int32 id=1;optional int32 type=2;optional int32 xcoord=3;optional int32 ycoord=4;optional int32 road=5;optional int64 time=6;optional int32 angle=7;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResProduceFishMsg"
+	},
+	"5462":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.jcby.message;option java_outer_classname = 'ResSwitchSceneMsg';message ResSwitchSceneMsg {  optional int32 id=1;optional int32 scene=2;}",
+		 "name":"com.idealighter.game.games.jcby.message.ResSwitchSceneMsg"
+	},
+	"601":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ResRoomChatMsg';message ResRoomChatMsg {  optional int32 id=1;optional string content=2;optional string playerName=3;}",
+		 "name":"com.idealighter.game.chat.message.ResRoomChatMsg"
+	},
+	"602":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ResTableChatMsg';message ResTableChatMsg {  optional int32 id=1;optional string content=2;optional string playerName=3;}",
+		 "name":"com.idealighter.game.chat.message.ResTableChatMsg"
+	},
+	"605":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ResHornMsg';message ResHornMsg {  optional int32 id=1;optional string playerName=2;optional string content=3;}",
+		 "name":"com.idealighter.game.chat.message.ResHornMsg"
+	},
+	"606":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.chat.message;option java_outer_classname = 'ResSysNoticeMsg';message ResSysNoticeMsg {  optional int32 id=1;optional string content=2;}",
+		 "name":"com.idealighter.game.chat.message.ResSysNoticeMsg"
+	},
+	"111201":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.plaza.message;option java_outer_classname = 'ResGameTypesMsg';message ResGameTypesMsg {  optional int32 id=1;repeated GameType types=2;}message GameType {  optional int32 type=1;optional int32 index=2;repeated int32 games=3;}",
+		 "name":"com.idealighter.game.plaza.message.ResGameTypesMsg"
+	},
+	"107":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResTouristUpdateMsg';message ResTouristUpdateMsg {  optional int32 id=1;optional string playerName=2;optional string phone=3;}",
+		 "name":"com.idealighter.game.login.message.ResTouristUpdateMsg"
+	},
+	"108":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResLogoutForRepetitionMsg';message ResLogoutForRepetitionMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ResLogoutForRepetitionMsg"
+	},
+	"109":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResLogoutForLockedMsg';message ResLogoutForLockedMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ResLogoutForLockedMsg"
+	},
+	"110":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResLogoutForGameExitMsg';message ResLogoutForGameExitMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ResLogoutForGameExitMsg"
+	},
+	"5999":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.baccarat.message;option java_outer_classname = 'ResGameInfoMsg';message ResGameInfoMsg {  optional int32 id=1;optional RoomInfo roomInfo=2;repeated MemInfo mems=3;repeated int64 betInfos=4;optional int32 cardIndex=5;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int32 proportionGold=7;optional int32 proportionChips=8;optional int32 table=9;repeated int64 betOptions=10;optional int32 afee=11;optional int32 inType=12;optional int32 playerNum=13;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.baccarat.message.ResGameInfoMsg"
+	},
+	"112":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.login.message;option java_outer_classname = 'ResLogoutForApplicationCloseMsg';message ResLogoutForApplicationCloseMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.login.message.ResLogoutForApplicationCloseMsg"
+	},
+	"6001":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResEnterGameHallMsg';message ResEnterGameHallMsg {  optional int32 id=1;repeated RoomTypeDetailInfo roomTypes=2;}message RoomTypeDetailInfo {  optional int32 type=1;optional string typeName=2;repeated RoomInfo rooms=3;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int64 beBankerChips=7;optional int64 offBankerChips=8;optional int32 proportionGold=9;optional int32 proportionChips=10;optional int32 tabble=11;repeated int64 betOptions=12;optional int32 afee=13;optional int32 inType=14;optional int32 playerNum=15;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResEnterGameHallMsg"
+	},
+	"6002":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResEnterRoomMsg';message ResEnterRoomMsg {  optional int32 id=1;repeated TableInfo tables=2;repeated MemInfo members=3;}message TableInfo {  optional int32 id=1;optional int32 roomId=2;optional int32 hasPwd=3;repeated SeatInfo seats=4;}message SeatInfo {  optional int32 tableId=1;optional int32 order=2;optional int64 playerId=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResEnterRoomMsg"
+	},
+	"6009":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResBetMsg';message ResBetMsg {  optional int32 id=1;optional int32 area=2;optional int64 chips=3;optional int64 bankerTotalBets=4;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResBetMsg"
+	},
+	"6011":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResGameInfoMsg';message ResGameInfoMsg {  optional int32 id=1;optional RoomInfo room=2;repeated MemInfo mems=3;optional GameInfo gameInfo=4;}message GameInfo {  optional int32 stage=1;optional int64 stageTime=2;repeated int32 historyList=3;repeated BetInfo tableBetInfos=4;repeated BetInfo myBetInfos=5;repeated int64 bankerApplicants=6;optional BankerInfo bankerInfo=7;repeated CardsInfo cardsInfo=8;optional BalanceInfo balanceInfo=9;}message CardsInfo {  optional int32 id=1;optional int32 cardsType=2;repeated int32 cards=3;}message BalanceInfo {  optional int64 bankerChips=1;optional int64 playerChips=2;}message BankerInfo {  optional int64 playerId=1;optional string name=2;optional int32 sex=3;optional int64 chips=4;optional int32 num=5;optional int64 score=6;}message BetInfo {  optional int32 area=1;optional int64 chips=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}message RoomInfo {  optional int32 roomId=1;optional string name=2;optional int32 type=3;optional int32 maxNum=4;optional int64 lower=5;optional int64 upper=6;optional int64 beBankerChips=7;optional int64 offBankerChips=8;optional int32 proportionGold=9;optional int32 proportionChips=10;optional int32 tabble=11;repeated int64 betOptions=12;optional int32 afee=13;optional int32 inType=14;optional int32 playerNum=15;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResGameInfoMsg"
+	},
+	"5002":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.common.message;option java_outer_classname = 'ResMatchNoticeMsg';message ResMatchNoticeMsg {  optional int32 id=1;optional string apply=2;optional int32 leftTime=3;}",
+		 "name":"com.idealighter.game.common.message.ResMatchNoticeMsg"
+	},
+	"5004":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResSeatInfoUpdateMsg';message ResSeatInfoUpdateMsg {  optional int32 id=1;optional SeatInfo seat=2;}message SeatInfo {  optional int32 tableId=1;optional int32 order=2;optional int64 playerId=3;}",
+		 "name":"com.idealighter.game.gamehall.message.ResSeatInfoUpdateMsg"
+	},
+	"5005":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResMemInfoUpdateMsg';message ResMemInfoUpdateMsg {  optional int32 id=1;optional MemInfo member=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.gamehall.message.ResMemInfoUpdateMsg"
+	},
+	"5006":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResRemoveMemInfoMsg';message ResRemoveMemInfoMsg {  optional int32 id=1;optional int64 playerId=2;}",
+		 "name":"com.idealighter.game.gamehall.message.ResRemoveMemInfoMsg"
+	},
+	"5007":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResRoomSettingUpdateMsg';message ResRoomSettingUpdateMsg {  optional int32 id=1;optional RoomSetting roomSetting=2;}message RoomSetting {  optional int64 tableLimitGold=1;optional int32 tableLimitGoldAbled=2;optional int32 tableLimitIp=3;optional string tablePwd=4;optional int32 tablePwdAbled=5;optional int32 roomSettingAbled=6;}",
+		 "name":"com.idealighter.game.gamehall.message.ResRoomSettingUpdateMsg"
+	},
+	"5008":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResTablePwdChangedMsg';message ResTablePwdChangedMsg {  optional int32 id=1;optional int32 tableId=2;optional int32 hasPwd=3;}",
+		 "name":"com.idealighter.game.gamehall.message.ResTablePwdChangedMsg"
+	},
+	"5009":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'NoticeRoomCloseKickoutMsg';message NoticeRoomCloseKickoutMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.gamehall.message.NoticeRoomCloseKickoutMsg"
+	},
+	"403":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ResTransferGoldSuccessMsg';message ResTransferGoldSuccessMsg {  optional int32 id=1;optional TranferRecordDto result=2;}message TranferRecordDto {  optional int32 id=1;optional int32 type=2;optional int32 oppositeType=3;optional int64 playerId=4;optional int64 playerSuperId=5;optional string playerName=6;optional int64 oppositePlayerId=7;optional int64 oppositeSuperId=8;optional string oppositePlayerName=9;optional int64 beforeSafeGold=10;optional int64 afterSafeGold=11;optional int64 fee=12;optional int32 feeRate=13;optional int64 changeSafeGold=14;optional int64 createTime=15;}",
+		 "name":"com.idealighter.game.bank.message.ResTransferGoldSuccessMsg"
+	},
+	"404":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ResTransferGoldRecordMsg';message ResTransferGoldRecordMsg {  optional int32 id=1;repeated TranferRecordDto records=2;optional int64 total=3;optional bool hasNext=4;}message TranferRecordDto {  optional int32 id=1;optional int32 type=2;optional int32 oppositeType=3;optional int64 playerId=4;optional int64 playerSuperId=5;optional string playerName=6;optional int64 oppositePlayerId=7;optional int64 oppositeSuperId=8;optional string oppositePlayerName=9;optional int64 beforeSafeGold=10;optional int64 afterSafeGold=11;optional int64 fee=12;optional int32 feeRate=13;optional int64 changeSafeGold=14;optional int64 createTime=15;}",
+		 "name":"com.idealighter.game.bank.message.ResTransferGoldRecordMsg"
+	},
+	"406":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.bank.message;option java_outer_classname = 'ResTransferCountMsg';message ResTransferCountMsg {  optional int32 id=1;optional int64 inFromAgent=2;optional int64 inFromUser=3;optional int64 outToAgent=4;optional int64 outToUser=5;}",
+		 "name":"com.idealighter.game.bank.message.ResTransferCountMsg"
+	},
+	"6051":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResExitRoomMsg';message ResExitRoomMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResExitRoomMsg"
+	},
+	"6052":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResChipsChangeMsg';message ResChipsChangeMsg {  optional int32 id=1;optional int64 playerId=2;optional int64 chips=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResChipsChangeMsg"
+	},
+	"6053":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResEnterTableMsg';message ResEnterTableMsg {  optional int32 id=1;repeated MemInfo mems=2;optional int64 totalChips=3;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResEnterTableMsg"
+	},
+	"6054":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResOtherEnterTableMsg';message ResOtherEnterTableMsg {  optional int32 id=1;optional MemInfo mem=2;}message MemInfo {  optional int64 playerId=1;optional string playerName=2;optional string signature=3;optional int32 level=4;optional int32 sex=5;optional int32 icon=6;optional int64 gold=7;optional int64 cedit=8;optional int64 chips=9;optional int32 state=10;optional int32 vip=11;optional int32 tableId=12;optional int32 order=13;optional int32 sysHost=14;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResOtherEnterTableMsg"
+	},
+	"6055":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResExitTableMsg';message ResExitTableMsg {  optional int32 id=1;optional int32 order=2;optional int64 playerId=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResExitTableMsg"
+	},
+	"6057":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResApplyBankersMsg';message ResApplyBankersMsg {  optional int32 id=1;repeated int64 applicants=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResApplyBankersMsg"
+	},
+	"6058":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResDealCardsMsg';message ResDealCardsMsg {  optional int32 id=1;repeated CardsInfo cardsInfo=2;}message CardsInfo {  optional int32 id=1;optional int32 cardsType=2;repeated int32 cards=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResDealCardsMsg"
+	},
+	"6059":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResTableBetMsg';message ResTableBetMsg {  optional int32 id=1;repeated BetInfo betInfo=2;}message BetInfo {  optional int32 area=1;optional int64 chips=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResTableBetMsg"
+	},
+	"6060":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResBankerInfoMsg';message ResBankerInfoMsg {  optional int32 id=1;optional int64 playerId=2;optional string name=3;optional int32 sex=4;optional int64 chips=5;optional int32 num=6;optional int64 score=7;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResBankerInfoMsg"
+	},
+	"6061":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResBalanceMsg';message ResBalanceMsg {  optional int32 id=1;optional int64 bankerChips=2;optional int64 playerChips=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResBalanceMsg"
+	},
+	"6062":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResHistoryMsg';message ResHistoryMsg {  optional int32 id=1;repeated int32 result=2;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResHistoryMsg"
+	},
+	"6063":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.games.bairenniuniu.message;option java_outer_classname = 'ResTimeMsg';message ResTimeMsg {  optional int32 id=1;optional int32 state=2;optional int32 time=3;}",
+		 "name":"com.idealighter.game.games.bairenniuniu.message.ResTimeMsg"
+	},
+	"703":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.welfare.message;option java_outer_classname = 'ResRefreshWelfareMsg';message ResRefreshWelfareMsg {  optional int32 id=1;repeated WelfareInfo welfares=2;}message WelfareInfo {  optional int32 type=1;optional int32 num=2;repeated string params=3;}",
+		 "name":"com.idealighter.game.welfare.message.ResRefreshWelfareMsg"
+	},
+	"704":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.welfare.message;option java_outer_classname = 'ResWelfareInfoMsg';message ResWelfareInfoMsg {  optional int32 id=1;repeated WelfareInfo welfares=2;}message WelfareInfo {  optional int32 type=1;optional int32 num=2;repeated string params=3;}",
+		 "name":"com.idealighter.game.welfare.message.ResWelfareInfoMsg"
+	},
+	"201":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResPlayerInfoMsg';message ResPlayerInfoMsg {  optional int32 id=1;optional PlayerInfoDto playerInfo=2;optional GameInfoDto gameInfo=3;}message GameInfoDto {  optional int32 gameType=1;}message PlayerInfoDto {  optional int64 id=1;optional string userName=2;optional string nickName=3;optional string sex=4;optional string fullName=5;optional string idCardNo=6;optional int32 icon=7;optional int32 level=8;optional int32 vipLevel=9;optional int32 vipDuration=10;optional int64 gold=11;optional int64 safeGold=12;optional int64 ingot=13;optional int64 cedit=14;optional int64 lottery=15;optional string phone=16;optional string email=17;optional int32 age=18;optional int32 birthMonth=19;optional int32 birthDay=20;optional string province=21;optional string city=22;optional string addr=23;optional string signature=24;optional string bindingMac=25;optional int32 havePwdProtect=26;optional int32 loginPhoneVerify=27;optional int32 playItemEffect=28;optional int32 tourist=29;optional string reLoginCode=30;optional int32 type=31;optional int64 transferReward=32;optional int64 superId=33;optional int64 nextLevelExp=34;optional int64 exp=35;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResPlayerInfoMsg"
+	},
+	"202":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResBindEmailMsg';message ResBindEmailMsg {  optional int32 id=1;optional string email=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResBindEmailMsg"
+	},
+	"203":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResBindPhoneMsg';message ResBindPhoneMsg {  optional int32 id=1;optional string phone=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResBindPhoneMsg"
+	},
+	"204":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResEnterPersonalCenterMsg';message ResEnterPersonalCenterMsg {  optional int32 id=1;optional int32 res=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResEnterPersonalCenterMsg"
+	},
+	"206":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResGetUnBindPhoneKeyMsg';message ResGetUnBindPhoneKeyMsg {  optional int32 id=1;optional int32 res=2;optional int32 second=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResGetUnBindPhoneKeyMsg"
+	},
+	"207":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResMdifyPwdProtectMsg';message ResMdifyPwdProtectMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResMdifyPwdProtectMsg"
+	},
+	"208":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResModifyBankPwdMsg';message ResModifyBankPwdMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResModifyBankPwdMsg"
+	},
+	"209":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResModifyBaseInfoMsg';message ResModifyBaseInfoMsg {  optional int32 id=1;optional PlayerBaseInfo baseInfo=2;}message PlayerBaseInfo {  optional int32 icon=1;optional string nickName=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResModifyBaseInfoMsg"
+	},
+	"210":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResModifyGameSettingMsg';message ResModifyGameSettingMsg {  optional int32 id=1;optional int32 loginPhoneVerify=2;optional int32 playItemEffect=3;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResModifyGameSettingMsg"
+	},
+	"211":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResModifyLoginPwdMsg';message ResModifyLoginPwdMsg {  optional int32 id=1;optional int32 res=2;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResModifyLoginPwdMsg"
+	},
+	"212":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResRealNameAuthenticateMsg';message ResRealNameAuthenticateMsg {  optional int32 id=1;optional int32 res=2;optional string name=3;optional string idNo=4;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResRealNameAuthenticateMsg"
+	},
+	"213":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.personalcenter.message;option java_outer_classname = 'ResUnBindPhoneMsg';message ResUnBindPhoneMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.personalcenter.message.ResUnBindPhoneMsg"
+	},
+	"214":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.player.message;option java_outer_classname = 'ResPlayerAttrChangeMsg';message ResPlayerAttrChangeMsg {  optional int32 id=1;optional int32 type=2;optional int64 val=3;}",
+		 "name":"com.idealighter.game.player.message.ResPlayerAttrChangeMsg"
+	},
+	"1001":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.mail.message;option java_outer_classname = 'ResMailListMsg';message ResMailListMsg {  optional int32 id=1;repeated MailDto mails=2;}message MailDto {  optional int32 id=1;optional int64 playerId=2;optional int64 playerSuperId=3;optional string playerName=4;optional int64 fromPlayerId=5;optional string fromPlayerSuperId=6;optional string fromPlayerName=7;optional int64 gold=8;optional string title=9;optional string content=10;optional int64 createTime=11;}",
+		 "name":"com.idealighter.game.mail.message.ResMailListMsg"
+	},
+	"5097":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'NoticeGameStartMsg';message NoticeGameStartMsg {  optional int32 id=1;optional int32 gameId=2;}",
+		 "name":"com.idealighter.game.gamehall.message.NoticeGameStartMsg"
+	},
+	"5098":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'NoticeGameCloseMsg';message NoticeGameCloseMsg {  optional int32 id=1;optional int32 gameId=2;}",
+		 "name":"com.idealighter.game.gamehall.message.NoticeGameCloseMsg"
+	},
+	"5099":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.gamehall.message;option java_outer_classname = 'ResGameMsg';message ResGameMsg {  optional int32 id=1;repeated GameDto games=2;}message GameDto {  optional int32 gameId=1;optional string name=2;}",
+		 "name":"com.idealighter.game.gamehall.message.ResGameMsg"
+	},
+	"501":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.notice.message;option java_outer_classname = 'ResMarqueeNoticeMsg';message ResMarqueeNoticeMsg {  optional int32 id=1;optional string content=2;optional int32 type=3;optional int32 interval=4;optional int32 times=5;optional string color=6;}",
+		 "name":"com.idealighter.game.notice.message.ResMarqueeNoticeMsg"
+	},
+	"502":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.notice.message;option java_outer_classname = 'ResNewsNoticeMsg';message ResNewsNoticeMsg {  optional int32 id=1;optional string content=2;optional string link=3;}",
+		 "name":"com.idealighter.game.notice.message.ResNewsNoticeMsg"
+	},
+	"503":{  
+		 "file":"syntax = 'proto2'; package com.idealighter.game.notice.message;option java_outer_classname = 'ResEmailNoticeMsg';message ResEmailNoticeMsg {  optional int32 id=1;}",
+		 "name":"com.idealighter.game.notice.message.ResEmailNoticeMsg"
+	}
+} 
