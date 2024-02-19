@@ -1,0 +1,65 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SetView",
+			"memberof": "game.SetView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "game.SetView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerEvent",
+			"memberof": "game.SetView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bgOnMethod",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "bgOnObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "game.SetView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "show",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SetView",
+		"memberof": "game",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\SetView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

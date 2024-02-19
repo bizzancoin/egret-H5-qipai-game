@@ -1,0 +1,86 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "getPara",
+			"memberof": "LocationProperty",
+			"scope": "static",
+			"description": "获取url参数值，没有返回null不传递paraUrl参数默认获取当前url",
+			"params": [
+				{
+					"name": "paraName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "paraUrl",
+					"question": true,
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "hasProperty",
+			"memberof": "LocationProperty",
+			"scope": "static",
+			"description": "检查url中是否包含某参数这代码有一个例外就是paraName = \"undefined\", paraUrl中不含\"?\"会返回true相信你不会这么用的 =.=",
+			"params": [
+				{
+					"name": "paraName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "paraUrl",
+					"question": true,
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "setProperty",
+			"memberof": "LocationProperty",
+			"scope": "static",
+			"description": "给Url参数赋值不传递paraUrl参数默认获取当前url",
+			"params": [
+				{
+					"name": "paraName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "paraValue",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "paraUrl",
+					"question": true,
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LocationProperty",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\LocationProperty.ts",
+		"description": "Created by Saco on 2014/12/1."
+	},
+	"pType": "public"
+}

@@ -1,0 +1,128 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_sid",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "UTFMsg",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "decode",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "消息解析",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "encode",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "消息封装",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSid",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "获取sessionDI",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receive",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "接收消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetSid",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "sessionId",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send",
+			"memberof": "UTFMsg",
+			"scope": "instance",
+			"description": "发送消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				},
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "UTFMsg",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\UTFMsg.ts",
+		"description": "Created by yangsong on 15-2-11.",
+		"implements": [
+			{
+				"name": "BaseMsg"
+			}
+		],
+		"children": [
+			"UTFMsgByJson"
+		]
+	},
+	"pType": "public"
+}

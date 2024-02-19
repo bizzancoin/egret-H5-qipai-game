@@ -1,0 +1,200 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Action",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Background",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Battery",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "BatteryPos",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "BgMusic",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "BondingBox",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Bullet",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Curve",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Fish",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "FishGold",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "LabelFnt",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Music",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Net",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Skill",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Sound",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Sprite",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "System",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "Water",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishConfigManager",
+			"memberof": "fish.FishConfigManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishConfigManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishConfigManager.ts",
+		"description": "获取配置文件",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

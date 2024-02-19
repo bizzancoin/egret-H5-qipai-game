@@ -1,0 +1,98 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "EffectUtils",
+			"memberof": "EffectUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "macIconShake",
+			"memberof": "EffectUtils",
+			"scope": "instance",
+			"description": "类似mac上图标上下抖动的效果",
+			"example": "eval(macIconShake(\"this.btnIcon\", 100));",
+			"returns": "返回的是一个要执行代码的字符串，通过eval执行",
+			"params": [
+				{
+					"name": "obj",
+					"type": "string",
+					"description": "要抖动的对象，使用"
+				},
+				{
+					"name": "initY",
+					"type": "number",
+					"description": "要抖动的对象的初始Y值，原始位置"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "startFlicker",
+			"memberof": "EffectUtils",
+			"scope": "instance",
+			"description": "开始闪烁",
+			"params": [
+				{
+					"name": "obj",
+					"type": "egret.DisplayObject",
+					"description": "obj"
+				},
+				{
+					"name": "alphaTime",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopFlicker",
+			"memberof": "EffectUtils",
+			"scope": "instance",
+			"description": "停止闪烁",
+			"params": [
+				{
+					"name": "obj",
+					"type": "egret.DisplayObject",
+					"description": "obj"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "EffectUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\EffectUtils.ts",
+		"description": "Created by yangsong on 2014/12/3.各种效果工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

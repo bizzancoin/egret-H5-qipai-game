@@ -1,0 +1,40 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "isLoading",
+			"memberof": "LoginMgr",
+			"scope": "static",
+			"description": "// 是否已经加载过",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "finish",
+			"memberof": "LoginMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "start",
+			"memberof": "LoginMgr",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LoginMgr",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\login\\LoginMgr.ts"
+	},
+	"pType": "public"
+}

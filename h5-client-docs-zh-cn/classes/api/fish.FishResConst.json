@@ -1,0 +1,167 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LoadScene",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000003"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResBackTable",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000005"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResCancelLockFish",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000014"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResChangeChips",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000008"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterGame",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000001"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterScene",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000006"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterTable",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000004"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResExitTable",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000012"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResFire",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000009"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResHitFish",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000011"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResInsteadPlayersUpgrade",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000015"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResLockFish",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000013"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResOtherEnterTable",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000007"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResProductFish",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000016"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResScence",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000017"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResSwitchBattery",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000010"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SetRoomInfo",
+			"memberof": "fish.FishResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "1000002"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "FishResConst",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\main\\FishMainConst.ts"
+	},
+	"pType": "public"
+}

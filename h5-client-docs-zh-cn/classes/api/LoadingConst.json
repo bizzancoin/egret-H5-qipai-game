@@ -1,0 +1,23 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SetProgress",
+			"memberof": "LoadingConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10001"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LoadingConst",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\loading\\LoadingConst.ts"
+	},
+	"pType": "public"
+}

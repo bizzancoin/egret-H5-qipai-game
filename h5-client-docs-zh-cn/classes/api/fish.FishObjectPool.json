@@ -1,0 +1,114 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishObjectPool",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getObject",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cls",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "dataId",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "init",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "newSomeObject",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cls",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "dataId",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "number",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "registerObjectCreater",
+			"memberof": "fish.FishObjectPool",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cls",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "creater",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishObjectPool",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishObjectPool.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

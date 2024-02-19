@@ -1,0 +1,399 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "starlingswf.SwfAssetManager",
+			"name": "_assetManager",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "//swf资源",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Object",
+			"name": "_createDisplayFuns",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "//创建对象的方法",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Object",
+			"name": "_swfData",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "//swf数据",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Button",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"btn\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Component",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"comp\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Image",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"img\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_MovieClip",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"mc\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Particle",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"particle\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Scale9",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"s9\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_ShapeImg",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"shapeImg\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_Sprite",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"spr\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "dataKey_TextField",
+			"memberof": "starlingswf.Swf",
+			"scope": "static",
+			"pType": "public",
+			"default": "\"text\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "name",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "//该swf名称",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "starlingswf.SwfUpdateManager",
+			"name": "swfUpdateManager",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "//动画更新器",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Swf",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "swfData",
+					"type": "Object",
+					"description": ""
+				},
+				{
+					"name": "assetManager",
+					"type": "starlingswf.SwfAssetManager",
+					"description": ""
+				},
+				{
+					"name": "fps",
+					"type": "number",
+					"default": "24",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createImage",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfMovieClip",
+			"name": "createMovie",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				},
+				{
+					"name": "cls",
+					"type": "any",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createS9Image",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createShapeImage",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfSprite",
+			"name": "createSprite",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				},
+				{
+					"name": "sprData",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.TextField",
+			"name": "createTextField",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Texture",
+			"name": "getTexture",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasImage",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "是否有某个Image",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasMovieClip",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "是否有某个MovieClip",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasS9Image",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "是否有某个S9Image",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasShapeImage",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "是否有某个S9Image",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasSprite",
+			"memberof": "starlingswf.Swf",
+			"scope": "instance",
+			"description": "是否有某个Sprite",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Swf",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\Swf.ts",
+		"description": "Swf文档类"
+	},
+	"pType": "public"
+}

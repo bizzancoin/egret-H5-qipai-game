@@ -1,0 +1,60 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FrameExecutor",
+			"memberof": "FrameExecutor",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$delayFrame",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "execute",
+			"memberof": "FrameExecutor",
+			"scope": "instance",
+			"description": "执行",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "regist",
+			"memberof": "FrameExecutor",
+			"scope": "instance",
+			"description": "注册要分帧处理的函数",
+			"params": [
+				{
+					"name": "$func",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "$thisObj",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FrameExecutor",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\FrameExecutor.ts",
+		"description": "Created by yangsong on 2014/11/23.分帧处理"
+	},
+	"pType": "public"
+}

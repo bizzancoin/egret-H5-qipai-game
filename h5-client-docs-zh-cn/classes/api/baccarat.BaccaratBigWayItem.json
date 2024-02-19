@@ -1,0 +1,79 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratBigWayItem",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "anim",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setType",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "result",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "drawNum",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "baccarat.BaccaratBigWayItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratBigWayItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\waybill\\BaccaratBigWayItem.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

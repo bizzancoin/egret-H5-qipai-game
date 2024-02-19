@@ -1,0 +1,149 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "MEI_NIU",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_1",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_2",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_3",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_4",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_5",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "5"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_6",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "6"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_7",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "7"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_8",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "8"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_9",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "9"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "NIU_NIU",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "10"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SI_HUA",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "11"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SI_ZHA",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "12"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "WU_HUA",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "13"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "WU_XIAO",
+			"memberof": "brnn.CardsKinds",
+			"scope": "static",
+			"pType": "public",
+			"default": "14"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "CardsKinds",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\CardCheck.ts"
+	},
+	"pType": "public"
+}

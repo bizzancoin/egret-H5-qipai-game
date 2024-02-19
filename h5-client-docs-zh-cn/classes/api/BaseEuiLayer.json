@@ -1,0 +1,23 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseEuiLayer",
+			"memberof": "BaseEuiLayer",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseEuiLayer",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\scene\\base\\BaseEuiLayer.ts",
+		"description": "Created by yangsong on 15-1-7.",
+		"augments": []
+	},
+	"pType": "public"
+}

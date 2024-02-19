@@ -1,0 +1,42 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "getAsset",
+			"memberof": "AssetAdapter",
+			"scope": "instance",
+			"description": "解析素材",
+			"params": [
+				{
+					"name": "source",
+					"type": "string",
+					"description": "待解析的新素材标识符"
+				},
+				{
+					"name": "compFunc",
+					"type": "Function",
+					"description": "解析完成回调函数，示例：callBack(content:any,source:string):void;"
+				},
+				{
+					"name": "thisObject",
+					"type": "any",
+					"description": "callBack的 this 引用"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "AssetAdapter",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\adapter\\AssetAdapter.ts",
+		"description": "//////////////////////////////////////////////////////////////////////////////////////",
+		"implements": []
+	},
+	"pType": "public"
+}

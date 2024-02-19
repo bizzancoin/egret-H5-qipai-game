@@ -1,0 +1,49 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FrameDelay",
+			"memberof": "FrameDelay",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "delayCall",
+			"memberof": "FrameDelay",
+			"scope": "instance",
+			"description": "延迟处理",
+			"params": [
+				{
+					"name": "delayFrame",
+					"type": "number",
+					"description": "延迟帧数"
+				},
+				{
+					"name": "func",
+					"type": "Function",
+					"description": "延迟执行的函数"
+				},
+				{
+					"name": "thisObj",
+					"type": "any",
+					"description": "延迟执行的函数的所属对象"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FrameDelay",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\FrameDelay.ts",
+		"description": "Created by yangsong on 2014/11/23.帧延迟处理"
+	},
+	"pType": "public"
+}

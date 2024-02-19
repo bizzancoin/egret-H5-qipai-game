@@ -1,0 +1,163 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_cache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "member",
+			"type": "Array<string>",
+			"name": "_loadingCache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "member",
+			"type": "egret.SoundChannel[]",
+			"name": "_soundChannels",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_volume",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SoundEffects",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkCanClear",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "检测一个文件是否要清除，子类重写",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Sound",
+			"name": "getSound",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "获取Sound",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadedPlay",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"description": "资源加载完成后处理播放",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"description": "播放一个音效",
+			"params": [
+				{
+					"name": "effectName",
+					"type": "string",
+					"description": "effectName"
+				},
+				{
+					"name": "loops",
+					"question": true,
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setVolume",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"description": "设置音量",
+			"params": [
+				{
+					"name": "volume",
+					"type": "number",
+					"description": "volume"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopEffect",
+			"memberof": "SoundEffects",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SoundEffects",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\sound\\SoundEffects.ts",
+		"description": "Created by yangsong on 15-1-14.音效类",
+		"augments": [
+			"BaseSound"
+		]
+	},
+	"pType": "public"
+}

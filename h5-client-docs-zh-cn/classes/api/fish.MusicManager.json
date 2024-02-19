@@ -1,0 +1,88 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "MusicManager",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "init",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "musicId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopAllMusicEffect",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "update",
+			"memberof": "fish.MusicManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "frameTime",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MusicManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\MusicManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

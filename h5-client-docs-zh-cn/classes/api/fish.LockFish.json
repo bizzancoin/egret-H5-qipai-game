@@ -1,0 +1,178 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "LockFish",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "forceToLockFish",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fishId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurrentLockAngle",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurrentLockFishId",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getLockState",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "lock",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onDestroy",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetLockLineByPos",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos1",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "pos2",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetLockLst",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "lst",
+					"type": "fish.Fish[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "selectLockFish",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setLockCall",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "call",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setLockFish",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unlock",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.LockFish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LockFish",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\LockFish.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

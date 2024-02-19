@@ -1,0 +1,50 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ClearingView",
+			"memberof": "brnn.ClearingView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hide",
+			"memberof": "brnn.ClearingView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "brnn.ClearingView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dealer",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "mine",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ClearingView",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\ClearingView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

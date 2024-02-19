@@ -1,0 +1,123 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "showed",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "PokerItem",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "ratateCard",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "recyle",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "sendCard",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "show",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCard",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "card",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showCard",
+			"memberof": "baccarat.PokerItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "PokerItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\PokerItem.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

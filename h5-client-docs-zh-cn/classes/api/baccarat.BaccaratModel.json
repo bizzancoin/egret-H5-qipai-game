@@ -1,0 +1,190 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_billWayInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_gameInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isEnterScene",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<number>",
+			"name": "_lastBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_me",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_mems",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<number>",
+			"name": "_myBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_roomInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_statInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<number>",
+			"name": "_totalBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "billWayInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "gameInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "lastBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "me",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "members",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "myBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "roomInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "statInfo",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "totalBet",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setMembers",
+			"memberof": "baccarat.BaccaratModel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "mems",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratModel",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratModel.ts"
+	},
+	"pType": "public"
+}

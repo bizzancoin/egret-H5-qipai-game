@@ -1,0 +1,485 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"name": "acer",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "addr",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "age",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "bindingMac",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "birthDay",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"name": "birthMonth",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"name": "city",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "curGameID",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"name": "email",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "exp",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "fullName",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "gameInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "gold",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "havePwdProtect",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "icon",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "id",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "idCardNo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "integral",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "isLogin",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"name": "isTourist",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"name": "level",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "loginPhoneVerify",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "loginType",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "LoginType.Tourist"
+		},
+		{
+			"kind": "member",
+			"name": "lottery",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "myDesksInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "[]"
+		},
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "myRoomTypeInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "[]"
+		},
+		{
+			"kind": "member",
+			"name": "myTableId",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"name": "nextLevelExp",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "nickName",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "phone",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "playItemEffect",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "province",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "reLoginCode",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "safeGold",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "sex",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "signature",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "superId",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "transferReward",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "type",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "userName",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "''"
+		},
+		{
+			"kind": "member",
+			"name": "vipLevel",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"name": "vipTime",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "PlayerInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Texture",
+			"name": "getHeadTexture",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "icon",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isMySelf",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "playerId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loginSuccess",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "gameInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "logout",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateDeskInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"description": "// 更新桌子信息",
+			"params": [
+				{
+					"name": "value",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "updateLoginState",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "isLogin",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateRoomInfo",
+			"memberof": "PlayerInfo",
+			"scope": "instance",
+			"description": "// 更新房间玩家数量",
+			"params": [
+				{
+					"name": "id",
+					"description": ""
+				},
+				{
+					"name": "num",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "PlayerInfo",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\player\\PlayerInfo.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

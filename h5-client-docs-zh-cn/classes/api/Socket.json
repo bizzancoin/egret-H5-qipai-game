@@ -1,0 +1,240 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_connectFlag",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_host",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isConnecting",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"name": "_maxReconnectCount",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "45"
+		},
+		{
+			"kind": "member",
+			"type": "BaseMsg",
+			"name": "_msg",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_needReconnect",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "true"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_port",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_reconnectCount",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"name": "_reconnectTime",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "2000"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_reconnectTimeout",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_reconnecting",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "egret.WebSocket",
+			"name": "_socket",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"name": "_startReconnect",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_url",
+			"memberof": "Socket",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Socket",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "close",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "关闭Socket连接",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "connect",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "开始Socket连接",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initServer",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "初始化服务区地址",
+			"params": [
+				{
+					"name": "host",
+					"type": "string",
+					"description": "IP"
+				},
+				{
+					"name": "port",
+					"type": "any",
+					"description": "端口"
+				},
+				{
+					"name": "url",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "msg",
+					"type": "BaseMsg",
+					"description": "消息发送接受处理类"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isConnecting",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "Socket是否在连接中",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send",
+			"memberof": "Socket",
+			"scope": "instance",
+			"description": "发送消息到服务器",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Socket",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\Socket.ts",
+		"description": "Created by yangsong on 2014/11/25.Socket类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

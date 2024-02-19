@@ -1,0 +1,44 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "RecordItem",
+			"memberof": "brnn.RecordItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "texture",
+					"type": "egret.Texture",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setTexture",
+			"memberof": "brnn.RecordItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "texture",
+					"type": "egret.Texture",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RecordItem",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\RecordView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

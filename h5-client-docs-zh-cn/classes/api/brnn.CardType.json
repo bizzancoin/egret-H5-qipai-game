@@ -1,0 +1,68 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "DA_WANG",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "6"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FANG_KUAI",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "HEI_TAO",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "HONG_TAO",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "MEI_HUA",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "XIAO_WANG",
+			"memberof": "brnn.CardType",
+			"scope": "static",
+			"pType": "public",
+			"default": "5"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "CardType",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\BrnnConfig.ts"
+	},
+	"pType": "public"
+}

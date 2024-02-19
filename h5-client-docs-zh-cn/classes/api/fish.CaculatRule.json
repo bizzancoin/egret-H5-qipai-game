@@ -1,0 +1,150 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "CaculatRule",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__acos",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 余弦曲线[y = acos(x)]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__acubiccve",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 三次曲线[y = ax3]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__aexponential",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 指数函数[y = a(x)]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__alogarithm",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 对数函数[y = alog(x)]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__asin",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 正弦曲线[y = asin(x)]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__circle",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 圆[(x + a)2 + (y + b)2 = r2]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__kline",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 直线[y = kx]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__parabola",
+			"memberof": "fish.CaculatRule",
+			"scope": "instance",
+			"description": "// 抛物线[y = ax2 + bx + c]",
+			"params": [
+				{
+					"name": "param",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CaculatRule",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\CaculatRule.ts",
+		"description": "// 函数计算规则"
+	},
+	"pType": "public"
+}

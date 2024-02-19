@@ -1,0 +1,121 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_resultMsg",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_startMsg",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "baccarat.BaccaratModel",
+			"name": "bjlModel",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "public",
+			"default": "new BaccaratModel()"
+		},
+		{
+			"kind": "member",
+			"type": "baccarat.BaccaratStart",
+			"name": "bjlStart",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratMgr",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "removeListener",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "registerListener",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setEnterScene",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "val",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "roomInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "start",
+			"memberof": "baccarat.BaccaratMgr",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratMgr",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratMgr.ts"
+	},
+	"pType": "public"
+}

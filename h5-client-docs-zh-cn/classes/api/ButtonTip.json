@@ -1,0 +1,110 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ButtonTip",
+			"memberof": "ButtonTip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hideButtonTip",
+			"memberof": "ButtonTip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "oneButtonTip",
+			"memberof": "ButtonTip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "twoButtonTip",
+			"memberof": "ButtonTip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "sureMethod",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "sureMethodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "cancelMethod",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "cancelMethodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ButtonTip",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\promot\\ButtonTip.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

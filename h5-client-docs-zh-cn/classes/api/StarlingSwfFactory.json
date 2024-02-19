@@ -1,0 +1,155 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "StarlingSwfFactory",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addSwf",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "添加一个swf",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "唯一标识"
+				},
+				{
+					"name": "swfData",
+					"type": "Object",
+					"description": "swf配置数据"
+				},
+				{
+					"name": "spriteSheep",
+					"type": "egret.SpriteSheet",
+					"description": "资源配置数据"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "清空",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Texture",
+			"name": "getTexture",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "获取材质",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"description": "材质名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "makeImage",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "创建一个Bitmap",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "图片的名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "StarlingSwfMovieClip",
+			"name": "makeMc",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "创建一个StarlingSwfMovieClip",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "mc的名字"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playSwfs",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "播放列表中的swf",
+			"params": [
+				{
+					"name": "arr",
+					"type": "Array<string>",
+					"description": "arr"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopSwfs",
+			"memberof": "StarlingSwfFactory",
+			"scope": "instance",
+			"description": "停止列表中的swf",
+			"params": [
+				{
+					"name": "arr",
+					"type": "Array<string>",
+					"description": "arr"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StarlingSwfFactory",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\game\\StarlingSwfFactory.ts",
+		"description": "Created by yangsong on 2014/6/16.StarlingSwf工厂类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

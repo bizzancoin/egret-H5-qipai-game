@@ -1,0 +1,41 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BigCards",
+			"memberof": "brnn.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Chips",
+			"memberof": "brnn.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SmallCards",
+			"memberof": "brnn.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "ObjectClassType",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\ObjectPool.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,57 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Array<string>",
+			"name": "_strings",
+			"memberof": "StringBuffer",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "StringBuffer",
+			"memberof": "StringBuffer",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "append",
+			"memberof": "StringBuffer",
+			"scope": "instance",
+			"description": "追加一个字符串",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": "str"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "StringBuffer",
+			"scope": "instance",
+			"description": "清空",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StringBuffer",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\StringBuffer.ts",
+		"description": "Created by yangsong on 2014/12/8.StringBuffer类"
+	},
+	"pType": "public"
+}

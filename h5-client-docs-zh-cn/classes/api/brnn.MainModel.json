@@ -1,0 +1,296 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "applicants",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "banker",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "billInfo",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "chips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"name": "countDown",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "curBetChipsMap",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public",
+			"default": "{}"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "gameStage",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "histories",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "lastBetChips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public",
+			"default": "{}"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "roomInfo",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "seatOrder",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "selectedChipIdx",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"name": "state",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "totalBetChips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public",
+			"default": "{}"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "totalBetChipsMap",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public",
+			"default": "{}"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "MainModel",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addMember",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"description": "// 添加牌桌玩家",
+			"params": [
+				{
+					"name": "mem",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyList",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "descTime",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getBankerIcon",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getContinueRequireChips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurBetRequireChips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getMember",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "playerId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isApply",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isBanker",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isBet",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isCanContinue",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "isChipsEnoughForApplyBanker",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeMember",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"description": "// 移除牌桌玩家",
+			"params": [
+				{
+					"name": "playerId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateMemberChips",
+			"memberof": "brnn.MainModel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "playerId",
+					"description": ""
+				},
+				{
+					"name": "chips",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MainModel",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\MainModel.ts"
+	},
+	"pType": "public"
+}

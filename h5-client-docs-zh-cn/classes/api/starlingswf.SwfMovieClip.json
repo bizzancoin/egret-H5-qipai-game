@@ -1,0 +1,400 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "__frameInfos",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Function",
+			"name": "_completeFunction",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_currentFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_currentLabel",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Object",
+			"name": "_displayObjects",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_endFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "_frames",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isPlay",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "_labels",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "starlingswf.Swf",
+			"name": "_ownerSwf",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_startFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "loop",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "public",
+			"default": "true"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SwfMovieClip",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "frames",
+					"type": "any[]",
+					"description": ""
+				},
+				{
+					"name": "labels",
+					"type": "any[]",
+					"description": ""
+				},
+				{
+					"name": "displayObjects",
+					"type": "Object",
+					"description": ""
+				},
+				{
+					"name": "ownerSwf",
+					"type": "starlingswf.Swf",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "currentLabel",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "返回当前播放的是哪一个标签",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurrentFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "getImage",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "starlingswf.SwfSprite"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getLabelEndFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "获取某一标签的结束帧",
+			"returns": "",
+			"params": [
+				{
+					"name": "label",
+					"type": "string",
+					"description": "label"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getLabelStartFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "以下为扩展代码",
+			"params": [
+				{
+					"name": "label",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfMovieClip",
+			"name": "getMovie",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "starlingswf.SwfSprite"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfSprite",
+			"name": "getSprite",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "starlingswf.SwfSprite"
+		},
+		{
+			"kind": "function",
+			"type": "egret.TextField",
+			"name": "getTextField",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "starlingswf.SwfSprite"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "gotoAndPlay",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "frame",
+					"type": "Object",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "gotoAndStop",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "frame",
+					"type": "Object",
+					"description": ""
+				},
+				{
+					"name": "stopChild",
+					"type": "boolean",
+					"default": "true",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Boolean",
+			"name": "hasLabel",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "是否包含某个标签",
+			"params": [
+				{
+					"name": "label",
+					"type": "String",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isPlay",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "是否再播放",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any[]",
+			"name": "labels",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "获取所有标签",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "播放",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCurrentFrame",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "frame",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "停止",
+			"params": [
+				{
+					"name": "stopChild",
+					"type": "boolean",
+					"default": "true",
+					"description": "是否停止子动画"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "totalFrames",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"description": "总共有多少帧",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "starlingswf.SwfMovieClip",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SwfMovieClip",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\display\\SwfMovieClip.ts",
+		"augments": [
+			"starlingswf.SwfSprite"
+		],
+		"implements": [
+			{
+				"name": "starlingswf.ISwfAnimation"
+			}
+		],
+		"children": [
+			"StarlingSwfMovieClip"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,30 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SkillItemLine",
+			"memberof": "fish.SkillItemLine",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SkillItemLine",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\SkillItemLine.ts",
+		"description": "激光连线",
+		"augments": []
+	},
+	"pType": "public"
+}

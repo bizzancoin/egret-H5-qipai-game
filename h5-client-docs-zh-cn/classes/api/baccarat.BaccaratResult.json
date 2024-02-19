@@ -1,0 +1,62 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratResult",
+			"memberof": "baccarat.BaccaratResult",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "grp",
+					"type": "eui.Panel",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratResult",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showResult",
+			"memberof": "baccarat.BaccaratResult",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "result",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "bankerChips",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "playerChips",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratResult",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\BaccaratResult.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

@@ -1,0 +1,60 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DateUtils",
+			"memberof": "DateUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "getFormatBySecond",
+			"memberof": "DateUtils",
+			"scope": "instance",
+			"description": "根据秒数格式化字符串",
+			"returns": "",
+			"params": [
+				{
+					"name": "second",
+					"type": "number",
+					"description": "秒数"
+				},
+				{
+					"name": "type",
+					"type": "number",
+					"default": "1",
+					"description": "1:00:00:00   2:yyyy-mm-dd h:m:s    3:00:00   4:xx天前，xx小时前，xx分钟前"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DateUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\DateUtils.ts",
+		"description": "Created by yangsong on 2014/11/22.Date工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

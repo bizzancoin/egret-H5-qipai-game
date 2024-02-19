@@ -1,0 +1,113 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Baccarat",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10006"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BaccaratLoad",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10005"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BrnnLoad",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10009"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BrnnMain",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10010"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FishLoad",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10007"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FishMain",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10008"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Home",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10002"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Loading",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10000"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Login",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10001"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Room",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10003"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Test",
+			"memberof": "ViewConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10004"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "ViewConst",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\consts\\ViewConst.ts"
+	},
+	"pType": "public"
+}

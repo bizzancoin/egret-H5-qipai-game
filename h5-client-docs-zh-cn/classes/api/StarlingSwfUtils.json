@@ -1,0 +1,235 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addSwf",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "函数游戏内用到的swf",
+			"params": [
+				{
+					"name": "swf",
+					"type": "starlingswf.Swf",
+					"description": "swf"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createImage",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "创建Bitmap",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "Bitmap名称"
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": "data"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfMovieClip",
+			"name": "createMovie",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "创建一个SwfMovieClip",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "SwfMovieClip名称"
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": "data"
+				},
+				{
+					"name": "cls",
+					"type": "any",
+					"default": "null",
+					"description": "cls"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createS9Image",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "创建一个九宫格图片",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "图片名称"
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": "data"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createShapeImage",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "创建ShapeImage",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "ShapeImage名称"
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": "data"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfSprite",
+			"name": "createSprite",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "创建Sprite",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "Sprite名称"
+				},
+				{
+					"name": "data",
+					"type": "any[]",
+					"default": "null",
+					"description": "data"
+				},
+				{
+					"name": "sprData",
+					"type": "any[]",
+					"default": "null",
+					"description": "sprData"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fixButton",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "根据一个两帧mc自定义Button",
+			"params": [
+				{
+					"name": "btn",
+					"type": "starlingswf.SwfMovieClip",
+					"description": "btn"
+				},
+				{
+					"name": "onClick",
+					"question": true,
+					"type": "Function",
+					"description": "onClick"
+				},
+				{
+					"name": "thisObj",
+					"question": true,
+					"type": "any",
+					"description": "thisObj"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.Swf",
+			"name": "getSwf",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "获取缓存中一个Swf",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Texture",
+			"name": "getTexture",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "获取材质",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"description": "材质名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeSwf",
+			"memberof": "StarlingSwfUtils",
+			"scope": "static",
+			"description": "在缓存中移除一个swf",
+			"params": [
+				{
+					"name": "swf",
+					"type": "starlingswf.Swf",
+					"description": "swf"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StarlingSwfUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\game\\StarlingSwfUtils.ts",
+		"description": "Created by lcj on 14-6-18.StarlingSwf工具类"
+	},
+	"pType": "public"
+}

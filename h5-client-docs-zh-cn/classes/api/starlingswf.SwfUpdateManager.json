@@ -1,0 +1,148 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "starlingswf.ISwfAnimation[]",
+			"name": "_addQueue",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "starlingswf.ISwfAnimation[]",
+			"name": "_animations",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_currentTime",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_fps",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_fpsTime",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "starlingswf.ISwfAnimation[]",
+			"name": "_removeQueue",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_update",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addSwfAnimation",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "animation",
+					"type": "starlingswf.ISwfAnimation",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfUpdateManager",
+			"name": "createSwfUpdateManager",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "static",
+			"params": [
+				{
+					"name": "fps",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeSwfAnimation",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "animation",
+					"type": "starlingswf.ISwfAnimation",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFps",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fps",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "starlingswf.SwfUpdateManager",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SwfUpdateManager",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\SwfUpdateManager.ts",
+		"description": "动画更新管理器"
+	},
+	"pType": "public"
+}

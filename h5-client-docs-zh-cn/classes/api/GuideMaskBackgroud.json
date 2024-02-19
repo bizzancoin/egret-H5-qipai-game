@@ -1,0 +1,132 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Array<egret.Shape>",
+			"name": "_bgs",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Rectangle",
+			"name": "_deductRec",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_stageHeight",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_stageWidth",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "GuideMaskBackgroud",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"description": "销毁",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "draw",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"description": "Draw",
+			"params": [
+				{
+					"name": "deductRec",
+					"type": "egret.Rectangle",
+					"description": "抠出矩形区域"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "hitTest",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"description": "重写hitTest检测指定坐标是否在显示对象内",
+			"returns": "",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": "检测坐标的x轴"
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": "检测坐标的y轴"
+				},
+				{
+					"name": "ignoreTouchEnabled",
+					"question": true,
+					"type": "boolean",
+					"description": "是否忽略TouchEnabled"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "GuideMaskBackgroud",
+			"scope": "instance",
+			"description": "初始化游戏宽高",
+			"params": [
+				{
+					"name": "stageWidth",
+					"type": "number",
+					"description": "宽"
+				},
+				{
+					"name": "stageHeight",
+					"type": "number",
+					"description": "高"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "GuideMaskBackgroud",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\module\\guide\\GuideMaskBackgroud.ts",
+		"description": "Created by yangsong on 14-12-2.引导背景层，实现的是一个类似不规则遮罩的功能",
+		"augments": []
+	},
+	"pType": "public"
+}

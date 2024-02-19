@@ -1,0 +1,118 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BackgroundManager",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurrentSceneId",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSceneState",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "groupContent",
+					"type": "eui.Group",
+					"description": ""
+				},
+				{
+					"name": "groupWater",
+					"type": "eui.Group",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initState",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playBkMusic",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "switchBaground",
+			"memberof": "fish.BackgroundManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "sceneId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BackgroundManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\BackgroundManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

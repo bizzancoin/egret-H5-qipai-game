@@ -1,0 +1,29 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "RotateScore",
+			"memberof": "fish.RotateScore",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RotateScore",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\RotateScore.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

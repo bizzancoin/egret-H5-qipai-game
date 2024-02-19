@@ -1,0 +1,28 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "registerResListener",
+			"memberof": "jcby.FishRes",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "removeResListener",
+			"memberof": "jcby.FishRes",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishRes",
+		"memberof": "jcby",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\jcby\\FishRes.ts"
+	},
+	"pType": "public"
+}

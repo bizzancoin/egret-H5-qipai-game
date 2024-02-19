@@ -1,0 +1,185 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LoadScene",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100003"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResApplyZuoZLst",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100011"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResBackTable",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100005"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResBet",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100013"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResBill",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100017"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResChangeChips",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100008"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResClearBet",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100014"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterGame",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100001"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterScene",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100006"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResEnterTable",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100004"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResExitRoom",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100010"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResExitTable",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100009"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResGameStage",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100019"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResHistory",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100018"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResNewDealer",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100016"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResOtherEnterTable",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100007"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResSendCard",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100012"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ResTableBet",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100015"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SetRoomInfo",
+			"memberof": "brnn.BrnnResConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "100002"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "BrnnResConst",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\BrnnConst.ts"
+	},
+	"pType": "public"
+}

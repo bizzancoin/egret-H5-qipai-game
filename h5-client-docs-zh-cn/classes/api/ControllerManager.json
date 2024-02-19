@@ -1,0 +1,153 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_modules",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ControllerManager",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyFunc",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "跨模块消息传递",
+			"params": [
+				{
+					"name": "controllerD",
+					"type": "number",
+					"description": "Controller唯一标识"
+				},
+				{
+					"name": "key",
+					"type": "number",
+					"description": "消息唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "清空处理",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "BaseModel",
+			"name": "getControllerModel",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "获取指定Controller的Model对象",
+			"returns": "",
+			"params": [
+				{
+					"name": "controllerD",
+					"type": "number",
+					"description": "Controller唯一标识"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isExists",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "是否已经存在Controller",
+			"returns": "Boolean",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "唯一标识"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "register",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "动态添加的Controller",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "唯一标识"
+				},
+				{
+					"name": "control",
+					"type": "BaseController",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unregister",
+			"memberof": "ControllerManager",
+			"scope": "instance",
+			"description": "动态移除Controller",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "唯一标识"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ControllerManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\mvc\\ControllerManager.ts",
+		"description": "Created by yangsong on 2014/11/22.Controller管理类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

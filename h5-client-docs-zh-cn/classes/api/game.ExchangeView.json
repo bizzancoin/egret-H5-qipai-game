@@ -1,0 +1,82 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ExchangeView",
+			"memberof": "game.ExchangeView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "game.ExchangeView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hide",
+			"memberof": "game.ExchangeView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerEvent",
+			"memberof": "game.ExchangeView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "method",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "game.ExchangeView",
+			"scope": "instance",
+			"description": "// 传入保险箱金币和当前筹码",
+			"params": [
+				{
+					"name": "saveGold",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "curChips",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "roomInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ExchangeView",
+		"memberof": "game",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\ExchangeView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

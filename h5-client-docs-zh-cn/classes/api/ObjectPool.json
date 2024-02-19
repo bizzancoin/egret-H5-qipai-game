@@ -1,0 +1,188 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_content",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"pType": "protected",
+			"default": "{}"
+		},
+		{
+			"kind": "member",
+			"type": "Array<any>",
+			"name": "_objs",
+			"memberof": "ObjectPool",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ObjectPool",
+			"memberof": "ObjectPool",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "ObjectPool",
+			"scope": "instance",
+			"description": "清除所有缓存对象",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "清除所有对象",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearClass",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "清除某一类对象",
+			"params": [
+				{
+					"name": "refKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "clearFuncName",
+					"type": "string",
+					"default": "null",
+					"description": "清除对象需要执行的函数"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "dealFunc",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "缓存中对象统一执行一个函数",
+			"params": [
+				{
+					"name": "refKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "dealFuncName",
+					"type": "string",
+					"description": "要执行的函数名称"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "pop",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "取出一个对象",
+			"returns": "Object",
+			"params": [
+				{
+					"name": "refKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "...args",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "popObj",
+			"memberof": "ObjectPool",
+			"scope": "instance",
+			"description": "取出一个对象",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "popWithExtraKey",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "取出一个对象",
+			"returns": "",
+			"params": [
+				{
+					"name": "refKey",
+					"type": "string",
+					"description": "Class"
+				},
+				{
+					"name": "extraKey",
+					"type": "any",
+					"description": "标识值"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "push",
+			"memberof": "ObjectPool",
+			"scope": "static",
+			"description": "放入一个对象",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": "obj"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pushObj",
+			"memberof": "ObjectPool",
+			"scope": "instance",
+			"description": "放回一个对象",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": "obj"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ObjectPool",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\ObjectPool.ts",
+		"description": "Created by yangsong on 2014/11/22.对象池类"
+	},
+	"pType": "public"
+}

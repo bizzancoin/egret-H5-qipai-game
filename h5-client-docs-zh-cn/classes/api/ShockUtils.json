@@ -1,0 +1,170 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "MAP",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SPRITE",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_repeatCount",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_rx",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_ry",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_shockCount",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_shockLength",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "Array<any>",
+			"name": "_shockPoss",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObject",
+			"name": "_target",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_type",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "repeatCount",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ShockUtils",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "shock",
+			"memberof": "ShockUtils",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"default": "0",
+					"description": ""
+				},
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"default": "null",
+					"description": ""
+				},
+				{
+					"name": "repeatCount",
+					"type": "number",
+					"default": "3",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ShockUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\ShockUtils.ts",
+		"description": "Created by Channing on 2014/12/6.震动",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

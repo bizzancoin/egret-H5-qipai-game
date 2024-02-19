@@ -1,0 +1,510 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "BaseController",
+			"name": "_controller",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isInit",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObjectContainer",
+			"name": "_myParent",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "member",
+			"type": "string[]",
+			"name": "_resources",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "null",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObjectContainer",
+			"name": "myParent",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "获取我的父级",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishMainView",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "$controller",
+					"type": "BaseController",
+					"description": ""
+				},
+				{
+					"name": "$parent",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addFish",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 产生鱼{fishs{id, type, xcoord, ycoord, road, time, angle}}",
+			"params": [
+				{
+					"name": "fishs",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addToParent",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "添加到父级",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyControllerFunc",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "触发其他模块消息",
+			"params": [
+				{
+					"name": "controllerKey",
+					"type": "number",
+					"description": "模块标识"
+				},
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyFunc",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "触发本模块消息",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "close",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "面板关闭执行函数，用于子类继承",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "销毁",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "enterScene",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 进入场景",
+			"params": [
+				{
+					"name": "sceneId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fire",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "//{seatId,bulletId,angle,playerId}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fishsDead",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 鱼死亡  {seatId, dies{fishId, score}}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initData",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initUI",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isInit",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "是否已经初始化",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isShow",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "面板是否显示",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadResource",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "/**加载面板所需资源",
+			"params": [
+				{
+					"name": "loadComplete",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "initComplete",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "open",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "面板开启执行函数，用于子类继承",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pauseGame",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "stopMusic",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "rebackTable",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 断线重连",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeFromParent",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "从父级移除",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeSeat",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 移除座位{seatId,playerId}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setLockFish",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 锁定鱼 {seatId, fishId}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "setOtherPlayerUserInfo",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 其他玩家进入桌子",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setResources",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "设置初始加载资源",
+			"params": [
+				{
+					"name": "resources",
+					"type": "string[]",
+					"description": "resources"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setVisible",
+			"memberof": "BaseEuiView",
+			"scope": "instance",
+			"description": "设置是否隐藏",
+			"params": [
+				{
+					"name": "value",
+					"type": "boolean",
+					"description": "value"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseEuiView"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "switchScene",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 切换场景",
+			"params": [
+				{
+					"name": "sceneId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unLockFish",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateBattery",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// 更新炮台 {seatId, num, score, power}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateChips",
+			"memberof": "fish.FishMainView",
+			"scope": "instance",
+			"description": "// {seatId, chips}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishMainView",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\main\\FishMainView.ts",
+		"augments": [
+			"BaseEuiView"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,405 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Battery",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "skin",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "forceToLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Point",
+			"name": "getBarrelPos",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 获取炮管屏幕坐标位置",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Point",
+			"name": "getBatteryPos",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 获取炮台中心点击坐标",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getChips",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCusSkin",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getLockAngle",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getLockFishId",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "getPlayerId",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSeatId",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getSendBulletPos",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 获取发送子弹的位置",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSide",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isLongTimeNoSendBullet",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isMyBattery",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "lockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onDestroy",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerEvent",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 注册事件",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetLockFishLst",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "lst",
+					"type": "fish.Fish[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "rotationBatteryByPos",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "targetPoint",
+					"type": "egret.Point",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "runSendBullet",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 发送子弹",
+			"params": [
+				{
+					"name": "bulletId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAutoAngle",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAutoFire",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "isAutoFire",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAutoLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "isAutoLock",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setBarrelIndex",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"description": "// 更新炮信息 index 炮管数量, power(0 不是能量炮,1 是能量炮)",
+			"params": [
+				{
+					"name": "index",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "score",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "isPower",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setBatteryInfo",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "isInit",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setChips",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "chips",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setClearLockStateCall",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "call",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUnLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUserInfo",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "userInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unLockFish",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.Battery",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Battery",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\Battery.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

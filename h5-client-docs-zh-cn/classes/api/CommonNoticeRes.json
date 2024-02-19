@@ -1,0 +1,21 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "registerResListener",
+			"memberof": "CommonNoticeRes",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CommonNoticeRes",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\player\\CommonNoticeRes.ts"
+	},
+	"pType": "public"
+}

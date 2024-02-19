@@ -1,0 +1,240 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Array<number>",
+			"name": "_opens",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "开启中UI",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_views",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "已注册的UI",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ViewManager",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "清空处理",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "close",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "关闭面板",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "面板唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "closeAll",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "关闭所有开启中的UI",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "closeView",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "关闭面板",
+			"params": [
+				{
+					"name": "view",
+					"type": "IBaseView",
+					"description": "view"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "currOpenNum",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "当前ui打开数量",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "销毁一个面板",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "唯一标识"
+				},
+				{
+					"name": "newView",
+					"type": "IBaseView",
+					"default": "null",
+					"description": "新面板"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "IBaseView",
+			"name": "getView",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "根据唯一标识获取一个UI对象",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isShow",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "检测一个UI是否开启中",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "IBaseView",
+			"name": "open",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "开启面板",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "面板唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "register",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "面板注册",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "面板唯一标识"
+				},
+				{
+					"name": "view",
+					"type": "IBaseView",
+					"description": "面板"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unregister",
+			"memberof": "ViewManager",
+			"scope": "instance",
+			"description": "面板解除注册",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ViewManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\mvc\\ViewManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

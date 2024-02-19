@@ -1,0 +1,167 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "A",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "65"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "D",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "68"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "DOWN",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "40"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "I",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "73"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "J",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "74"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "K",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "75"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "L",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "76"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LEFT",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "37"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "O",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "79"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "P",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "80"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "RIGHT",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "39"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "S",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "83"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SPACE",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "32"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "U",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "85"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "UP",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "38"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "W",
+			"memberof": "Keyboard",
+			"scope": "static",
+			"pType": "public",
+			"default": "87"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Keyboard",
+			"memberof": "Keyboard",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Keyboard",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\consts\\Keyboard.ts",
+		"description": "Created by yangsong on 15-1-26."
+	},
+	"pType": "public"
+}

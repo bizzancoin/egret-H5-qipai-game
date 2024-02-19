@@ -1,0 +1,137 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isOpen",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_startTimes",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_threshold",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "3"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "isDebug",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "是否是调试模式",
+			"returns": "",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DebugUtils",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "isOpen",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"description": "设置调试是否开启",
+			"params": [
+				{
+					"name": "flag",
+					"type": "boolean",
+					"description": "flag"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setThreshold",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"description": "设置时间间隔阈值",
+			"params": [
+				{
+					"name": "value",
+					"type": "number",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "start",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"description": "开始",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "标识"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "stop",
+			"memberof": "DebugUtils",
+			"scope": "instance",
+			"description": "停止",
+			"params": [
+				{
+					"name": "key",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DebugUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\DebugUtils.ts",
+		"description": "Created by yangsong on 2014/11/23.Debug调试工具",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

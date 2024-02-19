@@ -1,0 +1,214 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadScene",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pauseGame",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerCommonReq",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeCommonReq",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqApplyCancelZuoZ",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 申请下庄",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqApplyZuoZ",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 申请坐庄",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqBackTable",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 获取游戏信息",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqBet",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 请求下注",
+			"params": [
+				{
+					"name": "area",
+					"description": ""
+				},
+				{
+					"name": "chip",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqCancelZuoZ",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 取消申请坐庄",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqClearBet",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 清除下注",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqEnterGameHall",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 请求房间数据",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqEnterRoom",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 进入房间",
+			"params": [
+				{
+					"name": "roomid",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExchangeChips",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 金币兑换筹码",
+			"params": [
+				{
+					"name": "gold",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExchangeGolds",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 筹码兑换金币",
+			"params": [
+				{
+					"name": "chips",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExitRoom",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 离开房间",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExitTable",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 退出桌子",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqFastEnterTable",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"description": "// 快速进入桌子",
+			"params": [
+				{
+					"name": "roomid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "brnn.BrnnReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "roomInfo",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BrnnReq",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\net\\BrnnReq.ts"
+	},
+	"pType": "public"
+}

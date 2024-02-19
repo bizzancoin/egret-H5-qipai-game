@@ -1,0 +1,177 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "eui.UILayer",
+			"name": "_uiStage",
+			"memberof": "StageUtils",
+			"scope": "static",
+			"description": "//UIStage单例",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "StageUtils",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getHeight",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "获取游戏的高度",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Stage",
+			"name": "getStage",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "获取游戏Stage对象",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "eui.UILayer",
+			"name": "getUIStage",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "获取唯一UIStage",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getWidth",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "获取游戏宽度",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFrameRate",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "设置帧频",
+			"params": [
+				{
+					"name": "value",
+					"type": "number",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setMaxTouches",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "设置同时可触发几个点击事件，默认为2",
+			"params": [
+				{
+					"name": "value",
+					"type": "number",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setScaleMode",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "设置适配方式",
+			"params": [
+				{
+					"name": "value",
+					"type": "string",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setTouchChildren",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"description": "指定此对象的子项以及子孙项是否接收鼠标/触摸事件",
+			"params": [
+				{
+					"name": "value",
+					"type": "boolean",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "startFullscreenAdaptation",
+			"memberof": "StageUtils",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "designWidth",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "designHeight",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "resizeCallback",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StageUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\StageUtils.ts",
+		"description": "Created by yangsong on 2014/12/3.Stage相关工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,142 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "MessageCenter",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": "0:使用分帧处理 1:及时执行"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addListener",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "添加消息监听",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "消息唯一标识"
+				},
+				{
+					"name": "listener",
+					"type": "Function",
+					"description": "侦听函数"
+				},
+				{
+					"name": "listenerObj",
+					"type": "any",
+					"description": "侦听函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "clear",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "清空处理",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "dispatch",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "触发消息",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "消息唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeAll",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "移除某一对象的所有监听",
+			"params": [
+				{
+					"name": "listenerObj",
+					"type": "any",
+					"description": "侦听函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeListener",
+			"memberof": "MessageCenter",
+			"scope": "instance",
+			"description": "移除消息监听",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "消息唯一标识"
+				},
+				{
+					"name": "listener",
+					"type": "Function",
+					"description": "侦听函数"
+				},
+				{
+					"name": "listenerObj",
+					"type": "any",
+					"description": "侦听函数所属对象"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MessageCenter",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\MessageCenter.ts",
+		"description": "Created by yangsong on 2014/11/23.服务端返回消息处理",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

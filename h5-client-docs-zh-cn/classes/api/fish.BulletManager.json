@@ -1,0 +1,156 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BulletManager",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Bullet[]",
+			"name": "getBulletAliveLst",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getBulletBBX",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "init",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "parentObj",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Bullet",
+			"name": "preCreated",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"description": "// {id, objId}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeBulletObject",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeBulletObjectBySetId",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "sendBullet",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"description": "// {id,pos{x,y},angle,side,lockfishId,userInfo{playerId,seatId,serverId}}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.BulletManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BulletManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\BulletManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

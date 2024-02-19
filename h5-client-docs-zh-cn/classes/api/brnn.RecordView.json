@@ -1,0 +1,53 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "RecordView",
+			"memberof": "brnn.RecordView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hide",
+			"memberof": "brnn.RecordView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerTouchEvent",
+			"memberof": "brnn.RecordView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "brnn.RecordView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "records",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RecordView",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\RecordView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

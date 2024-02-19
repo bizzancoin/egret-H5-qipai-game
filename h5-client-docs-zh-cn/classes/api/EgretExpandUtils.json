@@ -1,0 +1,47 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "EgretExpandUtils",
+			"memberof": "EgretExpandUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "EgretExpandUtils",
+			"scope": "instance",
+			"description": "初始化函数",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "EgretExpandUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\EgretExpandUtils.ts",
+		"description": "Created by yangsong on 15-1-23.引擎扩展类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

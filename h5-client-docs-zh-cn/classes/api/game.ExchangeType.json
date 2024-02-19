@@ -1,0 +1,32 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "CashIn",
+			"memberof": "game.ExchangeType",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "CashOut",
+			"memberof": "game.ExchangeType",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "ExchangeType",
+		"memberof": "game",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\ExchangeView.ts"
+	},
+	"pType": "public"
+}

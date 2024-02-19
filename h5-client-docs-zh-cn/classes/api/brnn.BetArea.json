@@ -1,0 +1,100 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BetArea",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerEvent",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "area",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reset",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setMyBetChips",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "chips",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setTotalBetChips",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "chips",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setWin",
+			"memberof": "brnn.BetArea",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "isWin",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BetArea",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\BetArea.ts",
+		"description": "// 下注区域",
+		"augments": []
+	},
+	"pType": "public"
+}

@@ -1,0 +1,81 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ChipItem",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "recyle",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "sendChip",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "x",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "y",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setChip",
+			"memberof": "baccarat.ChipItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "chip",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ChipItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\ChipItem.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

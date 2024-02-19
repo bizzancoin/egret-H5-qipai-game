@@ -1,0 +1,930 @@
+{
+	"api": {
+		"": {
+			"class": [
+				{
+					"name": "AssetAdapter",
+					"description": "//////////////////////////////////////////////////////////////////////////////////////"
+				},
+				{
+					"name": "MergeJsonAnalyzer",
+					"description": "https://github.com/yicaoyimuys/EgretGameEngine合并过的json文件解析"
+				},
+				{
+					"name": "ThemeAdapter",
+					"description": "//////////////////////////////////////////////////////////////////////////////////////"
+				},
+				{
+					"name": "App",
+					"description": "Created by yangsong on 2014/11/22."
+				},
+				{
+					"name": "BaseClass",
+					"description": "Created by yangsong on 14/12/18.基类"
+				},
+				{
+					"name": "Keyboard",
+					"description": "Created by yangsong on 15-1-26."
+				},
+				{
+					"name": "BitmapNumber",
+					"description": "素材需要提前加载好素材命名规则：类型_数值（有类型是因为一般会同时有几种数字图片，比如大小号或不同颜色）点号素材命名：类型_dot创建BitmapNumber使用createNumPic返回DisplayObjectContainer创建好的BitmapNumber数值需要变化是调用changeNum回收使用desstroyNumPicCreated by Saco on 2014/8/1."
+				},
+				{
+					"name": "HotspotBitmap",
+					"description": "Created by Saco on 2014/12/1."
+				},
+				{
+					"name": "DragonBonesArmature",
+					"description": "Created by yangsong on 15-1-14.Armature封装类"
+				},
+				{
+					"name": "DragonBonesArmatureContainer",
+					"description": "Created by yangsong on 15-1-16.DragonBonesArmature容器类，用于一个动画使用多个DragonBonesArmature的情况"
+				},
+				{
+					"name": "DragonBonesFactory",
+					"description": "Created by egret on 15-1-14.DragonBones工厂类"
+				},
+				{
+					"name": "GuideMaskBackgroud",
+					"description": "Created by yangsong on 14-12-2.引导背景层，实现的是一个类似不规则遮罩的功能"
+				},
+				{
+					"name": "GuideUtils",
+					"description": "Created by yangsong on 14-12-2.引导工具类，根据每个项目重写实现可重写实现"
+				},
+				{
+					"name": "GuideView",
+					"description": "Created by yangsong on 14-12-2.GuideView"
+				},
+				{
+					"name": "EasyLoading",
+					"description": "Created by husong on 4/10/15."
+				},
+				{
+					"name": "BaseController",
+					"description": "Created by yangsong on 2014/11/22.Controller基类"
+				},
+				{
+					"name": "ControllerManager",
+					"description": "Created by yangsong on 2014/11/22.Controller管理类"
+				},
+				{
+					"name": "BaseModel",
+					"description": "Created by yangsong on 15-11-20.Model基类"
+				},
+				{
+					"name": "BaseProxy",
+					"description": "Created by yangsong on 2014/11/22.Proxy基类"
+				},
+				{
+					"name": "BaseEuiView",
+					"description": "Created by yangsong on 2014/11/22.View基类，继承自eui.Component"
+				},
+				{
+					"name": "BaseSpriteView",
+					"description": "Created by yangsong on 2014/11/22.View基类，继承自egret.Sprite"
+				},
+				{
+					"name": "ViewManager",
+					"description": ""
+				},
+				{
+					"name": "DynamicChange",
+					"description": "Created by yangsong on 2014/11/22.Http数据缓存类"
+				},
+				{
+					"name": "ProxyUpdate",
+					"description": "Created by yangsong on 2014/11/22.Http数据更新类"
+				},
+				{
+					"name": "Http",
+					"description": "Created by yangsong on 2014/11/22.Http请求处理"
+				},
+				{
+					"name": "ByteArrayMsg",
+					"description": "Created by yangsong on 15-2-11."
+				},
+				{
+					"name": "ByteArrayMsgByProtobuf",
+					"description": "Created by yangsong on 15-3-25."
+				},
+				{
+					"name": "MsgFactory",
+					"description": ""
+				},
+				{
+					"name": "Socket",
+					"description": "Created by yangsong on 2014/11/25.Socket类"
+				},
+				{
+					"name": "SocketConst",
+					"description": "Created by yangsong on 2014/11/25.Socket使用常量"
+				},
+				{
+					"name": "UTFMsg",
+					"description": "Created by yangsong on 15-2-11."
+				},
+				{
+					"name": "UTFMsgByJson",
+					"description": "Created by yangsong on 15-3-20."
+				},
+				{
+					"name": "BaseEuiLayer",
+					"description": "Created by yangsong on 15-1-7."
+				},
+				{
+					"name": "BaseScene",
+					"description": "Created by yangsong on 15-1-7.Scene基类"
+				},
+				{
+					"name": "BaseSpriteLayer",
+					"description": "Created by yangsong on 15-1-7."
+				},
+				{
+					"name": "SceneManager",
+					"description": "Created by yangsong on 2014/11/28.场景管理类"
+				},
+				{
+					"name": "BaseSound",
+					"description": "Created by yangsong on 15-1-14.Sound基类"
+				},
+				{
+					"name": "SoundBg",
+					"description": "Created by yangsong on 15-1-14.背景音乐类"
+				},
+				{
+					"name": "SoundEffects",
+					"description": "Created by yangsong on 15-1-14.音效类"
+				},
+				{
+					"name": "SoundManager",
+					"description": "Created by yangsong on 15-1-14.Sound管理类"
+				},
+				{
+					"name": "StarlingSwfFactory",
+					"description": "Created by yangsong on 2014/6/16.StarlingSwf工厂类"
+				},
+				{
+					"name": "StarlingSwfMovieClip",
+					"description": "Created by yangsong on 2014/6/16.自定义SwfMovieClip类，带有帧处理函数"
+				},
+				{
+					"name": "StarlingSwfUtils",
+					"description": "Created by lcj on 14-6-18.StarlingSwf工具类"
+				},
+				{
+					"name": "StarlingSwfButtonData",
+					"description": ""
+				},
+				{
+					"name": "AllAsyncExecutor",
+					"description": "Created by yangsong on 15-11-4."
+				},
+				{
+					"name": "AnchorUtil",
+					"description": "Created by Saco on 2015/9/16."
+				},
+				{
+					"name": "ArrayUtils",
+					"description": "Created by egret on 15-8-7."
+				},
+				{
+					"name": "AverageUtils",
+					"description": "Created by yangsong on 15-8-19.平均数工具类"
+				},
+				{
+					"name": "CommonUtils",
+					"description": "Created by yangsong on 15-1-12.通用工具类"
+				},
+				{
+					"name": "DateUtils",
+					"description": "Created by yangsong on 2014/11/22.Date工具类"
+				},
+				{
+					"name": "DebugUtils",
+					"description": "Created by yangsong on 2014/11/23.Debug调试工具"
+				},
+				{
+					"name": "DelayOptManager",
+					"description": "Created by Saco on 2014/8/2."
+				},
+				{
+					"name": "DeviceUtils",
+					"description": "Created by yangsong on 15-1-20."
+				},
+				{
+					"name": "DisplayUtils",
+					"description": "Created by yangsong on 2014/11/24.显示对象工具类"
+				},
+				{
+					"name": "EffectUtils",
+					"description": "Created by yangsong on 2014/12/3.各种效果工具类"
+				},
+				{
+					"name": "EgretExpandUtils",
+					"description": "Created by yangsong on 15-1-23.引擎扩展类"
+				},
+				{
+					"name": "FrameDelay",
+					"description": "Created by yangsong on 2014/11/23.帧延迟处理"
+				},
+				{
+					"name": "FrameExecutor",
+					"description": "Created by yangsong on 2014/11/23.分帧处理"
+				},
+				{
+					"name": "KeyboardUtils",
+					"description": "Created by yangsong on 15-1-26.键盘工具类"
+				},
+				{
+					"name": "LocationProperty",
+					"description": "Created by Saco on 2014/12/1."
+				},
+				{
+					"name": "Log",
+					"description": "Created by yangsong on 2014/11/22."
+				},
+				{
+					"name": "MathUtils",
+					"description": "Created by yangsong on 2014/11/22.数学计算工具类"
+				},
+				{
+					"name": "md5",
+					"description": "A JavaScript implementation of the RSA Data Security, Inc. MD5 MessageDigest Algorithm, as defined in RFC 1321.Version 2.2 Copyright (C) Paul Johnston 1999 - 2009Other contributors: Greg Holt, Andrew Kepert, Ydnar, LostinetDistributed under the BSD LicenseSee http://pajhome.org.uk/crypt/md5 for more info."
+				},
+				{
+					"name": "MessageCenter",
+					"description": "Created by yangsong on 2014/11/23.服务端返回消息处理"
+				},
+				{
+					"name": "MessageVo",
+					"description": ""
+				},
+				{
+					"name": "ObjectPool",
+					"description": "Created by yangsong on 2014/11/22.对象池类"
+				},
+				{
+					"name": "Percent",
+					"description": "Created by yangsong on 2014/11/23.百分比类"
+				},
+				{
+					"name": "QueueExecutor",
+					"description": "Created by yangsong on 15-8-19.队列处理"
+				},
+				{
+					"name": "RandomUtils",
+					"description": "Created by yangsong on 2014/11/23."
+				},
+				{
+					"name": "RenderTextureManager",
+					"description": "cacheAsBitmap的替代方案，解决QQ浏览器在1G内存的机器上最多能使用20个Canvas的限制"
+				},
+				{
+					"name": "ResourceUtils",
+					"description": "Created by yangsong on 15-2-11.资源加载工具类，支持多个resource.json文件加载封装Group的加载增加静默加载机制"
+				},
+				{
+					"name": "ResVersionManager",
+					"description": "Created by yangsong on 15-4-21.单一资源通过版本号加载管理类"
+				},
+				{
+					"name": "RockerUtils",
+					"description": "Created by yangsong on 15-1-27.摇杆控制类"
+				},
+				{
+					"name": "ShockUtils",
+					"description": "Created by Channing on 2014/12/6.震动"
+				},
+				{
+					"name": "StageUtils",
+					"description": "Created by yangsong on 2014/12/3.Stage相关工具类"
+				},
+				{
+					"name": "StringBuffer",
+					"description": "Created by yangsong on 2014/12/8.StringBuffer类"
+				},
+				{
+					"name": "StringUtils",
+					"description": "Created by yangsong on 14/12/18.字符串操作工具类"
+				},
+				{
+					"name": "TextFlowMaker",
+					"description": "Created by Saco on 2015/10/26."
+				},
+				{
+					"name": "TimerManager",
+					"description": "Created by yangsong on 2014/11/23.Timer管理器"
+				},
+				{
+					"name": "TimerHandler",
+					"description": ""
+				},
+				{
+					"name": "BaseLoadingView",
+					"description": ""
+				},
+				{
+					"name": "BasePanelView",
+					"description": ""
+				},
+				{
+					"name": "GameApp",
+					"description": ""
+				},
+				{
+					"name": "BaccaratConst",
+					"description": ""
+				},
+				{
+					"name": "BaccaratLoad",
+					"description": ""
+				},
+				{
+					"name": "HomeController",
+					"description": ""
+				},
+				{
+					"name": "HomeManager",
+					"description": ""
+				},
+				{
+					"name": "HomeView",
+					"description": ""
+				},
+				{
+					"name": "LoadingConst",
+					"description": ""
+				},
+				{
+					"name": "LoadingController",
+					"description": ""
+				},
+				{
+					"name": "LoadingView",
+					"description": ""
+				},
+				{
+					"name": "HeartMgr",
+					"description": "// 心跳处理"
+				},
+				{
+					"name": "LoginController",
+					"description": ""
+				},
+				{
+					"name": "LoginMgr",
+					"description": ""
+				},
+				{
+					"name": "LoginReq",
+					"description": ""
+				},
+				{
+					"name": "LoginStart",
+					"description": ""
+				},
+				{
+					"name": "LoginView",
+					"description": ""
+				},
+				{
+					"name": "CommonNoticeRes",
+					"description": ""
+				},
+				{
+					"name": "PlayerInfo",
+					"description": ""
+				},
+				{
+					"name": "PlayerManager",
+					"description": ""
+				},
+				{
+					"name": "PlayerRes",
+					"description": ""
+				},
+				{
+					"name": "ButtonComponent",
+					"description": ""
+				},
+				{
+					"name": "ButtonTip",
+					"description": ""
+				},
+				{
+					"name": "FloatingTip",
+					"description": "Created by ys on 4/16/18."
+				},
+				{
+					"name": "MarqueeManager",
+					"description": ""
+				},
+				{
+					"name": "PromotManager",
+					"description": ""
+				},
+				{
+					"name": "ItemRoomRenderer",
+					"description": ""
+				},
+				{
+					"name": "RoomController",
+					"description": ""
+				},
+				{
+					"name": "RoomView",
+					"description": ""
+				},
+				{
+					"name": "LayerManager",
+					"description": ""
+				},
+				{
+					"name": "LoginScene",
+					"description": "// 登录场景（包含 LoadingView, LoginView）"
+				},
+				{
+					"name": "Main",
+					"description": "//////////////////////////////////////////////////////////////////////////////////////"
+				}
+			],
+			"interface": [
+				{
+					"name": "IBaseView",
+					"description": "Created by yangsong on 2014/11/24.View基类接口"
+				},
+				{
+					"name": "BaseMsg",
+					"description": "Created by yangsong on 2014/11/25.服务端消息解析"
+				}
+			],
+			"enum": [
+				{
+					"name": "ControllerConst",
+					"description": ""
+				},
+				{
+					"name": "SceneConsts",
+					"description": ""
+				},
+				{
+					"name": "ViewConst",
+					"description": ""
+				},
+				{
+					"name": "CommonReq",
+					"description": ""
+				},
+				{
+					"name": "LoginType",
+					"description": ""
+				}
+			]
+		},
+		"starlingswf": {
+			"interface": [
+				{
+					"name": "ISwfAnimation",
+					"description": "动画接口"
+				}
+			],
+			"class": [
+				{
+					"name": "SwfMovieClip",
+					"description": ""
+				},
+				{
+					"name": "SwfSprite",
+					"description": "Sprite"
+				},
+				{
+					"name": "Swf",
+					"description": "Swf文档类"
+				},
+				{
+					"name": "SwfAssetManager",
+					"description": "swf资源管理器"
+				},
+				{
+					"name": "SwfUpdateManager",
+					"description": "动画更新管理器"
+				}
+			]
+		},
+		"baccarat": {
+			"class": [
+				{
+					"name": "BaccaratController",
+					"description": ""
+				},
+				{
+					"name": "BaccaratMgr",
+					"description": ""
+				},
+				{
+					"name": "BaccaratModel",
+					"description": ""
+				},
+				{
+					"name": "BaccaratReq",
+					"description": ""
+				},
+				{
+					"name": "BaccaratRes",
+					"description": ""
+				},
+				{
+					"name": "BaccaratScene",
+					"description": ""
+				},
+				{
+					"name": "BaccaratStart",
+					"description": ""
+				},
+				{
+					"name": "BaccaratBetAreaItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratMyBetItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratResult",
+					"description": ""
+				},
+				{
+					"name": "BaccaratView",
+					"description": ""
+				},
+				{
+					"name": "ChipItem",
+					"description": ""
+				},
+				{
+					"name": "PokerItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratBigEyeWayItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratBigWayItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratMainWayItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratSmallStrongItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratSmallWayItem",
+					"description": ""
+				},
+				{
+					"name": "BaccaratWayBillView",
+					"description": ""
+				}
+			]
+		},
+		"brnn": {
+			"enum": [
+				{
+					"name": "CardType",
+					"description": ""
+				},
+				{
+					"name": "BrnnResConst",
+					"description": ""
+				},
+				{
+					"name": "CardsKinds",
+					"description": ""
+				},
+				{
+					"name": "ObjectClassType",
+					"description": ""
+				}
+			],
+			"class": [
+				{
+					"name": "BrnnConfig",
+					"description": ""
+				},
+				{
+					"name": "BrnnMgr",
+					"description": ""
+				},
+				{
+					"name": "BrnnScene",
+					"description": ""
+				},
+				{
+					"name": "BrnnStart",
+					"description": ""
+				},
+				{
+					"name": "BetArea",
+					"description": "// 下注区域"
+				},
+				{
+					"name": "BetBtn",
+					"description": "// 下注按钮"
+				},
+				{
+					"name": "CardCheck",
+					"description": ""
+				},
+				{
+					"name": "CardItem",
+					"description": "// 牌想"
+				},
+				{
+					"name": "ChipsManager",
+					"description": ""
+				},
+				{
+					"name": "Chip",
+					"description": ""
+				},
+				{
+					"name": "BigCardsManager",
+					"description": ""
+				},
+				{
+					"name": "SmallCardsManager",
+					"description": ""
+				},
+				{
+					"name": "Card",
+					"description": ""
+				},
+				{
+					"name": "ClearingView",
+					"description": ""
+				},
+				{
+					"name": "LoadingView",
+					"description": ""
+				},
+				{
+					"name": "LoadingController",
+					"description": ""
+				},
+				{
+					"name": "MainController",
+					"description": ""
+				},
+				{
+					"name": "MainModel",
+					"description": ""
+				},
+				{
+					"name": "MainView",
+					"description": ""
+				},
+				{
+					"name": "ObjectPool",
+					"description": ""
+				},
+				{
+					"name": "RecordView",
+					"description": ""
+				},
+				{
+					"name": "RecordItem",
+					"description": ""
+				},
+				{
+					"name": "WaitView",
+					"description": ""
+				},
+				{
+					"name": "WaitItem",
+					"description": ""
+				},
+				{
+					"name": "BrnnReq",
+					"description": ""
+				},
+				{
+					"name": "BrnnRes",
+					"description": ""
+				}
+			]
+		},
+		"game": {
+			"enum": [
+				{
+					"name": "ExchangeType",
+					"description": ""
+				}
+			],
+			"class": [
+				{
+					"name": "ExchangeView",
+					"description": ""
+				},
+				{
+					"name": "SetView",
+					"description": ""
+				}
+			]
+		},
+		"fish": {
+			"class": [
+				{
+					"name": "ActionCreater",
+					"description": "动作创建器"
+				},
+				{
+					"name": "ActionCurve",
+					"description": ""
+				},
+				{
+					"name": "ActionEffect",
+					"description": ""
+				},
+				{
+					"name": "Background",
+					"description": ""
+				},
+				{
+					"name": "BackgroundManager",
+					"description": ""
+				},
+				{
+					"name": "Battery",
+					"description": ""
+				},
+				{
+					"name": "BatteryManager",
+					"description": ""
+				},
+				{
+					"name": "Bullet",
+					"description": ""
+				},
+				{
+					"name": "BulletManager",
+					"description": ""
+				},
+				{
+					"name": "CaculatRule",
+					"description": "// 函数计算规则"
+				},
+				{
+					"name": "frule",
+					"description": ""
+				},
+				{
+					"name": "CollisionManager",
+					"description": "碰撞检测"
+				},
+				{
+					"name": "Fish",
+					"description": ""
+				},
+				{
+					"name": "FishConfigManager",
+					"description": "获取配置文件"
+				},
+				{
+					"name": "FishGold",
+					"description": ""
+				},
+				{
+					"name": "FishGoldManager",
+					"description": ""
+				},
+				{
+					"name": "FishLabel",
+					"description": "得分票子"
+				},
+				{
+					"name": "FishLabelManager",
+					"description": ""
+				},
+				{
+					"name": "FishMainModel",
+					"description": ""
+				},
+				{
+					"name": "FishManager",
+					"description": ""
+				},
+				{
+					"name": "FishNet",
+					"description": ""
+				},
+				{
+					"name": "FishNetManager",
+					"description": ""
+				},
+				{
+					"name": "FishObjectPool",
+					"description": ""
+				},
+				{
+					"name": "LockFish",
+					"description": ""
+				},
+				{
+					"name": "MusicManager",
+					"description": ""
+				},
+				{
+					"name": "RotateScore",
+					"description": ""
+				},
+				{
+					"name": "SkillItemLine",
+					"description": "激光连线"
+				},
+				{
+					"name": "SkillManager",
+					"description": ""
+				},
+				{
+					"name": "FishMgr",
+					"description": ""
+				},
+				{
+					"name": "FishReq",
+					"description": ""
+				},
+				{
+					"name": "FishScene",
+					"description": ""
+				},
+				{
+					"name": "FishStart",
+					"description": ""
+				},
+				{
+					"name": "FishLoadingController",
+					"description": ""
+				},
+				{
+					"name": "FishLoadingView",
+					"description": ""
+				},
+				{
+					"name": "FishMainSceneController",
+					"description": ""
+				},
+				{
+					"name": "FishMainView",
+					"description": ""
+				}
+			],
+			"enum": [
+				{
+					"name": "Side",
+					"description": ""
+				},
+				{
+					"name": "CurveRuleType",
+					"description": ""
+				},
+				{
+					"name": "ObjectClassType",
+					"description": ""
+				},
+				{
+					"name": "FishResConst",
+					"description": ""
+				}
+			]
+		},
+		"jcby": {
+			"class": [
+				{
+					"name": "FishReq",
+					"description": ""
+				},
+				{
+					"name": "FishRes",
+					"description": ""
+				}
+			]
+		}
+	},
+	"other": {
+		"global": {
+			"class": [
+				{
+					"name": "Types",
+					"description": "基础类型介绍"
+				}
+			]
+		}
+	}
+}

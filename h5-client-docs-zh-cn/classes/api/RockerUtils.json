@@ -1,0 +1,77 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "RockerUtils",
+			"memberof": "RockerUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "RockerUtils",
+			"scope": "instance",
+			"description": "摇杆初始化",
+			"params": [
+				{
+					"name": "moveBg",
+					"type": "egret.Bitmap",
+					"description": "摇杆背景图"
+				},
+				{
+					"name": "moveFlag",
+					"type": "egret.Bitmap",
+					"description": "摇杆图标"
+				},
+				{
+					"name": "dealKeyFunc",
+					"type": "Function",
+					"description": "摇杆移动时处理函数"
+				},
+				{
+					"name": "dealKeyTarget",
+					"type": "any",
+					"description": "摇杆移动时处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "RockerUtils",
+			"scope": "instance",
+			"description": "停止处理",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RockerUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\RockerUtils.ts",
+		"description": "Created by yangsong on 15-1-27.摇杆控制类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

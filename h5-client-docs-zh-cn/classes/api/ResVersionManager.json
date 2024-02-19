@@ -1,0 +1,64 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ResVersionManager",
+			"memberof": "ResVersionManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadConfig",
+			"memberof": "ResVersionManager",
+			"scope": "instance",
+			"description": "加载资源版本号配置文件",
+			"params": [
+				{
+					"name": "url",
+					"type": "string",
+					"description": "配置文件路径"
+				},
+				{
+					"name": "complateFunc",
+					"type": "Function",
+					"description": "加载完成执行函数"
+				},
+				{
+					"name": "complateFuncTarget",
+					"type": "any",
+					"description": "加载完成执行函数所属对象"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ResVersionManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\ResVersionManager.ts",
+		"description": "Created by yangsong on 15-4-21.单一资源通过版本号加载管理类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,49 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ItemRoomRenderer",
+			"memberof": "ItemRoomRenderer",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "dataChanged",
+			"memberof": "ItemRoomRenderer",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "partAdded",
+			"memberof": "ItemRoomRenderer",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "partName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "instance",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ItemRoomRenderer",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\Room\\ItemRoomRenderer.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

@@ -1,0 +1,54 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Background",
+			"memberof": "fish.Background",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "create",
+			"memberof": "fish.Background",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "time",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getBkMusicId",
+			"memberof": "fish.Background",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Background",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\Background.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

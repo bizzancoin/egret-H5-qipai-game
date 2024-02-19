@@ -1,0 +1,63 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any[]",
+			"name": "_hotspot",
+			"memberof": "HotspotBitmap",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "HotspotBitmap",
+			"memberof": "HotspotBitmap",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addHotspotArea",
+			"memberof": "HotspotBitmap",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "rect",
+					"type": "egret.Rectangle",
+					"description": ""
+				},
+				{
+					"name": "callBack",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "thisObj",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "para",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "HotspotBitmap",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\display\\HotspotBitmap.ts",
+		"description": "Created by Saco on 2014/12/1.",
+		"augments": []
+	},
+	"pType": "public"
+}

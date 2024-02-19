@@ -1,0 +1,56 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "starlingswf.SwfMovieClip",
+			"name": "btn",
+			"memberof": "StarlingSwfButtonData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "Function",
+			"name": "onClick",
+			"memberof": "StarlingSwfButtonData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "thisObj",
+			"memberof": "StarlingSwfButtonData",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "touchStageX",
+			"memberof": "StarlingSwfButtonData",
+			"scope": "instance",
+			"pType": "public",
+			"default": "-1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "touchStageY",
+			"memberof": "StarlingSwfButtonData",
+			"scope": "instance",
+			"pType": "public",
+			"default": "-1"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StarlingSwfButtonData",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\game\\StarlingSwfUtils.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,81 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Card",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "isBig",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "getDataId",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "brnn.Card",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Card",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\Chips.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

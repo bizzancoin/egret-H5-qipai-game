@@ -1,0 +1,30 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "brnn.BrnnStart",
+			"scope": "instance",
+			"description": "// 结束游戏",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "start",
+			"memberof": "brnn.BrnnStart",
+			"scope": "instance",
+			"description": "// 开始捕鱼游戏",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BrnnStart",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\BrnnStart.ts"
+	},
+	"pType": "public"
+}

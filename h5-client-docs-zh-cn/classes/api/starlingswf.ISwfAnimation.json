@@ -1,0 +1,23 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "starlingswf.ISwfAnimation",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "ISwfAnimation",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\display\\ISwfAnimation.ts",
+		"description": "动画接口"
+	},
+	"pType": "public"
+}

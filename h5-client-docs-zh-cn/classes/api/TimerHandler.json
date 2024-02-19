@@ -1,0 +1,118 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Function",
+			"name": "complateMethod",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "完成处理函数",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "complateMethodObj",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "完成处理函数所属对象",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "dealTime",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "上次的执行时间",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "delay",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "执行间隔",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "exeTime",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "执行时间",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "Function",
+			"name": "method",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "处理函数",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "methodObj",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "处理函数所属对象",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "repeat",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "是否重复执行",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "repeatCount",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "重复执行次数",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "userFrame",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "是否用帧率",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "TimerHandler",
+			"scope": "instance",
+			"description": "清理",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TimerHandler",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\TimerManager.ts"
+	},
+	"pType": "public"
+}

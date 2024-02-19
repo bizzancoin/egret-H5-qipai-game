@@ -1,0 +1,49 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "WaitItem",
+			"memberof": "brnn.WaitItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "dataChanged",
+			"memberof": "brnn.WaitItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "partAdded",
+			"memberof": "brnn.WaitItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "partName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "instance",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "WaitItem",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\WaitView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

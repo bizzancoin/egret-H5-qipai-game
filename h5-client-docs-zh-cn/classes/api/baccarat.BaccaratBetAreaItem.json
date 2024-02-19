@@ -1,0 +1,97 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "height",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "width",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "x",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "y",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratBetAreaItem",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "img",
+					"type": "eui.Image",
+					"description": ""
+				},
+				{
+					"name": "lbl",
+					"type": "eui.BitmapLabel",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setBet",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bet",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setLight",
+			"memberof": "baccarat.BaccaratBetAreaItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratBetAreaItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\BaccaratBetAreaItem.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,87 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DisplayUtils",
+			"memberof": "DisplayUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createBitmap",
+			"memberof": "DisplayUtils",
+			"scope": "instance",
+			"description": "创建一个Bitmap",
+			"returns": "",
+			"params": [
+				{
+					"name": "resName",
+					"type": "string",
+					"description": "resource.json中配置的name"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "eui.Image",
+			"name": "createEuiImage",
+			"memberof": "DisplayUtils",
+			"scope": "instance",
+			"description": "创建一张Gui的图片",
+			"returns": "",
+			"params": [
+				{
+					"name": "resName",
+					"type": "string",
+					"description": "resName"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "removeFromParent",
+			"memberof": "DisplayUtils",
+			"scope": "instance",
+			"description": "从父级移除child",
+			"params": [
+				{
+					"name": "child",
+					"type": "egret.DisplayObject",
+					"description": "child"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DisplayUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\DisplayUtils.ts",
+		"description": "Created by yangsong on 2014/11/24.显示对象工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,165 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_backRoom",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"description": "// 当前是否是断线重连",
+			"pType": "protected",
+			"default": "false"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_instatdSendPlayerLst",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isEnterScene",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_roomInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"description": "// 房间信息",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_userInfoLst",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "backRoom",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "gameInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "instatdSendPlayerLst",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "roomInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "userInfoLst",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addUserInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"description": "// {playerId, seatId, isLocal, chips}",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "userInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getUserInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeAllUserInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "resetUserInfo",
+			"memberof": "fish.FishMainModel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishMainModel",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishMainModel.ts"
+	},
+	"pType": "public"
+}

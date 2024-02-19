@@ -1,0 +1,111 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishNet",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDataId",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFinishCall",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "finishCall",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "finishObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "startPlay",
+			"memberof": "fish.FishNet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishNet",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishNet.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

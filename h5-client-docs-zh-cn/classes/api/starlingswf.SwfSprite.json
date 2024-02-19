@@ -1,0 +1,79 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "getImage",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfMovieClip",
+			"name": "getMovie",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "starlingswf.SwfSprite",
+			"name": "getSprite",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.TextField",
+			"name": "getTextField",
+			"memberof": "starlingswf.SwfSprite",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SwfSprite",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\display\\SwfSprite.ts",
+		"description": "Sprite",
+		"augments": [],
+		"children": [
+			"starlingswf.SwfMovieClip"
+		]
+	},
+	"pType": "public"
+}

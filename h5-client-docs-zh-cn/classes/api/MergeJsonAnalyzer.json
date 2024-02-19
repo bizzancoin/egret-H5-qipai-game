@@ -1,0 +1,37 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "analyzeData",
+			"memberof": "MergeJsonAnalyzer",
+			"scope": "instance",
+			"description": "解析并缓存加载成功的数据",
+			"params": [
+				{
+					"name": "resItem",
+					"type": "RES.ResourceItem",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MergeJsonAnalyzer",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\adapter\\MergeJsonAnalyzer.ts",
+		"description": "https://github.com/yicaoyimuys/EgretGameEngine合并过的json文件解析",
+		"augments": []
+	},
+	"pType": "public"
+}

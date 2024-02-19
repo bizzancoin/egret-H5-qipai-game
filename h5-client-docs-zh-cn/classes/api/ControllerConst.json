@@ -1,0 +1,95 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Baccarat",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10004"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BrnnLoad",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10007"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "BrnnMain",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10008"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FishLoad",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10005"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FishMain",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10006"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Home",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10002"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Loading",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10000"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Login",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10001"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Room",
+			"memberof": "ControllerConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "10003"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "ControllerConst",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\consts\\ControllerConst.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,290 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "BaseController",
+			"name": "_controller",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseProxy",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$controller",
+					"type": "BaseController",
+					"description": "所属模块"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyControllerFunc",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "触发其他模块消息",
+			"params": [
+				{
+					"name": "controllerKey",
+					"type": "number",
+					"description": "模块标识"
+				},
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyFunc",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "触发本模块消息",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receiveServerHttpUpdateMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "注册从Http服务端返回的Update消息",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receiveServerHttpUpdateMsgOnce",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "注册从Http服务端返回的Update消息，仅一次，执行完成后删除",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receiveServerMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "注册从服务器返回消息的监听",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receiveServerMsgOnce",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "注册从服务器返回消息的监听，仅一次，执行完成后删除",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeServerHttpUpdateMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "移除从Http服务端返回的Update消息",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeServerMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "移除服务端返回消息的监听",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "消息标识"
+				},
+				{
+					"name": "callbackFunc",
+					"type": "Function",
+					"description": "处理函数"
+				},
+				{
+					"name": "callbackObj",
+					"type": "any",
+					"description": "处理函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "sendHttpMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "发送消息到Http服务端",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "消息标识 例如: User.login"
+				},
+				{
+					"name": "paramObj",
+					"type": "any",
+					"default": "null",
+					"description": "消息参数 例如: var paramObj:any = {\"uName\":uName, \"uPass\":uPass};"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "sendSocketMsg",
+			"memberof": "BaseProxy",
+			"scope": "instance",
+			"description": "发送消息到Socket服务器",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseProxy",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\mvc\\proxy\\BaseProxy.ts",
+		"description": "Created by yangsong on 2014/11/22.Proxy基类"
+	},
+	"pType": "public"
+}

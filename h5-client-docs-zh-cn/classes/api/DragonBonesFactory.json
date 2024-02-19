@@ -1,0 +1,234 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DragonBonesFactory",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addSkeletonData",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "添加动画描述文件",
+			"params": [
+				{
+					"name": "skeletonData",
+					"type": "any",
+					"description": "skeletonData"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addTextureAtlas",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "添加动画所需资源",
+			"params": [
+				{
+					"name": "texture",
+					"type": "egret.Texture",
+					"description": "动画资源"
+				},
+				{
+					"name": "textureData",
+					"type": "any",
+					"description": "动画资源描述文件"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "清空所有动画",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initArmatureFile",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "初始化一个动画文件",
+			"params": [
+				{
+					"name": "skeletonData",
+					"type": "any",
+					"description": "动画描述文件"
+				},
+				{
+					"name": "texture",
+					"type": "egret.Texture",
+					"description": "动画资源"
+				},
+				{
+					"name": "textureData",
+					"type": "any",
+					"description": "动画资源描述文件"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "DragonBonesArmature",
+			"name": "makeArmature",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "创建一个动画",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "动作名称"
+				},
+				{
+					"name": "fromDragonBonesDataName",
+					"question": true,
+					"type": "string",
+					"description": "动画文件名称"
+				},
+				{
+					"name": "playSpeed",
+					"type": "number",
+					"default": "1",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "DragonBonesArmature",
+			"name": "makeFastArmature",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "创建一个动画（急速模式）",
+			"returns": "",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "动作名称"
+				},
+				{
+					"name": "fromDragonBonesDataName",
+					"question": true,
+					"type": "string",
+					"description": "动画文件名称"
+				},
+				{
+					"name": "playSpeed",
+					"type": "number",
+					"default": "1",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeArmatureFile",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "移除动画文件",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "name"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeSkeletonData",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "移除动画描述文件",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeTextureAtlas",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "移除动画所需资源",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "start",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "开启",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "DragonBonesFactory",
+			"scope": "instance",
+			"description": "停止",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DragonBonesFactory",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\dragonBones\\DragonBonesFactory.ts",
+		"description": "Created by egret on 15-1-14.DragonBones工厂类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

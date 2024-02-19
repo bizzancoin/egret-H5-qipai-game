@@ -1,0 +1,273 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_cache",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ProxyUpdate",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cache",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_addObjectToArray",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cacheData",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "changeValue",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "_getFilterObject",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "filter",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "cacheData",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_removeObjectFromArray",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cacheData",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "changeValue",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_update",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cacheData",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "changeData",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "_updateObject",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "cacheData",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isAddToArray",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isArray",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isFilter",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isNormal",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isNumeric",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "v",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isObject",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isRemoveToArray",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "ProxyUpdate",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ProxyUpdate",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\http\\DataUpdate.ts",
+		"description": "Created by yangsong on 2014/11/22.Http数据更新类"
+	},
+	"pType": "public"
+}

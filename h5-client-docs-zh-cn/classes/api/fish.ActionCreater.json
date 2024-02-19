@@ -1,0 +1,322 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ActionCreater",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__blink",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"name": "__circle",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__delay",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__fade_in",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__fade_out",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"name": "__fallofshake",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__jump_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__jump_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__move_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__move_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__rotate_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__rotate_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__scale_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__scale_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"name": "__shake",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__skew_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__skew_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__tint_by",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "__tint_to",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "cfg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "create",
+			"memberof": "fish.ActionCreater",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"description": ""
+				},
+				{
+					"name": "cfg",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ActionCreater",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\ActionCreater.ts",
+		"description": "动作创建器"
+	},
+	"pType": "public"
+}

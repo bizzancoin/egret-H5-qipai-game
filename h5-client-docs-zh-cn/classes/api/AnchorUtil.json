@@ -1,0 +1,145 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_anchorChange",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_propertyChange",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getAnchor",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getAnchorX",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getAnchorY",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAnchor",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAnchorX",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setAnchorY",
+			"memberof": "AnchorUtil",
+			"scope": "static",
+			"params": [
+				{
+					"name": "target",
+					"type": "egret.DisplayObject",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "AnchorUtil",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\AnchorUtil.ts",
+		"description": "Created by Saco on 2015/9/16."
+	},
+	"pType": "public"
+}

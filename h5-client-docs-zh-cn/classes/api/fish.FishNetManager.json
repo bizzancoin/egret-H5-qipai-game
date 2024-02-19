@@ -1,0 +1,96 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishNetManager",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "init",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "parentObj",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"description": "// {id, pos{x,y}}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.FishNet",
+			"name": "preCreated",
+			"memberof": "fish.FishNetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishNetManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishNetManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

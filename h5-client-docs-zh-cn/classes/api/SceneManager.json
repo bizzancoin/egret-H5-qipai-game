@@ -1,0 +1,116 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_currScene",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_scenes",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SceneManager",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"description": "清空处理",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurrScene",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"description": "获取当前Scene",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "register",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"description": "注册Scene",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "Scene唯一标识"
+				},
+				{
+					"name": "scene",
+					"type": "BaseScene",
+					"description": "Scene对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "runScene",
+			"memberof": "SceneManager",
+			"scope": "instance",
+			"description": "切换场景",
+			"params": [
+				{
+					"name": "key",
+					"type": "number",
+					"description": "场景唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SceneManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\scene\\manager\\SceneManager.ts",
+		"description": "Created by yangsong on 2014/11/28.场景管理类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

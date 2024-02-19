@@ -1,0 +1,59 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TypeBullet",
+			"memberof": "fish.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TypeFish",
+			"memberof": "fish.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TypeGold",
+			"memberof": "fish.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TypeLabel",
+			"memberof": "fish.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "5"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TypeNet",
+			"memberof": "fish.ObjectClassType",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "ObjectClassType",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishObjectPool.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,172 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_cache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_currBg",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Sound",
+			"name": "_currSound",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.SoundChannel",
+			"name": "_currSoundChannel",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<string>",
+			"name": "_loadingCache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_volume",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SoundBg",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkCanClear",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "检测一个文件是否要清除",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Sound",
+			"name": "getSound",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "获取Sound",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseSound"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadedPlay",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "资源加载完成后处理播放",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "播放某个音乐",
+			"params": [
+				{
+					"name": "effectName",
+					"type": "string",
+					"description": "effectName"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setVolume",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "设置音量",
+			"params": [
+				{
+					"name": "volume",
+					"type": "number",
+					"description": "volume"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "SoundBg",
+			"scope": "instance",
+			"description": "停止当前音乐",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SoundBg",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\sound\\SoundBg.ts",
+		"description": "Created by yangsong on 15-1-14.背景音乐类",
+		"augments": [
+			"BaseSound"
+		]
+	},
+	"pType": "public"
+}

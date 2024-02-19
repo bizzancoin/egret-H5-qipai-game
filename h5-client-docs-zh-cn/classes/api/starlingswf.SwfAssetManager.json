@@ -1,0 +1,107 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Object",
+			"name": "_sheets",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Object",
+			"name": "_textures",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SwfAssetManager",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "addSpriteSheet",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "spriteSheep",
+					"type": "egret.SpriteSheet",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addTexture",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "texture",
+					"type": "egret.Texture",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Bitmap",
+			"name": "createBitmap",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Texture",
+			"name": "getTexture",
+			"memberof": "starlingswf.SwfAssetManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "name",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SwfAssetManager",
+		"memberof": "starlingswf",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\starlingswf\\SwfAssetManager.ts",
+		"description": "swf资源管理器"
+	},
+	"pType": "public"
+}

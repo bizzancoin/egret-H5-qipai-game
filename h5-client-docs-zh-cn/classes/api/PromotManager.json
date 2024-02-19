@@ -1,0 +1,134 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "PromotManager",
+			"memberof": "PromotManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "floatingTip",
+			"memberof": "PromotManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "hideButtonTip",
+			"memberof": "PromotManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "oneButtonTip",
+			"memberof": "PromotManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "args",
+					"question": true,
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "twoButtonTip",
+			"memberof": "PromotManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "args",
+					"question": true,
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "sureMethod",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "sureMethodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "cancelMethod",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "cancelMethodObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "PromotManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\promot\\PromotManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

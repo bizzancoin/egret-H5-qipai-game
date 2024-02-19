@@ -1,0 +1,278 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "BaseController",
+			"name": "_controller",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isInit",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObjectContainer",
+			"name": "_myParent",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string[]",
+			"name": "_resources",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObjectContainer",
+			"name": "myParent",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "获取我的父级",
+			"returns": "",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseSpriteView",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$controller",
+					"type": "BaseController",
+					"description": "所属模块"
+				},
+				{
+					"name": "$parent",
+					"type": "egret.DisplayObjectContainer",
+					"description": "父级"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addToParent",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "添加到父级",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyControllerFunc",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "触发其他模块消息",
+			"params": [
+				{
+					"name": "controllerKey",
+					"type": "number",
+					"description": "模块标识"
+				},
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "applyFunc",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "触发本模块消息",
+			"params": [
+				{
+					"name": "key",
+					"type": "any",
+					"description": "唯一标识"
+				},
+				{
+					"name": "...param",
+					"type": "any[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "close",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "面板关闭执行函数，用于子类继承",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "销毁",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initData",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "对面板数据的初始化，用于子类继承",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initUI",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "对面板进行显示初始化，用于子类继承",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isInit",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "是否已经初始化",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isShow",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "面板是否显示",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadResource",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "加载面板所需资源",
+			"params": [
+				{
+					"name": "loadComplete",
+					"type": "Function",
+					"description": "loadComplete"
+				},
+				{
+					"name": "initComplete",
+					"type": "Function",
+					"description": "initComplete"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onResize",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "屏幕尺寸变化时调用",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "open",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "面板开启执行函数，用于子类继承",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeFromParent",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "从父级移除",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setResources",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "设置初始加载资源",
+			"params": [
+				{
+					"name": "resources",
+					"type": "string[]",
+					"description": "resources"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setVisible",
+			"memberof": "BaseSpriteView",
+			"scope": "instance",
+			"description": "设置是否隐藏",
+			"params": [
+				{
+					"name": "value",
+					"type": "boolean",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseSpriteView",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\mvc\\view\\BaseSpriteView.ts",
+		"description": "Created by yangsong on 2014/11/22.View基类，继承自egret.Sprite",
+		"augments": [],
+		"implements": [
+			{
+				"name": "IBaseView"
+			}
+		]
+	},
+	"pType": "public"
+}

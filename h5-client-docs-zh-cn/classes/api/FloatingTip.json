@@ -1,0 +1,58 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FloatingTip",
+			"memberof": "FloatingTip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showTips",
+			"memberof": "FloatingTip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "tip",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "color",
+					"type": "number",
+					"default": "0xffffff",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FloatingTip",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\promot\\FloatingTip.ts",
+		"description": "Created by ys on 4/16/18.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

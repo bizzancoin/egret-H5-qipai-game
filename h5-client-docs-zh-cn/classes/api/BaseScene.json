@@ -1,0 +1,135 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Array<egret.DisplayObjectContainer>",
+			"name": "_layers",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "//当前所有Layer",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseScene",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "添加一个Layer到舞台",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLayerAt",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "添加一个Layer到舞台",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				},
+				{
+					"name": "index",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "layerRemoveAllChild",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "Layer中移除所有",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onEnter",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "进入Scene调用",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onExit",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "退出Scene调用",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeAllLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "移除所有Layer",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "在舞台移除一个Layer",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseScene",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\scene\\base\\BaseScene.ts",
+		"description": "Created by yangsong on 15-1-7.Scene基类",
+		"children": [
+			"baccarat.BaccaratScene",
+			"brnn.BrnnScene",
+			"fish.FishScene",
+			"LoginScene"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,122 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"name": "labelIsOverLenght",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "万字的显示",
+			"pType": "public",
+			"default": "function (label, num) {\n        var str = null;\n        if (num < 100000) {\n            str = num;\n        } else if (num < 1000000) {\n            str = Math.floor(num / 1000 / 10).toString() + \"万\";\n        } else {\n            str = Math.floor(num / 10000).toString() + \"万\";\n        }\n        label.text = str;\n    }"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "CommonUtils",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLableStrokeColor",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "给字体添加描边",
+			"params": [
+				{
+					"name": "lable",
+					"type": "eui.Label",
+					"description": "文字"
+				},
+				{
+					"name": "color",
+					"type": "any",
+					"description": "表示文本的描边颜色"
+				},
+				{
+					"name": "width",
+					"type": "any",
+					"description": "描边宽度。"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "copyDataHandler",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "深度复制",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "int64ToNumber",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "int64转number",
+			"returns": "",
+			"params": [
+				{
+					"name": "obj",
+					"description": "obj"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "lock",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "锁屏",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "unlock",
+			"memberof": "CommonUtils",
+			"scope": "instance",
+			"description": "解屏",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CommonUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\CommonUtils.ts",
+		"description": "Created by yangsong on 15-1-12.通用工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

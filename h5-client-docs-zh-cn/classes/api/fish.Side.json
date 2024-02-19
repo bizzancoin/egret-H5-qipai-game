@@ -1,0 +1,59 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Bottom",
+			"memberof": "fish.Side",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Left",
+			"memberof": "fish.Side",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "None",
+			"memberof": "fish.Side",
+			"scope": "static",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Right",
+			"memberof": "fish.Side",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Top",
+			"memberof": "fish.Side",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "Side",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\Bullet.ts"
+	},
+	"pType": "public"
+}

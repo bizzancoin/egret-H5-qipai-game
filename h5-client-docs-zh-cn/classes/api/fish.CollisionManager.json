@@ -1,0 +1,78 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "CollisionManager",
+			"memberof": "fish.CollisionManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.CollisionManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"name": "registerCallback",
+			"memberof": "fish.CollisionManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.CollisionManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CollisionManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\CollisionManager.ts",
+		"description": "碰撞检测",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

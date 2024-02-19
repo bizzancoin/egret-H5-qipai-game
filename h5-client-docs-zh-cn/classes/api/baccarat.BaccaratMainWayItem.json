@@ -1,0 +1,66 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratMainWayItem",
+			"memberof": "baccarat.BaccaratMainWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratMainWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "baccarat.BaccaratMainWayItem",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setType",
+			"memberof": "baccarat.BaccaratMainWayItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "id",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "baccarat.BaccaratMainWayItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratMainWayItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\waybill\\BaccaratMainWayItem.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

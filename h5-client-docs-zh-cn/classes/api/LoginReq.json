@@ -1,0 +1,119 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_loginBySmsCode",
+			"memberof": "LoginReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "phone",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "code",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_loginByTourist",
+			"memberof": "LoginReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "method",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_logout",
+			"memberof": "LoginReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "method",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_reLogin",
+			"memberof": "LoginReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "relogincode",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "loginType",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "byHand",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LoginReq",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\login\\LoginReq.ts"
+	},
+	"pType": "public"
+}

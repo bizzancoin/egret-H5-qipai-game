@@ -1,0 +1,28 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "baccarat.BaccaratStart",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "start",
+			"memberof": "baccarat.BaccaratStart",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratStart",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratStart.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,258 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_count",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_currFrame",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_currTime",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<TimerHandler>",
+			"name": "_delHandlers",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<TimerHandler>",
+			"name": "_handlers",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_timeScale",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "count",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "定时器执行数量",
+			"returns": "",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "TimerManager",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "doFrame",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "定时执行",
+			"params": [
+				{
+					"name": "delay",
+					"type": "number",
+					"description": "执行间隔:帧频"
+				},
+				{
+					"name": "repeatCount",
+					"type": "number",
+					"description": "执行次数, 0为无限次"
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": "执行函数"
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": "执行函数所属对象"
+				},
+				{
+					"name": "complateMethod",
+					"type": "Function",
+					"default": "null",
+					"description": "完成执行函数"
+				},
+				{
+					"name": "complateMethodObj",
+					"type": "any",
+					"default": "null",
+					"description": "完成执行函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "doTimer",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "定时执行",
+			"params": [
+				{
+					"name": "delay",
+					"type": "number",
+					"description": "执行间隔:毫秒"
+				},
+				{
+					"name": "repeatCount",
+					"type": "number",
+					"description": "执行次数, 0为无限次"
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": "执行函数"
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": "执行函数所属对象"
+				},
+				{
+					"name": "complateMethod",
+					"type": "Function",
+					"default": "null",
+					"description": "完成执行函数"
+				},
+				{
+					"name": "complateMethodObj",
+					"type": "any",
+					"default": "null",
+					"description": "完成执行函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isExists",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "检测是否已经存在",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": "method"
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": "methodObj"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "remove",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "清理",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": "要移除的函数"
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": "要移除的函数对应的对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeAll",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "清理",
+			"params": [
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": "要移除的函数对应的对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setTimeScale",
+			"memberof": "TimerManager",
+			"scope": "instance",
+			"description": "设置时间参数",
+			"params": [
+				{
+					"name": "timeScale",
+					"type": "number",
+					"description": "timeScale"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TimerManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\TimerManager.ts",
+		"description": "Created by yangsong on 2014/11/23.Timer管理器",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

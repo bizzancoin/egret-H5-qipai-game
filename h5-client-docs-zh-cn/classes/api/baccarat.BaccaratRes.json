@@ -1,0 +1,28 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "registerListener",
+			"memberof": "baccarat.BaccaratRes",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "unregisterListener",
+			"memberof": "baccarat.BaccaratRes",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratRes",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratRes.ts"
+	},
+	"pType": "public"
+}

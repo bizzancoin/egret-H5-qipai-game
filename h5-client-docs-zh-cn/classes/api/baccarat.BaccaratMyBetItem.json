@@ -1,0 +1,84 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "bet",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "x",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "y",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratMyBetItem",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "grp",
+					"type": "eui.Group",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "myName",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setMyBet",
+			"memberof": "baccarat.BaccaratMyBetItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bet",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratMyBetItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\BaccaratMyBetItem.ts"
+	},
+	"pType": "public"
+}

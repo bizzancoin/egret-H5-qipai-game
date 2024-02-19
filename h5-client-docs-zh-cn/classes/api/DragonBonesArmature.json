@@ -1,0 +1,330 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "dragonBones.Armature",
+			"name": "_armature",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "dragonBones.WorldClock",
+			"name": "_clock",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<any>",
+			"name": "_completeCalls",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "dragonBones.AnimationState",
+			"name": "_currAnimationState",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<any>",
+			"name": "_frameCalls",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isPlay",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_playName",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DragonBonesArmature",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "armature",
+					"type": "dragonBones.Armature",
+					"description": "dragonBones.Armature"
+				},
+				{
+					"name": "clock",
+					"type": "dragonBones.WorldClock",
+					"description": "dragonBones.WorldClock"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addCompleteCallFunc",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "添加动画完成函数",
+			"params": [
+				{
+					"name": "callFunc",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addFrameCallFunc",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "添加帧事件处理函数",
+			"params": [
+				{
+					"name": "callFunc",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "changeBone",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "替换骨骼插件",
+			"params": [
+				{
+					"name": "boneName",
+					"type": "string",
+					"description": "boneName"
+				},
+				{
+					"name": "displayObject",
+					"type": "egret.DisplayObject",
+					"description": "displayObject"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "销毁",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.Animation",
+			"name": "getAnimation",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取dragonBones.Animation",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.Armature",
+			"name": "getArmature",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取dragonBones.Armature",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.Bone",
+			"name": "getBone",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取一个dragonBones.Bone",
+			"returns": "",
+			"params": [
+				{
+					"name": "boneName",
+					"type": "string",
+					"description": "boneName"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.DisplayObject",
+			"name": "getBoneDisplay",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取骨骼的display",
+			"returns": "",
+			"params": [
+				{
+					"name": "bone",
+					"type": "dragonBones.Bone",
+					"description": "bone"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.WorldClock",
+			"name": "getClock",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取所属dragonBones.WorldClock",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.AnimationState",
+			"name": "getCurrAnimationState",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "获取当前dragonBones.AnimationState",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "getPlayName",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "当前正在播放的动作名字",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "dragonBones.AnimationState",
+			"name": "play",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "播放名为name的动作",
+			"params": [
+				{
+					"name": "name",
+					"type": "string",
+					"description": "名称"
+				},
+				{
+					"name": "playNum",
+					"type": "number",
+					"default": "undefined",
+					"description": "指定播放次数，默认走动画配置"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeCompleteCallFunc",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "移除一个动画完成函数",
+			"params": [
+				{
+					"name": "callFunc",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeFrameCallFunc",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "移除帧事件处理函数",
+			"params": [
+				{
+					"name": "callFunc",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "start",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "恢复播放",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stop",
+			"memberof": "DragonBonesArmature",
+			"scope": "instance",
+			"description": "停止播放",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DragonBonesArmature",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\dragonBones\\DragonBonesArmature.ts",
+		"description": "Created by yangsong on 15-1-14.Armature封装类",
+		"augments": []
+	},
+	"pType": "public"
+}

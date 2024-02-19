@@ -1,0 +1,28 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "registerResListener",
+			"memberof": "brnn.BrnnRes",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "removeResListener",
+			"memberof": "brnn.BrnnRes",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BrnnRes",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\net\\BrnnRes.ts"
+	},
+	"pType": "public"
+}

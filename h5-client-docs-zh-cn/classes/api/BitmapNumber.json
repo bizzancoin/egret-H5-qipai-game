@@ -1,0 +1,117 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "egret.DisplayObjectContainer[]",
+			"name": "_containerPool",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Bitmap[]",
+			"name": "_imgPool",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BitmapNumber",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "changeNum",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"description": "改变带数字的DisplayObjectContainer数字值提供这个方法是为了提高效率，直接更换之前创建对象的texture，避免多余的删除和创建",
+			"params": [
+				{
+					"name": "picContainer",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				},
+				{
+					"name": "num",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "type",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.DisplayObjectContainer",
+			"name": "createNumPic",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"description": "根据需要的数字和类型返回一个DisplayObjectContainernum数字值，支持小数点type素材类型",
+			"params": [
+				{
+					"name": "num",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "type",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "desstroyNumPic",
+			"memberof": "BitmapNumber",
+			"scope": "instance",
+			"description": "//回收带数字的DisplayObjectContainer",
+			"params": [
+				{
+					"name": "picContainer",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BitmapNumber",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\display\\BitmapNumber.ts",
+		"description": "素材需要提前加载好素材命名规则：类型_数值（有类型是因为一般会同时有几种数字图片，比如大小号或不同颜色）点号素材命名：类型_dot创建BitmapNumber使用createNumPic返回DisplayObjectContainer创建好的BitmapNumber数值需要变化是调用changeNum回收使用desstroyNumPicCreated by Saco on 2014/8/1.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

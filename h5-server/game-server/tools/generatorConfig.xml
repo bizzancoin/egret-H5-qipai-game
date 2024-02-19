@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+	<context id="context1" targetRuntime="MyBatis3">
+		<!-- 新增分页插件 -->
+		<plugin type="com.idealighter.mybatis.plugins.MySQLLimitPlugin" />
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<commentGenerator>
+			<property name="suppressAllComments" value="false" />
+			<property name="suppressDate" value="false" />
+		</commentGenerator>
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.71:3306/ma_lai_h5_game_data" userId="root"
+			password="bosan204" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<javaModelGenerator
+			targetPackage="com.idealighter.game.core.dao.generate.domain"
+			targetProject="src/main/java">
+			<!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.idealighter.game.core.dao.generate.xml"
+			targetProject="src/main/java">
+			<!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		<javaClientGenerator
+			targetPackage="com.idealighter.game.core.dao.generate.mapper"
+			targetProject="src/main/java" type="ANNOTATEDMAPPER">
+			<!-- 当为true时，产生的代码文件将按照schema产生子文件夹 -->
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<table schema="hh_game_data" tableName="black_list"
+			domainObjectName="BlackListDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="mail" domainObjectName="MailDomain"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_game_info"
+			domainObjectName="PlayerGameInfoDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_info"
+			domainObjectName="PlayerInfoDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_main"
+			domainObjectName="PlayerMainDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_safe_info"
+			domainObjectName="PlayerSafeInfoDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_status_record"
+			domainObjectName="PlayerStatusRecordDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="player_vip"
+			domainObjectName="PlayerVipDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="recharge_record"
+			domainObjectName="RechargeRecordDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="room_prize_pool_group"
+			domainObjectName="RoomPrizePoolGoupDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="game|room_id" sqlStatement="mysql"
+				identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="transfer_gold_record"
+			domainObjectName="TransferGoldRecordDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="white_list"
+			domainObjectName="WhiteListDomain" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+
+		<table schema="hh_game_data" tableName="apple_in_app_pay_receipt_data"
+			domainObjectName="AppleInAppPayReceiptDataDomain"
+			enableCountByExample="true" enableUpdateByExample="true"
+			enableDeleteByExample="true" enableSelectByExample="true"
+			selectByExampleQueryId="true">
+			<property name="useActualColumnNames" value="false" />
+			<generatedKey column="id" sqlStatement="mysql" identity="true" />
+			<columnRenamingRule searchString="^(.){0}(u_|f_|s_|d_|ft_)"
+				replaceString="" />
+		</table>
+	</context>
+</generatorConfiguration>

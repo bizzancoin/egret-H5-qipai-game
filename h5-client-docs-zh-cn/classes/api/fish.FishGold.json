@@ -1,0 +1,116 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishGold",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDataId",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFinishCall",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "finishCall",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "finishObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "startPlay",
+			"memberof": "fish.FishGold",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "startPos",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "endPos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishGold",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishGold.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

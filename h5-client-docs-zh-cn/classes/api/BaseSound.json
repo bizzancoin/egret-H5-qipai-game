@@ -1,0 +1,94 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_cache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<string>",
+			"name": "_loadingCache",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseSound",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkCanClear",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "检测一个文件是否要清除，子类重写",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.Sound",
+			"name": "getSound",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "获取Sound",
+			"returns": "",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadedPlay",
+			"memberof": "BaseSound",
+			"scope": "instance",
+			"description": "资源加载完成后处理播放，子类重写",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": "key"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseSound",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\sound\\BaseSound.ts",
+		"description": "Created by yangsong on 15-1-14.Sound基类",
+		"children": [
+			"SoundBg",
+			"SoundEffects"
+		]
+	},
+	"pType": "public"
+}

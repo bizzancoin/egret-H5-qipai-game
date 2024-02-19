@@ -1,0 +1,258 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "loadScene",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pauseGame",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerCommonReq",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 注册公共模块请求",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeCommonReq",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 移除公共模块请求",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqBackTable",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 断线重连",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqCancelLockFish",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 取消锁定鱼",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqEnterGameHall",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 进入大厅",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqEnterRoom",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 进入房间",
+			"params": [
+				{
+					"name": "roomid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExchangeChips",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 金币兑换筹码",
+			"params": [
+				{
+					"name": "gold",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExchangeGolds",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 筹码兑换金币",
+			"params": [
+				{
+					"name": "chips",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExitRoom",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 离开房间",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExitTable",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 退出桌子",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqFastEnterTable",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 快速进入桌子",
+			"params": [
+				{
+					"name": "roomid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqFire",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 开炮",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqHitFish",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 打中鱼",
+			"params": [
+				{
+					"name": "playerId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "bulletId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqLockFish",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 锁定鱼",
+			"params": [
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqScene",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 请求场景数据",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqSwitchBattery",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"description": "// 切换炮台",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "jcby.FishReq",
+			"scope": "static",
+			"params": [
+				{
+					"name": "roomInfo",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishReq",
+		"memberof": "jcby",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\jcby\\FishReq.ts"
+	},
+	"pType": "public"
+}

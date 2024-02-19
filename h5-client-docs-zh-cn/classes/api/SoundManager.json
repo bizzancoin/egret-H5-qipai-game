@@ -1,0 +1,205 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "CLEAR_TIME",
+			"memberof": "SoundManager",
+			"scope": "static",
+			"description": "音乐文件清理时间",
+			"pType": "public",
+			"default": "3 * 60 * 1000"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "bgOn",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "effectOn",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SoundManager",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getBgVolume",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "获取背景音乐音量",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getEffectVolume",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "获取音效音量",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playBg",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "播放背景音乐",
+			"params": [
+				{
+					"name": "bgName",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playEffect",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "播放音效",
+			"params": [
+				{
+					"name": "effectName",
+					"type": "string",
+					"description": "effectName"
+				},
+				{
+					"name": "loops",
+					"question": true,
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setBgOn",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "设置背景音乐是否开启",
+			"params": [
+				{
+					"name": "$isOn",
+					"type": "boolean",
+					"description": "$isOn"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setBgVolume",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "设置背景音乐音量",
+			"params": [
+				{
+					"name": "volume",
+					"type": "number",
+					"description": "volume"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setEffectOn",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "设置音效是否开启",
+			"params": [
+				{
+					"name": "$isOn",
+					"type": "boolean",
+					"description": "$isOn"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setEffectVolume",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "设置音效音量",
+			"params": [
+				{
+					"name": "volume",
+					"type": "number",
+					"description": "volume"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopBg",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "停止背景音乐",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "stopEffect",
+			"memberof": "SoundManager",
+			"scope": "instance",
+			"description": "// 停止播放特效",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SoundManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\sound\\SoundManager.ts",
+		"description": "Created by yangsong on 15-1-14.Sound管理类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

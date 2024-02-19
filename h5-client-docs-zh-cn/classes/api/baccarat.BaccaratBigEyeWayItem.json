@@ -1,0 +1,74 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratBigEyeWayItem",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "anim",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setType",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "id",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "baccarat.BaccaratBigEyeWayItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratBigEyeWayItem",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\waybill\\BaccaratBigEyeWayItem.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

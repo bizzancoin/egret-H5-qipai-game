@@ -1,0 +1,94 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_dataCache",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "ProxyUpdate",
+			"name": "_pUpdate",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "ProxyUpdate",
+			"name": "pUpdate",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"rwType": 1,
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "DynamicChange",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearCache",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getCacheData",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Array<any>",
+			"name": "getCacheKeyInfos",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isCache",
+			"memberof": "DynamicChange",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "DynamicChange",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\http\\DataCache.ts",
+		"description": "Created by yangsong on 2014/11/22.Http数据缓存类"
+	},
+	"pType": "public"
+}

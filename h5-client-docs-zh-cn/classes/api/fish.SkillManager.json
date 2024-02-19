@@ -1,0 +1,79 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SkillManager",
+			"memberof": "fish.SkillManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "destroy",
+			"memberof": "fish.SkillManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "fish.SkillManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "onShakeFunc",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "play",
+			"memberof": "fish.SkillManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "id",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SkillManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\SkillManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

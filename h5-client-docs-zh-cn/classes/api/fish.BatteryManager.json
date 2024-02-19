@@ -1,0 +1,211 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BatteryManager",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearAllLockState",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createBattery",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"description": "// info : {userInfo:{playerId,seatId,chips,isLocal}}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "isInit",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Battery",
+			"name": "getBatteryByPId",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "playerId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Battery",
+			"name": "getBatteryBySeatId",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "egret.DisplayObjectContainer",
+			"name": "getLockParent",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Battery",
+			"name": "getMyBattery",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "init",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "parentObj",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				},
+				{
+					"name": "lockParent",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeBatteryBySeatId",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetLockFishLst",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "lst",
+					"type": "fish.Fish[]",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "rotateByPos",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "point",
+					"type": "egret.Point",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setClearLockStateCall",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "call",
+					"type": "Function",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.BatteryManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BatteryManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\BatteryManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

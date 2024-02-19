@@ -1,0 +1,415 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "ArrayUtils",
+			"name": "ArrayUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "数组工具类",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "BitmapNumber",
+			"name": "BitmapNumber",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "图片合成数字工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "CommonUtils",
+			"name": "CommonUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "通过工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ControllerManager",
+			"name": "ControllerManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "模块管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DateUtils",
+			"name": "DateUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "日期工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DebugUtils",
+			"name": "DebugUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "调试工具",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DelayOptManager",
+			"name": "DelayOptManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "分帧处理类",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DeviceUtils",
+			"name": "DeviceUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "设备工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DisplayUtils",
+			"name": "DisplayUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "显示对象工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "DragonBonesFactory",
+			"name": "DragonBonesFactory",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "DragonBones工厂类",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "EasyLoading",
+			"name": "EasyLoading",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "通用Loading动画",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "EffectUtils",
+			"name": "EffectUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "Effect工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "EgretExpandUtils",
+			"name": "EgretExpandUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "引擎扩展类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "GlobalData",
+			"memberof": "App",
+			"scope": "static",
+			"description": "全局配置数据",
+			"pType": "public",
+			"default": "null"
+		},
+		{
+			"kind": "member",
+			"type": "GuideUtils",
+			"name": "GuideUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "引导工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "Http",
+			"name": "Http",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "Http请求",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "KeyboardUtils",
+			"name": "KeyboardUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "键盘操作工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MathUtils",
+			"name": "MathUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "数学计算工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MessageCenter",
+			"name": "MessageCenter",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "服务器返回的消息处理中心",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MsgFactory",
+			"name": "MsgFactory",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MessageCenter",
+			"name": "NotificationCenter",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "ProxyUserFlag",
+			"memberof": "App",
+			"scope": "static",
+			"description": "请求服务器使用的用户标识",
+			"pType": "public",
+			"default": "\"\""
+		},
+		{
+			"kind": "member",
+			"type": "RandomUtils",
+			"name": "RandomUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "随机数工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "RenderTextureManager",
+			"name": "RenderTextureManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "RenderTextureManager",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ResVersionManager",
+			"name": "ResVersionManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "单一资源通过版本号加载管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ResourceUtils",
+			"name": "ResourceUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "资源加载工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "RockerUtils",
+			"name": "RockerUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "摇杆操作工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "SceneManager",
+			"name": "SceneManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "场景管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ShockUtils",
+			"name": "ShockUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "震动类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "Socket",
+			"name": "Socket",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "Socket请求",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "SoundManager",
+			"name": "SoundManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "音乐管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "StageUtils",
+			"name": "StageUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "Stage操作相关工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "StarlingSwfFactory",
+			"name": "StarlingSwfFactory",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "StarlingSwf工厂类",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "StringUtils",
+			"name": "StringUtils",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "字符串工具类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "TextFlowMaker",
+			"name": "TextFlowMaker",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "TextFlow",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "TimerManager",
+			"name": "TimerManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "统一的计时器和帧刷管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ViewManager",
+			"name": "ViewManager",
+			"memberof": "App",
+			"scope": "static",
+			"rwType": 1,
+			"description": "View管理类",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MessageCenter",
+			"name": "_notificationCenter",
+			"memberof": "App",
+			"scope": "static",
+			"description": "消息通知中心",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "Init",
+			"memberof": "App",
+			"scope": "static",
+			"description": "初始化函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "IsNetAvaliable",
+			"memberof": "App",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "App",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\App.ts",
+		"description": "Created by yangsong on 2014/11/22."
+	},
+	"pType": "public"
+}

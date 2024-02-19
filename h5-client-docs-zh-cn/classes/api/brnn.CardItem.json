@@ -1,0 +1,104 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "CardItem",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "idx",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addCard",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"description": "// 添加牌",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addFlopCard",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playFlopAnimation",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"description": "// 翻拍动画",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reset",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCardInfo",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"description": "// 设置牌的信息",
+			"params": [
+				{
+					"name": "cardInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showCardType",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "playSoune",
+					"type": "boolean",
+					"default": "true",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showCards",
+			"memberof": "brnn.CardItem",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CardItem",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\CardItem.ts",
+		"description": "// 牌想",
+		"augments": []
+	},
+	"pType": "public"
+}

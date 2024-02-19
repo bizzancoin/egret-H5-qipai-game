@@ -1,0 +1,118 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "GuideMaskBackgroud",
+			"name": "_bg",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_data",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Bitmap",
+			"name": "_handPic",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Bitmap",
+			"name": "_maskPic",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.DisplayObject",
+			"name": "_obj",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Point",
+			"name": "_objGlobalPoint",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Rectangle",
+			"name": "_objRec",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.Bitmap",
+			"name": "_textBgPic",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.TextField",
+			"name": "_txt",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "GuideView",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setData",
+			"memberof": "GuideView",
+			"scope": "instance",
+			"description": "设置显示数据",
+			"params": [
+				{
+					"name": "obj",
+					"type": "egret.DisplayObject",
+					"description": "obj"
+				},
+				{
+					"name": "data",
+					"type": "any",
+					"description": "data"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "GuideView",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\module\\guide\\GuideView.ts",
+		"description": "Created by yangsong on 14-12-2.GuideView",
+		"augments": []
+	},
+	"pType": "public"
+}

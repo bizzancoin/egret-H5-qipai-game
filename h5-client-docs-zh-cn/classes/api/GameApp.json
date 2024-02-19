@@ -1,0 +1,288 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "HeartMgr",
+			"name": "HeartMgr",
+			"memberof": "GameApp",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "HomeManager",
+			"name": "HomeManager",
+			"memberof": "GameApp",
+			"scope": "static",
+			"rwType": 1,
+			"description": "HomeManager",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "MarqueeManager",
+			"name": "MarqueeManager",
+			"memberof": "GameApp",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "PlayerInfo",
+			"name": "PlayerInfo",
+			"memberof": "GameApp",
+			"scope": "static",
+			"rwType": 1,
+			"description": "用户信息",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "PromotManager",
+			"name": "PromotManager",
+			"memberof": "GameApp",
+			"scope": "static",
+			"rwType": 1,
+			"description": "通用提示",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"name": "isInBackground",
+			"memberof": "GameApp",
+			"scope": "static",
+			"description": "// 是否在后台运行",
+			"pType": "public",
+			"default": "false"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "Init",
+			"memberof": "GameApp",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "chips2Money",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "chips",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "chips2MoneyNum",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "chips",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "clone",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "equal",
+			"memberof": "GameApp",
+			"scope": "instance",
+			"description": "// == 0 equal, > 0 large, < 0 less",
+			"params": [
+				{
+					"name": "cLong1",
+					"description": ""
+				},
+				{
+					"name": "cLong2",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.MovieClip",
+			"name": "getClipByDataAndTexture",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "json",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "png",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "act",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.MovieClip",
+			"name": "getClipByFileName",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "fileName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "act",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.MovieClipDataFactory",
+			"name": "getMcFactory",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "json",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "png",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.MovieClipData",
+			"name": "getMovieDataByFileName",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "fileName",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "act",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "money2Chips",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "money",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "playMoveClip",
+			"memberof": "GameApp",
+			"scope": "static",
+			"params": [
+				{
+					"name": "parent",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				},
+				{
+					"name": "clip",
+					"type": "egret.MovieClip",
+					"description": ""
+				},
+				{
+					"name": "act",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "pos",
+					"question": true,
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "loop",
+					"question": true,
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "endCall",
+					"question": true,
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "endCallObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "GameApp",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\GameApp.ts"
+	},
+	"pType": "public"
+}

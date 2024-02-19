@@ -1,0 +1,431 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_members",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_moduleReq",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 游戏公共请求模块",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_moduleReqFuncs",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_moduleResFuncs",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 游戏通知监听模块",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_roomSettingData",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "HomeManager",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getMemberInfos",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 获取成员信息",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "loadGameScene",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入游戏场景(断线重连)",
+			"params": [
+				{
+					"name": "gameid",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pauseGame",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 前台转后台",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerModuleReq",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 注册公共请求模块",
+			"params": [
+				{
+					"name": "gameid",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "reqKey",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "registerModuleReqFunc",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "gameid",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerModuleResFunc",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 注册游戏监听模块",
+			"params": [
+				{
+					"name": "gameid",
+					"description": ""
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "removeModuleReq",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 移除公共请求模块",
+			"params": [
+				{
+					"name": "gameid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reqEnterCurGame",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "gameid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reqEnterCurGameRoom",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入房间",
+			"params": [
+				{
+					"name": "roomid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reqExitCurGameRoom",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 离开房间",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reqExitCurGameTable",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 离开桌子",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "reqQuickEnterCurGame",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入桌子",
+			"params": [
+				{
+					"name": "roomid",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resEnterGameHall",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入大厅成功",
+			"params": [
+				{
+					"name": "gameTitle",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resEnterRoomMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入房间结果消息",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resFailEnterRoom",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 进入房间失败结果消息",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resMemInfoUpdateMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "房间成员变更信息消息\t    msg = {\t\t    名称:member 类型:MemInfo 备注:房间成员信息\t    }",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resQuickEnterCurGame",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 快速加入失败结果消息",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resRemoveMemInfoMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resRoomPlayerNumMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resRoomSettingUpdateMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 房间设置更新消息",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resSeatInfoUpdateMsg",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "SeatInfo = {\t\t\ttableId, --桌子id\t\t\torder, --座位顺序\t\t\tplayerId, --玩家id,0代表座位上没有人\t\t}",
+			"params": [
+				{
+					"name": "msg",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeGame",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 后台转前台",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "HomeManager",
+			"scope": "instance",
+			"description": "// 设置房间信息",
+			"params": [
+				{
+					"name": "roomInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "HomeManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\Home\\HomeManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

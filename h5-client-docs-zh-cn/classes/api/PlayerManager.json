@@ -1,0 +1,66 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerResListener",
+			"memberof": "PlayerManager",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "resCommonMsg",
+			"memberof": "PlayerManager",
+			"scope": "static",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resLogoutMsg",
+			"memberof": "PlayerManager",
+			"scope": "static",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resPlayerAttrChangeMsg",
+			"memberof": "PlayerManager",
+			"scope": "static",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "PlayerManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\player\\PlayerManager.ts"
+	},
+	"pType": "public"
+}

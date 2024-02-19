@@ -1,0 +1,430 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Fish",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLineRelObj",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fishDead",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fishOut",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "fishStart",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getCurrentBBX",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getCurrentLineObj",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getCurrentPos",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDataId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getFishLevel",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getFishSceneId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getFishScore",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getLineRelObjLst",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getLockLevel",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getShotSeatId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initData",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isOutofTime",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isShotFish",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bbx",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCurrentLineObj",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCurveRotation",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFishCurveId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "id",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFishLevel",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "level",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFishSceneId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "sceneId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFishScore",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "score",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setGoldMoveEndPos",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "setObjId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setReserve",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bres",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRunTime",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "t",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "setShotSeatId",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "seatId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setStartPos",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUserInfo",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "userInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "update",
+			"memberof": "fish.Fish",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Fish",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\Fish.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

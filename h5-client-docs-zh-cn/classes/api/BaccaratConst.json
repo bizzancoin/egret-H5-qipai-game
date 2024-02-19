@@ -1,0 +1,167 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ClearBet",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595908"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "DoBet",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595907"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ExitTable",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595931"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "FastEnterTable",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595904"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameBillNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595926"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameInfo",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595999"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameOddsNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595923"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameResultNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595930"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameShuffleNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595924"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameStartNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595925"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameStatNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595927"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameStateNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595929"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "GameWayBillNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595922"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LoadCompleted",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "590001"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "PlayerChipNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595921"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "RenderCompleted",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "590002"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "TableBetInfoNotice",
+			"memberof": "BaccaratConst",
+			"scope": "static",
+			"pType": "public",
+			"default": "595928"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratConst",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratConst.ts"
+	},
+	"pType": "public"
+}

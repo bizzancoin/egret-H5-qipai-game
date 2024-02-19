@@ -1,0 +1,246 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "fish.ActionEffect",
+			"name": "ActionEffect",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 动作管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.BackgroundManager",
+			"name": "BackgroundManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 背景管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.BatteryManager",
+			"name": "BatteryManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 炮台管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.BulletManager",
+			"name": "BulletManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 子弹管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.CollisionManager",
+			"name": "CollisionManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 碰撞管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishConfigManager",
+			"name": "Config",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 资源管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishGoldManager",
+			"name": "FishGoldManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 飞行金币管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishLabelManager",
+			"name": "FishLabelManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 飘字管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishManager",
+			"name": "FishManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 鱼管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishNetManager",
+			"name": "FishNetManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 渔网管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishObjectPool",
+			"name": "FishObjectPool",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 对象池管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.MusicManager",
+			"name": "MusicManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 音效管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.SkillManager",
+			"name": "SkillManager",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"rwType": 1,
+			"description": "// 技能管理",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishMainModel",
+			"name": "fishModel",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public",
+			"default": "new FishMainModel()"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "fishModule",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"description": "// 当前游戏（金蟾捕鱼jc/李逵劈鱼 lk）",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "fish.FishStart",
+			"name": "fishStart",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "seatId",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "randomSelectId",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "lst",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "registerListener",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "roomInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "start",
+			"memberof": "fish.FishMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "key",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishMgr",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\FishMgr.ts"
+	},
+	"pType": "public"
+}

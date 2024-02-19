@@ -1,0 +1,185 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"name": "dt",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public",
+			"default": "0.001"
+		},
+		{
+			"kind": "member",
+			"name": "piAngle",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public",
+			"default": "180"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ActionCurve",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"description": "// 构造函数",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "addCurve",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"description": "添加一条曲线\t\t\tcveinfo = {\t\t\t\tt,\t\t\t\tx1,\t\t\t\tx2,\t\t\t\tftype,\t\t\t\tfparam = {a,b,c,way,r,k},\t\t\t}",
+			"params": [
+				{
+					"name": "cveinfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearAllCurve",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getAllTime",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getPosAndAngleByTime",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"description": "// 通过时间计算当前坐标和偏转角度",
+			"params": [
+				{
+					"name": "t",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isCurveEnd",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetInfo",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setActionReserve",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bres",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setActionRotation",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCurveRatio",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "ratio",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRatio",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "ratio",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setStartPos",
+			"memberof": "fish.ActionCurve",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ActionCurve",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\ActionCurve.ts"
+	},
+	"pType": "public"
+}

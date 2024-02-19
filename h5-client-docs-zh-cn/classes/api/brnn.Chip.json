@@ -1,0 +1,93 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_tag",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "tag",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Chip",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "getDataId",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "brnn.Chip",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Chip",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\Chips.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

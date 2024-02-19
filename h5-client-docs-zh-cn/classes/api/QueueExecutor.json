@@ -1,0 +1,108 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Function",
+			"name": "_callBack",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "any",
+			"name": "_callBackTarget",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<Array<any>>",
+			"name": "_functions",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "QueueExecutor",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "next",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"description": "执行下一个",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "regist",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"description": "注册需要队列处理的函数",
+			"params": [
+				{
+					"name": "$func",
+					"type": "Function",
+					"description": "函数"
+				},
+				{
+					"name": "$thisObj",
+					"type": "any",
+					"description": "函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setCallBack",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"description": "设置全部执行完成处理函数",
+			"params": [
+				{
+					"name": "callBack",
+					"type": "Function",
+					"description": "此队列处理完成执行函数"
+				},
+				{
+					"name": "callBackTarget",
+					"type": "any",
+					"description": "此队列处理完成执行函数所属对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "start",
+			"memberof": "QueueExecutor",
+			"scope": "instance",
+			"description": "开始执行",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "QueueExecutor",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\QueueExecutor.ts",
+		"description": "Created by yangsong on 15-8-19.队列处理"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,95 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "currPart",
+			"memberof": "GuideUtils",
+			"scope": "instance",
+			"description": "大步骤",
+			"pType": "public",
+			"default": "0"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "currStep",
+			"memberof": "GuideUtils",
+			"scope": "instance",
+			"description": "小步骤",
+			"pType": "public",
+			"default": "0"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isShow",
+			"memberof": "GuideUtils",
+			"scope": "instance",
+			"description": "引导是否显示",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "next",
+			"memberof": "GuideUtils",
+			"scope": "instance",
+			"description": "下一步",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "GuideUtils",
+			"scope": "instance",
+			"description": "显示",
+			"params": [
+				{
+					"name": "obj",
+					"type": "egret.DisplayObject",
+					"description": ""
+				},
+				{
+					"name": "targetPart",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "targetStep",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "GuideUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\module\\guide\\GuideUtils.ts",
+		"description": "Created by yangsong on 14-12-2.引导工具类，根据每个项目重写实现可重写实现",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

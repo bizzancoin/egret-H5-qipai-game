@@ -1,0 +1,175 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerListener",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 注册公共模块请求",
+			"params": [
+				{
+					"name": "gameId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeListener",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 移除公共模块请求",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqBackTable",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 断线重连",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqCancelLockFish",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 取消锁定鱼",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExchangeChip",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 兑换筹码",
+			"params": [
+				{
+					"name": "type",
+					"type": "game.ExchangeType",
+					"description": ""
+				},
+				{
+					"name": "value",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqExitTable",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 退出桌子",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqFire",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 开炮",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqHitFish",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 打中鱼",
+			"params": [
+				{
+					"name": "playerId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "bulletId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqLockFish",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 锁定鱼",
+			"params": [
+				{
+					"name": "fishId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqScene",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 请求场景数据",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send_ReqSwitchBattery",
+			"memberof": "fish.FishReq",
+			"scope": "static",
+			"description": "// 切换炮台",
+			"params": [
+				{
+					"name": "type",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishReq",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\FishReq.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,98 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ButtonComponent",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "SetCancelHandler",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "SetCancelVisible",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "visible",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "SetMsg",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "msg",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "SetSureHandler",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "createChildren",
+			"memberof": "ButtonComponent",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ButtonComponent",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\promot\\ButtonComponent.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

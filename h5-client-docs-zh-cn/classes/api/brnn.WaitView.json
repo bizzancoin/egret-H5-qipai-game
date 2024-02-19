@@ -1,0 +1,70 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "WaitView",
+			"memberof": "brnn.WaitView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hide",
+			"memberof": "brnn.WaitView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "brnn.WaitView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "btnCall",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "btnCallObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "show",
+			"memberof": "brnn.WaitView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "waits",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "isApply",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "WaitView",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\WaitView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

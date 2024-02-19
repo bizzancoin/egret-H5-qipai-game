@@ -1,0 +1,86 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "LoadGameScene",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "PauseGame",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "8"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ReqEnterCurGame",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ReqEnterCurGameRoom",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ReqExitCurGameRoom",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "5"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ReqExitCurGameTable",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "7"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "ReqQuickEnterCurGame",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "6"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "SetRoomInfo",
+			"memberof": "CommonReq",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "CommonReq",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\Home\\CommonReq.ts"
+	},
+	"pType": "public"
+}

@@ -1,0 +1,56 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "forEach",
+			"memberof": "ArrayUtils",
+			"scope": "instance",
+			"description": "遍历操作",
+			"params": [
+				{
+					"name": "arr",
+					"type": "Array<any>",
+					"description": "arr"
+				},
+				{
+					"name": "func",
+					"type": "Function",
+					"description": "func"
+				},
+				{
+					"name": "funcObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ArrayUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\ArrayUtils.ts",
+		"description": "Created by egret on 15-8-7.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,89 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_maxNum",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "Array<egret.RenderTexture>",
+			"name": "_pool",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_useNum",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "RenderTextureManager",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "egret.RenderTexture",
+			"name": "pop",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"description": "获取一个egret.RenderTexture",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "push",
+			"memberof": "RenderTextureManager",
+			"scope": "instance",
+			"description": "回收一个egret.RenderTexture",
+			"params": [
+				{
+					"name": "texture",
+					"type": "egret.RenderTexture",
+					"description": "texture"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RenderTextureManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\RenderTextureManager.ts",
+		"description": "cacheAsBitmap的替代方案，解决QQ浏览器在1G内存的机器上最多能使用20个Canvas的限制",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

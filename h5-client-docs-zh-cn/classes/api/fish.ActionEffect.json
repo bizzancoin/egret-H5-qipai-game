@@ -1,0 +1,67 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ActionEffect",
+			"memberof": "fish.ActionEffect",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "fish.ActionEffect",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "obj",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "endCall",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "effectId",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "parentObj",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ActionEffect",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\ActionEffect.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

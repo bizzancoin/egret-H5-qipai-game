@@ -1,0 +1,39 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "BaseController",
+			"name": "_controller",
+			"memberof": "BaseModel",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaseModel",
+			"memberof": "BaseModel",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$controller",
+					"type": "BaseController",
+					"description": "所属模块"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaseModel",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\mvc\\model\\BaseModel.ts",
+		"description": "Created by yangsong on 15-11-20.Model基类"
+	},
+	"pType": "public"
+}

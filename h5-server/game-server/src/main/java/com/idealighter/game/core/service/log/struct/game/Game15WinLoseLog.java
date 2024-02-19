@@ -1,0 +1,46 @@
+
+package com.idealighter.game.core.service.log.struct.game;
+
+import com.idealighter.game.core.service.games.common.AbstractSeat;
+import com.idealighter.game.core.service.log.core.LogReason;
+import com.idealighter.game.core.service.player.service.bo.PlayerBo;
+import com.idealighter.game.core.service.player.struct.Player;
+import com.idealighter.game.dblog.annotation.LogTable;
+import com.idealighter.game.dblog.core.TableType;
+
+/**
+ * 二人德州扑克输赢日志 .
+ *
+ */
+@LogTable(type = TableType.DAY)
+public class Game15WinLoseLog extends GameWinLoseLog {
+
+  /**
+   * 构造函数.
+   * 
+   * @param player 玩家.
+   * @param seat 座位信息.
+   * @param chips .
+   * @param gold .
+   * @param reason .
+   */
+  public Game15WinLoseLog(Player player, AbstractSeat seat, long chips, long gold,
+      LogReason reason) {
+    super(player, seat, chips, gold, reason);
+  }
+
+  /**
+   * 构造函数.
+   * 
+   * @param domain .
+   * @param seat 座位信息.
+   * @param chips .
+   * @param gold .
+   * @param reason .
+   */
+  public Game15WinLoseLog(PlayerBo domain, AbstractSeat seat, long chips, long gold,
+      LogReason reason) {
+    super(domain, seat, chips, gold, reason);
+  }
+
+}

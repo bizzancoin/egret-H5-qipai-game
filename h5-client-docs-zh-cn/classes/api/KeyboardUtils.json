@@ -1,0 +1,122 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "KeyboardUtils",
+			"memberof": "KeyboardUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addKeyDown",
+			"memberof": "KeyboardUtils",
+			"scope": "instance",
+			"description": "添加KeyDown事件",
+			"params": [
+				{
+					"name": "callback",
+					"type": "Function",
+					"description": "回调函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "回调函数对应的对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addKeyUp",
+			"memberof": "KeyboardUtils",
+			"scope": "instance",
+			"description": "添加KeyUp事件",
+			"params": [
+				{
+					"name": "callback",
+					"type": "Function",
+					"description": "回调函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "回调函数对应的对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeKeyDown",
+			"memberof": "KeyboardUtils",
+			"scope": "instance",
+			"description": "移除KeyDown事件",
+			"params": [
+				{
+					"name": "callback",
+					"type": "Function",
+					"description": "回调函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "回调函数对应的对象"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeKeyUp",
+			"memberof": "KeyboardUtils",
+			"scope": "instance",
+			"description": "移除KeyUp事件",
+			"params": [
+				{
+					"name": "callback",
+					"type": "Function",
+					"description": "回调函数"
+				},
+				{
+					"name": "target",
+					"type": "any",
+					"description": "回调函数对应的对象"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "KeyboardUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\KeyboardUtils.ts",
+		"description": "Created by yangsong on 15-1-26.键盘工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

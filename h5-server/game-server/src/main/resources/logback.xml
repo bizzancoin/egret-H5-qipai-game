@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 从高到地低 OFF 、 FATAL 、 ERROR 、 WARN 、 INFO 、 DEBUG 、 TRACE 、 ALL -->
+<configuration>
+  <property resource="config/server.properties"></property>
+
+  <contextName>${server.name}</contextName>
+
+  <!-- 控制台输出 -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 普通日志文件 -->
+  <appender name="GENERAL_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/general.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/general.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>100MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>50GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="MESSAGE_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/message/message.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/message/message.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>100MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>10GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Session日志文件 -->
+  <appender name="SESSION_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/session/session.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/session/session.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- GM日志文件 -->
+  <appender name="GM_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/gm/gm.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/gm/gm.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>5GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 数据库操作文件 -->
+  <appender name="DB_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/db/db.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/db/db.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 心跳文件 -->
+  <appender name="HEART_BEAT_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/beat/beat.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/beat/beat.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <appender name="resBet"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/resBet/resBet.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/resBet/resBet.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 充值日志文件 -->
+  <appender name="RECHARGE_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/recharge/recharge.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/recharge/recharge.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>10GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 监控日志文件 -->
+  <appender name="MOINTOR_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/mointor/mointor.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/mointor/mointor.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>10MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 保存玩家数据失败文件 -->
+  <appender name="SAVE_PLAYER_FAIL_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${log.path}/mointor/savePlayerFail.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${log.path}/mointor/savePlayerFail.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>50MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>10GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 异步写入 -->
+  <appender name="ASYNC_GENERAL_FILE" class="ch.qos.logback.classic.AsyncAppender">
+    <discardingThreshold>0</discardingThreshold>
+    <queueSize>20480</queueSize>
+    <appender-ref ref="GENERAL_FILE" />
+  </appender>
+
+  <!-- Session日志 -->
+  <logger name="SessionLog" level="INFO">
+    <appender-ref ref="SESSION_FILE" />
+  </logger>
+
+  <!-- GM日志 -->
+  <logger name="GMLog" level="INFO">
+    <appender-ref ref="GM_FILE" />
+  </logger>
+
+  <!-- 充值日志 -->
+  <logger name="RechargeLog" level="INFO">
+    <appender-ref ref="RECHARGE_FILE" />
+  </logger>
+
+  <!--消息处理时间日志 -->
+  <logger name="MsgHandlerLog" level="INFO" additivity="false">
+    <appender-ref ref="MOINTOR_FILE" />
+  </logger>
+
+  <!--数据库日志队列长度监控日志 -->
+  <logger name="DbLogMointorLog" level="INFO" additivity="false">
+<!--     <appender-ref ref="STDOUT" /> -->
+  </logger>
+
+  <!--数据库日志队列长度监控日志 -->
+  <logger name="SavePlayerFailLog" level="ERROR" additivity="false">
+    <appender-ref ref="SAVE_PLAYER_FAIL_FILE" />
+  </logger>
+  <logger name="MessageLog" level="DEBUG" additivity="false">
+    <appender-ref ref="MESSAGE_FILE"></appender-ref>
+  </logger>
+
+  <logger name="com.apache.ibatis" level="DEBUG" additivity="false" />
+  <logger name="org.quartz" level="WARN" additivity="false" />
+  <logger name="java.sql.Connection" level="DEBUG" additivity="false" />
+  <logger name="java.sql.Statement" level="DEBUG" additivity="false" />
+  <logger name="java.sql.PreparedStatement" level="DEBUG"
+    additivity="false" />
+  <logger name="druid.sql" level="DEBUG"></logger>
+  <logger name="com.idealighter.game.dictionary.mapper" level="DEBUG"></logger>
+  
+  <logger name="com.idealighter.game" level="INFO" />
+  <logger name="com.idealighter.game.server" level="DEBUG" />
+  <logger name="com.idealighter.game.dblog" level="ERROR"
+    additivity="false">
+    <appender-ref ref="DB_FILE" />
+  </logger>
+  <logger name="com.idealighter.game.server.db.datadb.generate"
+    level="DEBUG" additivity="false">
+    <appender-ref ref="DB_FILE" />
+  </logger>
+  <logger name="com.idealighter.game.server.db.datadb.mapper"
+    level="DEBUG" additivity="false">
+    <appender-ref ref="DB_FILE" />
+  </logger>
+  <logger name="io.netty" level="DEBUG"></logger>
+  <logger name="heartbeat" level="DEBUG" additivity="false">
+    <appender-ref ref="HEART_BEAT_FILE" />
+  </logger>
+  <logger name="resBet" level="INFO" additivity="false">
+    <appender-ref ref="resBet" />
+  </logger>
+  <!-- 日志输出级别 -->
+  <root level="INFO">
+    <appender-ref ref="STDOUT" />
+<!--     <appender-ref ref="GENERAL_FILE" /> -->
+  </root>
+</configuration>   

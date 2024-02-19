@@ -1,0 +1,107 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkIsSiHua",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"description": "// 四花",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkIsSiZha",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkIsWuHua",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"description": "// 五花",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "checkIsWuXiao",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"description": "// 五小",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "checkMaxNiuNiuPower",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getNormalNiuNiuMaxPower",
+			"memberof": "brnn.CardCheck",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "list",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "CardCheck",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\CardCheck.ts"
+	},
+	"pType": "public"
+}

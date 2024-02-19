@@ -1,0 +1,63 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"name": "s2c_player_ResLocked_msg",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public",
+			"default": "'109'"
+		},
+		{
+			"kind": "member",
+			"name": "s2c_player_ResLogout_msg",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public",
+			"default": "'105'"
+		},
+		{
+			"kind": "member",
+			"name": "s2c_player_ResNetStuck_msg",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public",
+			"default": "'110'"
+		},
+		{
+			"kind": "member",
+			"name": "s2c_player_ResRepeatLogin_msg",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public",
+			"default": "'108'"
+		},
+		{
+			"kind": "member",
+			"name": "s2c_player_ResStopService_msg",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public",
+			"default": "'112'"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerResListener",
+			"memberof": "PlayerRes",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "PlayerRes",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\player\\PlayerRes.ts"
+	},
+	"pType": "public"
+}

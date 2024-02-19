@@ -1,0 +1,155 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "brnn.BigCardsManager",
+			"name": "BigCard",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "brnn.ChipsManager",
+			"name": "ChipsManager",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "ObjectPool",
+			"name": "ObjectPool",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "brnn.SmallCardsManager",
+			"name": "SmallCard",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"rwType": 1,
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "brnn.MainModel",
+			"name": "mainMoel",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "finish",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string[]",
+			"name": "gsplit",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isEnterScene",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "playSound",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "id",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "sex",
+					"question": true,
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerListener",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setEnterScene",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "isEnterScene",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setRoomInfo",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"params": [
+				{
+					"name": "roomInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "start",
+			"memberof": "brnn.BrnnMgr",
+			"scope": "static",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BrnnMgr",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\BrnnMgr.ts"
+	},
+	"pType": "public"
+}

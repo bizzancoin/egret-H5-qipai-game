@@ -1,0 +1,61 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "EasyLoading",
+			"memberof": "EasyLoading",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "hideLoading",
+			"memberof": "EasyLoading",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "showLoading",
+			"memberof": "EasyLoading",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "text",
+					"question": true,
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "EasyLoading",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\module\\loading\\EasyLoading.ts",
+		"description": "Created by husong on 4/10/15.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

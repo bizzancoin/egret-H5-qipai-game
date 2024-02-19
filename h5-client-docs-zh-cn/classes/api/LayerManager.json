@@ -1,0 +1,34 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "BaseEuiLayer",
+			"name": "UI_Main",
+			"memberof": "LayerManager",
+			"scope": "static",
+			"description": "UI 层",
+			"pType": "public",
+			"default": "new BaseEuiLayer()"
+		},
+		{
+			"kind": "member",
+			"type": "BaseEuiLayer",
+			"name": "UI_Popup",
+			"memberof": "LayerManager",
+			"scope": "static",
+			"description": "UI弹出框层",
+			"pType": "public",
+			"default": "new BaseEuiLayer()"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "LayerManager",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\scene\\LayerManager.ts"
+	},
+	"pType": "public"
+}

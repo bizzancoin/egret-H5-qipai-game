@@ -1,0 +1,78 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "MsgFactory",
+			"memberof": "MsgFactory",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "decode",
+			"memberof": "MsgFactory",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "id",
+					"description": ""
+				},
+				{
+					"name": "buffer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "encode",
+			"memberof": "MsgFactory",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "id",
+					"description": ""
+				},
+				{
+					"name": "body",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerAll",
+			"memberof": "MsgFactory",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MsgFactory",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\MsgFactory.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

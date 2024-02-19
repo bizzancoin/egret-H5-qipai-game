@@ -1,0 +1,85 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_CLOSE",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socket已关闭",
+			"pType": "public",
+			"default": "\"SOCKET_CLOSE\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_CONNECT",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socket已经连接上",
+			"pType": "public",
+			"default": "\"SOCKET_CONNECT\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_DATA",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "socket收到消息",
+			"pType": "public",
+			"default": "\"SOCKET_DATA\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_DEBUG_INFO",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socketdebug的消息",
+			"pType": "public",
+			"default": "\"SOCKET_DEBUG_INFO\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_NOCONNECT",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socket不能连接上",
+			"pType": "public",
+			"default": "\"SOCKET_NOCONNECT\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_RECONNECT",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socket重新连接上",
+			"pType": "public",
+			"default": "\"SOCKET_RECONNECT\""
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "SOCKET_START_RECONNECT",
+			"memberof": "SocketConst",
+			"scope": "static",
+			"description": "Socket开始重新连接上",
+			"pType": "public",
+			"default": "\"SOCKET_START_RECONNECT\""
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SocketConst",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\SocketConst.ts",
+		"description": "Created by yangsong on 2014/11/25.Socket使用常量"
+	},
+	"pType": "public"
+}

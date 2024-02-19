@@ -1,0 +1,169 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getAngle",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"description": "弧度制转换为角度值",
+			"returns": "",
+			"params": [
+				{
+					"name": "radian",
+					"type": "number",
+					"description": "弧度制"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDistance",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"description": "获取两点间距离",
+			"returns": "",
+			"params": [
+				{
+					"name": "p1X",
+					"type": "number",
+					"description": "p1X"
+				},
+				{
+					"name": "p1Y",
+					"type": "number",
+					"description": "p1Y"
+				},
+				{
+					"name": "p2X",
+					"type": "number",
+					"description": "p2X"
+				},
+				{
+					"name": "p2Y",
+					"type": "number",
+					"description": "p2Y"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDistanceByPoint",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"description": "获取两点间距离",
+			"returns": "",
+			"params": [
+				{
+					"name": "pos1",
+					"type": "any",
+					"description": "pos1"
+				},
+				{
+					"name": "pos2",
+					"type": "any",
+					"description": "pos2"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getRadian",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"description": "角度值转换为弧度制",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": "angle"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getRadian2",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"description": "获取两点间弧度",
+			"returns": "",
+			"params": [
+				{
+					"name": "p1X",
+					"type": "number",
+					"description": "p1X"
+				},
+				{
+					"name": "p1Y",
+					"type": "number",
+					"description": "p1Y"
+				},
+				{
+					"name": "p2X",
+					"type": "number",
+					"description": "p2X"
+				},
+				{
+					"name": "p2Y",
+					"type": "number",
+					"description": "p2Y"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "range",
+			"memberof": "MathUtils",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "start",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "end",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "MathUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\MathUtils.ts",
+		"description": "Created by yangsong on 2014/11/22.数学计算工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

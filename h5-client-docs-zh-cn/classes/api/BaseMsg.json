@@ -1,0 +1,112 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "decode",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "消息解析,返回格式{key:XX, body:XX}",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "encode",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "消息封装",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSid",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "获取sessionDI",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receive",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "接收消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetSid",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "sessionId",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send",
+			"memberof": "BaseMsg",
+			"scope": "instance",
+			"description": "发送消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				},
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "interface",
+		"name": "BaseMsg",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\BaseMsg.ts",
+		"description": "Created by yangsong on 2014/11/25.服务端消息解析"
+	},
+	"pType": "public"
+}

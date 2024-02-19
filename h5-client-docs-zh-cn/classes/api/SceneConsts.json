@@ -1,0 +1,50 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Brnn",
+			"memberof": "SceneConsts",
+			"scope": "static",
+			"pType": "public",
+			"default": "4"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Fish",
+			"memberof": "SceneConsts",
+			"scope": "static",
+			"pType": "public",
+			"default": "3"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Game",
+			"memberof": "SceneConsts",
+			"scope": "static",
+			"pType": "public",
+			"default": "2"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "Login",
+			"memberof": "SceneConsts",
+			"scope": "static",
+			"pType": "public",
+			"default": "1"
+		}
+	],
+	"function": [],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "enum",
+		"name": "SceneConsts",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\consts\\SceneConsts.ts"
+	},
+	"pType": "public"
+}

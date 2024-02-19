@@ -1,0 +1,60 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratWayBillView",
+			"memberof": "baccarat.BaccaratWayBillView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "renderView",
+			"memberof": "baccarat.BaccaratWayBillView",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setData",
+			"memberof": "baccarat.BaccaratWayBillView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setStat",
+			"memberof": "baccarat.BaccaratWayBillView",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "data",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratWayBillView",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\view\\waybill\\BaccaratWayBillView.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

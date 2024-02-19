@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <settings>
+    <setting name="cacheEnabled" value="false" />
+    <setting name="useGeneratedKeys" value="true" />
+    <setting name="defaultExecutorType" value="REUSE" />
+  </settings>
+
+  <typeAliases>
+    <typeAlias
+      type="com.idealighter.game.core.datasource.DruidDataSourceFactory"
+      alias="DRUID" />
+  </typeAliases>
+
+  <environments default="${mybatis.environment.id}">
+    <environment id="${mybatis.environment.id}">
+      <transactionManager type="JDBC" />
+      <dataSource type="DRUID">
+        <!-- 基本属性 url、user、password -->
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.user}" />
+        <property name="password" value="${jdbc.pw}" />
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="${jdbc.initialSize}" />
+        <property name="minIdle" value="${jdbc.minIdle}" />
+        <property name="maxActive" value="${jdbc.maxActive}" />
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="60000" />
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000" />
+
+        <!-- 配置一个连接在池中最小生存的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000" />
+
+        <property name="validationQuery" value="SELECT 'x'" />
+        <property name="testWhileIdle" value="true" />
+        <property name="testOnBorrow" value="false" />
+        <property name="testOnReturn" value="false" />
+
+        <!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+        <!-- <property name="poolPreparedStatements" value="true" /> <property 
+          name="maxPoolPreparedStatementPerConnectionSize" value="20" /> -->
+
+        <!-- 配置监控统计拦截的filters -->
+        <property name="filters" value="stat" />
+      </dataSource>
+    </environment>
+  </environments>
+
+  <mappers>
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/BlackListDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/MailDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerGameInfoDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerInfoDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerMainDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerSafeInfoDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerStatusRecordDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/PlayerVipDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/RechargeRecordDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/RoomPrizePoolGoupDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/TransferGoldRecordDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/WhiteListDomainMapper.xml" />
+    <mapper
+      resource="com/idealighter/game/server/db/datadb/generate/xml/AppleInAppPayReceiptDataDomainMapper.xml" />
+
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.BlackListMapper" />
+    <mapper class="com.idealighter.game.server.db.datadb.mapper.MailMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerGameInfoMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerInfoMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerMainMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerSafeInfoMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerStatusRecordMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.PlayerVipMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.RechargeRecordMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.RoomPrizePoolGroupMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.TransferGoldRecordMapper" />
+    <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.WhiteListMapper" />
+      <mapper
+      class="com.idealighter.game.server.db.datadb.mapper.AppleInAppPayReceiptDataMapper" />
+  </mappers>
+
+</configuration>

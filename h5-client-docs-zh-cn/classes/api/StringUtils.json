@@ -1,0 +1,118 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "StringUtils",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getStringLength",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"description": "获取字符串长度，中文为2",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": "str"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isChinese",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"description": "判断一个字符串是否包含中文",
+			"returns": "",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": "str"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isEmpty",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isPhone",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "string",
+			"name": "trimSpace",
+			"memberof": "StringUtils",
+			"scope": "instance",
+			"description": "去掉前后空格",
+			"returns": "",
+			"params": [
+				{
+					"name": "str",
+					"type": "string",
+					"description": "str"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "StringUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\StringUtils.ts",
+		"description": "Created by yangsong on 14/12/18.字符串操作工具类",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

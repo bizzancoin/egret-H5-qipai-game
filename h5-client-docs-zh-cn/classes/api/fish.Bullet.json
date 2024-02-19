@@ -1,0 +1,245 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Bullet",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getBondingBox",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"description": "// 获取包围盒",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getBulletPlayerId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getBulletSeatId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getBulletServerId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getCurLockFishId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDataId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getNewAngleAndSide",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "side",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getNewSide",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"description": "// 计算新边 left, right, top, bottom",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "bsz",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getUserInfo",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "isMyBullet",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "resumeOrgin",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setStartPosAndAngle",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "angle",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "side",
+					"type": "number",
+					"description": ""
+				},
+				{
+					"name": "lockfishId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUserInfo",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "userInfo",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "shotSomething",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.Bullet",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Bullet",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\Bullet.ts",
+		"augments": []
+	},
+	"pType": "public"
+}

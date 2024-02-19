@@ -1,0 +1,54 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "TextFlowMaker",
+			"memberof": "TextFlowMaker",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "egret.ITextElement[]",
+			"name": "generateTextFlow",
+			"memberof": "TextFlowMaker",
+			"scope": "instance",
+			"description": "\"你好|S:18&C:0xffff00&T:带颜色字号|S:50&T:大号字体|C:0x0000ff&T:带色字体\";",
+			"returns": "",
+			"params": [
+				{
+					"name": "sourceText",
+					"type": "string",
+					"description": "sourceText"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "TextFlowMaker",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\TextFlowMaker.ts",
+		"description": "Created by Saco on 2015/10/26.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

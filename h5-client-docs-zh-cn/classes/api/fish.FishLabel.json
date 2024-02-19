@@ -1,0 +1,117 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishLabel",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getDataId",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getObjId",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "boolean",
+			"name": "getUseState",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "play",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "number",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resumeOrgin",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setFinishCall",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "finishCall",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "finishObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setUseState",
+			"memberof": "fish.FishLabel",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "state",
+					"type": "boolean",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishLabel",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishLabel.ts",
+		"description": "得分票子",
+		"augments": []
+	},
+	"pType": "public"
+}

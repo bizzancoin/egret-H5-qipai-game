@@ -1,0 +1,69 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "HeartMgr",
+			"memberof": "HeartMgr",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "HeartMgr",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "pause",
+			"memberof": "HeartMgr",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resume",
+			"memberof": "HeartMgr",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "uninit",
+			"memberof": "HeartMgr",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "HeartMgr",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\module\\login\\HeartMgr.ts",
+		"description": "// 心跳处理",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

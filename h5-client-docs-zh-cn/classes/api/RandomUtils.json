@@ -1,0 +1,91 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "limit",
+			"memberof": "RandomUtils",
+			"scope": "instance",
+			"description": "获取一个区间的随机数",
+			"returns": "",
+			"params": [
+				{
+					"name": "$from",
+					"type": "number",
+					"description": "最小值"
+				},
+				{
+					"name": "$end",
+					"type": "number",
+					"description": "最大值"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "limitInteger",
+			"memberof": "RandomUtils",
+			"scope": "instance",
+			"description": "获取一个区间的随机数(帧数)",
+			"returns": "",
+			"params": [
+				{
+					"name": "$from",
+					"type": "number",
+					"description": "最小值"
+				},
+				{
+					"name": "$end",
+					"type": "number",
+					"description": "最大值"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "randomArray",
+			"memberof": "RandomUtils",
+			"scope": "instance",
+			"description": "在一个数组中随机获取一个元素",
+			"returns": "随机出来的结果",
+			"params": [
+				{
+					"name": "arr",
+					"type": "Array<any>",
+					"description": "数组"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "RandomUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\RandomUtils.ts",
+		"description": "Created by yangsong on 2014/11/23.",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

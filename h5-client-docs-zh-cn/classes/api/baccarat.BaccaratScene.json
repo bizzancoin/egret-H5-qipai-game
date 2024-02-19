@@ -1,0 +1,140 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "Array<egret.DisplayObjectContainer>",
+			"name": "_layers",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "//当前所有Layer",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "BaseScene"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BaccaratScene",
+			"memberof": "baccarat.BaccaratScene",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "添加一个Layer到舞台",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseScene"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "addLayerAt",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "添加一个Layer到舞台",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				},
+				{
+					"name": "index",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseScene"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "layerRemoveAllChild",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "Layer中移除所有",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseScene"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onEnter",
+			"memberof": "baccarat.BaccaratScene",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "onExit",
+			"memberof": "baccarat.BaccaratScene",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeAllLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "移除所有Layer",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseScene"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeLayer",
+			"memberof": "BaseScene",
+			"scope": "instance",
+			"description": "在舞台移除一个Layer",
+			"params": [
+				{
+					"name": "layer",
+					"type": "egret.DisplayObjectContainer",
+					"description": "layer"
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseScene"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BaccaratScene",
+		"memberof": "baccarat",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\baccarat\\BaccaratScene.ts",
+		"augments": [
+			"BaseScene"
+		]
+	},
+	"pType": "public"
+}

@@ -1,0 +1,207 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "FishManager",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "addFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "fish",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearAllFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clearFishAll",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Fish",
+			"name": "clickFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "pos",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "destroy",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Fish",
+			"name": "getAliveFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "getAliveFishObjectLst",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Fish[]",
+			"name": "getFishLevelLst",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Fish",
+			"name": "getFishObjById",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "init",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "parentObj",
+					"type": "egret.DisplayObjectContainer",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"name": "preCreated",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"description": "// {objId, id}",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "removeFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "objId",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "fish.Fish",
+			"name": "shotFish",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "bbx",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "update",
+			"memberof": "fish.FishManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dt",
+					"type": "number",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "FishManager",
+		"memberof": "fish",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\fish\\common\\FishManager.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

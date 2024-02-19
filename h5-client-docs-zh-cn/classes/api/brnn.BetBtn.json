@@ -1,0 +1,80 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "BetBtn",
+			"memberof": "brnn.BetBtn",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initBetOptions",
+			"memberof": "brnn.BetBtn",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "betOptions",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "registerListener",
+			"memberof": "brnn.BetBtn",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "setOnBetHandler",
+			"memberof": "brnn.BetBtn",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "updateBtnStatus",
+			"memberof": "brnn.BetBtn",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "totalChips",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "BetBtn",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\BetBtn.ts",
+		"description": "// 下注按钮",
+		"augments": []
+	},
+	"pType": "public"
+}

@@ -1,0 +1,112 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "currentValue",
+			"memberof": "Percent",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "totalValue",
+			"memberof": "Percent",
+			"scope": "instance",
+			"pType": "public"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Percent",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$currentValue",
+					"type": "number",
+					"description": "当前值"
+				},
+				{
+					"name": "$totalValue",
+					"type": "number",
+					"description": "总值"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "computePercent",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "计算当前百分比",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "computePercentReverse",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "计算百分比反转",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "computeRate",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "计算当前比例",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "computeRateReverse",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "计算比例反转",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Percent",
+			"name": "copy",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "复制",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "Percent",
+			"name": "reverse",
+			"memberof": "Percent",
+			"scope": "instance",
+			"description": "反转",
+			"returns": "",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Percent",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\Percent.ts",
+		"description": "Created by yangsong on 2014/11/23.百分比类"
+	},
+	"pType": "public"
+}

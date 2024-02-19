@@ -1,0 +1,66 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "AverageUtils",
+			"memberof": "AverageUtils",
+			"scope": "instance",
+			"description": "构造函数",
+			"params": [
+				{
+					"name": "$maxNum",
+					"type": "number",
+					"default": "10",
+					"description": "参与计算的最大值"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "clear",
+			"memberof": "AverageUtils",
+			"scope": "instance",
+			"description": "清空",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getValue",
+			"memberof": "AverageUtils",
+			"scope": "instance",
+			"description": "获取平均值",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "push",
+			"memberof": "AverageUtils",
+			"scope": "instance",
+			"description": "加入一个值",
+			"params": [
+				{
+					"name": "value",
+					"type": "number",
+					"description": "value"
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "AverageUtils",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\AverageUtils.ts",
+		"description": "Created by yangsong on 15-8-19.平均数工具类"
+	},
+	"pType": "public"
+}

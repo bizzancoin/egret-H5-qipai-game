@@ -1,0 +1,24 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "trace",
+			"memberof": "Log",
+			"scope": "static",
+			"description": "Debug_Log",
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Log",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\utils\\Log.ts",
+		"description": "Created by yangsong on 2014/11/22."
+	},
+	"pType": "public"
+}

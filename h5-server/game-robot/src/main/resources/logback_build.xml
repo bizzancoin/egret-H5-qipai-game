@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<configuration>
+
+  <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+  <property name="LOG_HOME" value="log" />
+
+  <!-- ch.qos.logback.core.ConsoleAppender 控制台输出 -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- 普通日志文件 -->
+  <appender name="GENERAL_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${LOG_HOME}/general.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${LOG_HOME}/general.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>100MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>2GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+
+  <appender name="MESSAGE_FILE"
+    class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <File>${LOG_HOME}/message/message.log</File>
+    <rollingPolicy
+      class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <FileNamePattern>${LOG_HOME}/message/message.log.%d{yyyy-MM-dd}.%i
+      </FileNamePattern>
+      <!--日志文件最大的大小 -->
+      <MaxFileSize>100MB</MaxFileSize>
+      <MaxHistory>3</MaxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+    <encoder>
+      <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level
+        %logger{50} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  
+  <logger name="MessageLog" level="DEBUG" additivity="false">
+    <appender-ref ref="MESSAGE_FILE"></appender-ref>
+  </logger>
+
+  <!-- 日志输出级别 -->
+  <root level="INFO">
+    <!-- <appender-ref ref="STDOUT" /> -->
+    <appender-ref ref="GENERAL_FILE" />
+  </root>
+</configuration>   

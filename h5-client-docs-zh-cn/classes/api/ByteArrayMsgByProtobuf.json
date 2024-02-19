@@ -1,0 +1,153 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "egret.ByteArray",
+			"name": "_msgBuffer",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"pType": "protected",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		},
+		{
+			"kind": "member",
+			"type": "number",
+			"name": "_sid",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"pType": "protected",
+			"default": "0",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "ByteArrayMsgByProtobuf",
+			"memberof": "ByteArrayMsgByProtobuf",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "decode",
+			"memberof": "ByteArrayMsgByProtobuf",
+			"scope": "instance",
+			"description": "消息解析",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "encode",
+			"memberof": "ByteArrayMsgByProtobuf",
+			"scope": "instance",
+			"description": "消息封装",
+			"params": [
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "number",
+			"name": "getSid",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"description": "获取sessionDI",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "receive",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"description": "接收消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "resetSid",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"description": "sessionId",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send",
+			"memberof": "ByteArrayMsg",
+			"scope": "instance",
+			"description": "发送消息处理",
+			"params": [
+				{
+					"name": "socket",
+					"type": "egret.WebSocket",
+					"description": ""
+				},
+				{
+					"name": "msg",
+					"type": "any",
+					"description": "msg"
+				},
+				{
+					"name": "method",
+					"type": "Function",
+					"description": ""
+				},
+				{
+					"name": "methodObj",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public",
+			"inherited": true,
+			"inherits": "ByteArrayMsg"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "ByteArrayMsgByProtobuf",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\socket\\ByteArrayMsgByProtobuf.ts",
+		"description": "Created by yangsong on 15-3-25.",
+		"augments": [
+			"ByteArrayMsg"
+		]
+	},
+	"pType": "public"
+}

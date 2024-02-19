@@ -1,0 +1,143 @@
+{
+	"member": [
+		{
+			"kind": "member",
+			"type": "DynamicChange",
+			"name": "Data",
+			"memberof": "Http",
+			"scope": "instance",
+			"rwType": 1,
+			"description": "数据缓存",
+			"returns": "",
+			"pType": "public"
+		},
+		{
+			"kind": "member",
+			"type": "Array<any>",
+			"name": "_cache",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "DynamicChange",
+			"name": "_data",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "boolean",
+			"name": "_isRequesting",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.URLRequest",
+			"name": "_request",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_serverUrl",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "string",
+			"name": "_type",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		},
+		{
+			"kind": "member",
+			"type": "egret.URLLoader",
+			"name": "_urlLoader",
+			"memberof": "Http",
+			"scope": "instance",
+			"pType": "protected"
+		}
+	],
+	"function": [
+		{
+			"kind": "function",
+			"name": "Http",
+			"memberof": "Http",
+			"scope": "instance",
+			"description": "构造函数",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "initServer",
+			"memberof": "Http",
+			"scope": "instance",
+			"description": "初始化服务器地址",
+			"params": [
+				{
+					"name": "serverUrl",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "void",
+			"name": "send",
+			"memberof": "Http",
+			"scope": "instance",
+			"description": "请求数据",
+			"params": [
+				{
+					"name": "type",
+					"type": "string",
+					"description": "type"
+				},
+				{
+					"name": "urlVariables",
+					"type": "egret.URLVariables",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "Http",
+		"memberof": "",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\core\\net\\http\\Http.ts",
+		"description": "Created by yangsong on 2014/11/22.Http请求处理",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}

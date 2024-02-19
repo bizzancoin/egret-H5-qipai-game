@@ -1,0 +1,71 @@
+{
+	"member": [],
+	"function": [
+		{
+			"kind": "function",
+			"name": "SmallCardsManager",
+			"memberof": "brnn.SmallCardsManager",
+			"scope": "instance",
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "brnn.Card",
+			"name": "get",
+			"memberof": "brnn.SmallCardsManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "dataId",
+					"type": "any",
+					"description": ""
+				},
+				{
+					"name": "pos",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		},
+		{
+			"kind": "function",
+			"type": "any",
+			"name": "getInstance",
+			"memberof": "BaseClass",
+			"scope": "static",
+			"description": "获取一个单例",
+			"returns": "",
+			"pType": "public",
+			"inherited": true,
+			"inherits": "BaseClass"
+		},
+		{
+			"kind": "function",
+			"type": "brnn.Card",
+			"name": "preCreated",
+			"memberof": "brnn.SmallCardsManager",
+			"scope": "instance",
+			"params": [
+				{
+					"name": "info",
+					"type": "any",
+					"description": ""
+				}
+			],
+			"pType": "public"
+		}
+	],
+	"globalMember": [],
+	"globalFunction": [],
+	"class": {
+		"kind": "class",
+		"name": "SmallCardsManager",
+		"memberof": "brnn",
+		"filename": "D:\\Project\\白鹭H5电玩城\\h5-client\\src\\game\\games\\brnn\\main\\Chips.ts",
+		"augments": [
+			"BaseClass"
+		]
+	},
+	"pType": "public"
+}
